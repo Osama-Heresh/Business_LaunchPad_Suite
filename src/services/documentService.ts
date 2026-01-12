@@ -9540,6 +9540,2809 @@ Top Placements: [List key media outlets that covered it]
 // Add marketing templates to the main templates array
 templates.push(...marketingTemplates);
 
+// Legal & Admin Templates
+const legalAdminTemplates: DocumentTemplate[] = [
+  {
+    id: 'legal-service-agreement',
+    title: 'Service Agreement',
+    description: 'Comprehensive service agreement template for defining terms between service provider and client',
+    category: 'legal',
+    downloadCount: 8920,
+    fileSize: '52.3 KB',
+    rating: 4.8,
+    tags: ['service-agreement', 'contract', 'legal', 'business', 'terms'],
+    createdAt: '2024-01-08T10:00:00Z',
+    updatedAt: '2024-01-29T16:45:00Z',
+    content: `
+SERVICE AGREEMENT
+
+This Service Agreement ("Agreement") is entered into as of [Date] ("Effective Date") by and between:
+
+SERVICE PROVIDER:
+[Company/Individual Name]
+[Address]
+[City, State, ZIP Code]
+[Email]
+[Phone]
+
+CLIENT:
+[Company/Individual Name]
+[Address]
+[City, State, ZIP Code]
+[Email]
+[Phone]
+
+WHEREAS, Provider offers [description of services]; and
+WHEREAS, Client desires to engage Provider to perform such services;
+
+NOW, THEREFORE, in consideration of the mutual covenants and agreements herein contained, the parties agree as follows:
+
+1. SERVICES
+
+1.1 Scope of Services
+Provider agrees to provide the following services ("Services"):
+• [Service 1]
+• [Service 2]
+• [Service 3]
+• [Additional services as specified in Exhibit A]
+
+1.2 Service Specifications
+• Deliverables: [List specific deliverables]
+• Performance Standards: [Quality standards, response times, etc.]
+• Service Location: [On-site, remote, hybrid]
+• Service Hours: [Hours of availability]
+
+2. TERM AND TERMINATION
+
+2.1 Term
+This Agreement shall commence on [Start Date] and continue until [End Date], unless terminated earlier in accordance with this Agreement.
+
+2.2 Termination for Convenience
+Either party may terminate this Agreement with [#] days written notice.
+
+2.3 Termination for Cause
+Either party may terminate immediately upon written notice if the other party:
+• Materially breaches this Agreement and fails to cure within [#] days
+• Becomes insolvent or files for bankruptcy
+• Engages in fraud or illegal activities
+
+2.4 Effect of Termination
+Upon termination:
+• Client shall pay for all services rendered through the termination date
+• Provider shall deliver all work product and Client property
+• All confidential information shall be returned or destroyed
+• Sections [#] shall survive termination
+
+3. COMPENSATION AND PAYMENT
+
+3.1 Fees
+Client agrees to pay Provider as follows:
+☐ Fixed Fee: $[Amount] for [scope]
+☐ Hourly Rate: $[Rate] per hour, estimated [#] hours
+☐ Monthly Retainer: $[Amount] per month
+☐ Other: [Specify payment structure]
+
+3.2 Expenses
+☐ Included in fees
+☐ Reimbursable with prior approval (estimated $[Amount])
+☐ Subject to markup of [%]
+
+3.3 Payment Terms
+• Invoice Schedule: [Monthly, upon milestones, etc.]
+• Payment Due: Net [#] days from invoice date
+• Payment Method: [Wire transfer, check, ACH, etc.]
+• Late Fee: [%] per month on overdue amounts
+
+3.4 Additional Services
+Services beyond the scope shall be billed at:
+• Hourly Rate: $[Rate]
+• Or as mutually agreed in writing
+
+4. RESPONSIBILITIES
+
+4.1 Provider Responsibilities
+Provider shall:
+• Perform Services in a professional and workmanlike manner
+• Comply with all applicable laws and regulations
+• Provide qualified personnel
+• Maintain adequate insurance coverage
+• [Additional responsibilities]
+
+4.2 Client Responsibilities
+Client shall:
+• Provide timely access to information, systems, and personnel
+• Review and approve deliverables within [#] business days
+• Make timely payments
+• Provide workspace/equipment if applicable: [Details]
+• [Additional responsibilities]
+
+5. INTELLECTUAL PROPERTY
+
+5.1 Ownership of Deliverables
+☐ Client owns all work product upon full payment
+☐ Provider retains ownership; Client receives license: [Type of license]
+☐ Joint ownership as specified: [Details]
+
+5.2 Pre-Existing Materials
+Provider retains ownership of pre-existing:
+• Methodologies, tools, and templates
+• Generic knowledge and experience
+• [Other pre-existing IP]
+
+5.3 License Grant
+[If applicable] Provider grants Client a [exclusive/non-exclusive], [perpetual/term-limited], [transferable/non-transferable] license to use deliverables for [permitted uses].
+
+6. CONFIDENTIALITY
+
+6.1 Confidential Information
+Each party agrees to maintain in confidence all proprietary information of the other party, including:
+• Business strategies and financial information
+• Technical data and trade secrets
+• Customer and supplier information
+• This Agreement and its terms
+
+6.2 Obligations
+Receiving party shall:
+• Use Confidential Information solely for this Agreement
+• Protect it with at least the same care as its own confidential information
+• Limit disclosure to employees/contractors with need to know
+• Not disclose to third parties without prior written consent
+
+6.3 Exceptions
+Confidentiality obligations do not apply to information that:
+• Is publicly available through no breach of this Agreement
+• Was rightfully known prior to disclosure
+• Is independently developed
+• Must be disclosed by law (with prompt notice to disclosing party)
+
+6.4 Duration
+Confidentiality obligations survive for [#] years after termination.
+
+7. WARRANTIES AND REPRESENTATIONS
+
+7.1 Provider Warranties
+Provider represents and warrants that:
+• It has the right and authority to enter this Agreement
+• Services will be performed in a professional manner
+• Services will conform to specifications and industry standards
+• Work product will not infringe third-party rights
+• It maintains appropriate licenses and qualifications
+
+7.2 Client Warranties
+Client represents and warrants that:
+• It has authority to enter this Agreement
+• Materials provided do not infringe third-party rights
+• It will comply with applicable laws
+
+7.3 Warranty Period
+Warranty period for deliverables: [#] days from acceptance
+
+7.4 Warranty Remedy
+Exclusive remedy: Provider will re-perform non-conforming Services at no charge
+
+7.5 DISCLAIMER
+EXCEPT AS EXPRESSLY PROVIDED HEREIN, SERVICES ARE PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, OR NON-INFRINGEMENT.
+
+8. LIMITATION OF LIABILITY
+
+8.1 Cap on Liability
+EXCEPT FOR EXCLUDED CLAIMS, EACH PARTY'S TOTAL LIABILITY SHALL NOT EXCEED:
+☐ The fees paid in the [12] months preceding the claim
+☐ $[Amount]
+☐ [Other limitation]
+
+8.2 Excluded Claims
+Limitations do not apply to:
+• Gross negligence or willful misconduct
+• Breach of confidentiality
+• Infringement of intellectual property
+• Death or bodily injury
+• [Other exclusions]
+
+8.3 CONSEQUENTIAL DAMAGES
+IN NO EVENT SHALL EITHER PARTY BE LIABLE FOR INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES, INCLUDING LOST PROFITS, EVEN IF ADVISED OF THEIR POSSIBILITY.
+
+9. INDEMNIFICATION
+
+9.1 Provider Indemnification
+Provider shall indemnify and defend Client against claims arising from:
+• Provider's negligence or willful misconduct
+• Infringement of third-party IP rights by deliverables
+• Breach of Provider's representations and warranties
+
+9.2 Client Indemnification
+Client shall indemnify and defend Provider against claims arising from:
+• Client's negligence or willful misconduct
+• Client's use of deliverables beyond scope of license
+• Materials or instructions provided by Client
+
+9.3 Indemnification Procedure
+Indemnified party must:
+• Promptly notify indemnifying party of claim
+• Allow indemnifying party to control defense
+• Cooperate reasonably in defense
+
+10. INDEPENDENT CONTRACTOR
+
+10.1 Relationship
+Provider is an independent contractor, not an employee, partner, or agent of Client.
+
+10.2 Taxes and Benefits
+Provider is responsible for:
+• All taxes (income, self-employment, etc.)
+• Insurance (liability, workers' compensation, etc.)
+• Benefits
+• Compliance with labor and employment laws
+
+10.3 No Benefits
+Provider is not entitled to employee benefits including health insurance, paid leave, or retirement benefits.
+
+11. INSURANCE
+
+Provider shall maintain the following insurance:
+• General Liability: $[Amount] per occurrence
+• Professional Liability (E&O): $[Amount] per claim
+• Workers' Compensation: As required by law
+• Cyber Liability: $[Amount] (if applicable)
+
+Certificates of insurance shall be provided upon request.
+
+12. GENERAL PROVISIONS
+
+12.1 Entire Agreement
+This Agreement constitutes the entire agreement and supersedes all prior agreements and understandings.
+
+12.2 Amendments
+Amendments must be in writing and signed by both parties.
+
+12.3 Assignment
+Neither party may assign this Agreement without prior written consent, except to a successor in a merger or acquisition.
+
+12.4 Notices
+All notices shall be in writing and delivered to:
+
+Provider: [Contact information]
+Client: [Contact information]
+
+12.5 Governing Law
+This Agreement shall be governed by the laws of [State/Country], without regard to conflicts of law principles.
+
+12.6 Dispute Resolution
+☐ Mediation required before litigation
+☐ Binding arbitration under [AAA/JAMS] rules in [Location]
+☐ Litigation in courts of [Jurisdiction]
+
+12.7 Attorney's Fees
+Prevailing party in dispute shall be entitled to reasonable attorney's fees and costs.
+
+12.8 Severability
+If any provision is invalid, the remainder shall continue in effect.
+
+12.9 Waiver
+Failure to enforce any provision does not waive the right to enforce it later.
+
+12.10 Force Majeure
+Neither party is liable for delays caused by events beyond reasonable control (acts of God, war, strikes, pandemics, etc.).
+
+12.11 Publicity
+☐ Provider may list Client as reference and use in marketing materials
+☐ No publicity without prior written approval
+
+12.12 Counterparts
+This Agreement may be executed in counterparts and by electronic signature.
+
+13. SPECIAL PROVISIONS
+
+[Any industry-specific or custom provisions]
+
+
+IN WITNESS WHEREOF, the parties have executed this Agreement as of the Effective Date.
+
+SERVICE PROVIDER:
+
+Signature: _________________________
+Name: [Printed Name]
+Title: [Title]
+Date: _____________________________
+
+CLIENT:
+
+Signature: _________________________
+Name: [Printed Name]
+Title: [Title]
+Date: _____________________________
+
+
+EXHIBIT A: DETAILED SCOPE OF SERVICES
+
+[Detailed description of services, deliverables, milestones, specifications, acceptance criteria, etc.]
+
+EXHIBIT B: PAYMENT SCHEDULE
+
+[Detailed payment milestones and amounts]
+    `
+  },
+  {
+    id: 'legal-partnership-agreement',
+    title: 'Partnership Agreement',
+    description: 'Detailed partnership agreement for establishing business partnerships with profit sharing and governance terms',
+    category: 'legal',
+    downloadCount: 7340,
+    fileSize: '58.7 KB',
+    rating: 4.7,
+    tags: ['partnership', 'business', 'legal', 'agreement', 'equity'],
+    createdAt: '2024-01-09T11:30:00Z',
+    updatedAt: '2024-01-30T10:20:00Z',
+    content: `
+PARTNERSHIP AGREEMENT
+
+This Partnership Agreement ("Agreement") is entered into as of [Date] ("Effective Date") by and among the following partners ("Partners"):
+
+PARTNER 1:
+[Full Legal Name]
+[Address]
+[City, State, ZIP Code]
+[Email]
+[Phone]
+Ownership Percentage: [%]
+
+PARTNER 2:
+[Full Legal Name]
+[Address]
+[City, State, ZIP Code]
+[Email]
+[Phone]
+Ownership Percentage: [%]
+
+[Additional Partners]
+
+RECITALS
+
+WHEREAS, the Partners wish to form a partnership for the purpose of [business purpose];
+WHEREAS, the Partners desire to set forth the terms and conditions of their partnership;
+
+NOW, THEREFORE, in consideration of the mutual covenants herein, the Partners agree:
+
+1. FORMATION AND NAME
+
+1.1 Partnership Name
+The name of the partnership shall be: [Partnership Name] ("Partnership")
+
+1.2 Principal Place of Business
+[Address]
+[City, State, ZIP Code]
+
+1.3 Type of Partnership
+☐ General Partnership
+☐ Limited Partnership
+☐ Limited Liability Partnership (LLP)
+
+1.4 Formation
+The Partnership is formed under the laws of [State], effective [Date].
+
+2. PURPOSE AND BUSINESS
+
+2.1 Business Purpose
+The Partnership is formed for the following purposes:
+• [Primary business activity]
+• [Secondary activities]
+• [Other permitted activities]
+
+2.2 Scope of Business
+The Partnership may engage in any lawful business activities agreed upon by the Partners.
+
+2.3 Term
+The Partnership shall continue until [Date] or until dissolved according to this Agreement.
+
+3. CAPITAL CONTRIBUTIONS
+
+3.1 Initial Contributions
+Each Partner shall contribute the following:
+
+Partner 1: [Name]
+• Cash: $[Amount]
+• Property: [Description, valued at $Amount]
+• Services: [Description, valued at $Amount]
+• Total: $[Amount]
+
+Partner 2: [Name]
+• Cash: $[Amount]
+• Property: [Description, valued at $Amount]
+• Services: [Description, valued at $Amount]
+• Total: $[Amount]
+
+[Additional Partners]
+
+3.2 Additional Contributions
+• Required contributions may be called by [majority/unanimous] vote
+• Notice period: [#] days
+• Failure to contribute: [Consequences - dilution, forced sale, etc.]
+
+3.3 Return of Contributions
+Capital contributions shall not be returned except upon dissolution or as specifically provided herein.
+
+3.4 Interest on Capital
+Partners shall [receive/not receive] interest on capital contributions at [%] per annum.
+
+4. OWNERSHIP AND PROFIT SHARING
+
+4.1 Ownership Percentages
+Partner 1: [Name] - [%]
+Partner 2: [Name] - [%]
+[Additional Partners]
+Total: 100%
+
+4.2 Profit and Loss Allocation
+Profits and losses shall be allocated according to ownership percentages, unless otherwise agreed.
+
+4.3 Distributions
+• Timing: [Quarterly, annually, as determined by Partners]
+• Amount: As determined by [majority/unanimous] vote
+• Minimum distribution: [If applicable]
+• Tax distributions: Sufficient to cover each Partner's tax liability
+
+4.4 Draws
+Each Partner may take monthly draws of up to $[Amount], subject to available cash flow.
+
+5. MANAGEMENT AND DECISION MAKING
+
+5.1 Management Structure
+☐ All Partners manage equally
+☐ Managing Partner(s): [Name(s)]
+☐ Management Committee: [Composition]
+
+5.2 Voting Rights
+• Routine matters: [Majority/Unanimous] vote required
+• Major decisions: [Unanimous/Supermajority] vote required
+
+5.3 Major Decisions Requiring [Unanimous/Supermajority] Approval
+• Admission of new Partners
+• Sale, merger, or dissolution of Partnership
+• Purchase or sale of Partnership assets exceeding $[Amount]
+• Borrowing exceeding $[Amount]
+• Execution of leases or contracts exceeding [$ or term]
+• Amendment of this Agreement
+• Changes to capital structure
+• [Other major decisions]
+
+5.4 Authority of Partners
+Each Partner has authority to:
+• Bind the Partnership in ordinary course of business
+• Sign contracts up to $[Amount]
+• [Other routine authorities]
+
+Each Partner does NOT have authority to:
+• Sell Partnership assets without approval
+• Admit new Partners
+• Settle litigation exceeding $[Amount]
+• [Other restricted activities]
+
+5.5 Meetings
+• Regular meetings: [Frequency]
+• Special meetings: Called by any Partner with [#] days notice
+• Quorum: [#] Partners or [%] of ownership
+• Action by written consent permitted
+
+6. DUTIES AND RESPONSIBILITIES
+
+6.1 Partner Duties
+Each Partner shall:
+• Devote [full-time/[#] hours per week] to Partnership business
+• Act in good faith and in Partnership's best interests
+• Comply with all applicable laws and regulations
+• Maintain accurate books and records
+• [Specific duties by Partner]
+
+Partner 1: [Name]
+• [Specific responsibilities]
+
+Partner 2: [Name]
+• [Specific responsibilities]
+
+6.2 Fiduciary Duties
+Partners owe each other and the Partnership duties of loyalty, care, and good faith.
+
+6.3 Confidentiality
+Partners shall maintain confidentiality of Partnership information during and after the Partnership.
+
+6.4 Non-Compete
+During the term of this Agreement and for [#] years thereafter, Partners shall not:
+• Compete directly with the Partnership in [geographic area]
+• Solicit Partnership customers or employees
+• [Other non-compete restrictions]
+
+Exception: [If applicable - e.g., approved side businesses]
+
+6.5 Compensation
+Beyond profit distributions, Partners may receive:
+• Salary: [Details by Partner]
+• Bonuses: [Criteria]
+• Benefits: [Health insurance, retirement, etc.]
+• Expense reimbursement: [Policy]
+
+7. BOOKS, RECORDS, AND ACCOUNTING
+
+7.1 Fiscal Year
+The Partnership's fiscal year shall be [Calendar year / Other period].
+
+7.2 Accounting Method
+The Partnership shall use the [cash/accrual] method of accounting.
+
+7.3 Books and Records
+The Partnership shall maintain complete books and records at the principal place of business.
+
+7.4 Bank Accounts
+• Bank: [Name of bank]
+• Signatories: [Names and any limitations]
+• Approval required for withdrawals exceeding: $[Amount]
+
+7.5 Financial Statements
+• Annual financial statements shall be prepared by [Date]
+• Prepared by: ☐ Internal ☐ CPA firm
+• Audit required: ☐ Yes ☐ No
+
+7.6 Tax Returns
+• Partnership tax returns (Form 1065) shall be filed timely
+• K-1s distributed to Partners by [Date]
+• Tax matters partner: [Name]
+
+7.7 Access to Records
+Partners have full access to all books and records at reasonable times.
+
+8. TRANSFER OF PARTNERSHIP INTERESTS
+
+8.1 Restrictions on Transfer
+Partnership interests may not be transferred without prior written consent of [all other Partners / majority].
+
+8.2 Right of First Refusal
+Before transferring any interest, the selling Partner must:
+• Provide written notice with terms
+• Other Partners have [#] days to purchase on same terms
+• Pro-rata allocation among purchasing Partners
+
+8.3 Permitted Transfers
+Without consent, Partners may transfer to:
+☐ Spouse or children
+☐ Trust for estate planning
+☐ [Other permitted transferees]
+
+8.4 Buy-Sell Provisions
+Upon occurrence of trigger events, Partnership interests shall be purchased:
+
+Trigger Events:
+• Death
+• Disability (unable to work for [#] months)
+• Bankruptcy
+• Divorce (if interest at risk)
+• Retirement (age [#] or after [#] years)
+• Voluntary withdrawal
+• Termination for cause
+
+8.5 Valuation Method
+☐ Formula: [e.g., Book value, Multiple of earnings]
+☐ Independent appraisal by [Appraiser]
+☐ Agreement of Partners
+☐ Annual valuation: Last valuation was $[Amount] on [Date]
+
+8.6 Payment Terms
+• Down payment: [%] within [#] days
+• Balance: Paid over [#] years
+• Interest rate: [%] per annum
+• Security: [If applicable]
+
+8.7 Funding Mechanism
+Purchase shall be funded by:
+☐ Partnership redemption
+☐ Cross-purchase by other Partners
+☐ Life insurance (for death)
+☐ Disability insurance (for disability)
+
+9. ADMISSION OF NEW PARTNERS
+
+9.1 Approval Required
+Admission requires [unanimous/supermajority] approval of existing Partners.
+
+9.2 Terms of Admission
+New Partner must:
+• Make capital contribution of $[Amount] or [% of valuation]
+• Execute counterpart of this Agreement
+• [Other requirements]
+
+9.3 Effect on Ownership
+Existing Partners' interests shall be [diluted proportionally / protected].
+
+10. WITHDRAWAL AND RETIREMENT
+
+10.1 Voluntary Withdrawal
+A Partner may withdraw upon [#] months written notice.
+
+10.2 Effect of Withdrawal
+Upon withdrawal:
+• Withdrawing Partner's interest shall be purchased per Section 8
+• Partner loses all management rights immediately
+• Non-compete provisions remain in effect
+• [Other consequences]
+
+11. DISSOLUTION AND WINDING UP
+
+11.1 Events Causing Dissolution
+The Partnership shall dissolve upon:
+• Agreement of Partners holding [%] of interests
+• Expiration of term
+• [Number] or fewer Partners remain
+• Bankruptcy of Partnership
+• Court order
+
+11.2 Winding Up Process
+Upon dissolution:
+• Business operations cease except as necessary for winding up
+• Liquidating Partner(s): [Name or selection method]
+• Assets shall be sold or distributed in kind
+• Creditors paid in order of priority
+• Remaining assets distributed to Partners per ownership %
+
+11.3 Order of Distribution
+1. Creditors (including Partner loans)
+2. Return of capital contributions
+3. Remaining profits per ownership percentages
+
+12. DISPUTE RESOLUTION
+
+12.1 Good Faith Negotiation
+Partners shall first attempt to resolve disputes through good faith negotiation.
+
+12.2 Mediation
+If negotiation fails, disputes shall be submitted to mediation before [Organization] in [Location].
+
+12.3 Arbitration
+☐ Binding arbitration required under [AAA/JAMS] rules
+☐ Arbitration optional
+☐ Litigation permitted after mediation
+
+12.4 Deadlock
+If Partners are deadlocked on major decision:
+☐ Mediation required
+☐ Buy-sell triggered: [Details]
+☐ [Other deadlock mechanism]
+
+13. GENERAL PROVISIONS
+
+13.1 Entire Agreement
+This Agreement constitutes the entire agreement among the Partners.
+
+13.2 Amendments
+Amendments require [written consent of all Partners / supermajority].
+
+13.3 Governing Law
+This Agreement shall be governed by the laws of [State].
+
+13.4 Notices
+Notices shall be sent to addresses listed above or as updated in writing.
+
+13.5 Severability
+Invalid provisions shall be severed; remainder continues in effect.
+
+13.6 Waiver
+Waiver of any provision must be in writing and does not constitute ongoing waiver.
+
+13.7 Successors and Assigns
+This Agreement binds and benefits Partners' successors and permitted assigns.
+
+13.8 Counterparts
+This Agreement may be executed in counterparts.
+
+14. SPECIAL PROVISIONS
+
+[Any additional provisions specific to the partnership]
+
+
+IN WITNESS WHEREOF, the Partners have executed this Agreement as of the Effective Date.
+
+PARTNER 1:
+Signature: _________________________
+Name: [Printed Name]
+Date: _____________________________
+
+PARTNER 2:
+Signature: _________________________
+Name: [Printed Name]
+Date: _____________________________
+
+[Additional Partner Signatures]
+
+
+EXHIBIT A: INITIAL VALUATION AND CAPITAL ACCOUNTS
+
+[Details of initial contributions and valuations]
+
+EXHIBIT B: BUSINESS PLAN
+
+[Business plan, if applicable]
+    `
+  },
+  {
+    id: 'legal-mutual-nda',
+    title: 'Confidentiality Agreement (Mutual NDA)',
+    description: 'Mutual Non-Disclosure Agreement for protecting confidential information shared between two parties',
+    category: 'legal',
+    downloadCount: 12450,
+    fileSize: '38.6 KB',
+    rating: 4.9,
+    tags: ['nda', 'confidentiality', 'legal', 'mutual', 'non-disclosure'],
+    createdAt: '2024-01-10T09:15:00Z',
+    updatedAt: '2024-01-31T14:00:00Z',
+    content: `
+MUTUAL NON-DISCLOSURE AGREEMENT
+
+This Mutual Non-Disclosure Agreement ("Agreement") is entered into as of [Date] ("Effective Date") by and between:
+
+PARTY 1:
+[Company/Individual Name]
+[Address]
+[City, State, ZIP Code]
+[Email]
+
+PARTY 2:
+[Company/Individual Name]
+[Address]
+[City, State, ZIP Code]
+[Email]
+
+(Each a "Party" and collectively the "Parties")
+
+RECITALS
+
+WHEREAS, the Parties wish to explore a business relationship concerning [purpose/project description] ("Purpose");
+
+WHEREAS, in connection with the Purpose, each Party may disclose to the other certain confidential and proprietary information;
+
+WHEREAS, the Parties desire to protect such confidential information from unauthorized use and disclosure;
+
+NOW, THEREFORE, in consideration of the mutual covenants and agreements herein, the Parties agree:
+
+1. DEFINITION OF CONFIDENTIAL INFORMATION
+
+1.1 "Confidential Information" means any information disclosed by one Party (the "Disclosing Party") to the other Party (the "Receiving Party"), whether orally, in writing, electronically, or by visual observation, that:
+
+(a) Is marked as "Confidential," "Proprietary," or with a similar designation; or
+
+(b) Would reasonably be considered confidential given the nature of the information and circumstances of disclosure; or
+
+(c) Includes, but is not limited to:
+• Technical data, trade secrets, know-how, research, product plans, products, services, inventions, designs, processes, drawings, engineering, hardware, software, algorithms, source code
+• Business information, pricing, costs, profits, markets, sales, customers, prospects, marketing plans, strategies
+• Financial information, budgets, projections, investments
+• Personnel information
+• Any other proprietary information
+
+1.2 Visual Observations
+Information disclosed through facility tours, demonstrations, or observation of products, processes, or equipment shall be considered Confidential Information.
+
+2. EXCLUSIONS FROM CONFIDENTIAL INFORMATION
+
+Confidential Information does not include information that:
+
+(a) Was known to the Receiving Party prior to disclosure by the Disclosing Party, as evidenced by written records;
+
+(b) Is or becomes publicly available through no breach of this Agreement by the Receiving Party;
+
+(c) Is rightfully received by the Receiving Party from a third party without breach of any confidentiality obligation;
+
+(d) Is independently developed by the Receiving Party without use of or reference to the Disclosing Party's Confidential Information, as evidenced by written records;
+
+(e) Is approved for release by written authorization of the Disclosing Party.
+
+3. OBLIGATIONS OF RECEIVING PARTY
+
+3.1 Non-Use
+The Receiving Party shall use the Confidential Information solely for the Purpose and shall not use it for any other purpose without the prior written consent of the Disclosing Party.
+
+3.2 Non-Disclosure
+The Receiving Party shall:
+
+(a) Maintain the Confidential Information in strict confidence using at least the same degree of care it uses to protect its own confidential information, but in no event less than reasonable care;
+
+(b) Not disclose the Confidential Information to any third party except as permitted under Section 3.3;
+
+(c) Protect the Confidential Information from unauthorized use, access, or disclosure.
+
+3.3 Permitted Disclosures
+The Receiving Party may disclose Confidential Information only to:
+
+(a) Its employees, officers, directors, agents, contractors, and advisors (collectively "Representatives") who:
+• Have a legitimate need to know for the Purpose;
+• Have been informed of the confidential nature of the information; and
+• Are bound by confidentiality obligations at least as restrictive as those in this Agreement.
+
+(b) The Receiving Party is responsible for any breach of this Agreement by its Representatives.
+
+3.4 Protective Measures
+The Receiving Party shall:
+• Limit access to Confidential Information on a need-to-know basis
+• Implement reasonable security measures to prevent unauthorized disclosure
+• Promptly notify the Disclosing Party of any unauthorized use or disclosure
+• Cooperate with the Disclosing Party to remedy any breach
+
+4. COMPELLED DISCLOSURE
+
+4.1 If the Receiving Party is required by law, regulation, court order, or government authority to disclose any Confidential Information, it shall:
+
+(a) Promptly notify the Disclosing Party in writing (unless legally prohibited) to allow the Disclosing Party to seek a protective order or other remedy;
+
+(b) Provide reasonable assistance to the Disclosing Party in opposing or limiting the disclosure;
+
+(c) Disclose only the minimum Confidential Information legally required;
+
+(d) Request confidential treatment of any disclosed information.
+
+4.2 The obligations of Section 3 shall apply to any Confidential Information not actually disclosed pursuant to legal compulsion.
+
+5. OWNERSHIP AND NO LICENSE
+
+5.1 Ownership
+All Confidential Information remains the sole property of the Disclosing Party. No transfer of ownership or intellectual property rights is granted under this Agreement.
+
+5.2 No License
+Nothing in this Agreement grants any license, right, or interest in any patent, copyright, trademark, trade secret, or other intellectual property right, except the limited right to use Confidential Information for the Purpose.
+
+5.3 No Obligation
+Neither Party is obligated to:
+• Disclose any Confidential Information
+• Enter into any further agreement
+• Continue any business relationship
+
+6. RETURN OR DESTRUCTION OF CONFIDENTIAL INFORMATION
+
+6.1 Upon written request by the Disclosing Party, or upon termination of this Agreement, the Receiving Party shall promptly:
+
+(a) Return all tangible materials containing Confidential Information; and
+
+(b) At the Disclosing Party's option, either:
+• Destroy all copies of Confidential Information (including electronic copies); or
+• Return all copies to the Disclosing Party.
+
+6.2 The Receiving Party shall provide written certification of compliance with Section 6.1 upon request.
+
+6.3 The Receiving Party may retain one archival copy of Confidential Information solely for legal compliance purposes, subject to continued confidentiality obligations.
+
+6.4 Retention for Legal Compliance
+The Receiving Party may retain Confidential Information to the extent required by law or bona fide document retention policy, provided it remains subject to confidentiality obligations.
+
+7. TERM AND TERMINATION
+
+7.1 Term
+This Agreement shall commence on the Effective Date and continue for [#] years, unless earlier terminated.
+
+7.2 Termination
+Either Party may terminate this Agreement at any time upon [#] days written notice to the other Party.
+
+7.3 Survival
+The obligations under this Agreement shall survive termination for:
+• Trade secrets: For as long as the information qualifies as a trade secret under applicable law
+• Other Confidential Information: [#] years from the date of disclosure
+
+8. NO WARRANTY
+
+ALL CONFIDENTIAL INFORMATION IS PROVIDED "AS IS." THE DISCLOSING PARTY MAKES NO WARRANTIES, EXPRESS OR IMPLIED, REGARDING THE ACCURACY, COMPLETENESS, OR PERFORMANCE OF THE CONFIDENTIAL INFORMATION, INCLUDING ANY IMPLIED WARRANTIES OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE.
+
+9. REMEDIES
+
+9.1 Irreparable Harm
+The Parties acknowledge that breach of this Agreement may cause irreparable harm for which monetary damages are an inadequate remedy.
+
+9.2 Injunctive Relief
+In addition to all other remedies available at law or in equity, the Disclosing Party shall be entitled to seek injunctive relief to prevent or restrain any actual or threatened breach, without the necessity of posting a bond.
+
+9.3 Other Remedies
+The Parties' remedies under this Agreement are cumulative and not exclusive.
+
+10. NO AGENCY OR PARTNERSHIP
+
+This Agreement does not create any agency, partnership, joint venture, or employment relationship between the Parties. Neither Party has authority to bind the other.
+
+11. GENERAL PROVISIONS
+
+11.1 Entire Agreement
+This Agreement constitutes the entire agreement regarding confidentiality and supersedes all prior agreements and understandings.
+
+11.2 Amendments
+Amendments must be in writing and signed by both Parties.
+
+11.3 Waiver
+No waiver of any provision shall be effective unless in writing. Waiver of one breach does not constitute waiver of subsequent breaches.
+
+11.4 Severability
+If any provision is held invalid or unenforceable, the remaining provisions shall continue in full force and effect.
+
+11.5 Assignment
+Neither Party may assign this Agreement without the prior written consent of the other Party, except to a successor in connection with a merger, acquisition, or sale of all or substantially all assets.
+
+11.6 Governing Law
+This Agreement shall be governed by the laws of [State/Country], without regard to conflicts of law principles.
+
+11.7 Jurisdiction and Venue
+Any dispute shall be resolved exclusively in the courts of [Jurisdiction], and the Parties consent to personal jurisdiction therein.
+
+11.8 Export Control
+The Receiving Party shall comply with all applicable export control laws and regulations.
+
+11.9 Notices
+All notices shall be in writing and delivered to the addresses above, or as updated in writing by a Party.
+
+11.10 Counterparts
+This Agreement may be executed in counterparts, each of which shall be deemed an original.
+
+11.11 Electronic Signatures
+This Agreement may be executed by electronic signature, which shall be deemed an original signature.
+
+12. MUTUAL OBLIGATIONS
+
+The Parties acknowledge that:
+• Each Party may both disclose and receive Confidential Information
+• The obligations under this Agreement apply equally to both Parties
+• Each Party may independently possess or develop similar information
+
+13. SPECIAL PROVISIONS
+
+[Any additional provisions specific to the parties or purpose]
+
+
+IN WITNESS WHEREOF, the Parties have executed this Agreement as of the Effective Date.
+
+PARTY 1:
+
+Signature: _________________________
+Name: [Printed Name]
+Title: [Title]
+Date: _____________________________
+
+PARTY 2:
+
+Signature: _________________________
+Name: [Printed Name]
+Title: [Title]
+Date: _____________________________
+    `
+  },
+  {
+    id: 'legal-terms-conditions',
+    title: 'Terms & Conditions (T&C)',
+    description: 'Comprehensive Terms and Conditions template for websites and online services',
+    category: 'legal',
+    downloadCount: 15620,
+    fileSize: '61.4 KB',
+    rating: 4.8,
+    tags: ['terms', 'conditions', 'legal', 'website', 'ecommerce'],
+    createdAt: '2024-01-11T13:45:00Z',
+    updatedAt: '2024-02-01T09:30:00Z',
+    content: `
+TERMS AND CONDITIONS
+
+Last Updated: [Date]
+
+PLEASE READ THESE TERMS AND CONDITIONS CAREFULLY BEFORE USING THIS WEBSITE/SERVICE.
+
+1. INTRODUCTION AND ACCEPTANCE
+
+1.1 Agreement to Terms
+These Terms and Conditions ("Terms," "Terms and Conditions") constitute a legally binding agreement between you ("User," "you," or "your") and [Company Name] ("Company," "we," "us," or "our") concerning your access to and use of the [Website Name] website located at [URL] (the "Website") and any related services, features, content, or applications (collectively, the "Services").
+
+1.2 Acceptance
+By accessing or using the Services, you agree to be bound by these Terms. If you do not agree to these Terms, you must not access or use the Services.
+
+1.3 Changes to Terms
+We reserve the right to modify these Terms at any time. We will notify users of material changes via [email/website notice/other method]. Your continued use after such modifications constitutes acceptance of the updated Terms. You are responsible for reviewing these Terms periodically.
+
+1.4 Additional Terms
+Certain features or services may be subject to additional terms and conditions, which will be presented to you in connection with such features or services.
+
+2. ELIGIBILITY AND ACCOUNT REGISTRATION
+
+2.1 Eligibility
+You must be at least [13/16/18] years old to use the Services. By using the Services, you represent and warrant that you meet this age requirement.
+
+2.2 Parental Consent
+Users between [13-18] years old must have permission from a parent or legal guardian.
+
+2.3 Account Registration
+To access certain features, you must register for an account by providing:
+• Full legal name
+• Valid email address
+• Password
+• [Other required information]
+
+2.4 Account Accuracy
+You agree to provide accurate, current, and complete information and to update it as necessary to maintain accuracy.
+
+2.5 Account Security
+You are responsible for:
+• Maintaining the confidentiality of your account credentials
+• All activities that occur under your account
+• Notifying us immediately of any unauthorized use
+• Not sharing your account with others
+
+2.6 Account Termination
+We reserve the right to suspend or terminate your account at any time for:
+• Violation of these Terms
+• Fraudulent, abusive, or illegal activity
+• Other reasons at our sole discretion
+
+3. USE OF SERVICES
+
+3.1 License Grant
+Subject to these Terms, we grant you a limited, non-exclusive, non-transferable, revocable license to access and use the Services for personal [and/or commercial] purposes.
+
+3.2 Restrictions
+You agree NOT to:
+• Violate any applicable laws or regulations
+• Infringe on any third-party rights
+• Upload or transmit viruses, malware, or other harmful code
+• Attempt to gain unauthorized access to systems or accounts
+• Interfere with or disrupt the Services
+• Use automated means (bots, scrapers) without permission
+• Reverse engineer, decompile, or disassemble any part of the Services
+• Remove or modify any copyright, trademark, or proprietary notices
+• Use the Services for any illegal or unauthorized purpose
+• Impersonate any person or entity
+• Collect user information without consent
+• Spam, harass, or abuse other users
+
+3.3 User Conduct
+You agree to:
+• Comply with all applicable laws
+• Respect the rights of others
+• Use the Services in good faith
+• Not engage in any conduct that restricts or inhibits others' use
+
+4. USER CONTENT
+
+4.1 Definition
+"User Content" means any content you submit, upload, post, or transmit through the Services, including text, images, videos, audio, and other materials.
+
+4.2 Ownership
+You retain ownership of your User Content. However, by submitting User Content, you grant us a worldwide, non-exclusive, royalty-free, transferable, sublicensable license to use, reproduce, modify, adapt, publish, translate, create derivative works from, distribute, and display such User Content in connection with the Services.
+
+4.3 License Duration
+The license granted in Section 4.2 continues even after you stop using the Services, except for User Content you delete (provided deletion is available).
+
+4.4 Responsibility for User Content
+You are solely responsible for your User Content and the consequences of posting it. You represent and warrant that:
+• You own or have necessary rights to your User Content
+• Your User Content does not violate these Terms or any law
+• Your User Content does not infringe third-party rights
+
+4.5 Prohibited Content
+You may not post User Content that:
+• Is illegal, harmful, threatening, abusive, harassing, defamatory, or invasive of privacy
+• Infringes intellectual property or other proprietary rights
+• Contains viruses or harmful code
+• Is spam or unauthorized advertising
+• Promotes discrimination, hate speech, or violence
+• Exploits or harms minors
+• Impersonates any person or entity
+• [Other prohibited content]
+
+4.6 Content Moderation
+We reserve the right (but have no obligation) to:
+• Monitor, review, or remove User Content
+• Suspend or terminate accounts for violations
+• Cooperate with law enforcement
+
+4.7 No Endorsement
+We do not endorse User Content and make no representations regarding its accuracy, reliability, or suitability.
+
+5. INTELLECTUAL PROPERTY RIGHTS
+
+5.1 Company IP
+The Services and all content, features, and functionality (excluding User Content) are owned by the Company and are protected by copyright, trademark, patent, trade secret, and other intellectual property laws.
+
+5.2 Trademarks
+[Company Name], [Logo], and other marks are trademarks of the Company. You may not use these without our prior written permission.
+
+5.3 Copyright Infringement
+We respect intellectual property rights. If you believe content on the Services infringes your copyright, please contact our designated agent:
+
+[Copyright Agent Name]
+[Address]
+[Email]
+[Phone]
+
+Your notice must include:
+• Identification of the copyrighted work
+• Identification of the infringing material and its location
+• Your contact information
+• A statement of good faith belief that use is unauthorized
+• A statement under penalty of perjury that information is accurate
+• Your physical or electronic signature
+
+5.4 DMCA Policy
+We will respond to valid DMCA notices and may terminate repeat infringers' accounts.
+
+6. PURCHASES AND PAYMENTS
+
+[If applicable to e-commerce or paid services]
+
+6.1 Pricing
+All prices are in [Currency] and are subject to change without notice. We strive to ensure accuracy but errors may occur.
+
+6.2 Payment
+You agree to pay all fees and applicable taxes for purchases made through the Services using authorized payment methods.
+
+6.3 Payment Methods
+We accept: [List payment methods - credit cards, PayPal, etc.]
+
+6.4 Billing
+• Subscription services are billed [monthly/annually] in advance
+• One-time purchases are billed immediately
+• You authorize us to charge your payment method
+
+6.5 Refunds and Cancellations
+• Refund policy: [Details]
+• Cancellation policy: [Details]
+• Cancellation process: [Steps]
+
+6.6 Free Trials
+• Duration: [# days]
+• Auto-conversion to paid subscription unless cancelled
+• Cancellation before trial ends: No charge
+
+7. THIRD-PARTY LINKS AND SERVICES
+
+7.1 Third-Party Links
+The Services may contain links to third-party websites or services not controlled by us.
+
+7.2 No Responsibility
+We are not responsible for the content, privacy policies, or practices of third-party sites. You access them at your own risk.
+
+7.3 No Endorsement
+Inclusion of links does not imply endorsement.
+
+8. DISCLAIMERS
+
+8.1 AS-IS BASIS
+THE SERVICES ARE PROVIDED "AS IS" AND "AS AVAILABLE" WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE, AND NON-INFRINGEMENT.
+
+8.2 NO GUARANTEES
+WE DO NOT WARRANT THAT:
+• The Services will be uninterrupted, secure, or error-free
+• The results obtained will be accurate or reliable
+• Any errors will be corrected
+• The Services will meet your requirements
+
+8.3 Use at Your Own Risk
+Your use of the Services is at your sole risk. You are responsible for any damage to your computer system or loss of data.
+
+9. LIMITATION OF LIABILITY
+
+9.1 EXCLUSION OF DAMAGES
+TO THE MAXIMUM EXTENT PERMITTED BY LAW, IN NO EVENT SHALL THE COMPANY, ITS OFFICERS, DIRECTORS, EMPLOYEES, OR AGENTS BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES, INCLUDING BUT NOT LIMITED TO LOSS OF PROFITS, DATA, USE, GOODWILL, OR OTHER INTANGIBLE LOSSES, RESULTING FROM:
+• Your use or inability to use the Services
+• Any unauthorized access to or use of our servers and/or any personal information stored therein
+• Any interruption or cessation of transmission to or from the Services
+• Any bugs, viruses, or harmful code transmitted through the Services
+• Any errors or omissions in any content or for any loss or damage incurred as a result of use of any content posted, emailed, transmitted, or otherwise made available through the Services
+• User Content or the defamatory, offensive, or illegal conduct of any third party
+
+9.2 LIABILITY CAP
+THE COMPANY'S TOTAL LIABILITY SHALL NOT EXCEED THE GREATER OF:
+• The amount you paid to us in the 12 months prior to the claim; or
+• $[Amount]
+
+9.3 Exceptions
+Some jurisdictions do not allow the exclusion of certain warranties or limitation of liability, so the above limitations may not apply to you.
+
+10. INDEMNIFICATION
+
+You agree to indemnify, defend, and hold harmless the Company, its affiliates, and their respective officers, directors, employees, and agents from and against any claims, liabilities, damages, losses, costs, expenses, or fees (including reasonable attorneys' fees) arising from:
+• Your use of the Services
+• Your violation of these Terms
+• Your violation of any rights of another
+• Your User Content
+
+11. DISPUTE RESOLUTION
+
+11.1 Governing Law
+These Terms shall be governed by the laws of [State/Country], without regard to conflict of law provisions.
+
+11.2 Informal Resolution
+Before filing a claim, you agree to contact us and attempt to resolve the dispute informally by sending written notice to [Contact Information].
+
+11.3 Arbitration Agreement
+Any dispute arising from these Terms or the Services shall be resolved through binding arbitration under the rules of [AAA/JAMS] in [Location], except that either party may bring suit in court to enjoin infringement of intellectual property rights.
+
+11.4 Class Action Waiver
+YOU AGREE THAT DISPUTES MUST BE BROUGHT INDIVIDUALLY AND NOT AS A PLAINTIFF OR CLASS MEMBER IN ANY PURPORTED CLASS OR REPRESENTATIVE PROCEEDING.
+
+11.5 Jury Trial Waiver
+YOU WAIVE YOUR RIGHT TO A JURY TRIAL.
+
+OR (Alternative to Arbitration):
+
+11.3 Jurisdiction
+You agree to submit to the personal and exclusive jurisdiction of the courts located in [Jurisdiction].
+
+12. TERMINATION
+
+12.1 By You
+You may terminate your account at any time by [process].
+
+12.2 By Us
+We may suspend or terminate your access immediately, without prior notice, for any reason, including breach of these Terms.
+
+12.3 Effect of Termination
+Upon termination:
+• Your right to use the Services ceases immediately
+• We may delete your account and User Content
+• Sections [#] survive termination
+
+13. GENERAL PROVISIONS
+
+13.1 Entire Agreement
+These Terms constitute the entire agreement between you and the Company regarding the Services.
+
+13.2 Waiver
+Our failure to enforce any right or provision shall not constitute a waiver.
+
+13.3 Severability
+If any provision is held invalid or unenforceable, the remaining provisions continue in effect.
+
+13.4 Assignment
+You may not assign or transfer these Terms. We may assign our rights without restriction.
+
+13.5 Force Majeure
+We are not liable for delays or failures caused by circumstances beyond our reasonable control.
+
+13.6 Notices
+Notices to you may be sent to your email address on file. Notices to us should be sent to:
+
+[Company Name]
+[Address]
+[Email]
+
+13.7 Export Control
+You agree to comply with all export and import laws and regulations.
+
+13.8 U.S. Government Rights
+If you are a U.S. government entity, the Services are "Commercial Items" as defined in FAR 2.101.
+
+14. PRIVACY
+
+Your use of the Services is also governed by our Privacy Policy, available at [URL]. Please review it to understand our data practices.
+
+15. CONTACT INFORMATION
+
+If you have questions about these Terms, please contact us:
+
+[Company Name]
+[Address]
+[City, State, ZIP Code]
+[Email]
+[Phone]
+[Website]
+
+
+By using the Services, you acknowledge that you have read, understood, and agree to be bound by these Terms and Conditions.
+    `
+  },
+  {
+    id: 'legal-privacy-policy',
+    title: 'Privacy Policy (GDPR/CCPA-ready)',
+    description: 'Comprehensive privacy policy template compliant with GDPR and CCPA regulations',
+    category: 'legal',
+    downloadCount: 14830,
+    fileSize: '67.2 KB',
+    rating: 4.9,
+    tags: ['privacy', 'gdpr', 'ccpa', 'legal', 'data-protection'],
+    createdAt: '2024-01-12T10:00:00Z',
+    updatedAt: '2024-02-02T11:15:00Z',
+    content: `
+PRIVACY POLICY
+
+Last Updated: [Date]
+Effective Date: [Date]
+
+INTRODUCTION
+
+[Company Name] ("we," "us," or "our") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website [URL] and use our services (collectively, the "Services").
+
+Please read this Privacy Policy carefully. By accessing or using the Services, you acknowledge that you have read, understood, and agree to be bound by this Privacy Policy. If you do not agree, please do not access or use the Services.
+
+TABLE OF CONTENTS
+
+1. Information We Collect
+2. How We Use Your Information
+3. How We Share Your Information
+4. Cookies and Tracking Technologies
+5. Third-Party Services
+6. Data Security
+7. Data Retention
+8. Your Privacy Rights
+9. Children's Privacy
+10. International Data Transfers
+11. California Privacy Rights (CCPA)
+12. European Privacy Rights (GDPR)
+13. Do Not Track Signals
+14. Changes to This Privacy Policy
+15. Contact Us
+
+1. INFORMATION WE COLLECT
+
+We collect information that you provide directly, information collected automatically, and information from third parties.
+
+1.1 Information You Provide Directly
+
+A. Account Information
+When you create an account, we collect:
+• Name
+• Email address
+• Password (encrypted)
+• Phone number
+• [Other account details]
+
+B. Profile Information
+• Profile photo
+• Bio or description
+• Preferences and settings
+• [Other profile details]
+
+C. Payment Information
+• Billing address
+• Payment card information (processed by [Payment Processor])
+• Transaction history
+
+D. Communications
+• Customer support inquiries
+• Survey responses
+• Feedback and reviews
+• Communications you send us
+
+E. User Content
+• Posts, comments, messages
+• Files, photos, videos you upload
+• [Other content]
+
+1.2 Information Collected Automatically
+
+A. Device and Usage Information
+• IP address
+• Browser type and version
+• Operating system
+• Device identifiers
+• Pages visited and time spent
+• Referring URLs
+• Click patterns and interactions
+
+B. Location Information
+• Approximate location based on IP address
+• Precise location (if you grant permission)
+
+C. Cookies and Similar Technologies
+We use cookies, web beacons, pixel tags, and similar technologies to collect information. See Section 4 for details.
+
+1.3 Information from Third Parties
+
+A. Social Media
+If you connect via social media (Facebook, Google, etc.), we may receive:
+• Profile information
+• Email address
+• Friends/connections list
+• [Other information based on your privacy settings]
+
+B. Third-Party Services
+We may receive information from:
+• Analytics providers
+• Advertising partners
+• Data brokers (where permitted by law)
+• Publicly available sources
+
+2. HOW WE USE YOUR INFORMATION
+
+We use your information for the following purposes:
+
+2.1 Provide and Improve Services
+• Create and manage your account
+• Process transactions
+• Provide customer support
+• Personalize your experience
+• Improve and optimize the Services
+• Develop new features and services
+
+2.2 Communications
+• Send service-related announcements
+• Respond to inquiries
+• Send marketing communications (with your consent)
+• Send newsletters (with your consent)
+• Conduct surveys
+
+2.3 Safety and Security
+• Detect and prevent fraud, abuse, and illegal activity
+• Enforce our Terms of Service
+• Protect our rights and property
+• Comply with legal obligations
+• Ensure safety of users
+
+2.4 Analytics and Research
+• Analyze usage patterns and trends
+• Conduct research and analysis
+• Create aggregated, de-identified data
+
+2.5 Advertising and Marketing
+• Display targeted advertisements
+• Measure ad effectiveness
+• Send promotional offers (with your consent)
+
+2.6 Legal Compliance
+• Comply with legal obligations
+• Respond to legal requests
+• Enforce our policies
+• Protect rights, property, and safety
+
+3. HOW WE SHARE YOUR INFORMATION
+
+We share your information in the following circumstances:
+
+3.1 With Your Consent
+We share information when you direct us to do so.
+
+3.2 Service Providers
+We share information with third-party service providers who perform services on our behalf:
+• Payment processors
+• Cloud hosting providers
+• Email service providers
+• Analytics providers
+• Customer support tools
+• Marketing platforms
+
+These providers are contractually obligated to use your information only for the purposes of providing services to us and to protect your information.
+
+3.3 Business Transfers
+If we are involved in a merger, acquisition, sale of assets, or bankruptcy, your information may be transferred as part of that transaction.
+
+3.4 Legal Requirements
+We may disclose information to:
+• Comply with laws, regulations, or legal processes
+• Respond to government requests
+• Enforce our Terms of Service
+• Protect our rights, property, or safety
+• Prevent fraud or illegal activity
+
+3.5 Aggregated or De-Identified Data
+We may share aggregated or de-identified information that cannot reasonably be used to identify you.
+
+3.6 Public Information
+Information you post publicly (e.g., comments, reviews) may be viewed by others.
+
+3.7 With Affiliates
+We may share information with our parent company, subsidiaries, and affiliates.
+
+4. COOKIES AND TRACKING TECHNOLOGIES
+
+4.1 What Are Cookies?
+Cookies are small text files stored on your device that help us recognize you and remember your preferences.
+
+4.2 Types of Cookies We Use
+
+A. Essential Cookies
+Required for the Services to function. You cannot opt out of these.
+
+B. Functional Cookies
+Remember your preferences and settings.
+
+C. Analytics Cookies
+Help us understand how you use the Services (e.g., Google Analytics).
+
+D. Advertising Cookies
+Used to deliver targeted ads based on your interests.
+
+4.3 Cookie Management
+You can control cookies through your browser settings. Note that disabling cookies may affect functionality.
+
+4.4 Other Tracking Technologies
+We use web beacons, pixel tags, and similar technologies for analytics and advertising.
+
+4.5 Do Not Track
+See Section 13 for our Do Not Track policy.
+
+5. THIRD-PARTY SERVICES
+
+5.1 Third-Party Links
+The Services may contain links to third-party websites and services. We are not responsible for their privacy practices.
+
+5.2 Third-Party Plugins
+We use social media plugins (e.g., Facebook Like button) that may collect information about you.
+
+5.3 Analytics Services
+We use:
+• Google Analytics [Opt-out: https://tools.google.com/dlpage/gaoptout]
+• [Other analytics services]
+
+5.4 Advertising Networks
+We work with advertising partners who may use cookies and similar technologies. You can opt out at:
+• Network Advertising Initiative: http://www.networkadvertising.org/choices/
+• Digital Advertising Alliance: http://www.aboutads.info/choices/
+• European Interactive Digital Advertising Alliance: http://www.youronlinechoices.eu/
+
+6. DATA SECURITY
+
+6.1 Security Measures
+We implement reasonable administrative, technical, and physical security measures to protect your information, including:
+• Encryption of data in transit (SSL/TLS)
+• Encryption of sensitive data at rest
+• Regular security assessments
+• Access controls and authentication
+• Employee training
+
+6.2 No Guarantee
+However, no method of transmission or storage is 100% secure. We cannot guarantee absolute security.
+
+6.3 Your Responsibility
+You are responsible for maintaining the confidentiality of your account credentials.
+
+6.4 Breach Notification
+In the event of a data breach, we will notify affected users as required by law.
+
+7. DATA RETENTION
+
+7.1 Retention Period
+We retain your information for as long as necessary to:
+• Provide the Services
+• Comply with legal obligations
+• Resolve disputes
+• Enforce our policies
+
+7.2 Deletion
+When we no longer need your information, we will securely delete or anonymize it.
+
+7.3 Backup Copies
+Some information may remain in backup copies for a limited time.
+
+8. YOUR PRIVACY RIGHTS
+
+Depending on your location, you may have the following rights:
+
+8.1 Access
+You may request a copy of your personal information.
+
+8.2 Correction
+You may request that we correct inaccurate information.
+
+8.3 Deletion
+You may request that we delete your information, subject to certain exceptions.
+
+8.4 Portability
+You may request your information in a portable format.
+
+8.5 Objection
+You may object to certain processing of your information.
+
+8.6 Restriction
+You may request that we restrict certain processing.
+
+8.7 Withdraw Consent
+If processing is based on consent, you may withdraw it at any time.
+
+8.8 Opt Out of Marketing
+You may opt out of marketing communications by:
+• Clicking "unsubscribe" in emails
+• Updating your account settings
+• Contacting us
+
+8.9 How to Exercise Your Rights
+To exercise these rights, contact us at:
+[Privacy Contact Email]
+[Privacy Contact Address]
+
+We will respond within [30] days.
+
+9. CHILDREN'S PRIVACY
+
+9.1 Age Restriction
+The Services are not intended for children under [13/16] years of age. We do not knowingly collect information from children.
+
+9.2 Parental Notice
+If you are a parent and believe your child has provided us with information, please contact us.
+
+9.3 Deletion
+If we learn we have collected information from a child without parental consent, we will delete it promptly.
+
+10. INTERNATIONAL DATA TRANSFERS
+
+10.1 Global Operations
+We operate globally and may transfer your information to countries other than your own, including [Country where servers are located].
+
+10.2 Adequate Protection
+We ensure adequate protection through:
+• EU-U.S. Privacy Shield (if applicable)
+• Standard Contractual Clauses
+• Adequacy decisions
+• Your consent
+
+10.3 European Users
+For European users, data may be transferred outside the EEA. We use appropriate safeguards as required by GDPR.
+
+11. CALIFORNIA PRIVACY RIGHTS (CCPA)
+
+If you are a California resident, you have additional rights under the California Consumer Privacy Act (CCPA):
+
+11.1 Right to Know
+You have the right to request:
+• Categories of personal information collected
+• Categories of sources
+• Business purpose for collection
+• Categories of third parties with whom we share information
+• Specific pieces of personal information
+
+11.2 Right to Delete
+You have the right to request deletion of your personal information, subject to exceptions.
+
+11.3 Right to Opt-Out of Sale
+We [do/do not] sell personal information as defined by CCPA. If we do, you have the right to opt out at: [Do Not Sell My Personal Information Link]
+
+11.4 Right to Non-Discrimination
+You have the right not to receive discriminatory treatment for exercising your CCPA rights.
+
+11.5 Authorized Agent
+You may designate an authorized agent to make requests on your behalf.
+
+11.6 Verification
+We will verify your identity before processing requests.
+
+11.7 California Shine the Light
+California residents may request information about our disclosure of personal information to third parties for their direct marketing purposes. Contact us at [Email].
+
+12. EUROPEAN PRIVACY RIGHTS (GDPR)
+
+If you are in the European Economic Area (EEA), you have rights under the General Data Protection Regulation (GDPR):
+
+12.1 Legal Basis for Processing
+We process your information based on:
+• Consent
+• Performance of a contract
+• Legitimate interests
+• Legal obligations
+
+12.2 Data Controller
+[Company Name] is the data controller for your personal data.
+
+Data Protection Officer Contact:
+[DPO Name]
+[DPO Email]
+[DPO Address]
+
+12.3 Your GDPR Rights
+• Right of access
+• Right to rectification
+• Right to erasure ("right to be forgotten")
+• Right to restriction of processing
+• Right to data portability
+• Right to object
+• Rights related to automated decision-making and profiling
+
+12.4 Supervisory Authority
+You have the right to lodge a complaint with your local data protection authority.
+
+12.5 Cross-Border Data Transfers
+See Section 10.
+
+13. DO NOT TRACK SIGNALS
+
+13.1 Browser DNT
+Some browsers have a "Do Not Track" feature. We [do/do not] currently respond to DNT signals.
+
+13.2 Global Privacy Control
+We [do/do not] honor Global Privacy Control (GPC) signals.
+
+14. CHANGES TO THIS PRIVACY POLICY
+
+14.1 Updates
+We may update this Privacy Policy from time to time. We will notify you of material changes by:
+• Posting the updated Privacy Policy with a new "Last Updated" date
+• Sending you an email notification
+• Displaying a prominent notice on the Services
+
+14.2 Acceptance
+Your continued use of the Services after changes constitutes acceptance of the updated Privacy Policy.
+
+14.3 Review
+We encourage you to review this Privacy Policy periodically.
+
+15. CONTACT US
+
+If you have questions, concerns, or requests regarding this Privacy Policy or our privacy practices, please contact us:
+
+[Company Name]
+Attn: Privacy Department
+[Address]
+[City, State, ZIP Code]
+
+Email: [Privacy Email]
+Phone: [Privacy Phone]
+Website: [Privacy Webpage]
+
+For GDPR-related inquiries, contact our Data Protection Officer:
+[DPO Name]
+[DPO Email]
+
+For CCPA-related inquiries:
+[CCPA Contact Email]
+
+
+ADDITIONAL DISCLOSURES FOR SPECIFIC JURISDICTIONS
+
+[Add any additional disclosures required by specific states or countries]
+
+
+By using our Services, you acknowledge that you have read and understood this Privacy Policy.
+    `
+  },
+  {
+    id: 'legal-ip-assignment',
+    title: 'Intellectual Property Assignment Agreement',
+    description: 'Agreement for transferring intellectual property rights from creator to company or purchaser',
+    category: 'legal',
+    downloadCount: 6890,
+    fileSize: '44.5 KB',
+    rating: 4.7,
+    tags: ['ip', 'intellectual-property', 'assignment', 'legal', 'copyright'],
+    createdAt: '2024-01-13T14:20:00Z',
+    updatedAt: '2024-02-03T16:00:00Z',
+    content: `
+INTELLECTUAL PROPERTY ASSIGNMENT AGREEMENT
+
+This Intellectual Property Assignment Agreement ("Agreement") is entered into as of [Date] ("Effective Date") by and between:
+
+ASSIGNOR:
+[Full Legal Name]
+[Address]
+[City, State, ZIP Code]
+[Email]
+[Phone]
+
+ASSIGNEE:
+[Company/Individual Name]
+[Address]
+[City, State, ZIP Code]
+[Email]
+[Phone]
+
+RECITALS
+
+WHEREAS, Assignor has created, developed, or owns certain intellectual property;
+
+WHEREAS, Assignee desires to acquire all rights, title, and interest in such intellectual property;
+
+WHEREAS, Assignor desires to assign such rights to Assignee in exchange for the consideration set forth herein;
+
+NOW, THEREFORE, in consideration of the mutual covenants and agreements herein, the parties agree:
+
+1. DEFINITIONS
+
+1.1 "Assigned IP" means all intellectual property described in Exhibit A and all intellectual property created, developed, or conceived by Assignor:
+☐ During the term of employment/engagement with Assignee
+☐ Related to the Project (as defined below)
+☐ [Other scope]
+
+1.2 "Intellectual Property" or "IP" includes:
+• Inventions, discoveries, and improvements (whether patentable or not)
+• Works of authorship (copyrightable works)
+• Trade secrets and confidential information
+• Trademarks, service marks, trade names, and logos
+• Designs, processes, methods, and know-how
+• Software, code, algorithms, and documentation
+• Databases and compilations
+• All rights in the foregoing worldwide
+
+1.3 "Project" means: [Description of project, if applicable]
+
+2. ASSIGNMENT OF INTELLECTUAL PROPERTY
+
+2.1 Assignment
+Assignor hereby irrevocably assigns, transfers, and conveys to Assignee all right, title, and interest in and to the Assigned IP, including:
+
+A. Ownership Rights
+• All ownership rights worldwide
+• All rights to use, reproduce, modify, distribute, display, and perform
+• All rights to create derivative works
+• All rights to sublicense and transfer
+
+B. Intellectual Property Rights
+• All patent rights and applications
+• All copyright and related rights
+• All trademark rights
+• All trade secret rights
+• All moral rights (to the extent assignable)
+• All other proprietary rights
+
+C. Embodiments
+• All tangible embodiments (documents, prototypes, code, etc.)
+• All electronic files and data
+• All notes, drawings, and specifications
+• All related materials
+
+2.2 Prior Works
+This Agreement does not apply to the following pre-existing intellectual property owned by Assignor:
+[List any excluded prior works, or state "None"]
+
+2.3 License to Prior Works
+☐ N/A - No prior works incorporated
+☐ Assignor grants Assignee a [exclusive/non-exclusive], [perpetual/term-limited], [royalty-free/royalty-bearing], worldwide license to use Prior Works to the extent incorporated in Assigned IP for [permitted uses].
+
+3. CONSIDERATION
+
+In consideration for this assignment, Assignee shall provide:
+
+3.1 Payment
+☐ One-time payment of $[Amount], payable [upon execution/within # days]
+☐ Royalty of [%] of [net revenue/gross sales] from Assigned IP, paid [quarterly/annually]
+☐ Employment compensation (IP created during employment)
+☐ Other: [Specify consideration]
+
+3.2 Additional Consideration
+☐ Stock/equity: [# shares or %]
+☐ Attribution/credit: [Details]
+☐ Other benefits: [Specify]
+
+3.3 Payment Terms
+• Method: [Wire, check, etc.]
+• Schedule: [Details]
+• Conditions: [If applicable]
+
+4. REPRESENTATIONS AND WARRANTIES
+
+4.1 Assignor's Representations
+Assignor represents and warrants that:
+
+A. Ownership
+• Assignor is the sole and exclusive owner of the Assigned IP
+• Assignor has full right and authority to assign the Assigned IP
+• No other person or entity has any rights in the Assigned IP
+
+B. Originality
+• The Assigned IP is original to Assignor
+• The Assigned IP does not infringe any third-party rights
+• Assignor has not licensed or assigned the Assigned IP to any third party
+
+C. No Conflicts
+• This assignment does not violate any agreement with third parties
+• Assignor is not subject to any conflicting obligations
+• No consents from third parties are required
+
+D. No Litigation
+• There are no pending or threatened claims regarding the Assigned IP
+• Assignor is not aware of any infringement by third parties
+
+E. Quality
+• [If applicable] The Assigned IP is free from material defects
+• [If applicable] The Assigned IP performs substantially as described
+
+4.2 DISCLAIMER
+EXCEPT AS EXPRESSLY PROVIDED IN SECTION 4.1, THE ASSIGNED IP IS PROVIDED "AS IS" WITHOUT ANY WARRANTY, EXPRESS OR IMPLIED, INCLUDING WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, OR NON-INFRINGEMENT.
+
+4.3 Assignee's Representations
+Assignee represents that it has authority to enter into this Agreement.
+
+5. ASSIGNOR'S OBLIGATIONS
+
+5.1 Delivery of Materials
+Assignor shall promptly deliver to Assignee:
+• All tangible embodiments of the Assigned IP
+• All documentation, specifications, and notes
+• All source code, files, and data
+• All passwords, access credentials, and keys
+• Any other materials related to the Assigned IP
+
+5.2 Further Assurances
+Assignor agrees to:
+• Execute any documents reasonably necessary to perfect Assignee's rights
+• Cooperate in obtaining patents, copyrights, or other registrations
+• Assist in enforcement against infringers
+• Provide testimony or declarations if needed
+• Take any other actions reasonably requested by Assignee
+
+5.3 Cooperation
+Assignor shall cooperate at Assignee's expense in:
+• Patent prosecution
+• Copyright registration
+• Litigation or disputes
+• Due diligence requests
+
+5.4 Moral Rights Waiver
+To the extent permitted by law, Assignor irrevocably waives all moral rights (including attribution, integrity, and withdrawal rights) in the Assigned IP.
+
+If moral rights cannot be waived, Assignor agrees not to assert them against Assignee or its successors.
+
+6. ASSIGNEE'S RIGHTS
+
+6.1 Unrestricted Use
+Assignee shall have the unrestricted right to:
+• Use, modify, and create derivative works
+• Commercialize and monetize the Assigned IP
+• License or assign to third parties
+• Register patents, copyrights, or trademarks
+• Enforce rights against infringers
+• Take any other action an owner may take
+
+6.2 No Obligation
+Assignee has no obligation to:
+• Use or commercialize the Assigned IP
+• Provide attribution to Assignor
+• Continue development
+• Pay royalties beyond those specified in Section 3
+
+7. CONFIDENTIALITY
+
+7.1 Confidential Information
+Assignor agrees to maintain in confidence all proprietary and confidential information of Assignee disclosed in connection with this Agreement.
+
+7.2 Obligations
+Assignor shall:
+• Use confidential information only for purposes of this Agreement
+• Protect it with reasonable care
+• Not disclose to third parties without consent
+
+7.3 Exclusions
+Confidentiality does not apply to information that:
+• Is publicly available
+• Was known prior to disclosure
+• Is independently developed
+• Must be disclosed by law
+
+7.4 Duration
+Confidentiality obligations survive for [#] years after termination.
+
+8. INDEMNIFICATION
+
+8.1 Assignor's Indemnification
+Assignor shall indemnify, defend, and hold harmless Assignee from claims arising from:
+• Breach of Assignor's representations and warranties
+• Infringement of third-party rights by the Assigned IP
+• Assignor's negligence or willful misconduct
+
+8.2 Assignee's Indemnification
+Assignee shall indemnify Assignor from claims arising from:
+• Assignee's use of the Assigned IP after assignment
+• Modifications made by Assignee
+• [Other Assignee liabilities]
+
+8.3 Indemnification Procedure
+Indemnified party must:
+• Promptly notify indemnifying party
+• Allow indemnifying party to control defense
+• Cooperate reasonably
+
+9. LIMITATION OF LIABILITY
+
+9.1 ASSIGNOR'S LIABILITY CAP
+ASSIGNOR'S TOTAL LIABILITY SHALL NOT EXCEED:
+☐ The consideration paid under Section 3
+☐ $[Amount]
+☐ [Other limitation]
+
+9.2 EXCLUDED DAMAGES
+NEITHER PARTY SHALL BE LIABLE FOR INDIRECT, INCIDENTAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES, INCLUDING LOST PROFITS.
+
+9.3 Exceptions
+Limitations do not apply to:
+• Willful misconduct or fraud
+• Breach of confidentiality
+• Indemnification obligations
+• [Other exceptions]
+
+10. TERM AND TERMINATION
+
+10.1 Term
+This Agreement is effective as of the Effective Date and continues perpetually, except for:
+• Assignor's obligations under Section 5: [Term or perpetual]
+• Confidentiality obligations: [# years]
+
+10.2 Termination
+☐ This Agreement cannot be terminated
+☐ Assignee may terminate if Assignor materially breaches
+☐ Other termination rights: [Specify]
+
+10.3 Effect of Termination
+☐ N/A - Agreement is perpetual
+☐ Upon termination, assignment remains effective but [other effects]
+
+11. GENERAL PROVISIONS
+
+11.1 Entire Agreement
+This Agreement constitutes the entire agreement and supersedes all prior agreements.
+
+11.2 Amendments
+Amendments must be in writing and signed by both parties.
+
+11.3 Assignment
+• Assignor may not assign this Agreement without consent
+• Assignee may freely assign this Agreement
+• This Agreement binds successors and assigns
+
+11.4 Governing Law
+This Agreement shall be governed by the laws of [State/Country].
+
+11.5 Dispute Resolution
+☐ Mediation required before litigation
+☐ Binding arbitration under [AAA/JAMS] rules in [Location]
+☐ Litigation in courts of [Jurisdiction]
+
+11.6 Attorney's Fees
+Prevailing party in dispute entitled to reasonable attorney's fees.
+
+11.7 Severability
+Invalid provisions severed; remainder continues in effect.
+
+11.8 Waiver
+Waiver must be in writing and does not constitute ongoing waiver.
+
+11.9 Notices
+Notices shall be sent to addresses above or as updated in writing.
+
+11.10 Counterparts
+This Agreement may be executed in counterparts and by electronic signature.
+
+11.11 Survival
+Sections [#] survive termination or expiration of this Agreement.
+
+12. SPECIAL PROVISIONS
+
+[Any additional provisions specific to the assignment]
+
+
+IN WITNESS WHEREOF, the parties have executed this Agreement as of the Effective Date.
+
+ASSIGNOR:
+
+Signature: _________________________
+Name: [Printed Name]
+Date: _____________________________
+
+ASSIGNEE:
+
+Signature: _________________________
+Name: [Printed Name]
+Title: [Title]
+Date: _____________________________
+
+
+EXHIBIT A: DESCRIPTION OF ASSIGNED IP
+
+[Detailed description of the intellectual property being assigned, including:
+- Inventions and patents (with patent numbers or applications)
+- Copyrighted works (with registration numbers if applicable)
+- Trademarks (with registration numbers if applicable)
+- Trade secrets and know-how
+- Software and code (with repositories, versions)
+- Designs and drawings
+- Any other IP being assigned]
+
+
+EXHIBIT B: PRIOR WORKS (IF APPLICABLE)
+
+[List of Assignor's prior works that are excluded from this assignment]
+
+
+EXHIBIT C: PAYMENT SCHEDULE (IF APPLICABLE)
+
+[Detailed payment terms, milestones, and amounts]
+    `
+  },
+  {
+    id: 'legal-independent-contractor',
+    title: 'Independent Contractor Agreement',
+    description: 'Comprehensive agreement for engaging independent contractors with clear terms and deliverables',
+    category: 'legal',
+    downloadCount: 11240,
+    fileSize: '55.8 KB',
+    rating: 4.8,
+    tags: ['contractor', 'freelance', 'legal', 'agreement', '1099'],
+    createdAt: '2024-01-14T11:00:00Z',
+    updatedAt: '2024-02-04T13:45:00Z',
+    content: `
+INDEPENDENT CONTRACTOR AGREEMENT
+
+This Independent Contractor Agreement ("Agreement") is entered into as of [Date] ("Effective Date") by and between:
+
+COMPANY:
+[Company Name]
+[Address]
+[City, State, ZIP Code]
+[Email]
+[Phone]
+
+CONTRACTOR:
+[Full Legal Name / Business Name]
+[Address]
+[City, State, ZIP Code]
+[Email]
+[Phone]
+Tax ID/SSN: [Tax ID Number]
+
+RECITALS
+
+WHEREAS, Company desires to engage Contractor to perform certain services;
+WHEREAS, Contractor is in the business of providing such services;
+WHEREAS, the parties intend to establish an independent contractor relationship;
+
+NOW, THEREFORE, in consideration of the mutual covenants herein, the parties agree:
+
+1. SERVICES
+
+1.1 Scope of Services
+Contractor agrees to provide the following services ("Services"):
+
+[Detailed description of services, deliverables, and specifications]
+
+Examples:
+• [Service/deliverable 1]
+• [Service/deliverable 2]
+• [Service/deliverable 3]
+• [Additional services as specified in Exhibit A]
+
+1.2 Performance Standards
+Services shall be performed:
+• In a professional and workmanlike manner
+• In accordance with industry standards
+• According to specifications in Exhibit A
+• In compliance with all applicable laws
+
+1.3 Work Product
+"Work Product" means all deliverables, documents, materials, and intellectual property created by Contractor in performing the Services.
+
+2. TERM AND TERMINATION
+
+2.1 Term
+This Agreement shall commence on [Start Date] and continue until:
+☐ [End Date]
+☐ Completion of Services
+☐ Termination by either party
+
+2.2 Termination for Convenience
+Either party may terminate this Agreement with [#] days written notice.
+
+2.3 Termination for Cause
+Either party may terminate immediately upon written notice if the other party:
+• Materially breaches this Agreement and fails to cure within [#] days
+• Becomes insolvent or files for bankruptcy
+• Engages in fraud, illegal activities, or gross negligence
+
+2.4 Effect of Termination
+Upon termination:
+• Contractor shall deliver all completed Work Product
+• Company shall pay for services satisfactorily performed through termination date
+• Contractor shall return all Company property and confidential information
+• Sections [3, 4, 5, 6, 7, 8] survive termination
+
+3. COMPENSATION AND PAYMENT
+
+3.1 Fees
+Company agrees to pay Contractor as follows:
+
+☐ Fixed Fee: $[Amount] for [scope of work]
+  Payable: ☐ Upon completion ☐ In installments per Exhibit B
+
+☐ Hourly Rate: $[Rate] per hour
+  Estimated hours: [#]
+  Maximum without approval: [#] hours or $[Amount]
+
+☐ Per Project/Milestone: As specified in Exhibit B
+
+☐ Monthly Retainer: $[Amount] per month for [scope]
+
+☐ Other: [Specify payment structure]
+
+3.2 Expenses
+☐ Expenses are included in the fees
+☐ Pre-approved expenses reimbursed (estimated: $[Amount])
+  • Reimbursement requires receipts
+  • Maximum reimbursable: $[Amount] without prior approval
+☐ Contractor pays all expenses
+
+3.3 Invoicing
+• Frequency: [Weekly/Monthly/Upon milestones/Upon completion]
+• Invoice must include: [Details required - hours, description, receipts]
+• Submit to: [Email/address]
+
+3.4 Payment Terms
+• Payment due: Net [#] days from invoice date
+• Payment method: [ACH, check, wire transfer, etc.]
+• Late payment: Interest of [%] per month on overdue amounts
+
+3.5 Taxes
+Contractor is responsible for all taxes, including:
+• Income taxes
+• Self-employment taxes
+• Sales/use taxes
+• Other applicable taxes
+
+Company will issue Form 1099-NEC if payments exceed $600 in a calendar year.
+
+4. INDEPENDENT CONTRACTOR RELATIONSHIP
+
+4.1 Independent Contractor Status
+Contractor is an independent contractor, not an employee, partner, or agent of Company.
+
+4.2 No Employment Benefits
+Contractor is not entitled to:
+• Health insurance, retirement, or other employee benefits
+• Unemployment insurance
+• Workers' compensation
+• Paid time off
+• Any other employee benefits
+
+4.3 No Authority to Bind
+Contractor has no authority to bind Company or enter into agreements on Company's behalf.
+
+4.4 Contractor's Business
+Contractor:
+• Maintains their own business
+• May provide services to other clients (subject to Section 6)
+• Controls the manner and means of performing Services (subject to deliverable specifications)
+• Provides their own tools, equipment, and workspace
+
+4.5 IRS Factors
+The parties intend this to be an independent contractor relationship under IRS guidelines and acknowledge:
+• Contractor controls how Services are performed
+• Contractor is engaged in an independently established business
+• Contractor provides similar services to others
+• Contractor has the opportunity for profit or loss
+• Contractor invests in their own business
+• The relationship is not indefinite
+
+5. INTELLECTUAL PROPERTY
+
+5.1 Ownership of Work Product
+☐ Work-Made-for-Hire: All Work Product is a "work made for hire" and Company owns all rights.
+
+☐ Assignment: Contractor assigns all right, title, and interest in Work Product to Company upon [full payment/creation].
+
+☐ License: Contractor retains ownership and grants Company a [exclusive/non-exclusive], [perpetual/term-limited], [royalty-free/royalty-bearing], worldwide license to use Work Product for [purposes].
+
+5.2 Pre-Existing Materials
+Contractor's pre-existing materials ("Pre-Existing IP") incorporated into Work Product:
+[List or state "None"]
+
+License to Pre-Existing IP:
+Contractor grants Company a [exclusive/non-exclusive], [perpetual/term-limited], royalty-free license to use Pre-Existing IP to the extent incorporated in Work Product.
+
+5.3 Contractor's Retained Rights
+Contractor retains rights in:
+• General knowledge, skills, and experience
+• Methods, processes, and techniques of general application
+• [Other retained rights]
+
+5.4 Third-Party Materials
+Contractor shall not incorporate third-party materials without Company's prior written approval.
+
+5.5 Moral Rights
+Contractor waives all moral rights in the Work Product to the extent permitted by law.
+
+5.6 Further Assurances
+Contractor agrees to execute any documents necessary to:
+• Perfect Company's rights in Work Product
+• Assist in obtaining patents, copyrights, or other registrations
+• Enforce rights against infringers
+
+6. CONFIDENTIALITY AND NON-DISCLOSURE
+
+6.1 Confidential Information
+"Confidential Information" means all proprietary information of Company, including:
+• Business strategies, financial information, and customer data
+• Technical data, trade secrets, and know-how
+• Product plans and marketing strategies
+• Information marked "Confidential" or reasonably understood to be confidential
+
+6.2 Obligations
+Contractor shall:
+• Use Confidential Information only to perform Services
+• Protect it with at least reasonable care
+• Not disclose to third parties without written consent
+• Limit access to those with a need to know
+
+6.3 Exceptions
+Obligations do not apply to information that:
+• Is publicly available through no fault of Contractor
+• Was rightfully known prior to disclosure
+• Is independently developed without use of Confidential Information
+• Must be disclosed by law (with prompt notice to Company)
+
+6.4 Return of Information
+Upon termination, Contractor shall return or destroy all Confidential Information and provide written certification.
+
+6.5 Duration
+Confidentiality obligations survive for [#] years after termination, or indefinitely for trade secrets.
+
+7. NON-COMPETE AND NON-SOLICITATION
+
+[Note: Enforceability varies by jurisdiction]
+
+7.1 Non-Compete
+During the term and for [#] months/years after termination, Contractor shall not:
+☐ N/A - No non-compete restriction
+☐ Directly compete with Company in [geographic area] by [specific restricted activities]
+
+7.2 Non-Solicitation of Customers
+During the term and for [#] months after termination, Contractor shall not solicit Company's customers with whom Contractor had contact or about whom Contractor learned confidential information.
+
+☐ N/A - No customer non-solicitation
+
+7.3 Non-Solicitation of Employees
+During the term and for [#] months after termination, Contractor shall not solicit or hire Company's employees.
+
+☐ N/A - No employee non-solicitation
+
+7.4 Exception
+These restrictions do not apply to:
+☐ Services unrelated to those provided to Company
+☐ General advertising not targeted at Company's customers/employees
+☐ [Other exceptions]
+
+8. REPRESENTATIONS AND WARRANTIES
+
+8.1 Contractor's Warranties
+Contractor represents and warrants that:
+• Contractor has the right and ability to enter into this Agreement
+• Services will be performed in a professional manner
+• Work Product will be original and will not infringe third-party rights
+• Contractor has appropriate licenses, permits, and insurance
+• Contractor will comply with all applicable laws
+• Contractor is not subject to any conflicting obligations
+
+8.2 No Conflicts
+Contractor represents that this Agreement does not violate any agreement with third parties or any legal restrictions.
+
+8.3 Company's Warranties
+Company represents that it has authority to enter this Agreement and will make timely payments.
+
+8.4 DISCLAIMER
+EXCEPT AS EXPRESSLY PROVIDED, SERVICES ARE PROVIDED "AS IS" WITHOUT WARRANTY. CONTRACTOR DISCLAIMS ALL IMPLIED WARRANTIES INCLUDING MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.
+
+9. INDEMNIFICATION
+
+9.1 Contractor's Indemnification
+Contractor shall indemnify and defend Company against claims arising from:
+• Contractor's negligence or willful misconduct
+• Infringement of third-party IP rights by Work Product
+• Breach of Contractor's representations and warranties
+• Violation of laws by Contractor
+• Injury or damage caused by Contractor
+
+9.2 Company's Indemnification
+Company shall indemnify Contractor against claims arising from:
+• Company's negligence or willful misconduct
+• Company's use of Work Product beyond scope of license
+• Breach of Company's obligations
+
+9.3 Procedure
+Indemnified party must:
+• Promptly notify indemnifying party of claim
+• Allow indemnifying party to control defense
+• Cooperate reasonably in defense
+
+10. LIMITATION OF LIABILITY
+
+10.1 LIABILITY CAP
+CONTRACTOR'S TOTAL LIABILITY SHALL NOT EXCEED:
+☐ Fees paid in the 12 months preceding the claim
+☐ $[Amount]
+☐ [Other limitation]
+
+10.2 CONSEQUENTIAL DAMAGES
+NEITHER PARTY SHALL BE LIABLE FOR INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES, INCLUDING LOST PROFITS, EVEN IF ADVISED OF THEIR POSSIBILITY.
+
+10.3 Exceptions
+Limitations do not apply to:
+• Willful misconduct or fraud
+• Breach of confidentiality
+• Indemnification obligations
+• [Other exceptions]
+
+11. INSURANCE
+
+Contractor shall maintain the following insurance during the term:
+☐ General Liability: $[Amount] per occurrence
+☐ Professional Liability (E&O): $[Amount] per claim
+☐ Workers' Compensation: As required by law (if Contractor has employees)
+☐ Other: [Specify]
+
+Contractor shall provide certificates of insurance upon request.
+
+☐ N/A - No insurance required
+
+12. GENERAL PROVISIONS
+
+12.1 Entire Agreement
+This Agreement constitutes the entire agreement and supersedes all prior agreements.
+
+12.2 Amendments
+Amendments must be in writing and signed by both parties.
+
+12.3 Assignment
+Contractor may not assign this Agreement without Company's written consent. Company may assign to a successor in merger or acquisition.
+
+12.4 Independent Legal Advice
+Each party has had opportunity to obtain independent legal and tax advice regarding this Agreement.
+
+12.5 Governing Law
+This Agreement shall be governed by the laws of [State/Country].
+
+12.6 Dispute Resolution
+☐ Mediation required before litigation in [Location]
+☐ Binding arbitration under [AAA/JAMS] rules in [Location]
+☐ Litigation in courts of [Jurisdiction]
+
+12.7 Attorney's Fees
+Prevailing party in dispute entitled to reasonable attorney's fees and costs.
+
+12.8 Severability
+Invalid provisions severed; remainder continues in effect.
+
+12.9 Waiver
+Failure to enforce any provision does not waive right to enforce later.
+
+12.10 Notices
+Notices shall be sent to addresses above or as updated in writing.
+
+12.11 Force Majeure
+Neither party liable for delays caused by events beyond reasonable control.
+
+12.12 Counterparts
+This Agreement may be executed in counterparts and by electronic signature.
+
+
+IN WITNESS WHEREOF, the parties have executed this Agreement as of the Effective Date.
+
+COMPANY:
+
+Signature: _________________________
+Name: [Printed Name]
+Title: [Title]
+Date: _____________________________
+
+CONTRACTOR:
+
+Signature: _________________________
+Name: [Printed Name]
+Title/DBA: [If applicable]
+Date: _____________________________
+
+
+EXHIBIT A: STATEMENT OF WORK
+
+[Detailed description of Services, deliverables, specifications, milestones, acceptance criteria, timelines, etc.]
+
+
+EXHIBIT B: PAYMENT SCHEDULE
+
+[Detailed payment terms, milestones, amounts, and due dates]
+
+
+EXHIBIT C: PRE-EXISTING INTELLECTUAL PROPERTY
+
+[List of Contractor's pre-existing materials, if any]
+    `
+  },
+  {
+    id: 'legal-power-of-attorney',
+    title: 'Power of Attorney (Limited Use)',
+    description: 'Limited Power of Attorney for granting specific authority to act on your behalf in defined situations',
+    category: 'legal',
+    downloadCount: 5670,
+    fileSize: '36.9 KB',
+    rating: 4.6,
+    tags: ['power-of-attorney', 'legal', 'authorization', 'limited', 'agent'],
+    createdAt: '2024-01-15T09:30:00Z',
+    updatedAt: '2024-02-05T10:00:00Z',
+    content: `
+LIMITED POWER OF ATTORNEY
+
+NOTICE: This is an important legal document. It authorizes another person to act on your behalf. Before signing, you should understand the powers you are granting and the obligations you are undertaking. Consider consulting an attorney.
+
+PRINCIPAL INFORMATION:
+
+I, [Full Legal Name] ("Principal")
+Address: [Street Address]
+[City, State, ZIP Code]
+Date of Birth: [DOB]
+Social Security Number (last 4 digits): XXX-XX-[####]
+
+AGENT INFORMATION:
+
+Hereby appoint [Full Legal Name] ("Agent" or "Attorney-in-Fact")
+Address: [Street Address]
+[City, State, ZIP Code]
+Phone: [Phone Number]
+Email: [Email Address]
+
+SUCCESSOR AGENT (OPTIONAL):
+
+☐ N/A - No successor agent designated
+
+☐ If the Agent is unable or unwilling to serve, I appoint [Full Legal Name] as Successor Agent
+Address: [Street Address]
+[City, State, ZIP Code]
+Phone: [Phone Number]
+Email: [Email Address]
+
+GRANT OF AUTHORITY:
+
+This Limited Power of Attorney grants Agent authority to act on Principal's behalf ONLY for the specific purposes and matters described below:
+
+1. SCOPE OF AUTHORITY
+
+Agent is authorized to perform ONLY the following acts on behalf of Principal:
+
+☐ Real Estate Transactions
+• Buy, sell, lease, mortgage, or manage real property located at: [Property address or description]
+• Execute deeds, contracts, and closing documents
+• [Other specific real estate powers]
+
+☐ Financial and Banking Matters
+• Access bank accounts at [Bank name]: Account #[####]
+• Make deposits and withdrawals
+• Transfer funds
+• Pay bills and expenses related to: [Specify]
+• [Other specific financial powers]
+
+☐ Business Operations
+• Manage business operations of: [Business name]
+• Sign contracts and agreements related to: [Specify]
+• Hire and terminate employees
+• [Other specific business powers]
+
+☐ Tax Matters
+• Prepare and file tax returns for tax year(s): [Year(s)]
+• Represent Principal before [IRS/State tax authority]
+• Sign tax forms and documents
+• [Other specific tax powers]
+
+☐ Legal Matters
+• Represent Principal in the matter of: [Case name or description]
+• Sign legal documents related to: [Specify]
+• [Other specific legal powers]
+
+☐ Insurance
+• Manage insurance policies: [Policy numbers or types]
+• File claims
+• Change beneficiaries (if applicable)
+• [Other specific insurance powers]
+
+☐ Government Benefits
+• Apply for and manage: [Social Security, Medicare, Veterans benefits, etc.]
+• Sign applications and forms
+• [Other specific benefits powers]
+
+☐ Vehicle Transactions
+• Buy, sell, or register vehicles: [Specify year/make/model or VIN]
+• Sign title and registration documents
+• [Other specific vehicle powers]
+
+☐ Other Specific Powers
+[Detailed description of any other specific, limited powers granted]
+
+2. LIMITATIONS ON AUTHORITY
+
+Agent does NOT have authority to:
+
+☐ Make gifts of Principal's property (unless specifically authorized below)
+☐ Create, amend, or revoke a trust
+☐ Make or change beneficiary designations
+☐ Create or change rights of survivorship
+☐ Delegate authority to another person
+☐ Sign a will or codicil on Principal's behalf
+☐ Make health care decisions (separate healthcare power of attorney required)
+☐ [Other limitations]
+
+Agent's authority is limited to the specific powers granted in Section 1 above. Agent has NO general power of attorney.
+
+3. GIFTING POWERS (IF APPLICABLE)
+
+☐ N/A - Agent has NO authority to make gifts
+
+☐ Agent is authorized to make gifts ONLY as follows:
+• To the following individuals/organizations: [Names]
+• Maximum gift per person/organization: $[Amount] per year
+• Purpose: [e.g., annual exclusion gifts, charitable donations]
+• Other restrictions: [Specify]
+
+4. TERM AND EFFECTIVENESS
+
+4.1 Effective Date
+This Power of Attorney is effective:
+☐ Immediately upon execution
+☐ Upon the occurrence of: [Specify event or condition]
+☐ On [Specific date]
+
+4.2 Expiration
+This Power of Attorney shall:
+☐ Expire on [Specific date]
+☐ Expire upon completion of: [Specific purpose or transaction]
+☐ Continue until revoked by Principal
+☐ Expire [#] months/years from the effective date
+
+4.3 Durable or Non-Durable
+☐ This is a DURABLE Power of Attorney. It remains effective if Principal becomes incapacitated.
+
+☐ This is a NON-DURABLE Power of Attorney. It terminates if Principal becomes incapacitated.
+
+Note: Unless specifically stated as durable, this power of attorney terminates upon Principal's incapacity under applicable state law.
+
+5. OBLIGATIONS AND DUTIES OF AGENT
+
+5.1 Fiduciary Duty
+Agent is a fiduciary and must:
+• Act in good faith and in Principal's best interests
+• Act with care, competence, and diligence
+• Keep Principal's property separate from Agent's property
+• Avoid conflicts of interest
+• Keep adequate records of all transactions
+
+5.2 Use of Authority
+Agent shall:
+• Use authority only for Principal's benefit
+• Make decisions consistent with Principal's known wishes
+• Not use authority for Agent's own benefit unless specifically authorized
+• Act within the scope of authority granted
+
+5.3 Record Keeping
+Agent shall:
+• Keep accurate records of all transactions
+• Keep receipts and documentation
+• Provide accountings to Principal upon request
+• Provide accountings to [Other person, if specified]
+
+5.4 Reporting
+Agent shall provide written reports to Principal:
+☐ Upon request
+☐ [Quarterly/Annually]
+☐ N/A - No periodic reporting required
+
+5.5 Compensation
+Agent shall be compensated as follows:
+☐ No compensation
+☐ Reasonable compensation of $[Amount] or [Hourly rate]
+☐ Reimbursement of reasonable expenses only
+☐ As agreed between Principal and Agent
+
+6. THIRD-PARTY RELIANCE
+
+6.1 Acceptance
+Third parties may rely on this Power of Attorney and are not responsible for determining:
+• Whether the power has been revoked
+• Whether the Principal is alive or competent
+• Whether the Agent is acting properly within the scope of authority
+
+Except: Third parties have actual knowledge of revocation or termination.
+
+6.2 Protection
+Third parties who accept and act in reliance on this Power of Attorney without actual knowledge that it has been revoked or terminated shall be fully protected.
+
+6.3 Certification
+Agent may execute an affidavit or certification stating:
+• Principal is alive and has not revoked this Power of Attorney
+• Agent's authority is in full force and effect
+• Agent is acting within the scope of authority
+
+7. NOMINATION OF GUARDIAN (OPTIONAL)
+
+☐ N/A
+
+☐ If a court proceeding is initiated to appoint a guardian of the person or estate for Principal, Principal nominates [Name] to serve as guardian.
+
+This nomination does not give Agent any authority over healthcare decisions unless separately authorized.
+
+8. REVOCATION
+
+8.1 Right to Revoke
+Principal may revoke this Power of Attorney at any time while competent by:
+• Executing a written revocation
+• Executing a new Power of Attorney
+• Notifying Agent in writing
+• Destroying all original copies
+
+8.2 Notice of Revocation
+Upon revocation, Principal should provide notice to:
+• Agent
+• All third parties who have relied on this Power of Attorney
+• Any institution or person holding a copy
+
+8.3 Automatic Termination
+This Power of Attorney automatically terminates upon:
+• Principal's death
+• Expiration date specified in Section 4.2
+• Completion of the specific purpose
+• Principal's incapacity (if non-durable)
+• Court appointment of a guardian or conservator (in some jurisdictions)
+
+9. GOVERNING LAW
+
+This Power of Attorney shall be governed by and construed in accordance with the laws of the State of [State].
+
+10. ACKNOWLEDGMENT AND ACCEPTANCE BY AGENT
+
+Agent acknowledges:
+• Receipt of this Power of Attorney
+• Understanding of the fiduciary duties and obligations
+• Agreement to act in Principal's best interests
+• Agreement to keep adequate records
+• Authority is limited to the specific powers granted herein
+
+11. SEVERABILITY
+
+If any provision of this Power of Attorney is held invalid, the remaining provisions shall continue in effect to the extent possible.
+
+12. PHOTOCOPIES
+
+A photocopy or electronic copy of this Power of Attorney shall have the same effect as the original.
+
+
+PRINCIPAL'S SIGNATURE:
+
+I have read this Limited Power of Attorney and understand its contents. I am of sound mind and am executing this document voluntarily, without undue influence.
+
+Principal Signature: _________________________
+Printed Name: [Full Legal Name]
+Date: _____________________________
+
+
+AGENT'S ACKNOWLEDGMENT AND ACCEPTANCE:
+
+I acknowledge that I have read this Limited Power of Attorney, understand my duties and obligations, and agree to act as Agent for the Principal under the terms set forth herein.
+
+Agent Signature: _________________________
+Printed Name: [Full Legal Name]
+Date: _____________________________
+
+
+WITNESSES (IF REQUIRED BY STATE LAW):
+
+Witness 1 Signature: _________________________
+Printed Name: [Full Legal Name]
+Address: [Address]
+Date: _____________________________
+
+Witness 2 Signature: _________________________
+Printed Name: [Full Legal Name]
+Address: [Address]
+Date: _____________________________
+
+
+NOTARY ACKNOWLEDGMENT:
+
+STATE OF [STATE]
+COUNTY OF [COUNTY]
+
+On this _____ day of ______________, 20___, before me, the undersigned notary public, personally appeared [Principal's Name], proved to me through satisfactory evidence of identification, which was [type of ID], to be the person whose name is subscribed to the within instrument and acknowledged to me that [he/she/they] executed the same in [his/her/their] authorized capacity, and that by [his/her/their] signature on the instrument, the person, or the entity upon behalf of which the person acted, executed the instrument.
+
+Witness my hand and official seal.
+
+
+Notary Public Signature: _________________________
+Printed Name: [Notary Name]
+My Commission Expires: _____________________
+
+[NOTARY SEAL]
+
+
+IMPORTANT NOTICES:
+
+1. This form may not be suitable for all situations. Consult an attorney if you have questions.
+
+2. Requirements for Powers of Attorney vary by state. Ensure this document complies with your state's laws.
+
+3. Some institutions may require their own forms or additional documentation.
+
+4. Keep the original in a safe place. Provide certified copies to Agent and relevant third parties.
+
+5. Review and update this Power of Attorney periodically to ensure it reflects your current wishes.
+
+6. This Power of Attorney does NOT authorize healthcare decisions. A separate Healthcare Power of Attorney or Advance Directive is needed for medical decisions.
+    `
+  }
+];
+
+// Add legal & admin templates to the main templates array
+templates.push(...legalAdminTemplates);
+
 class DocumentService {
   getTemplates(): DocumentTemplate[] {
     return templates;
