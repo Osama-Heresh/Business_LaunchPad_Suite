@@ -12343,6 +12343,2120 @@ IMPORTANT NOTICES:
 // Add legal & admin templates to the main templates array
 templates.push(...legalAdminTemplates);
 
+// IT & Operations Templates
+const itTemplates: DocumentTemplate[] = [
+  {
+    id: 'it-access-request',
+    title: 'IT Access Request Form',
+    description: 'Standardized form for requesting access to IT systems, applications, and network resources',
+    category: 'it',
+    downloadCount: 842,
+    fileSize: '38.4 KB',
+    rating: 4.6,
+    tags: ['access', 'security', 'permissions', 'IT', 'systems'],
+    createdAt: '2024-01-18T11:00:00Z',
+    updatedAt: '2024-01-28T09:15:00Z',
+    content: `
+IT ACCESS REQUEST FORM
+
+REQUESTER INFORMATION:
+Employee Name: [Full Name]
+Employee ID: [ID Number]
+Department: [Department Name]
+Job Title: [Position]
+Manager Name: [Manager Name]
+Email Address: [Email]
+Phone Number: [Phone]
+Request Date: [Date]
+
+ACCESS REQUEST DETAILS:
+
+Type of Access Requested (check all that apply):
+☐ Network Access (Domain/VPN)
+☐ Email Account
+☐ Application Access
+☐ Database Access
+☐ File Share/Network Drive
+☐ Remote Access
+☐ Administrative Rights
+☐ Cloud Services
+☐ Other: ___________________
+
+SPECIFIC SYSTEMS/APPLICATIONS:
+System/Application Name: [Name]
+Access Level Required: ☐ Read Only  ☐ Read/Write  ☐ Administrator
+Business Justification: [Explain why access is needed]
+
+System/Application Name: [Name]
+Access Level Required: ☐ Read Only  ☐ Read/Write  ☐ Administrator
+Business Justification: [Explain why access is needed]
+
+DURATION OF ACCESS:
+☐ Permanent (ongoing employment)
+☐ Temporary
+  Start Date: [Date]
+  End Date: [Date]
+  Reason for Temporary Access: [Explanation]
+
+BUSINESS JUSTIFICATION:
+Detailed explanation of why this access is required:
+[Provide comprehensive business justification including job responsibilities, projects, or specific tasks that require this access]
+
+SECURITY CLEARANCE:
+Does this request involve access to:
+☐ Confidential Information
+☐ Personal Data (PII)
+☐ Financial Data
+☐ Proprietary Information
+☐ None of the above
+
+DATA CLASSIFICATION LEVEL:
+☐ Public
+☐ Internal Use Only
+☐ Confidential
+☐ Highly Confidential
+
+APPROVALS REQUIRED:
+
+MANAGER APPROVAL:
+I confirm this access is required for the employee's job responsibilities.
+Manager Name: [Name]
+Manager Signature: _________________ Date: _______
+Manager Email: [Email]
+
+DEPARTMENT HEAD APPROVAL (if required):
+Department Head Name: [Name]
+Department Head Signature: _________________ Date: _______
+
+IT SECURITY APPROVAL:
+Security Officer Name: [Name]
+Security Officer Signature: _________________ Date: _______
+Security Review Date: [Date]
+☐ Approved  ☐ Denied  ☐ Conditional Approval
+Conditions/Comments: [Notes]
+
+IT ADMINISTRATOR ACTION:
+
+Access Granted By: [IT Admin Name]
+Date Granted: [Date]
+Account/Username Created: [Username]
+Expiration Date (if applicable): [Date]
+Additional Notes: [Any relevant implementation notes]
+
+IMPORTANT NOTES:
+1. All access requests must be approved by direct manager
+2. Access to confidential systems requires additional approval from IT Security
+3. Temporary access will be automatically revoked on the specified end date
+4. Users are responsible for maintaining the confidentiality of their credentials
+5. Any misuse of access privileges may result in disciplinary action
+6. Access will be reviewed periodically and may be revoked if no longer needed
+    `
+  },
+  {
+    id: 'it-asset-handover',
+    title: 'Asset Handover Form',
+    description: 'Comprehensive form for tracking IT equipment assignment and return during onboarding/offboarding',
+    category: 'it',
+    downloadCount: 1156,
+    fileSize: '42.1 KB',
+    rating: 4.7,
+    tags: ['assets', 'equipment', 'inventory', 'onboarding', 'offboarding'],
+    createdAt: '2024-01-16T13:30:00Z',
+    updatedAt: '2024-01-26T15:20:00Z',
+    content: `
+IT ASSET HANDOVER FORM
+
+HANDOVER TYPE:
+☐ Asset Assignment (New Hire/Transfer)
+☐ Asset Return (Termination/Transfer)
+☐ Asset Exchange (Replacement/Upgrade)
+
+EMPLOYEE INFORMATION:
+Full Name: [Employee Name]
+Employee ID: [ID Number]
+Department: [Department]
+Position: [Job Title]
+Manager: [Manager Name]
+Email: [Email Address]
+Phone: [Phone Number]
+Handover Date: [Date]
+
+COMPUTER EQUIPMENT:
+
+LAPTOP/DESKTOP COMPUTER:
+☐ Laptop  ☐ Desktop
+Make/Model: [Brand and Model]
+Serial Number: [Serial Number]
+Asset Tag: [Asset Tag Number]
+Operating System: [OS Version]
+RAM: [Amount]
+Storage: [Capacity]
+Condition: ☐ New  ☐ Good  ☐ Fair  ☐ Damaged
+Damage Notes: [If applicable]
+Power Adapter Included: ☐ Yes  ☐ No
+
+MONITOR(S):
+Monitor 1:
+Make/Model: [Brand and Model]
+Serial Number: [Serial Number]
+Asset Tag: [Asset Tag Number]
+Size: [Screen Size]
+Condition: ☐ New  ☐ Good  ☐ Fair  ☐ Damaged
+Cables Included: ☐ Yes  ☐ No
+
+Monitor 2 (if applicable):
+Make/Model: [Brand and Model]
+Serial Number: [Serial Number]
+Asset Tag: [Asset Tag Number]
+
+PERIPHERALS:
+
+KEYBOARD:
+Type: ☐ Wired  ☐ Wireless
+Make/Model: [Details]
+Serial Number: [Serial Number]
+Condition: ☐ New  ☐ Good  ☐ Fair  ☐ Damaged
+
+MOUSE:
+Type: ☐ Wired  ☐ Wireless
+Make/Model: [Details]
+Serial Number: [Serial Number]
+Condition: ☐ New  ☐ Good  ☐ Fair  ☐ Damaged
+
+MOBILE DEVICES:
+
+SMARTPHONE:
+☐ iPhone  ☐ Android  ☐ Other: _______
+Make/Model: [Brand and Model]
+Serial Number/IMEI: [Number]
+Phone Number: [Number]
+SIM Card Number: [Number]
+Condition: ☐ New  ☐ Good  ☐ Fair  ☐ Damaged
+Charger Included: ☐ Yes  ☐ No
+Case Included: ☐ Yes  ☐ No
+
+TABLET (if applicable):
+Make/Model: [Brand and Model]
+Serial Number: [Serial Number]
+Condition: ☐ New  ☐ Good  ☐ Fair  ☐ Damaged
+
+ACCESSORIES & OTHER EQUIPMENT:
+
+☐ Docking Station
+    Model: [Model]
+    Serial Number: [Serial Number]
+    Condition: ☐ New  ☐ Good  ☐ Fair  ☐ Damaged
+
+☐ Headset/Headphones
+    Type: [Type]
+    Condition: ☐ New  ☐ Good  ☐ Fair  ☐ Damaged
+
+☐ Webcam
+    Model: [Model]
+    Serial Number: [Serial Number]
+
+☐ External Hard Drive
+    Capacity: [Size]
+    Serial Number: [Serial Number]
+
+☐ USB Hub/Adapters
+    Description: [Details]
+
+☐ Laptop Bag/Case
+    Condition: ☐ New  ☐ Good  ☐ Fair  ☐ Damaged
+
+☐ Other Equipment:
+    Description: [Details]
+    Serial Number: [Serial Number]
+    Condition: ☐ New  ☐ Good  ☐ Fair  ☐ Damaged
+
+NETWORK & SECURITY:
+
+☐ Security Token/Key Fob
+    Serial Number: [Serial Number]
+
+☐ VPN Access Credentials Provided
+    Status: ☐ Active  ☐ Deactivated
+
+☐ Building Access Card
+    Card Number: [Number]
+    Status: ☐ Active  ☐ Returned  ☐ Deactivated
+
+SOFTWARE LICENSES ASSIGNED:
+1. [Software Name] - License Key: [Key if applicable]
+2. [Software Name] - License Key: [Key if applicable]
+3. [Software Name] - License Key: [Key if applicable]
+
+EMPLOYEE ACKNOWLEDGMENT (For Asset Assignment):
+
+I acknowledge receipt of the above IT assets and agree to the following:
+• I will use these assets solely for business purposes
+• I will maintain the equipment in good condition
+• I will report any damage or malfunction immediately
+• I will not install unauthorized software
+• I will protect all company data and maintain security protocols
+• I will return all equipment upon request or termination of employment
+• I understand I am financially responsible for lost or damaged equipment due to negligence
+
+Employee Signature: _________________ Date: _______
+Employee Name (Print): [Name]
+
+IT DEPARTMENT VERIFICATION (For Asset Return):
+
+All items returned in acceptable condition: ☐ Yes  ☐ No
+Damaged items noted: [List any damaged items]
+Missing items: [List any missing items]
+Data wiped/sanitized: ☐ Yes  ☐ No  ☐ N/A
+Asset status updated in inventory: ☐ Yes  ☐ No
+
+IT Representative: [Name]
+IT Signature: _________________ Date: _______
+
+HR CONFIRMATION (For Offboarding):
+
+All company assets accounted for: ☐ Yes  ☐ No
+Outstanding equipment charges: ☐ None  ☐ Amount: $_______
+Final paycheck adjustment required: ☐ Yes  ☐ No
+
+HR Representative: [Name]
+HR Signature: _________________ Date: _______
+
+NOTES/COMMENTS:
+[Any additional notes regarding the asset handover]
+    `
+  },
+  {
+    id: 'it-software-license-tracking',
+    title: 'Software License Tracking Sheet',
+    description: 'Comprehensive spreadsheet template for managing software licenses, renewals, and compliance',
+    category: 'it',
+    downloadCount: 723,
+    fileSize: '45.7 KB',
+    rating: 4.5,
+    tags: ['software', 'licenses', 'compliance', 'tracking', 'renewals'],
+    createdAt: '2024-01-20T10:00:00Z',
+    updatedAt: '2024-01-27T11:45:00Z',
+    content: `
+SOFTWARE LICENSE TRACKING SHEET
+
+ORGANIZATION: [Company Name]
+DEPARTMENT: [IT Department]
+LAST UPDATED: [Date]
+MAINTAINED BY: [IT Manager Name]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+SOFTWARE LICENSE INVENTORY
+
+LICENSE #1:
+Software Name: [Application Name]
+Vendor/Publisher: [Company Name]
+Version: [Version Number]
+License Type: ☐ Perpetual  ☐ Subscription  ☐ Volume  ☐ Enterprise  ☐ Trial
+License Model: ☐ Per User  ☐ Per Device  ☐ Concurrent  ☐ Site License
+
+Purchase Information:
+Purchase Date: [Date]
+Purchase Order #: [PO Number]
+Cost: $[Amount]
+Payment Method: ☐ Annual  ☐ Monthly  ☐ One-time
+Purchased From: [Reseller/Vendor]
+Invoice Number: [Invoice #]
+
+License Details:
+Total Licenses Purchased: [Number]
+Licenses Currently in Use: [Number]
+Available Licenses: [Number]
+License Key(s): [Key - Store securely]
+Product ID/Activation Code: [Code]
+
+Renewal Information:
+Renewal Date: [Date]
+Auto-Renewal: ☐ Yes  ☐ No
+Renewal Cost: $[Amount]
+Renewal Reminder Date: [Date - 30/60/90 days before]
+Vendor Contact: [Name/Email/Phone]
+
+Assignment Information:
+Assigned Users: [List of users or "See detailed assignment log"]
+Department(s): [Department names]
+Installation Locations: [Computer names/IDs]
+
+Compliance Notes:
+Terms of Use: [Link to license agreement]
+Restrictions: [Any usage restrictions]
+Audit Trail: [Last audit date and results]
+Compliance Status: ☐ Compliant  ☐ Under-licensed  ☐ Over-licensed
+
+─────────────────────────────────────────────────────────────────────────────
+
+LICENSE #2:
+Software Name: [Application Name]
+Vendor/Publisher: [Company Name]
+Version: [Version Number]
+License Type: ☐ Perpetual  ☐ Subscription  ☐ Volume  ☐ Enterprise  ☐ Trial
+License Model: ☐ Per User  ☐ Per Device  ☐ Concurrent  ☐ Site License
+
+Purchase Information:
+Purchase Date: [Date]
+Purchase Order #: [PO Number]
+Cost: $[Amount]
+Payment Method: ☐ Annual  ☐ Monthly  ☐ One-time
+Purchased From: [Reseller/Vendor]
+
+License Details:
+Total Licenses Purchased: [Number]
+Licenses Currently in Use: [Number]
+Available Licenses: [Number]
+License Key(s): [Key]
+Product ID/Activation Code: [Code]
+
+Renewal Information:
+Renewal Date: [Date]
+Auto-Renewal: ☐ Yes  ☐ No
+Renewal Cost: $[Amount]
+
+─────────────────────────────────────────────────────────────────────────────
+
+LICENSE #3:
+Software Name: [Application Name]
+Vendor/Publisher: [Company Name]
+Version: [Version Number]
+License Type: ☐ Perpetual  ☐ Subscription  ☐ Volume  ☐ Enterprise  ☐ Trial
+
+Purchase Information:
+Purchase Date: [Date]
+Cost: $[Amount]
+
+License Details:
+Total Licenses Purchased: [Number]
+Licenses Currently in Use: [Number]
+Available Licenses: [Number]
+
+Renewal Information:
+Renewal Date: [Date]
+Renewal Cost: $[Amount]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+UPCOMING RENEWALS (Next 90 Days):
+
+1. [Software Name] - Renewal Date: [Date] - Cost: $[Amount]
+2. [Software Name] - Renewal Date: [Date] - Cost: $[Amount]
+3. [Software Name] - Renewal Date: [Date] - Cost: $[Amount]
+
+Total Renewal Cost (90 days): $[Total Amount]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+ANNUAL LICENSE BUDGET SUMMARY:
+
+Total Annual Software Costs: $[Amount]
+
+By Category:
+- Operating Systems: $[Amount]
+- Productivity Software: $[Amount]
+- Design/Creative Tools: $[Amount]
+- Development Tools: $[Amount]
+- Security Software: $[Amount]
+- Database/Server Licenses: $[Amount]
+- Cloud Services: $[Amount]
+- Other: $[Amount]
+
+By Department:
+- IT Department: $[Amount]
+- Sales Department: $[Amount]
+- Marketing Department: $[Amount]
+- Finance Department: $[Amount]
+- HR Department: $[Amount]
+- Operations: $[Amount]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+LICENSE COMPLIANCE CHECKLIST:
+
+☐ All software installations documented
+☐ License counts verified against actual installations
+☐ Proof of purchase available for all licenses
+☐ License agreements reviewed and on file
+☐ User assignments documented
+☐ Renewal dates tracked in calendar system
+☐ Budget allocated for upcoming renewals
+☐ Quarterly compliance audit scheduled
+☐ Unused licenses identified for optimization
+☐ Software inventory matches license inventory
+
+Last Compliance Audit: [Date]
+Next Scheduled Audit: [Date]
+Audited By: [Name]
+Audit Results: ☐ Fully Compliant  ☐ Issues Found (see notes)
+
+═══════════════════════════════════════════════════════════════════════════════
+
+VENDOR CONTACT INFORMATION:
+
+Vendor #1: [Vendor Name]
+Primary Contact: [Name]
+Email: [Email]
+Phone: [Phone]
+Account Number: [Account #]
+Support Portal: [URL]
+
+Vendor #2: [Vendor Name]
+Primary Contact: [Name]
+Email: [Email]
+Phone: [Phone]
+Account Number: [Account #]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+NOTES & ACTION ITEMS:
+
+[Date] - [Note about license changes, issues, or upcoming needs]
+[Date] - [Note]
+[Date] - [Note]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+DOCUMENT CONTROL:
+Created By: [Name]
+Created Date: [Date]
+Last Modified By: [Name]
+Last Modified Date: [Date]
+Review Frequency: Monthly
+Next Review Date: [Date]
+    `
+  },
+  {
+    id: 'it-security-policy',
+    title: 'Security Policy Template',
+    description: 'Comprehensive IT security policy template covering data protection, access control, and compliance',
+    category: 'it',
+    downloadCount: 1345,
+    fileSize: '71.8 KB',
+    rating: 4.8,
+    tags: ['security', 'policy', 'compliance', 'data protection', 'cybersecurity'],
+    createdAt: '2024-01-12T14:00:00Z',
+    updatedAt: '2024-01-29T10:30:00Z',
+    content: `
+INFORMATION SECURITY POLICY
+
+[Company Name]
+Information Technology Security Policy
+Document Version: [Version Number]
+Effective Date: [Date]
+Last Revised: [Date]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+1. PURPOSE AND SCOPE
+
+1.1 PURPOSE
+This Information Security Policy establishes the framework for protecting [Company Name]'s information assets, including data, systems, networks, and infrastructure. This policy aims to:
+• Protect the confidentiality, integrity, and availability of company information
+• Ensure compliance with applicable laws and regulations
+• Minimize security risks and vulnerabilities
+• Establish clear roles and responsibilities for information security
+• Provide guidelines for acceptable use of company IT resources
+
+1.2 SCOPE
+This policy applies to:
+• All employees, contractors, consultants, temporary workers, and third parties
+• All information systems, networks, and devices owned or operated by the company
+• All company data, regardless of location or format
+• All access to company resources, whether on-site or remote
+
+═══════════════════════════════════════════════════════════════════════════════
+
+2. ROLES AND RESPONSIBILITIES
+
+2.1 EXECUTIVE MANAGEMENT
+• Provide overall security governance and strategic direction
+• Allocate adequate resources for security initiatives
+• Review and approve security policies
+• Ensure compliance with regulatory requirements
+
+2.2 IT SECURITY OFFICER
+• Develop and maintain security policies and procedures
+• Monitor security threats and vulnerabilities
+• Conduct security audits and risk assessments
+• Coordinate incident response activities
+• Provide security awareness training
+
+2.3 IT DEPARTMENT
+• Implement and maintain security controls
+• Monitor systems for security incidents
+• Manage user access and authentication
+• Perform regular security updates and patches
+• Maintain security documentation
+
+2.4 ALL EMPLOYEES
+• Comply with all security policies and procedures
+• Protect company information and assets
+• Report security incidents immediately
+• Participate in security awareness training
+• Use strong passwords and protect credentials
+
+═══════════════════════════════════════════════════════════════════════════════
+
+3. ACCESS CONTROL POLICY
+
+3.1 USER AUTHENTICATION
+• All users must have unique user IDs
+• Multi-factor authentication (MFA) is required for:
+  - Remote access (VPN)
+  - Email systems
+  - Financial systems
+  - Administrative access
+  - Cloud services
+• Passwords must meet the following requirements:
+  - Minimum 12 characters
+  - Combination of uppercase, lowercase, numbers, and special characters
+  - Changed every 90 days
+  - Cannot reuse last 10 passwords
+  - No dictionary words or common patterns
+
+3.2 ACCESS RIGHTS
+• Access granted on need-to-know and least-privilege basis
+• Manager approval required for all access requests
+• Access reviewed quarterly and removed when no longer needed
+• Privileged access requires additional approval and logging
+• Terminated employees' access revoked immediately
+
+3.3 ACCOUNT MANAGEMENT
+• Inactive accounts disabled after 30 days
+• Guest accounts prohibited unless specifically approved
+• Shared accounts prohibited
+• Service accounts documented and regularly reviewed
+• Failed login attempts locked after 5 attempts
+
+═══════════════════════════════════════════════════════════════════════════════
+
+4. DATA PROTECTION AND CLASSIFICATION
+
+4.1 DATA CLASSIFICATION
+Data is classified into four categories:
+
+PUBLIC:
+• Information intended for public disclosure
+• No confidentiality requirements
+• Marketing materials, public website content
+
+INTERNAL USE:
+• Information for internal business use
+• Minimal confidentiality requirements
+• Internal communications, policies
+
+CONFIDENTIAL:
+• Sensitive business information
+• Moderate to high confidentiality requirements
+• Customer data, financial records, employee information
+• Requires encryption when transmitted
+• Access restricted to authorized personnel
+
+HIGHLY CONFIDENTIAL:
+• Critical business information
+• Highest confidentiality requirements
+• Trade secrets, strategic plans, security credentials
+• Encrypted at rest and in transit
+• Strict access controls and audit logging
+
+4.2 DATA HANDLING REQUIREMENTS
+• Data labeled according to classification
+• Confidential data encrypted when stored or transmitted
+• Sensitive data not stored on portable devices without encryption
+• Data retention policies followed
+• Secure disposal methods used (shredding, wiping)
+• Personal data protected per privacy regulations (GDPR, CCPA, etc.)
+
+═══════════════════════════════════════════════════════════════════════════════
+
+5. NETWORK SECURITY
+
+5.1 NETWORK ACCESS
+• Firewalls deployed at all network boundaries
+• Network segmentation to isolate critical systems
+• Wireless networks encrypted with WPA3 or equivalent
+• Guest networks isolated from corporate network
+• VPN required for remote access
+• Network access control (NAC) implemented
+
+5.2 NETWORK MONITORING
+• Intrusion detection/prevention systems (IDS/IPS) deployed
+• Network traffic monitored for anomalies
+• Security logs retained for minimum 90 days
+• Regular vulnerability scans conducted
+• Annual penetration testing performed
+
+═══════════════════════════════════════════════════════════════════════════════
+
+6. ENDPOINT SECURITY
+
+6.1 DEVICE REQUIREMENTS
+• Antivirus/anti-malware software required on all endpoints
+• Operating systems and applications kept current with security patches
+• Full disk encryption required on laptops and mobile devices
+• Screen lock activated after 10 minutes of inactivity
+• USB ports restricted where appropriate
+• Personal devices must meet BYOD policy requirements
+
+6.2 MOBILE DEVICE MANAGEMENT
+• Mobile devices registered with MDM solution
+• Remote wipe capability enabled
+• Device encryption required
+• Strong passcode/biometric authentication mandatory
+• Lost or stolen devices reported immediately
+
+═══════════════════════════════════════════════════════════════════════════════
+
+7. EMAIL AND INTERNET USAGE
+
+7.1 EMAIL SECURITY
+• Spam and malware filtering enabled
+• Suspicious emails reported to IT security
+• Phishing awareness training provided quarterly
+• Email encryption used for confidential information
+• Auto-forwarding to external addresses prohibited
+• Large file transfers via approved secure methods only
+
+7.2 ACCEPTABLE INTERNET USE
+• Internet usage for business purposes
+• Prohibited activities include:
+  - Accessing illegal or inappropriate content
+  - Downloading unauthorized software
+  - Using unauthorized cloud storage services
+  - Cryptocurrency mining
+  - Peer-to-peer file sharing
+• Web filtering applied to block malicious sites
+• Internet usage monitored and logged
+
+═══════════════════════════════════════════════════════════════════════════════
+
+8. INCIDENT RESPONSE
+
+8.1 SECURITY INCIDENT DEFINITION
+Security incidents include:
+• Unauthorized access to systems or data
+• Malware infection
+• Data breach or loss
+• Denial of service attack
+• Physical security breach
+• Lost or stolen devices containing company data
+• Suspected phishing or social engineering
+
+8.2 INCIDENT REPORTING
+• All suspected incidents reported immediately to IT Security
+• Incident reporting hotline: [Phone/Email]
+• Do not attempt to investigate independently
+• Preserve evidence - do not delete or modify
+• Document what occurred
+
+8.3 INCIDENT RESPONSE PROCESS
+1. Detection and reporting
+2. Initial assessment and containment
+3. Investigation and analysis
+4. Eradication and recovery
+5. Post-incident review and lessons learned
+6. Documentation and reporting
+
+═══════════════════════════════════════════════════════════════════════════════
+
+9. PHYSICAL SECURITY
+
+• Server rooms and data centers access restricted
+• Visitor access logged and escorted
+• Equipment secured against theft
+• Clean desk policy enforced for confidential information
+• Secure disposal of physical media (shredding, degaussing)
+• Security cameras in sensitive areas
+• After-hours access controlled and monitored
+
+═══════════════════════════════════════════════════════════════════════════════
+
+10. THIRD-PARTY SECURITY
+
+• Vendors assessed for security compliance
+• Contracts include security and confidentiality clauses
+• Third-party access limited and monitored
+• Regular review of vendor access rights
+• Vendor security incidents reported and investigated
+
+═══════════════════════════════════════════════════════════════════════════════
+
+11. BACKUP AND DISASTER RECOVERY
+
+• Critical data backed up daily
+• Backups encrypted and stored securely
+• Offsite/cloud backup copies maintained
+• Backup restoration tested quarterly
+• Disaster recovery plan documented and tested annually
+• Recovery Time Objectives (RTO) and Recovery Point Objectives (RPO) defined
+
+═══════════════════════════════════════════════════════════════════════════════
+
+12. SECURITY AWARENESS AND TRAINING
+
+• Security awareness training required for all employees:
+  - Upon hire (within first week)
+  - Annually thereafter
+  - When policies change significantly
+• Specialized training for IT staff and administrators
+• Phishing simulation exercises conducted quarterly
+• Security tips and reminders communicated regularly
+
+═══════════════════════════════════════════════════════════════════════════════
+
+13. COMPLIANCE AND AUDIT
+
+• Compliance with applicable regulations:
+  - GDPR (General Data Protection Regulation)
+  - HIPAA (if applicable)
+  - PCI DSS (if processing payment cards)
+  - SOX (if applicable)
+  - Industry-specific regulations
+• Internal security audits conducted quarterly
+• External security assessments conducted annually
+• Audit findings tracked and remediated
+• Compliance reports provided to management
+
+═══════════════════════════════════════════════════════════════════════════════
+
+14. POLICY VIOLATIONS AND ENFORCEMENT
+
+14.1 VIOLATIONS
+Violations of this policy may result in:
+• Verbal or written warning
+• Mandatory retraining
+• Suspension of system access
+• Termination of employment or contract
+• Legal action if laws violated
+
+14.2 REPORTING VIOLATIONS
+• Violations reported to direct manager and IT Security
+• Anonymous reporting available
+• No retaliation for good-faith reporting
+
+═══════════════════════════════════════════════════════════════════════════════
+
+15. POLICY MAINTENANCE
+
+• Policy reviewed annually or when significant changes occur
+• Updates approved by executive management
+• Changes communicated to all employees
+• Previous versions archived
+
+═══════════════════════════════════════════════════════════════════════════════
+
+16. EXCEPTIONS
+
+• Exceptions to this policy require written approval from:
+  - IT Security Officer
+  - Department Head
+  - Chief Information Officer (for significant exceptions)
+• Exceptions documented with business justification
+• Compensating controls implemented where possible
+• Exceptions reviewed annually
+
+═══════════════════════════════════════════════════════════════════════════════
+
+ACKNOWLEDGMENT
+
+I acknowledge that I have read, understood, and agree to comply with this Information Security Policy. I understand that violation of this policy may result in disciplinary action up to and including termination of employment.
+
+Employee Name (Print): [Name]
+Employee Signature: _________________ Date: _______
+Employee ID: [ID Number]
+Department: [Department]
+
+Manager Name: [Name]
+Manager Signature: _________________ Date: _______
+
+═══════════════════════════════════════════════════════════════════════════════
+
+DOCUMENT CONTROL
+
+Policy Owner: Chief Information Security Officer
+Approved By: [Executive Name and Title]
+Approval Date: [Date]
+Effective Date: [Date]
+Next Review Date: [Date]
+Version History:
+- Version 1.0 - [Date] - Initial release
+- Version 1.1 - [Date] - [Summary of changes]
+    `
+  },
+  {
+    id: 'it-incident-report',
+    title: 'Incident Report Form',
+    description: 'Detailed form for documenting IT incidents, security breaches, and system failures',
+    category: 'it',
+    downloadCount: 967,
+    fileSize: '48.2 KB',
+    rating: 4.6,
+    tags: ['incident', 'security', 'troubleshooting', 'documentation', 'IT support'],
+    createdAt: '2024-01-22T09:00:00Z',
+    updatedAt: '2024-01-30T14:00:00Z',
+    content: `
+IT INCIDENT REPORT FORM
+
+INCIDENT NUMBER: [Auto-generated or assigned number]
+REPORT DATE/TIME: [Date and Time]
+REPORT STATUS: ☐ Open  ☐ In Progress  ☐ Resolved  ☐ Closed
+
+═══════════════════════════════════════════════════════════════════════════════
+
+SECTION 1: REPORTER INFORMATION
+
+Reported By: [Full Name]
+Employee ID: [ID Number]
+Department: [Department]
+Job Title: [Position]
+Contact Phone: [Phone Number]
+Contact Email: [Email Address]
+Location: [Office/Building/Floor]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+SECTION 2: INCIDENT CLASSIFICATION
+
+INCIDENT TYPE (Select primary category):
+☐ Security Incident
+  ☐ Unauthorized Access
+  ☐ Data Breach
+  ☐ Malware/Virus
+  ☐ Phishing Attack
+  ☐ Lost/Stolen Device
+  ☐ Suspicious Activity
+  ☐ Password Compromise
+  ☐ Other Security: _______________
+
+☐ System Failure
+  ☐ Server Down
+  ☐ Application Crash
+  ☐ Database Error
+  ☐ Network Outage
+  ☐ Email System Failure
+  ☐ Other System: _______________
+
+☐ Hardware Issue
+  ☐ Computer Malfunction
+  ☐ Printer Issue
+  ☐ Network Equipment Failure
+  ☐ Phone System Problem
+  ☐ Other Hardware: _______________
+
+☐ Software Issue
+  ☐ Application Error
+  ☐ License Problem
+  ☐ Performance Issue
+  ☐ Compatibility Problem
+  ☐ Other Software: _______________
+
+☐ User Error
+☐ Data Loss/Corruption
+☐ Service Request
+☐ Other: _______________
+
+SEVERITY LEVEL:
+☐ Critical - Complete loss of service, security breach, or data loss affecting multiple users/systems
+☐ High - Significant impact on operations, limited workaround available
+☐ Medium - Moderate impact, workaround available
+☐ Low - Minor impact, does not significantly affect operations
+
+PRIORITY:
+☐ P1 - Immediate attention required
+☐ P2 - High priority, resolve within 4 hours
+☐ P3 - Medium priority, resolve within 24 hours
+☐ P4 - Low priority, resolve within 5 business days
+
+═══════════════════════════════════════════════════════════════════════════════
+
+SECTION 3: INCIDENT DETAILS
+
+DATE AND TIME INCIDENT OCCURRED:
+Date: [Date]
+Time: [Time]
+Time Zone: [Time Zone]
+
+DISCOVERY METHOD:
+☐ User Report
+☐ Automated Alert/Monitoring
+☐ Security Scan
+☐ Routine Inspection
+☐ Third Party Notification
+☐ Other: _______________
+
+AFFECTED SYSTEMS/SERVICES:
+System/Application Name: [Name]
+Server Name/IP: [Server Information]
+Database Name: [If applicable]
+Network Segment: [If applicable]
+
+AFFECTED USERS:
+Number of Users Impacted: [Number or "All Users"]
+Specific Users/Departments: [List affected users or departments]
+Business Impact: [Describe how business operations are affected]
+
+INCIDENT DESCRIPTION:
+Provide detailed description of what occurred:
+[Comprehensive description including:
+- What happened?
+- Where did it happen?
+- What were you doing when it occurred?
+- What error messages appeared?
+- Has this happened before?
+- Any recent changes to the system?]
+
+SYMPTOMS OBSERVED:
+[List all symptoms, error messages, unusual behavior]
+
+STEPS TO REPRODUCE (if applicable):
+1. [Step 1]
+2. [Step 2]
+3. [Step 3]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+SECTION 4: INITIAL ASSESSMENT
+
+INCIDENT DETECTED AT: [Date/Time]
+INCIDENT REPORTED AT: [Date/Time]
+TIME TO DETECTION: [Duration between occurrence and detection]
+
+POTENTIAL CAUSES:
+☐ Hardware Failure
+☐ Software Bug
+☐ Configuration Error
+☐ User Error
+☐ Security Attack
+☐ Network Issue
+☐ Power Outage
+☐ External Service Failure
+☐ Unknown
+☐ Other: _______________
+
+DATA IMPACT:
+☐ No Data Affected
+☐ Data Temporarily Unavailable
+☐ Data Corrupted
+☐ Data Lost
+☐ Data Breach/Exposure
+☐ Unknown
+
+If data affected, describe:
+Type of Data: [e.g., customer records, financial data, employee information]
+Amount of Data: [Approximate number of records or size]
+Data Classification: ☐ Public  ☐ Internal  ☐ Confidential  ☐ Highly Confidential
+
+REGULATORY NOTIFICATION REQUIRED:
+☐ No
+☐ Yes - Specify: ☐ GDPR  ☐ HIPAA  ☐ PCI DSS  ☐ Other: _______________
+
+═══════════════════════════════════════════════════════════════════════════════
+
+SECTION 5: IMMEDIATE ACTIONS TAKEN
+
+CONTAINMENT ACTIONS:
+[Describe immediate steps taken to contain the incident]
+☐ System isolated from network
+☐ User accounts disabled
+☐ Services shut down
+☐ Backup restoration initiated
+☐ Users notified
+☐ Other: _______________
+
+TEMPORARY WORKAROUND:
+☐ No workaround available
+☐ Workaround implemented
+Description: [Describe temporary solution]
+
+EVIDENCE PRESERVED:
+☐ Log files saved
+☐ Screenshots captured
+☐ System state preserved
+☐ Network traffic captured
+☐ Physical evidence secured
+☐ Other: _______________
+
+═══════════════════════════════════════════════════════════════════════════════
+
+SECTION 6: INVESTIGATION AND RESOLUTION
+
+ASSIGNED TO:
+Technician Name: [Name]
+Technician ID: [ID]
+Assignment Date/Time: [Date/Time]
+
+INVESTIGATION FINDINGS:
+Root Cause: [Detailed explanation of what caused the incident]
+
+Contributing Factors: [Any additional factors that contributed]
+
+RESOLUTION ACTIONS:
+[Detailed description of actions taken to resolve the incident]
+1. [Action 1]
+2. [Action 2]
+3. [Action 3]
+
+RESOLUTION DATE/TIME: [Date/Time]
+TOTAL DOWNTIME: [Duration]
+
+VERIFICATION:
+☐ Issue verified as resolved
+☐ User confirmed resolution
+☐ System tested and functioning normally
+☐ Monitoring in place
+Verified By: [Name]
+Verification Date: [Date]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+SECTION 7: PREVENTIVE MEASURES
+
+RECOMMENDATIONS TO PREVENT RECURRENCE:
+1. [Recommendation 1]
+2. [Recommendation 2]
+3. [Recommendation 3]
+
+PREVENTIVE ACTIONS IMPLEMENTED:
+☐ Software/System Updated
+☐ Security Patch Applied
+☐ Configuration Changed
+☐ Monitoring Enhanced
+☐ Procedure Updated
+☐ Training Provided
+☐ Hardware Replaced
+☐ Other: _______________
+
+FOLLOW-UP ACTIONS REQUIRED:
+Action: [Description]
+Responsible Party: [Name]
+Due Date: [Date]
+Status: ☐ Pending  ☐ In Progress  ☐ Completed
+
+═══════════════════════════════════════════════════════════════════════════════
+
+SECTION 8: COMMUNICATION AND NOTIFICATIONS
+
+STAKEHOLDERS NOTIFIED:
+☐ IT Management
+☐ Department Management
+☐ Executive Leadership
+☐ Affected Users
+☐ Security Team
+☐ Legal Department
+☐ External Parties (specify): _______________
+☐ Regulatory Bodies (specify): _______________
+
+COMMUNICATION LOG:
+[Date/Time] - [Recipient] - [Method] - [Summary of Communication]
+[Date/Time] - [Recipient] - [Method] - [Summary of Communication]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+SECTION 9: LESSONS LEARNED
+
+WHAT WENT WELL:
+[Describe what worked effectively in the incident response]
+
+WHAT COULD BE IMPROVED:
+[Identify areas for improvement in processes, tools, or procedures]
+
+KNOWLEDGE BASE ARTICLE CREATED:
+☐ Yes - KB Article #: _______________
+☐ No
+☐ Not Applicable
+
+TRAINING NEEDS IDENTIFIED:
+☐ User Training
+☐ IT Staff Training
+☐ Management Training
+☐ None
+Description: [Specify training topics]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+SECTION 10: CLOSURE
+
+FINAL STATUS:
+☐ Resolved - Issue completely fixed
+☐ Resolved with Workaround - Permanent fix scheduled
+☐ Closed - No action required
+☐ Closed - Unable to Reproduce
+☐ Escalated - Transferred to: _______________
+
+USER SATISFACTION:
+☐ Very Satisfied
+☐ Satisfied
+☐ Neutral
+☐ Dissatisfied
+☐ Very Dissatisfied
+User Comments: [Optional feedback]
+
+TIME TRACKING:
+Time to Acknowledge: [Duration]
+Time to Respond: [Duration]
+Time to Resolve: [Duration]
+Total Time: [Duration]
+
+CLOSED BY: [Name]
+CLOSURE DATE/TIME: [Date/Time]
+
+APPROVED BY: [Manager/Supervisor Name]
+APPROVAL DATE: [Date]
+Signature: _________________
+
+═══════════════════════════════════════════════════════════════════════════════
+
+ATTACHMENTS:
+☐ Screenshots
+☐ Log Files
+☐ Email Correspondence
+☐ Network Diagrams
+☐ Other Documentation
+
+Attachment List:
+1. [Filename/Description]
+2. [Filename/Description]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+INTERNAL USE ONLY - CONFIDENTIAL
+
+Document Reference: INC-[YYYY-MM-DD]-[###]
+Created By: [System/Name]
+Last Modified: [Date/Time]
+    `
+  },
+  {
+    id: 'it-sop-template',
+    title: 'Standard Operating Procedure (SOP) Template',
+    description: 'Professional template for documenting IT processes, workflows, and procedures',
+    category: 'it',
+    downloadCount: 1089,
+    fileSize: '52.3 KB',
+    rating: 4.7,
+    tags: ['SOP', 'procedures', 'documentation', 'processes', 'workflow'],
+    createdAt: '2024-01-14T11:30:00Z',
+    updatedAt: '2024-01-28T13:45:00Z',
+    content: `
+STANDARD OPERATING PROCEDURE (SOP)
+
+[Company Name]
+Information Technology Department
+
+═══════════════════════════════════════════════════════════════════════════════
+
+DOCUMENT INFORMATION
+
+SOP Title: [Procedure Title]
+SOP Number: [SOP-XXX-###]
+Version: [Version Number]
+Effective Date: [Date]
+Last Revision Date: [Date]
+Next Review Date: [Date]
+
+Document Owner: [Name and Title]
+Author(s): [Name(s)]
+Approved By: [Name and Title]
+Approval Date: [Date]
+Approval Signature: _________________
+
+═══════════════════════════════════════════════════════════════════════════════
+
+DOCUMENT CONTROL
+
+Version History:
+
+Version | Date | Author | Description of Changes | Approved By
+--------|------|--------|----------------------|-------------
+1.0 | [Date] | [Name] | Initial release | [Name]
+1.1 | [Date] | [Name] | [Changes made] | [Name]
+[Ver] | [Date] | [Name] | [Changes made] | [Name]
+
+Distribution List:
+- [Department/Role]
+- [Department/Role]
+- [Department/Role]
+
+Related Documents:
+- [Document Name] - [Document Reference]
+- [Document Name] - [Document Reference]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+TABLE OF CONTENTS
+
+1. Purpose
+2. Scope
+3. Responsibilities
+4. Definitions and Acronyms
+5. Prerequisites
+6. Procedure
+7. Safety and Compliance
+8. Quality Control
+9. Documentation and Recordkeeping
+10. Troubleshooting
+11. References
+12. Appendices
+
+═══════════════════════════════════════════════════════════════════════════════
+
+1. PURPOSE
+
+1.1 OBJECTIVE
+[Clearly state what this SOP aims to accomplish. Example: This SOP establishes the standard procedure for provisioning new user accounts to ensure consistent, secure, and efficient onboarding of employees.]
+
+1.2 BENEFITS
+[List the key benefits of following this SOP]
+• [Benefit 1]
+• [Benefit 2]
+• [Benefit 3]
+
+1.3 SCOPE STATEMENT
+[Define what is covered and what is not covered by this SOP]
+
+In Scope:
+• [Item 1]
+• [Item 2]
+
+Out of Scope:
+• [Item 1]
+• [Item 2]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+2. SCOPE
+
+2.1 APPLICABILITY
+This SOP applies to:
+• [Department/Team]
+• [Systems/Applications]
+• [Locations]
+• [User Groups]
+
+2.2 FREQUENCY
+☐ As Needed
+☐ Daily
+☐ Weekly
+☐ Monthly
+☐ Quarterly
+☐ Annually
+☐ Event-Driven (specify trigger): _______________
+
+2.3 EXCEPTIONS
+[List any exceptions to this procedure and how they should be handled]
+• [Exception 1 and handling process]
+• [Exception 2 and handling process]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+3. RESPONSIBILITIES
+
+PRIMARY RESPONSIBILITY:
+Role: [Job Title/Role]
+Responsibilities:
+• [Responsibility 1]
+• [Responsibility 2]
+• [Responsibility 3]
+
+SUPPORTING ROLES:
+
+Role: [Job Title/Role]
+Responsibilities:
+• [Responsibility 1]
+• [Responsibility 2]
+
+Role: [Job Title/Role]
+Responsibilities:
+• [Responsibility 1]
+• [Responsibility 2]
+
+APPROVAL AUTHORITY:
+Role: [Job Title/Role]
+Authority: [What they can approve/authorize]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+4. DEFINITIONS AND ACRONYMS
+
+DEFINITIONS:
+[Term]: [Definition]
+[Term]: [Definition]
+[Term]: [Definition]
+
+ACRONYMS:
+[Acronym]: [Full Form]
+[Acronym]: [Full Form]
+[Acronym]: [Full Form]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+5. PREREQUISITES
+
+5.1 REQUIRED KNOWLEDGE/SKILLS
+• [Skill/Knowledge 1]
+• [Skill/Knowledge 2]
+• [Skill/Knowledge 3]
+
+5.2 REQUIRED TRAINING
+• [Training Course 1]
+• [Training Course 2]
+
+5.3 REQUIRED TOOLS AND EQUIPMENT
+• [Tool/Equipment 1]
+• [Tool/Equipment 2]
+• [Tool/Equipment 3]
+
+5.4 REQUIRED ACCESS/PERMISSIONS
+• [Access Level 1]
+• [Access Level 2]
+
+5.5 REQUIRED MATERIALS/RESOURCES
+• [Material/Resource 1]
+• [Material/Resource 2]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+6. PROCEDURE
+
+6.1 OVERVIEW
+[Provide a high-level overview of the procedure flow]
+
+Process Flow:
+[Step 1] → [Step 2] → [Step 3] → [Step 4] → [Complete]
+
+Estimated Time to Complete: [Duration]
+
+─────────────────────────────────────────────────────────────────────────────
+
+6.2 DETAILED STEPS
+
+STEP 1: [STEP NAME]
+Responsible: [Role]
+Duration: [Estimated time]
+
+Description:
+[Detailed description of what needs to be done]
+
+Actions:
+1.1. [Specific action with details]
+    • Sub-action or detail
+    • Sub-action or detail
+
+1.2. [Specific action with details]
+
+1.3. [Specific action with details]
+
+Expected Outcome:
+[What should result from completing this step]
+
+Quality Check:
+☐ [Verification item 1]
+☐ [Verification item 2]
+
+Screenshots/Visual Aids:
+[Reference to screenshot or diagram if applicable]
+
+─────────────────────────────────────────────────────────────────────────────
+
+STEP 2: [STEP NAME]
+Responsible: [Role]
+Duration: [Estimated time]
+
+Description:
+[Detailed description of what needs to be done]
+
+Actions:
+2.1. [Specific action with details]
+
+2.2. [Specific action with details]
+
+2.3. [Specific action with details]
+
+Expected Outcome:
+[What should result from completing this step]
+
+⚠️ CAUTION:
+[Any warnings or important notes for this step]
+
+─────────────────────────────────────────────────────────────────────────────
+
+STEP 3: [STEP NAME]
+Responsible: [Role]
+Duration: [Estimated time]
+
+Description:
+[Detailed description of what needs to be done]
+
+Actions:
+3.1. [Specific action with details]
+
+3.2. [Specific action with details]
+    If [condition]:
+      • [Action A]
+    Else:
+      • [Action B]
+
+3.3. [Specific action with details]
+
+Expected Outcome:
+[What should result from completing this step]
+
+─────────────────────────────────────────────────────────────────────────────
+
+STEP 4: [STEP NAME] - VERIFICATION AND TESTING
+Responsible: [Role]
+Duration: [Estimated time]
+
+Description:
+[Description of verification and testing procedures]
+
+Actions:
+4.1. Verify [specific item]
+4.2. Test [specific functionality]
+4.3. Confirm [specific requirement]
+
+Acceptance Criteria:
+☐ [Criterion 1]
+☐ [Criterion 2]
+☐ [Criterion 3]
+
+─────────────────────────────────────────────────────────────────────────────
+
+STEP 5: [STEP NAME] - DOCUMENTATION AND CLOSURE
+Responsible: [Role]
+Duration: [Estimated time]
+
+Actions:
+5.1. Document all actions taken in [ticketing system/log]
+5.2. Update [relevant system/database]
+5.3. Notify [stakeholders] of completion
+5.4. Archive [relevant files/records]
+
+Documentation Required:
+• [Document type 1]
+• [Document type 2]
+
+Notification List:
+• [Person/Role 1]
+• [Person/Role 2]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+7. SAFETY AND COMPLIANCE
+
+7.1 SAFETY CONSIDERATIONS
+• [Safety requirement 1]
+• [Safety requirement 2]
+
+7.2 COMPLIANCE REQUIREMENTS
+This procedure must comply with:
+• [Regulation/Standard 1] - [Brief description]
+• [Regulation/Standard 2] - [Brief description]
+• [Company Policy] - [Brief description]
+
+7.3 SECURITY REQUIREMENTS
+• [Security requirement 1]
+• [Security requirement 2]
+• [Security requirement 3]
+
+7.4 DATA PROTECTION
+• [Data protection measure 1]
+• [Data protection measure 2]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+8. QUALITY CONTROL
+
+8.1 QUALITY METRICS
+Performance indicators for this procedure:
+
+Metric: [Metric Name]
+Target: [Target Value]
+Measurement Method: [How it's measured]
+
+Metric: [Metric Name]
+Target: [Target Value]
+Measurement Method: [How it's measured]
+
+8.2 QUALITY CHECKPOINTS
+At each step, verify:
+• [Checkpoint 1]
+• [Checkpoint 2]
+• [Checkpoint 3]
+
+8.3 REVIEW AND AUDIT
+• Procedure reviewed: [Frequency]
+• Audit conducted: [Frequency]
+• Metrics reported: [Frequency]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+9. DOCUMENTATION AND RECORDKEEPING
+
+9.1 REQUIRED DOCUMENTATION
+The following must be documented:
+• [Document/Record type 1]
+• [Document/Record type 2]
+• [Document/Record type 3]
+
+9.2 RETENTION REQUIREMENTS
+Record Type | Retention Period | Storage Location
+------------|-----------------|------------------
+[Record 1] | [Duration] | [Location/System]
+[Record 2] | [Duration] | [Location/System]
+
+9.3 FORMS AND TEMPLATES
+• [Form Name] - [Form ID/Location]
+• [Template Name] - [Template ID/Location]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+10. TROUBLESHOOTING
+
+10.1 COMMON ISSUES AND SOLUTIONS
+
+ISSUE #1: [Problem Description]
+Symptoms:
+• [Symptom 1]
+• [Symptom 2]
+
+Probable Cause:
+[Explanation of likely cause]
+
+Solution:
+1. [Step to resolve]
+2. [Step to resolve]
+3. [Step to resolve]
+
+If issue persists:
+[Escalation procedure]
+
+─────────────────────────────────────────────────────────────────────────────
+
+ISSUE #2: [Problem Description]
+Symptoms:
+• [Symptom 1]
+• [Symptom 2]
+
+Probable Cause:
+[Explanation of likely cause]
+
+Solution:
+1. [Step to resolve]
+2. [Step to resolve]
+
+─────────────────────────────────────────────────────────────────────────────
+
+ISSUE #3: [Problem Description]
+Symptoms:
+• [Symptom 1]
+
+Solution:
+1. [Step to resolve]
+2. [Step to resolve]
+
+─────────────────────────────────────────────────────────────────────────────
+
+10.2 ESCALATION PROCEDURE
+If unable to resolve:
+
+Level 1: [Contact/Role]
+Contact: [Email/Phone]
+Response Time: [SLA]
+
+Level 2: [Contact/Role]
+Contact: [Email/Phone]
+Response Time: [SLA]
+
+Level 3: [Contact/Role]
+Contact: [Email/Phone]
+Response Time: [SLA]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+11. REFERENCES
+
+11.1 INTERNAL REFERENCES
+• [Document Name] - [Document ID/Location]
+• [Document Name] - [Document ID/Location]
+
+11.2 EXTERNAL REFERENCES
+• [Standard/Guideline Name] - [URL/Reference]
+• [Vendor Documentation] - [URL/Reference]
+
+11.3 CONTACT INFORMATION
+Department: [Department Name]
+Help Desk: [Phone/Email]
+Manager: [Name] - [Email/Phone]
+Subject Matter Expert: [Name] - [Email/Phone]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+12. APPENDICES
+
+APPENDIX A: [TITLE]
+[Content, forms, screenshots, diagrams, etc.]
+
+APPENDIX B: [TITLE]
+[Content, forms, screenshots, diagrams, etc.]
+
+APPENDIX C: CHECKLIST
+☐ [Checklist item 1]
+☐ [Checklist item 2]
+☐ [Checklist item 3]
+☐ [Checklist item 4]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+ACKNOWLEDGMENT AND TRAINING RECORD
+
+I acknowledge that I have read and understood this Standard Operating Procedure and have been trained in its execution.
+
+Employee Name (Print): [Name]
+Employee ID: [ID]
+Position: [Title]
+Signature: _________________ Date: _______
+
+Trainer Name: [Name]
+Trainer Signature: _________________ Date: _______
+
+Training Method:
+☐ Hands-on Training
+☐ Self-Study
+☐ Classroom Training
+☐ Online Training
+
+Competency Verified: ☐ Yes  ☐ No
+Verifier Name: [Name]
+Verifier Signature: _________________ Date: _______
+
+═══════════════════════════════════════════════════════════════════════════════
+
+END OF DOCUMENT
+    `
+  },
+  {
+    id: 'it-maintenance-request',
+    title: 'Maintenance Request Form',
+    description: 'Form for submitting IT maintenance requests, system updates, and scheduled maintenance',
+    category: 'it',
+    downloadCount: 834,
+    fileSize: '39.6 KB',
+    rating: 4.5,
+    tags: ['maintenance', 'support', 'requests', 'IT service', 'helpdesk'],
+    createdAt: '2024-01-24T10:00:00Z',
+    updatedAt: '2024-01-31T12:00:00Z',
+    content: `
+IT MAINTENANCE REQUEST FORM
+
+REQUEST NUMBER: [To be assigned by IT]
+SUBMISSION DATE: [Date]
+REQUEST STATUS: ☐ Submitted  ☐ Approved  ☐ Scheduled  ☐ In Progress  ☐ Completed
+
+═══════════════════════════════════════════════════════════════════════════════
+
+SECTION 1: REQUESTER INFORMATION
+
+Full Name: [Requester Name]
+Employee ID: [ID Number]
+Department: [Department Name]
+Job Title: [Position]
+Phone Number: [Phone]
+Email Address: [Email]
+Location/Office: [Building/Floor/Room]
+Manager Name: [Manager Name]
+Manager Email: [Manager Email]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+SECTION 2: REQUEST DETAILS
+
+MAINTENANCE TYPE (Select one):
+☐ Preventive Maintenance (Routine/Scheduled)
+☐ Corrective Maintenance (Repair/Fix)
+☐ Adaptive Maintenance (Update/Upgrade)
+☐ Emergency Maintenance (Urgent/Critical)
+☐ Perfective Maintenance (Enhancement/Optimization)
+
+REQUEST CATEGORY:
+☐ Hardware Maintenance
+  ☐ Computer/Laptop
+  ☐ Server
+  ☐ Network Equipment
+  ☐ Printer/Scanner
+  ☐ Phone System
+  ☐ Other Hardware: _______________
+
+☐ Software Maintenance
+  ☐ Operating System Update
+  ☐ Application Update/Patch
+  ☐ Security Update
+  ☐ License Renewal
+  ☐ Software Installation
+  ☐ Software Removal
+  ☐ Other Software: _______________
+
+☐ Network/Infrastructure
+  ☐ Network Optimization
+  ☐ Firewall Configuration
+  ☐ VPN Maintenance
+  ☐ WiFi Enhancement
+  ☐ Cable Management
+  ☐ Other Network: _______________
+
+☐ Security Maintenance
+  ☐ Security Scan
+  ☐ Vulnerability Assessment
+  ☐ Access Control Review
+  ☐ Antivirus Update
+  ☐ Password Reset System
+  ☐ Other Security: _______________
+
+☐ Database Maintenance
+  ☐ Database Optimization
+  ☐ Backup Verification
+  ☐ Index Rebuild
+  ☐ Performance Tuning
+  ☐ Other Database: _______________
+
+☐ Other: _______________
+
+═══════════════════════════════════════════════════════════════════════════════
+
+SECTION 3: AFFECTED SYSTEM/EQUIPMENT
+
+SYSTEM/EQUIPMENT DETAILS:
+System/Application Name: [Name]
+Asset Tag/ID: [Asset Number if applicable]
+Serial Number: [Serial Number if applicable]
+Model: [Make and Model]
+Location: [Physical location]
+Current Version/Configuration: [Version info]
+
+BUSINESS IMPACT:
+Number of Users Affected: [Number or "Select below"]
+☐ Single User
+☐ Department (5-20 users)
+☐ Multiple Departments (20-50 users)
+☐ Organization-wide (50+ users)
+
+Affected Department(s): [List departments]
+
+CRITICALITY:
+☐ Critical - Core business system
+☐ High - Important but has workaround
+☐ Medium - Standard business system
+☐ Low - Nice to have, minimal impact
+
+═══════════════════════════════════════════════════════════════════════════════
+
+SECTION 4: MAINTENANCE DESCRIPTION
+
+BRIEF SUMMARY:
+[One-line description of what maintenance is needed]
+
+DETAILED DESCRIPTION:
+[Comprehensive description of:
+- What maintenance is required?
+- Why is this maintenance needed?
+- What is the current state/problem?
+- What should be the result after maintenance?
+- Any specific requirements or considerations?]
+
+SYMPTOMS/CURRENT ISSUES (if applicable):
+[List any problems, errors, or symptoms that indicate maintenance is needed]
+• [Symptom 1]
+• [Symptom 2]
+
+ERROR MESSAGES (if applicable):
+[Exact text of any error messages]
+
+PREVIOUS RELATED WORK:
+Has this system had recent maintenance or issues?
+☐ No
+☐ Yes - Describe: [Previous work details]
+Previous Ticket/Request #: [Reference number]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+SECTION 5: SCHEDULING REQUIREMENTS
+
+PREFERRED MAINTENANCE WINDOW:
+
+URGENCY:
+☐ Emergency - Immediate attention required (system down, security breach)
+☐ Urgent - Within 24 hours
+☐ High Priority - Within 3 business days
+☐ Normal - Within 1-2 weeks
+☐ Low Priority - Can be scheduled at IT's convenience
+
+PREFERRED DATE RANGE:
+Start Date: [Date]
+End Date: [Date]
+
+PREFERRED TIME:
+☐ Business Hours (8 AM - 5 PM)
+☐ After Hours (5 PM - 8 AM)
+☐ Weekend
+☐ Specific Time: [Time range]
+
+DOWNTIME REQUIREMENTS:
+Estimated Downtime Needed: [Duration]
+
+Downtime Acceptable:
+☐ Yes - Anytime
+☐ Yes - With advance notice
+☐ Yes - Only during specified window: [Specify]
+☐ No - Zero downtime required
+
+If downtime required, preferred schedule:
+Day: [Day of week]
+Time: [Time range]
+Date: [Specific date if applicable]
+
+BLACKOUT DATES:
+Are there any dates when this maintenance should NOT occur?
+☐ No
+☐ Yes - List blackout dates and reasons:
+  [Date] - [Reason, e.g., month-end processing, major event]
+  [Date] - [Reason]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+SECTION 6: BUSINESS JUSTIFICATION
+
+WHY IS THIS MAINTENANCE NECESSARY:
+[Explain the business need, benefits, or risks of not performing maintenance]
+
+EXPECTED BENEFITS:
+• [Benefit 1]
+• [Benefit 2]
+• [Benefit 3]
+
+RISK IF NOT PERFORMED:
+☐ System Failure
+☐ Security Vulnerability
+☐ Performance Degradation
+☐ Compliance Violation
+☐ Data Loss
+☐ Increased Costs
+☐ Other: _______________
+
+Risk Level if Delayed: ☐ Low  ☐ Medium  ☐ High  ☐ Critical
+
+BUDGET INFORMATION:
+Estimated Cost: $[Amount if known]
+Budget Code/Cost Center: [Code]
+Approved Budget: ☐ Yes  ☐ No  ☐ Approval Pending
+
+═══════════════════════════════════════════════════════════════════════════════
+
+SECTION 7: TECHNICAL REQUIREMENTS
+
+BACKUP REQUIRED BEFORE MAINTENANCE:
+☐ Yes - Full Backup
+☐ Yes - Incremental Backup
+☐ No - Low risk change
+☐ Already backed up - Last backup: [Date]
+
+TESTING REQUIREMENTS:
+☐ No testing required
+☐ Basic functionality test
+☐ Comprehensive testing required
+☐ User acceptance testing (UAT) required
+
+Test Environment Available: ☐ Yes  ☐ No
+
+ROLLBACK PLAN REQUIRED:
+☐ Yes - Describe: [Rollback procedure]
+☐ No - Low risk change
+
+DEPENDENCIES:
+Are there any dependent systems or prerequisites?
+☐ No dependencies
+☐ Yes - List:
+  • [Dependent system/requirement 1]
+  • [Dependent system/requirement 2]
+
+COORDINATION REQUIRED WITH:
+☐ Other IT Teams (specify): _______________
+☐ Vendors/Third Parties (specify): _______________
+☐ Business Units (specify): _______________
+☐ None
+
+═══════════════════════════════════════════════════════════════════════════════
+
+SECTION 8: COMMUNICATION PLAN
+
+NOTIFICATION REQUIRED:
+Who needs to be notified about this maintenance?
+
+☐ Requester Only
+☐ Department
+☐ All Affected Users
+☐ Organization-wide
+☐ Specific Users (list): _______________
+
+NOTIFICATION TIMING:
+☐ 24 hours before
+☐ 48 hours before
+☐ 1 week before
+☐ 2 weeks before
+☐ Other: _______________
+
+NOTIFICATION METHOD:
+☐ Email
+☐ System Message/Alert
+☐ Team Meeting
+☐ Phone Call
+☐ Portal Announcement
+☐ Other: _______________
+
+COMMUNICATION CONTACT:
+Primary Contact During Maintenance: [Name]
+Phone: [Phone Number]
+Email: [Email]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+SECTION 9: APPROVALS
+
+MANAGER APPROVAL:
+Required for all maintenance requests
+
+Manager Name: [Name]
+Manager Title: [Title]
+Approval Status: ☐ Approved  ☐ Denied  ☐ Pending
+Manager Signature: _________________ Date: _______
+Comments: [Any manager comments or conditions]
+
+ADDITIONAL APPROVALS (if required):
+
+DEPARTMENT HEAD APPROVAL (for major changes):
+Department Head Name: [Name]
+Approval Status: ☐ Approved  ☐ Denied  ☐ Pending  ☐ N/A
+Signature: _________________ Date: _______
+
+IT MANAGEMENT APPROVAL (for infrastructure changes):
+IT Manager Name: [Name]
+Approval Status: ☐ Approved  ☐ Denied  ☐ Pending  ☐ N/A
+Signature: _________________ Date: _______
+
+CHANGE ADVISORY BOARD (for high-risk changes):
+CAB Approval: ☐ Approved  ☐ Denied  ☐ Pending  ☐ N/A
+CAB Meeting Date: [Date]
+CAB Decision: [Summary of decision and any conditions]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+SECTION 10: IT DEPARTMENT USE ONLY
+
+REQUEST RECEIVED BY: [IT Staff Name]
+DATE RECEIVED: [Date/Time]
+TICKET NUMBER: [Tracking Number]
+
+ASSIGNMENT:
+Assigned To: [Technician/Team]
+Assignment Date: [Date]
+Priority: ☐ P1  ☐ P2  ☐ P3  ☐ P4
+
+SCHEDULED MAINTENANCE WINDOW:
+Scheduled Date: [Date]
+Scheduled Time: [Start Time] to [End Time]
+Duration: [Hours/Minutes]
+Technician(s): [Name(s)]
+
+PRE-MAINTENANCE CHECKLIST:
+☐ Backup completed
+☐ Test environment verified
+☐ Rollback plan documented
+☐ Required tools/parts available
+☐ Access credentials verified
+☐ Users notified
+☐ Change documentation complete
+☐ Team briefed
+
+MAINTENANCE LOG:
+Start Time: [Date/Time]
+Technician: [Name]
+
+Actions Taken:
+[Date/Time] - [Action performed]
+[Date/Time] - [Action performed]
+[Date/Time] - [Action performed]
+
+Issues Encountered:
+[Description of any issues and resolutions]
+
+End Time: [Date/Time]
+Total Duration: [Hours/Minutes]
+
+POST-MAINTENANCE VERIFICATION:
+☐ System operational
+☐ Testing completed successfully
+☐ Performance verified
+☐ Users can access system
+☐ No errors in logs
+☐ Backup verified
+☐ Documentation updated
+
+COMPLETION STATUS:
+☐ Completed Successfully
+☐ Completed with Issues (describe): _______________
+☐ Partially Completed (describe): _______________
+☐ Unsuccessful - Rolled Back
+☐ Cancelled - Reason: _______________
+
+REQUESTER NOTIFICATION:
+Notified By: [Name]
+Notification Date: [Date/Time]
+Method: ☐ Email  ☐ Phone  ☐ In Person
+
+REQUESTER CONFIRMATION:
+Work Verified By Requester: ☐ Yes  ☐ No
+Requester Signature: _________________ Date: _______
+Satisfaction: ☐ Satisfied  ☐ Needs Follow-up
+
+CLOSURE:
+Closed By: [IT Staff Name]
+Closure Date: [Date]
+Final Status: ☐ Resolved  ☐ Requires Follow-up
+Follow-up Ticket: [Number if applicable]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+NOTES/COMMENTS:
+[Any additional notes, observations, or recommendations]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+ATTACHMENTS:
+☐ Screenshots
+☐ Error Logs
+☐ Diagrams
+☐ Quotes/Estimates
+☐ Other: _______________
+
+List of Attached Files:
+1. [Filename]
+2. [Filename]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+FOR OFFICE USE ONLY
+Form Received: [Date]
+Processed By: [Name]
+Filed In: [Location/System]
+Retention: [Date]
+    `
+  }
+];
+
+// Add IT templates to the main templates array
+templates.push(...itTemplates);
+
 class DocumentService {
   getTemplates(): DocumentTemplate[] {
     return templates;
