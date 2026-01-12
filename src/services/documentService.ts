@@ -4758,6 +4758,1343 @@ For the most current pricing, visit: [Website URL]
 // Add sales templates to the main templates array
 templates.push(...salesTemplates);
 
+// Marketing Templates
+const marketingTemplates: DocumentTemplate[] = [
+  {
+    id: 'marketing-social-media-calendar',
+    title: 'Social Media Content Calendar',
+    description: 'Comprehensive calendar for planning and organizing social media content across multiple platforms',
+    category: 'marketing',
+    downloadCount: 6780,
+    fileSize: '48.9 KB',
+    rating: 4.9,
+    tags: ['social-media', 'content-calendar', 'planning', 'scheduling', 'marketing'],
+    createdAt: '2024-01-07T09:00:00Z',
+    updatedAt: '2024-01-28T15:30:00Z',
+    content: `
+SOCIAL MEDIA CONTENT CALENDAR
+
+CAMPAIGN OVERVIEW:
+Campaign Name: [Campaign Name]
+Month/Quarter: [Time Period]
+Marketing Manager: [Name]
+Last Updated: [Date]
+
+SOCIAL MEDIA ACCOUNTS:
+• Facebook: [Account Name/URL]
+• Instagram: [Account Name/URL]
+• Twitter/X: [Account Name/URL]
+• LinkedIn: [Account Name/URL]
+• TikTok: [Account Name/URL]
+• YouTube: [Account Name/URL]
+• Pinterest: [Account Name/URL]
+
+CAMPAIGN GOALS:
+• Primary Goal: [Goal]
+• Target Audience: [Audience description]
+• Key Messages: [Key messages]
+• Success Metrics: [KPIs]
+
+CONTENT THEMES FOR THE MONTH:
+Week 1: [Theme]
+Week 2: [Theme]
+Week 3: [Theme]
+Week 4: [Theme]
+
+WEEKLY POSTING SCHEDULE:
+
+WEEK 1 - [Date Range]
+
+Monday [Date]:
+Platform | Time | Content Type | Post Copy | Visual/Media | Link | Hashtags | Status
+---------|------|--------------|-----------|--------------|------|----------|--------
+Facebook | [Time] | [Type] | [Copy preview] | [Image/Video desc] | [URL] | [#tags] | [Draft/Scheduled/Posted]
+Instagram | [Time] | [Type] | [Copy preview] | [Image/Video desc] | [URL] | [#tags] | [Draft/Scheduled/Posted]
+Twitter | [Time] | [Type] | [Copy preview] | [Image/Video desc] | [URL] | [#tags] | [Draft/Scheduled/Posted]
+LinkedIn | [Time] | [Type] | [Copy preview] | [Image/Video desc] | [URL] | [#tags] | [Draft/Scheduled/Posted]
+
+Tuesday [Date]:
+Platform | Time | Content Type | Post Copy | Visual/Media | Link | Hashtags | Status
+---------|------|--------------|-----------|--------------|------|----------|--------
+Facebook | [Time] | [Type] | [Copy preview] | [Image/Video desc] | [URL] | [#tags] | [Draft/Scheduled/Posted]
+Instagram | [Time] | [Type] | [Copy preview] | [Image/Video desc] | [URL] | [#tags] | [Draft/Scheduled/Posted]
+Twitter | [Time] | [Type] | [Copy preview] | [Image/Video desc] | [URL] | [#tags] | [Draft/Scheduled/Posted]
+LinkedIn | [Time] | [Type] | [Copy preview] | [Image/Video desc] | [URL] | [#tags] | [Draft/Scheduled/Posted]
+
+Wednesday [Date]:
+Platform | Time | Content Type | Post Copy | Visual/Media | Link | Hashtags | Status
+---------|------|--------------|-----------|--------------|------|----------|--------
+Facebook | [Time] | [Type] | [Copy preview] | [Image/Video desc] | [URL] | [#tags] | [Draft/Scheduled/Posted]
+Instagram | [Time] | [Type] | [Copy preview] | [Image/Video desc] | [URL] | [#tags] | [Draft/Scheduled/Posted]
+Twitter | [Time] | [Type] | [Copy preview] | [Image/Video desc] | [URL] | [#tags] | [Draft/Scheduled/Posted]
+LinkedIn | [Time] | [Type] | [Copy preview] | [Image/Video desc] | [URL] | [#tags] | [Draft/Scheduled/Posted]
+
+Thursday [Date]:
+Platform | Time | Content Type | Post Copy | Visual/Media | Link | Hashtags | Status
+---------|------|--------------|-----------|--------------|------|----------|--------
+Facebook | [Time] | [Type] | [Copy preview] | [Image/Video desc] | [URL] | [#tags] | [Draft/Scheduled/Posted]
+Instagram | [Time] | [Type] | [Copy preview] | [Image/Video desc] | [URL] | [#tags] | [Draft/Scheduled/Posted]
+Twitter | [Time] | [Type] | [Copy preview] | [Image/Video desc] | [URL] | [#tags] | [Draft/Scheduled/Posted]
+LinkedIn | [Time] | [Type] | [Copy preview] | [Image/Video desc] | [URL] | [#tags] | [Draft/Scheduled/Posted]
+
+Friday [Date]:
+Platform | Time | Content Type | Post Copy | Visual/Media | Link | Hashtags | Status
+---------|------|--------------|-----------|--------------|------|----------|--------
+Facebook | [Time] | [Type] | [Copy preview] | [Image/Video desc] | [URL] | [#tags] | [Draft/Scheduled/Posted]
+Instagram | [Time] | [Type] | [Copy preview] | [Image/Video desc] | [URL] | [#tags] | [Draft/Scheduled/Posted]
+Twitter | [Time] | [Type] | [Copy preview] | [Image/Video desc] | [URL] | [#tags] | [Draft/Scheduled/Posted]
+LinkedIn | [Time] | [Type] | [Copy preview] | [Image/Video desc] | [URL] | [#tags] | [Draft/Scheduled/Posted]
+
+Saturday [Date]:
+Platform | Time | Content Type | Post Copy | Visual/Media | Link | Hashtags | Status
+---------|------|--------------|-----------|--------------|------|----------|--------
+Facebook | [Time] | [Type] | [Copy preview] | [Image/Video desc] | [URL] | [#tags] | [Draft/Scheduled/Posted]
+Instagram | [Time] | [Type] | [Copy preview] | [Image/Video desc] | [URL] | [#tags] | [Draft/Scheduled/Posted]
+
+Sunday [Date]:
+Platform | Time | Content Type | Post Copy | Visual/Media | Link | Hashtags | Status
+---------|------|--------------|-----------|--------------|------|----------|--------
+Instagram | [Time] | [Type] | [Copy preview] | [Image/Video desc] | [URL] | [#tags] | [Draft/Scheduled/Posted]
+Facebook | [Time] | [Type] | [Copy preview] | [Image/Video desc] | [URL] | [#tags] | [Draft/Scheduled/Posted]
+
+CONTENT TYPES:
+• Promotional Post
+• Educational Content
+• Behind-the-Scenes
+• User-Generated Content
+• Testimonial/Review
+• Product Showcase
+• Blog Post Share
+• Video Content
+• Infographic
+• Poll/Question
+• Live Event Announcement
+• Story/Reel
+• Carousel Post
+• Trending Topic
+
+OPTIMAL POSTING TIMES BY PLATFORM:
+Facebook: [e.g., 1-4 PM Wed-Fri]
+Instagram: [e.g., 11 AM-1 PM Mon-Thu]
+Twitter: [e.g., 8 AM-10 AM, 6 PM-9 PM daily]
+LinkedIn: [e.g., 7-8 AM, 12 PM, 5-6 PM Tue-Thu]
+TikTok: [e.g., 6-10 AM, 7-11 PM]
+
+HASHTAG STRATEGY:
+
+Brand Hashtags (Always include):
+• [#YourBrand]
+• [#YourProductLine]
+• [#BrandTagline]
+
+Campaign Hashtags:
+• [#CampaignName]
+• [#SeasonalPromo]
+
+Trending/Industry Hashtags (Rotate):
+• [#IndustryTerm]
+• [#TrendingTopic]
+• [#CommunityHashtag]
+
+Platform-Specific Guidelines:
+• Instagram: 10-15 hashtags
+• Twitter: 1-2 hashtags
+• LinkedIn: 3-5 hashtags
+• TikTok: 4-8 hashtags
+
+CONTENT PILLARS:
+
+Pillar 1: Education (40% of content)
+Topics: [Industry tips, how-tos, tutorials]
+Goal: [Build authority and provide value]
+
+Pillar 2: Inspiration (25% of content)
+Topics: [Success stories, motivation, behind-the-scenes]
+Goal: [Connect emotionally with audience]
+
+Pillar 3: Promotion (20% of content)
+Topics: [Products, services, offers]
+Goal: [Drive conversions and sales]
+
+Pillar 4: Community (15% of content)
+Topics: [User-generated content, engagement posts, polls]
+Goal: [Build relationships and loyalty]
+
+CONTENT LIBRARY:
+
+Asset Type | File Name | Platform | Usage Rights | Date Created | Notes
+-----------|-----------|----------|--------------|--------------|-------
+Image | [filename.jpg] | [All/Specific] | [Owned/Licensed] | [Date] | [Notes]
+Video | [filename.mp4] | [All/Specific] | [Owned/Licensed] | [Date] | [Notes]
+Graphic | [filename.png] | [All/Specific] | [Owned/Licensed] | [Date] | [Notes]
+Template | [filename.psd] | [All/Specific] | [Owned/Licensed] | [Date] | [Notes]
+
+SPECIAL EVENTS & HOLIDAYS:
+
+Date | Event/Holiday | Planned Content | Platforms | Lead Time | Status
+-----|---------------|-----------------|-----------|-----------|--------
+[Date] | [Event name] | [Content description] | [Platforms] | [Days ahead] | [Status]
+[Date] | [Event name] | [Content description] | [Platforms] | [Days ahead] | [Status]
+[Date] | [Event name] | [Content description] | [Platforms] | [Days ahead] | [Status]
+
+ENGAGEMENT STRATEGY:
+
+Response Time Goals:
+• Comments: [Within X hours]
+• Direct Messages: [Within X hours]
+• Mentions: [Within X hours]
+
+Community Management:
+• Monitor brand mentions daily
+• Engage with user-generated content
+• Respond to all comments (positive and negative)
+• Share/repost relevant content from followers
+
+Influencer Partnerships:
+• [Influencer 1]: [Collaboration details]
+• [Influencer 2]: [Collaboration details]
+
+PAID PROMOTION SCHEDULE:
+
+Date Range | Platform | Campaign | Budget | Target Audience | Objective | Status
+-----------|----------|----------|--------|-----------------|-----------|--------
+[Dates] | [Platform] | [Campaign name] | $[Amount] | [Demographics/interests] | [Reach/Engagement/Conversions] | [Status]
+[Dates] | [Platform] | [Campaign name] | $[Amount] | [Demographics/interests] | [Reach/Engagement/Conversions] | [Status]
+
+PERFORMANCE METRICS TO TRACK:
+
+Engagement Metrics:
+• Likes: [Target per post]
+• Comments: [Target per post]
+• Shares: [Target per post]
+• Saves: [Target per post]
+• Engagement Rate: [Target %]
+
+Growth Metrics:
+• Follower Growth: [Target per month]
+• Reach: [Target impressions]
+• Profile Visits: [Target]
+
+Conversion Metrics:
+• Click-Through Rate: [Target %]
+• Website Clicks: [Target]
+• Conversions: [Target]
+• Revenue Attributed: $[Target]
+
+WEEKLY ANALYTICS REVIEW:
+
+Week Ending [Date]:
+Platform | Posts | Reach | Engagement | Top Post | CTR | New Followers
+---------|-------|-------|------------|----------|-----|---------------
+Facebook | [#] | [#] | [#] | [Description] | [%] | [#]
+Instagram | [#] | [#] | [#] | [Description] | [%] | [#]
+Twitter | [#] | [#] | [#] | [Description] | [%] | [#]
+LinkedIn | [#] | [#] | [#] | [Description] | [%] | [#]
+
+Key Insights:
+• [Insight 1]
+• [Insight 2]
+• [Insight 3]
+
+Actions for Next Week:
+• [Action 1]
+• [Action 2]
+• [Action 3]
+
+COMPETITOR ANALYSIS:
+
+Competitor | Platforms | Posting Freq | Top Content | Engagement Rate | Strategy Notes
+-----------|-----------|--------------|-------------|-----------------|----------------
+[Competitor 1] | [Platforms] | [X/week] | [Type] | [%] | [Observations]
+[Competitor 2] | [Platforms] | [X/week] | [Type] | [%] | [Observations]
+[Competitor 3] | [Platforms] | [X/week] | [Type] | [%] | [Observations]
+
+CONTENT APPROVAL WORKFLOW:
+
+1. Content Creation: [Team member name]
+2. First Review: [Team member name]
+3. Final Approval: [Team member name]
+4. Scheduling: [Team member name]
+5. Post-Publication Monitoring: [Team member name]
+
+Approval Deadlines:
+• Content due: [X days before posting]
+• First review: [X days before posting]
+• Final approval: [X days before posting]
+• Scheduled: [X days before posting]
+
+NOTES & IDEAS:
+
+Content Ideas to Develop:
+• [Idea 1]
+• [Idea 2]
+• [Idea 3]
+
+Lessons Learned:
+• [Learning 1]
+• [Learning 2]
+• [Learning 3]
+
+Upcoming Opportunities:
+• [Opportunity 1]
+• [Opportunity 2]
+
+Prepared by: _________________ Date: _______
+[Marketing Manager Name]
+    `
+  },
+  {
+    id: 'marketing-blog-post-outline',
+    title: 'Blog Post Outline Template',
+    description: 'Structured template for planning and outlining engaging blog posts with SEO optimization',
+    category: 'marketing',
+    downloadCount: 5420,
+    fileSize: '42.3 KB',
+    rating: 4.8,
+    tags: ['blog', 'content', 'writing', 'seo', 'outline'],
+    createdAt: '2024-01-09T10:30:00Z',
+    updatedAt: '2024-01-30T12:45:00Z',
+    content: `
+BLOG POST OUTLINE TEMPLATE
+
+POST INFORMATION:
+Working Title: [Blog Post Title]
+Author: [Author Name]
+Target Publish Date: [Date]
+Status: [Draft/In Review/Approved/Scheduled/Published]
+Blog Category: [Category]
+Tags: [Tag1, Tag2, Tag3, Tag4]
+Word Count Goal: [1500/2000/2500/3000] words
+
+CONTENT STRATEGY:
+
+Primary Goal:
+☐ Drive organic traffic
+☐ Generate leads
+☐ Build thought leadership
+☐ Educate audience
+☐ Promote product/service
+☐ Improve brand awareness
+☐ Other: [Specify]
+
+Target Audience:
+Primary Persona: [Persona name]
+• Demographics: [Age, role, industry]
+• Knowledge Level: [Beginner/Intermediate/Advanced]
+• Pain Points: [Specific challenges this post addresses]
+• Reading Intent: [What they hope to gain]
+
+SEO STRATEGY:
+
+Primary Keyword: [main keyword phrase]
+Search Volume: [monthly searches]
+Keyword Difficulty: [score/10]
+Current Ranking: [position or "not ranking"]
+
+Secondary Keywords:
+• [Secondary keyword 1]
+• [Secondary keyword 2]
+• [Secondary keyword 3]
+
+Long-Tail Keywords:
+• [Long-tail variation 1]
+• [Long-tail variation 2]
+• [Long-tail variation 3]
+
+Search Intent:
+☐ Informational (seeking knowledge)
+☐ Navigational (looking for specific site/page)
+☐ Commercial (researching before purchase)
+☐ Transactional (ready to take action)
+
+Competitor Analysis:
+Top 3 Ranking Articles:
+1. [URL] - [Strengths/Gaps]
+2. [URL] - [Strengths/Gaps]
+3. [URL] - [Strengths/Gaps]
+
+Our Differentiation:
+[How this post will be better/different]
+
+META DATA & SEO ELEMENTS:
+
+SEO Title (50-60 characters):
+[Compelling title with primary keyword]
+
+Meta Description (150-160 characters):
+[Engaging description with primary keyword and call-to-action]
+
+URL Slug:
+/blog/[keyword-rich-slug]
+
+Featured Image:
+Description: [What the image shows]
+Alt Text: [Descriptive alt text with keyword]
+Dimensions: [1200x630 for social sharing]
+Source: [Stock photo site/original/licensed]
+
+HEADLINE OPTIONS:
+
+Option 1: [Headline variation 1]
+Option 2: [Headline variation 2]
+Option 3: [Headline variation 3]
+Option 4: [Headline variation 4]
+
+Selected Headline: [Final headline choice]
+
+Subheadline (Optional):
+[Supporting headline that adds context]
+
+INTRODUCTION (150-200 words)
+
+Hook (1-2 sentences):
+[Attention-grabbing opening - statistic, question, bold statement, or story]
+
+Problem/Pain Point:
+[Clearly state the problem or challenge the reader faces]
+
+Promise/Solution Preview:
+[What the reader will learn or gain by reading this post]
+
+Credibility Statement:
+[Why you/your company is qualified to address this topic]
+
+Thesis Statement:
+[Main argument or central point of the blog post]
+
+Preview of Main Points:
+In this post, you'll discover:
+• [Key point 1]
+• [Key point 2]
+• [Key point 3]
+
+MAIN CONTENT OUTLINE:
+
+H2: [Section 1 Heading - Include keyword variation]
+Opening paragraph: [Brief introduction to this section]
+
+H3: [Subpoint 1.1]
+• Key point: [Main idea]
+• Supporting details: [Explanation]
+• Example: [Specific example or scenario]
+• Data/Statistic: [Relevant data with source]
+
+H3: [Subpoint 1.2]
+• Key point: [Main idea]
+• Supporting details: [Explanation]
+• Quote: "[Expert quote]" - [Source, Title]
+• Visual: [Describe chart/image needed]
+
+H3: [Subpoint 1.3]
+• Key point: [Main idea]
+• Supporting details: [Explanation]
+• Case study: [Brief description of example]
+• Takeaway: [Key lesson]
+
+---
+
+H2: [Section 2 Heading - Include keyword variation]
+Opening paragraph: [Brief introduction to this section]
+
+H3: [Subpoint 2.1]
+• Key point: [Main idea]
+• Supporting details: [Explanation]
+• List:
+  1. [Item 1]
+  2. [Item 2]
+  3. [Item 3]
+
+H3: [Subpoint 2.2]
+• Key point: [Main idea]
+• How-to steps:
+  Step 1: [Action]
+  Step 2: [Action]
+  Step 3: [Action]
+• Pro tip: [Insider advice]
+
+H3: [Subpoint 2.3]
+• Key point: [Main idea]
+• Common mistake: [What to avoid]
+• Best practice: [Recommended approach]
+• Tool/Resource: [Helpful tool mention]
+
+---
+
+H2: [Section 3 Heading - Include keyword variation]
+Opening paragraph: [Brief introduction to this section]
+
+H3: [Subpoint 3.1]
+• Key point: [Main idea]
+• Supporting details: [Explanation]
+• Real-world example: [Specific scenario]
+• Visual: [Infographic/diagram description]
+
+H3: [Subpoint 3.2]
+• Key point: [Main idea]
+• Supporting details: [Explanation]
+• Comparison: [X vs. Y analysis]
+• Recommendation: [Specific advice]
+
+H3: [Subpoint 3.3]
+• Key point: [Main idea]
+• Supporting details: [Explanation]
+• Checklist:
+  ☐ [Item 1]
+  ☐ [Item 2]
+  ☐ [Item 3]
+
+---
+
+[Add additional H2 sections as needed]
+
+SUPPORTING ELEMENTS:
+
+Statistics & Data Points:
+• [Statistic 1] - Source: [URL]
+• [Statistic 2] - Source: [URL]
+• [Statistic 3] - Source: [URL]
+
+Expert Quotes:
+• "[Quote 1]" - [Expert Name, Title, Company]
+• "[Quote 2]" - [Expert Name, Title, Company]
+
+Examples & Case Studies:
+• [Company/Person]: [Brief description of their success/failure]
+• [Company/Person]: [Brief description of their success/failure]
+
+Visual Content Needed:
+☐ Featured image
+☐ Header image for introduction
+☐ [Infographic about X topic]
+☐ [Screenshot showing Y]
+☐ [Diagram illustrating Z process]
+☐ [Chart/graph with data]
+☐ [Comparison table]
+☐ [Pull quote graphic]
+
+INTERNAL LINKS (3-5 recommended):
+
+• [Anchor text 1] → [URL to related blog post]
+• [Anchor text 2] → [URL to pillar content]
+• [Anchor text 3] → [URL to product/service page]
+• [Anchor text 4] → [URL to resource page]
+• [Anchor text 5] → [URL to about/contact page]
+
+EXTERNAL LINKS (2-4 recommended):
+
+• [Anchor text 1] → [URL to authoritative source]
+• [Anchor text 2] → [URL to research/study]
+• [Anchor text 3] → [URL to tool/resource]
+• [Anchor text 4] → [URL to industry publication]
+
+CONCLUSION (150-200 words)
+
+Summary of Main Points:
+Recap the key takeaways:
+• [Main point 1]
+• [Main point 2]
+• [Main point 3]
+
+Final Thought/Insight:
+[Memorable closing statement or future outlook]
+
+Call-to-Action (CTA):
+
+Primary CTA:
+[What you want the reader to do next]
+
+Options:
+☐ Download [resource name]
+☐ Sign up for [newsletter/webinar/trial]
+☐ Request [consultation/demo]
+☐ Read [related article]
+☐ Share on social media
+☐ Leave a comment
+☐ Try [product/service]
+
+CTA Copy:
+[Compelling call-to-action text]
+
+CTA Button/Link Text:
+[Action-oriented button text]
+
+CTA Link URL:
+[Destination URL]
+
+ADDITIONAL COMPONENTS:
+
+Key Takeaways Box (Optional):
+Place near top or bottom of post
+• [Takeaway 1]
+• [Takeaway 2]
+• [Takeaway 3]
+• [Takeaway 4]
+
+FAQ Section (Optional but recommended for SEO):
+Q: [Common question 1]
+A: [Clear, concise answer]
+
+Q: [Common question 2]
+A: [Clear, concise answer]
+
+Q: [Common question 3]
+A: [Clear, concise answer]
+
+Table of Contents (For posts 2000+ words):
+• [Link to section 1]
+• [Link to section 2]
+• [Link to section 3]
+
+Author Bio:
+[Author name] is [brief credentials and expertise]. [One sentence about their background]. [Link to author page or social profile]
+
+Related Posts (3-5):
+• [Related post title 1]
+• [Related post title 2]
+• [Related post title 3]
+
+Lead Magnet/Content Upgrade (Optional):
+[Downloadable checklist/template/guide related to post topic]
+
+PROMOTION STRATEGY:
+
+Email Newsletter:
+Subject Line: [Subject]
+Preview Text: [Preview]
+Email Excerpt: [First 2-3 paragraphs]
+CTA: [Read More button]
+Send Date: [Date]
+Segment: [Audience segment]
+
+Social Media Posts:
+
+LinkedIn:
+Post Copy: [Copy with hook]
+Visual: [Image/graphic]
+Hashtags: [#tag1 #tag2 #tag3]
+Post Time: [Day/Time]
+
+Twitter/X:
+Tweet 1: [Copy with link]
+Tweet 2: [Pull quote + link]
+Tweet 3: [Statistic + link]
+Hashtags: [#tag1 #tag2]
+Schedule: [Day/Time for each]
+
+Facebook:
+Post Copy: [Copy]
+Visual: [Image]
+Post Time: [Day/Time]
+
+Instagram:
+Caption: [Copy]
+Visual: [Image design]
+Hashtags: [Up to 30 hashtags]
+Story: [Yes/No + design]
+Post Time: [Day/Time]
+
+Paid Promotion:
+☐ Google Ads (budget: $[amount])
+☐ Facebook/Instagram Ads (budget: $[amount])
+☐ LinkedIn Sponsored Content (budget: $[amount])
+☐ Reddit Ads (budget: $[amount])
+Target Audience: [Demographics/interests]
+
+Outreach & Distribution:
+• Email to [influencer name] for potential share
+• Submit to [content aggregator]
+• Share in [LinkedIn/Facebook group]
+• Post in [Slack community]
+• Send to [industry newsletter]
+
+RESEARCH SOURCES:
+
+Primary Sources:
+1. [Source title/URL] - [Key information to use]
+2. [Source title/URL] - [Key information to use]
+3. [Source title/URL] - [Key information to use]
+
+Secondary Sources:
+• [Source title/URL]
+• [Source title/URL]
+• [Source title/URL]
+
+Tools/Data Sources:
+• [Tool/database used for research]
+• [Survey/report referenced]
+
+CONTENT CHECKLIST:
+
+Pre-Writing:
+☐ Keyword research completed
+☐ Competitor content analyzed
+☐ Outline reviewed and approved
+☐ Sources and data gathered
+☐ Visuals planned
+
+Writing:
+☐ Introduction written (includes hook, problem, promise)
+☐ All H2/H3 sections completed
+☐ Conclusion written with strong CTA
+☐ Word count target achieved
+☐ Primary keyword used naturally (avoid keyword stuffing)
+☐ Secondary keywords incorporated
+☐ Examples and data included
+☐ Internal links added (3-5)
+☐ External links added (2-4)
+☐ Transition sentences between sections
+
+Editing & Optimization:
+☐ Proofread for grammar and spelling
+☐ Checked for readability (Hemingway/Grammarly)
+☐ Sentences and paragraphs kept short
+☐ Removed jargon or explained technical terms
+☐ Active voice used (passive minimized)
+☐ Formatted with bullets, lists, bold text
+☐ Mobile-friendly formatting verified
+
+SEO Elements:
+☐ Primary keyword in title (preferably at beginning)
+☐ Primary keyword in first 100 words
+☐ Primary keyword in URL slug
+☐ Primary keyword in meta description
+☐ Keywords in at least 2-3 H2 headings
+☐ Images added with descriptive alt text
+☐ Featured image optimized (compressed)
+☐ Meta title is 50-60 characters
+☐ Meta description is 150-160 characters
+☐ Internal link structure implemented
+☐ External authoritative sources linked
+☐ Content length competitive with top-ranking posts
+☐ Schema markup added (Article, FAQ, HowTo if applicable)
+
+Visual Elements:
+☐ Featured image created/selected
+☐ All images optimized and compressed
+☐ Alt text added to all images
+☐ Infographics/charts created
+☐ Screenshots captured and annotated
+☐ Images properly attributed/licensed
+
+Final Review:
+☐ Fact-checking completed
+☐ All links tested (no broken links)
+☐ CTA included and link works
+☐ Author bio added
+☐ Related posts suggested
+☐ Categories and tags assigned
+☐ Preview on mobile and desktop
+☐ Legal/compliance review (if needed)
+☐ Final approval received
+
+Post-Publication:
+☐ Post published at scheduled time
+☐ Shared on all social media channels
+☐ Email newsletter sent
+☐ Submitted to search console for indexing
+☐ Shared in relevant communities
+☐ Outreach emails sent
+☐ Analytics tracking verified
+☐ Monitor for comments and engagement
+☐ Respond to comments within 24 hours
+☐ Track performance metrics
+
+PERFORMANCE TRACKING:
+
+Success Metrics:
+• Organic traffic: [Target monthly visitors]
+• Time on page: [Target minutes:seconds]
+• Bounce rate: [Target %]
+• Social shares: [Target number]
+• Comments: [Target number]
+• Backlinks: [Target number]
+• Email signups: [Target number]
+• Downloads: [Target number]
+• Keyword rankings: [Target positions]
+• Conversion rate: [Target %]
+
+Tracking Tools:
+• Google Analytics
+• Google Search Console
+• Social media analytics
+• Email marketing platform
+• Rank tracking tool
+
+Review Schedule:
+• 1 week post-publication: Initial performance review
+• 1 month: Full performance analysis
+• 3 months: Optimization review
+• 6 months: Update/refresh assessment
+
+Optimization Opportunities:
+☐ Update with new data/statistics
+☐ Add new sections based on questions/comments
+☐ Improve underperforming CTAs
+☐ Add more visuals
+☐ Update internal links
+☐ Refresh introduction
+☐ Target new keywords
+
+NOTES & IDEAS:
+
+Content Spin-Off Ideas:
+• [Related topic 1 for future post]
+• [Related topic 2 for future post]
+• [Infographic version]
+• [Video script adaptation]
+• [Social media carousel]
+
+Questions to Address:
+• [Question raised during research]
+• [Question from audience]
+
+Additional Resources Needed:
+• [Resource 1]
+• [Resource 2]
+
+APPROVALS:
+
+Created by: _________________ Date: _______
+[Author Name]
+
+Reviewed by: _________________ Date: _______
+[Editor Name]
+
+SEO Approved by: _________________ Date: _______
+[SEO Specialist Name]
+
+Final Approval by: _________________ Date: _______
+[Marketing Manager Name]
+    `
+  },
+  {
+    id: 'marketing-email-campaign',
+    title: 'Email Campaign Template',
+    description: 'Complete email marketing campaign template with strategy, copy framework, and tracking',
+    category: 'marketing',
+    downloadCount: 7340,
+    fileSize: '46.7 KB',
+    rating: 4.9,
+    tags: ['email', 'campaign', 'marketing', 'newsletter', 'automation'],
+    createdAt: '2024-01-11T13:15:00Z',
+    updatedAt: '2024-02-01T09:30:00Z',
+    content: `
+EMAIL CAMPAIGN TEMPLATE
+
+CAMPAIGN OVERVIEW:
+Campaign Name: [Campaign Name]
+Campaign Type: ☐ Newsletter ☐ Promotional ☐ Drip Sequence ☐ Welcome Series ☐ Re-engagement ☐ Event ☐ Product Launch
+Campaign Owner: [Name]
+Date Created: [Date]
+Launch Date: [Date]
+End Date: [Date if applicable]
+
+CAMPAIGN OBJECTIVES:
+
+Primary Goal:
+☐ Generate sales/revenue
+☐ Drive website traffic
+☐ Nurture leads
+☐ Increase engagement
+☐ Build brand awareness
+☐ Event registrations
+☐ Content downloads
+☐ Collect feedback/reviews
+☐ Other: [Specify]
+
+Success Metrics (SMART Goals):
+• Open Rate Target: [%] (Industry avg: 15-25%)
+• Click-Through Rate Target: [%] (Industry avg: 2-5%)
+• Conversion Rate Target: [%]
+• Revenue Target: $[Amount]
+• List Growth: [Number of new subscribers]
+• Unsubscribe Rate Limit: < [%] (Keep under 0.5%)
+
+TARGET AUDIENCE:
+
+Segment Name: [Segment identifier]
+List Size: [Number of recipients]
+
+Demographics:
+• Age Range: [Range]
+• Location: [Geographic targeting]
+• Gender: [If relevant]
+• Job Title/Role: [If B2B]
+• Income Level: [If relevant]
+• Company Size: [If B2B]
+
+Behavioral Criteria:
+• Purchase history: [Recent buyers, never purchased, etc.]
+• Website activity: [Pages visited, time on site]
+• Email engagement: [Openers, clickers, inactive]
+• Lead score: [Range]
+• Cart abandonment: [Yes/No]
+• Product interests: [Categories/products]
+
+Psychographics:
+• Interests: [List relevant interests]
+• Pain points: [Key challenges]
+• Goals: [What they want to achieve]
+• Values: [What matters to them]
+
+CAMPAIGN STRATEGY:
+
+Email Sequence Structure:
+This campaign consists of [#] emails sent over [timeframe]
+
+Email #1: [Purpose/Name]
+Trigger/Send Date: [Date or trigger event]
+Send Time: [Time + Timezone]
+Delay from previous: [N/A or X days/hours]
+
+Email #2: [Purpose/Name]
+Trigger/Send Date: [Date or trigger event]
+Send Time: [Time + Timezone]
+Delay from previous: [X days/hours]
+
+Email #3: [Purpose/Name]
+Trigger/Send Date: [Date or trigger event]
+Send Time: [Time + Timezone]
+Delay from previous: [X days/hours]
+
+[Add more emails as needed]
+
+---
+
+EMAIL #1: [EMAIL NAME/PURPOSE]
+
+SUBJECT LINE:
+
+Option 1: [Subject line variation 1]
+Option 2: [Subject line variation 2]
+Option 3: [Subject line variation 3]
+
+Selected Subject Line: [Final choice]
+
+Subject Line Best Practices Check:
+☐ Under 50 characters (mobile-friendly)
+☐ Includes personalization token ({{First_Name}})
+☐ Creates curiosity or urgency
+☐ Clear value proposition
+☐ No spam trigger words (FREE, !!!, ACT NOW)
+☐ Action-oriented
+☐ A/B test variant created
+
+PREVIEW TEXT (Preheader):
+[40-100 characters that complement subject line]
+
+SENDER INFORMATION:
+From Name: [Company Name] or [Personal Name from Company]
+From Email: [email@company.com]
+Reply-To Email: [reply@company.com]
+
+EMAIL HEADER:
+• Logo: [Company logo with link to homepage]
+• Header Image: [Optional hero image]
+• Navigation: [Home | Shop | Blog | Contact] (optional)
+
+EMAIL BODY CONTENT:
+
+Greeting:
+Hi {{First_Name}},
+
+or
+
+Hello,
+
+or
+
+Hi there,
+
+Opening Hook (First paragraph):
+[Attention-grabbing opening that relates to recipient's interests or pain points. Make it personal and relevant. 2-3 sentences max.]
+
+Value Proposition:
+[Clear statement of what's in it for them. Why should they keep reading?]
+
+Main Content:
+
+[SECTION 1 HEADING]
+[Content paragraph explaining the main message. Keep paragraphs short - 2-3 sentences max.]
+
+Key Points (use bullets for scannability):
+• [Benefit/Feature 1]
+• [Benefit/Feature 2]
+• [Benefit/Feature 3]
+
+[SECTION 2 HEADING - if needed]
+[Additional content paragraph]
+
+Social Proof (if applicable):
+"[Customer testimonial or impressive statistic]"
+- [Customer Name, Company]
+
+or
+
+[X,XXX] customers have already [achieved result]
+
+Visual Elements:
+• Hero Image: [Description]
+• Product Image: [Description]
+• Icon/Graphic: [Description]
+• GIF/Animation: [Description]
+
+Primary Call-to-Action (CTA):
+
+CTA Button Text: [Action verb + benefit, e.g., "Get My Free Guide"]
+Button Color: [Color - high contrast]
+Button Size: [Large, thumb-friendly]
+Link URL: [Full URL with UTM parameters]
+Placement: [After which section]
+
+CTA Supporting Copy:
+[1-2 sentences before CTA button that reinforce value and create urgency]
+
+Secondary CTA (Optional):
+Link Text: [e.g., "Learn more about X"]
+Link URL: [URL]
+Placement: [Location in email]
+
+Closing Paragraph:
+[Friendly closing that reinforces the CTA or adds a personal touch]
+
+Signature:
+Best regards,
+[Name]
+[Title]
+[Company Name]
+
+or
+
+Cheers,
+The [Company Name] Team
+
+P.S. [Powerful postscript that reinforces key benefit, adds urgency, or includes additional offer]
+
+EMAIL FOOTER:
+
+Contact Information:
+[Company Name]
+[Street Address]
+[City, State ZIP Code]
+[Phone Number]
+
+Social Media Links:
+[Facebook Icon] [Twitter Icon] [LinkedIn Icon] [Instagram Icon]
+
+Footer Links:
+• [Unsubscribe]
+• [Update Email Preferences]
+• [View in Browser]
+• [Privacy Policy]
+• [Contact Us]
+
+Legal/Compliance Text:
+"You're receiving this email because you [signed up/made a purchase/attended event]. If you no longer wish to receive these emails, you can [unsubscribe link] at any time."
+
+"[Company Name], [Full Address]"
+
+---
+
+EMAIL #2: [EMAIL NAME/PURPOSE]
+
+[Repeat structure for second email]
+
+Subject Line: [Subject]
+Preview Text: [Preview]
+[Full email copy following same structure]
+
+---
+
+EMAIL #3: [EMAIL NAME/PURPOSE]
+
+[Repeat structure for third email]
+
+---
+
+A/B TESTING STRATEGY:
+
+Test Element:
+☐ Subject line
+☐ From name (Company vs. Person)
+☐ Preview text
+☐ Email copy (short vs. long)
+☐ CTA button text
+☐ CTA button color
+☐ Send time
+☐ Personalization level
+☐ Image vs. text-only
+☐ Number of CTAs (single vs. multiple)
+
+Test Details:
+Variant A: [Description]
+Variant B: [Description]
+
+Sample Size: [% of list, e.g., 10% to A, 10% to B]
+Test Duration: [How long before declaring winner]
+Winner Criteria: [Which metric determines winner]
+Winner Rollout: Send to remaining [80%] of list
+
+TECHNICAL SETUP:
+
+Email Service Provider: [Platform name - Mailchimp, HubSpot, etc.]
+Template ID: [Template identifier]
+Campaign ID: [ID number]
+List/Segment ID: [ID]
+
+Personalization Tokens:
+• {{First_Name}}
+• {{Company_Name}}
+• {{Last_Purchase_Product}}
+• {{Days_Since_Purchase}}
+• {{Custom_Field}}
+
+Dynamic Content Blocks:
+• [Show Block A to Segment X]
+• [Show Block B to Segment Y]
+• [Product recommendations based on browse history]
+• [Location-specific content]
+
+Tracking & UTM Parameters:
+URL structure: [URL]?utm_source=[source]&utm_medium=email&utm_campaign=[campaign_name]&utm_content=[content_identifier]
+
+Example:
+https://yoursite.com/product?utm_source=mailchimp&utm_medium=email&utm_campaign=summer_sale_2024&utm_content=cta_button
+
+Conversion Tracking:
+☐ Goal URL set up
+☐ Event tracking configured
+☐ Revenue tracking enabled
+☐ Email platform connected to analytics
+
+MOBILE OPTIMIZATION:
+
+Requirements:
+☐ Responsive design (single column)
+☐ Minimum 14px font size
+☐ CTA buttons at least 44x44px (thumb-friendly)
+☐ Images scale to fit screen
+☐ Compressed images (<200KB total)
+☐ Avoid small tap targets close together
+☐ Test on iOS Mail app
+☐ Test on Gmail app (Android)
+☐ Test on Outlook mobile
+
+DELIVERABILITY CHECKLIST:
+
+Authentication:
+☐ SPF record verified
+☐ DKIM signature enabled
+☐ DMARC policy set
+☐ Domain reputation checked
+
+List Hygiene:
+☐ Hard bounces removed
+☐ Unsubscribes processed
+☐ Invalid emails removed
+☐ Inactive subscribers (1+ year) segmented
+☐ Re-engagement campaign sent to inactive users
+
+Pre-Send Testing:
+☐ Spam score checked (<5 recommended)
+☐ All links tested and working
+☐ Images loading properly
+☐ Alt text added to all images
+☐ Plain text version created
+☐ Tested in Gmail
+☐ Tested in Outlook
+☐ Tested in Apple Mail
+☐ Tested in Yahoo Mail
+☐ Mobile preview checked (iOS and Android)
+☐ Personalization tokens tested
+☐ Unsubscribe link tested
+☐ Legal compliance verified (CAN-SPAM/GDPR)
+
+Content Quality:
+☐ Text-to-image ratio balanced (60:40)
+☐ No spam trigger words in subject/body
+☐ Not using all caps or excessive punctuation!!!
+☐ Link count reasonable (<10 links)
+☐ Proper HTML structure
+☐ No broken formatting
+
+AUTOMATION TRIGGERS (If applicable):
+
+Trigger Event:
+☐ User signs up
+☐ Purchase made
+☐ Cart abandoned
+☐ Downloads resource
+☐ Clicks specific link
+☐ Visits specific page
+☐ Reaches lead score threshold
+☐ Birthday/Anniversary
+☐ Subscription renewal date
+☐ X days of inactivity
+☐ Tag added/removed
+
+Trigger Conditions:
+[Specific conditions that must be met]
+
+Wait Time:
+Send email [immediately / X hours / X days] after trigger event
+
+Exit Conditions:
+User exits sequence if:
+• [Condition 1, e.g., Makes a purchase]
+• [Condition 2, e.g., Unsubscribes]
+• [Condition 3, e.g., Opens competitor email]
+
+CAMPAIGN BUDGET:
+
+Email Design/Template: $[Amount]
+Copywriting: $[Amount]
+Images/Graphics: $[Amount]
+Email Service Provider: $[Monthly cost]
+A/B Testing Tools: $[Amount]
+List Cleaning Service: $[Amount]
+Total Campaign Cost: $[Amount]
+
+Expected ROI: [Revenue target] / [Total cost] = [X]x ROI
+
+TIMELINE & MILESTONES:
+
+[Date] - Campaign strategy approved
+[Date] - Copy drafted
+[Date] - Design completed
+[Date] - Internal review
+[Date] - Revisions completed
+[Date] - Final approval
+[Date] - Setup in ESP
+[Date] - Testing completed
+[Date] - Campaign launched
+[Date] - Mid-campaign check
+[Date] - Campaign concludes
+[Date] - Performance review meeting
+
+RISK MITIGATION:
+
+Potential Risks & Backup Plans:
+• Low open rate: [Have subject line variants ready]
+• High unsubscribe rate: [Pause send, review content]
+• Technical issues: [Have backup send date]
+• Deliverability problems: [Monitor and adjust]
+• Negative feedback: [Response protocol ready]
+
+PERFORMANCE TRACKING:
+
+Delivery Metrics:
+• Emails Sent: [Target #]
+• Delivered: [#]
+• Bounced: [#]
+• Bounce Rate: [%]
+
+Engagement Metrics:
+• Opens: [#]
+• Open Rate: [%]
+• Unique Opens: [#]
+• Clicks: [#]
+• Click-Through Rate (CTR): [%]
+• Click-to-Open Rate (CTOR): [%]
+
+Conversion Metrics:
+• Conversions: [#]
+• Conversion Rate: [%]
+• Revenue Generated: $[Amount]
+• Average Order Value: $[Amount]
+• Revenue Per Email: $[Amount]
+
+List Health:
+• Unsubscribes: [#]
+• Unsubscribe Rate: [%]
+• Spam Complaints: [#]
+• Complaint Rate: [%]
+
+Engagement by Segment:
+Segment | Opens | CTR | Conversions | Revenue
+--------|-------|-----|-------------|--------
+[Segment 1] | [%] | [%] | [#] | $[Amount]
+[Segment 2] | [%] | [%] | [#] | $[Amount]
+[Segment 3] | [%] | [%] | [#] | $[Amount]
+
+Device Stats:
+• Desktop: [%]
+• Mobile: [%]
+• Tablet: [%]
+
+Email Client Stats:
+• Gmail: [%]
+• Apple Mail: [%]
+• Outlook: [%]
+• Other: [%]
+
+Geographic Performance:
+[If relevant - which locations had best engagement]
+
+POST-CAMPAIGN ANALYSIS:
+
+What Worked Well:
+• [Success 1 - with specific data]
+• [Success 2 - with specific data]
+• [Success 3 - with specific data]
+
+What Didn't Work:
+• [Challenge 1 - with specific data]
+• [Challenge 2 - with specific data]
+
+Key Learnings:
+• [Learning 1]
+• [Learning 2]
+• [Learning 3]
+
+Optimization Recommendations:
+• [Recommendation for future campaigns]
+• [Recommendation for future campaigns]
+• [Recommendation for future campaigns]
+
+FOLLOW-UP ACTIONS:
+
+☐ Segment engaged users (openers/clickers) for next campaign
+☐ Create re-engagement sequence for non-openers
+☐ Remove hard bounces from list
+☐ Update email preferences based on feedback
+☐ Document learnings in campaign playbook
+☐ Share results with team
+☐ Plan follow-up campaign based on insights
+☐ Thank customers who converted
+☐ Survey non-converters for feedback
+
+APPROVALS:
+
+Campaign Strategy:
+Approved by: _________________ Date: _______
+[Marketing Manager]
+
+Email Copy:
+Approved by: _________________ Date: _______
+[Content Lead]
+
+Email Design:
+Approved by: _________________ Date: _______
+[Design Lead]
+
+Legal/Compliance:
+Approved by: _________________ Date: _______
+[Legal/Compliance Officer]
+
+Final Launch Approval:
+Approved by: _________________ Date: _______
+[VP Marketing/CMO]
+
+NOTES & ADDITIONAL DETAILS:
+[Space for any additional campaign notes, special considerations, or context]
+    `
+  }
+];
+
+// Add marketing templates to the main templates array
+templates.push(...marketingTemplates);
+
 class DocumentService {
   getTemplates(): DocumentTemplate[] {
     return templates;
