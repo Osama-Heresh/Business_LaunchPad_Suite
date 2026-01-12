@@ -1,4 +1,4 @@
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, useCallback, useEffect } from 'react';
 import { Search, Download, Eye, Edit, Trash2, Plus, Filter } from 'lucide-react';
 import { documentService } from '../services/documentService';
 import TemplatePreview from '../components/TemplatePreview';
@@ -11,8 +11,9 @@ const Templates: React.FC = () => {
   const [previewTemplate, setPreviewTemplate] = useState<any>(null);
   const [showUpload, setShowUpload] = useState(false);
   const [isAdmin] = useState(true); // In real app, get from auth context
+  const [isLoading, setIsLoading] = useState(true);
 
-  const categories = [
+  const categories = useMemo(() => [
     { id: 'all', name: 'All Templates', color: 'from-gray-500 to-gray-600', count: 0 },
     { id: 'hr', name: 'Human Resources (HR)', color: 'from-blue-500 to-blue-600', count: 0 },
     { id: 'finance', name: 'Finance & Accounting', color: 'from-green-500 to-green-600', count: 0 },
@@ -22,17 +23,26 @@ const Templates: React.FC = () => {
     { id: 'it', name: 'IT & Operations', color: 'from-cyan-500 to-cyan-600', count: 0 },
     { id: 'project', name: 'Client & Project Management', color: 'from-indigo-500 to-indigo-600', count: 0 },
     { id: 'strategy', name: 'Business Strategy & Planning', color: 'from-orange-500 to-orange-600', count: 0 }
-  ];
+  ], []);
 
-  const templates = documentService.getTemplates();
+  const templates = useMemo(() => documentService.getTemplates(), []);
+
+  useEffect(() => {
+    // Simulate loading delay and set loading to false once templates are ready
+    const timer = setTimeout(() => setIsLoading(false), 100);
+    return () => clearTimeout(timer);
+  }, [templates]);
 
   // Update category counts
-  const categoriesWithCounts = categories.map(category => ({
-    ...category,
-    count: category.id === 'all' 
-      ? templates.length 
-      : templates.filter(t => t.category === category.id).length
-  }));
+  const categoriesWithCounts = useMemo(() =>
+    categories.map(category => ({
+      ...category,
+      count: category.id === 'all'
+        ? templates.length
+        : templates.filter(t => t.category === category.id).length
+    })),
+    [categories, templates]
+  );
 
   const filteredTemplates = useMemo(() => {
     let filtered = templates;
@@ -68,7 +78,7 @@ const Templates: React.FC = () => {
     return filtered;
   }, [templates, selectedCategory, searchTerm, sortBy]);
 
-  const handleDownload = async (template: any) => {
+  const handleDownload = useCallback(async (template: any) => {
     try {
       await documentService.generateDocx(template, {});
       // Update download count
@@ -76,18 +86,29 @@ const Templates: React.FC = () => {
     } catch (error) {
       console.error('Download failed:', error);
     }
-  };
+  }, []);
 
-  const handleDelete = (templateId: string) => {
+  const handleDelete = useCallback((templateId: string) => {
     if (window.confirm('Are you sure you want to delete this template?')) {
       // In real app, call API to delete template
       console.log('Delete template:', templateId);
     }
-  };
+  }, []);
 
-  const getCategoryInfo = (categoryId: string) => {
+  const getCategoryInfo = useCallback((categoryId: string) => {
     return categoriesWithCounts.find(cat => cat.id === categoryId) || categoriesWithCounts[0];
-  };
+  }, [categoriesWithCounts]);
+
+  if (isLoading) {
+    return (
+      <div className="min-h-screen bg-gray-50 flex items-center justify-center">
+        <div className="text-center">
+          <div className="inline-block animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600 mb-4"></div>
+          <p className="text-gray-600">Loading templates...</p>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div className="min-h-screen bg-gray-50">
