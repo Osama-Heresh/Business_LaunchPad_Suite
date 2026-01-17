@@ -16899,6 +16899,2285 @@ NOTES SECTION
 
 [Additional space for general notes, observations, or comments]
     `
+  },
+  {
+    id: 'pm-client-feedback',
+    title: 'Client Feedback Form',
+    description: 'Structured form for gathering client feedback on project deliverables and performance',
+    category: 'project-management',
+    downloadCount: 1156,
+    fileSize: '42.8 KB',
+    rating: 4.7,
+    tags: ['feedback', 'client', 'evaluation', 'survey', 'quality'],
+    createdAt: '2024-01-19T11:00:00Z',
+    updatedAt: '2024-01-30T15:30:00Z',
+    content: `
+CLIENT FEEDBACK FORM
+
+═══════════════════════════════════════════════════════════════════════════════
+
+FORM INFORMATION
+
+Form ID: [Form-###]
+Date Submitted: [Date]
+Project Name: [Project Name]
+Project ID: [Project ID]
+Feedback Period: [Start Date] to [End Date]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+CLIENT INFORMATION
+
+Company Name: [Company Name]
+Industry: [Industry]
+Company Size: [Number of employees]
+
+Primary Contact:
+Name: [Full Name]
+Title: [Job Title]
+Department: [Department]
+Email: [Email Address]
+Phone: [Phone Number]
+
+Alternative Contact (if applicable):
+Name: [Full Name]
+Title: [Job Title]
+Email: [Email Address]
+Phone: [Phone Number]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+PROJECT DETAILS
+
+Project Title: [Project Name]
+Project Type: ☐ Development  ☐ Consulting  ☐ Implementation  ☐ Support  ☐ Other: _______
+Start Date: [Date]
+Completion/Review Date: [Date]
+Project Duration: [Number] weeks/months
+Project Budget: $[Amount]
+
+Project Manager: [Name]
+Account Manager: [Name]
+Team Size: [Number] people
+
+Project Phase:
+☐ Kickoff
+☐ Planning
+☐ Execution
+☐ Testing/QA
+☐ Deployment
+☐ Post-Launch Support
+☐ Project Complete
+
+═══════════════════════════════════════════════════════════════════════════════
+
+OVERALL SATISFACTION
+
+1. Overall Project Satisfaction
+
+How satisfied are you with the overall project outcome?
+
+☐ 5 - Very Satisfied
+☐ 4 - Satisfied
+☐ 3 - Neutral
+☐ 2 - Dissatisfied
+☐ 1 - Very Dissatisfied
+
+Please explain your rating:
+_____________________________________________________________________________
+_____________________________________________________________________________
+_____________________________________________________________________________
+
+2. Value for Investment
+
+Do you feel you received good value for your investment?
+
+☐ 5 - Excellent Value
+☐ 4 - Good Value
+☐ 3 - Fair Value
+☐ 2 - Poor Value
+☐ 1 - Very Poor Value
+
+Comments:
+_____________________________________________________________________________
+_____________________________________________________________________________
+
+3. Would you work with us again?
+
+☐ Definitely
+☐ Probably
+☐ Not Sure
+☐ Probably Not
+☐ Definitely Not
+
+Why or why not?
+_____________________________________________________________________________
+_____________________________________________________________________________
+_____________________________________________________________________________
+
+4. Would you recommend us to others?
+
+Net Promoter Score (0-10): On a scale of 0-10, how likely are you to recommend our services to a colleague or peer?
+
+☐ 0  ☐ 1  ☐ 2  ☐ 3  ☐ 4  ☐ 5  ☐ 6  ☐ 7  ☐ 8  ☐ 9  ☐ 10
+(Not at all likely)                                    (Extremely likely)
+
+What is the primary reason for your score?
+_____________________________________________________________________________
+_____________________________________________________________________________
+_____________________________________________________________________________
+
+═══════════════════════════════════════════════════════════════════════════════
+
+DELIVERABLES & QUALITY
+
+5. Quality of Deliverables
+
+How would you rate the quality of the deliverables provided?
+
+☐ 5 - Exceptional Quality (Exceeded expectations)
+☐ 4 - High Quality (Met expectations)
+☐ 3 - Acceptable Quality (Mostly met expectations)
+☐ 2 - Below Expectations
+☐ 1 - Poor Quality
+
+Specific feedback on deliverables:
+_____________________________________________________________________________
+_____________________________________________________________________________
+_____________________________________________________________________________
+
+6. Completeness of Deliverables
+
+Were all promised deliverables provided?
+
+☐ Yes, all deliverables were provided
+☐ Most deliverables were provided
+☐ Some deliverables were missing
+☐ Many deliverables were missing
+
+If any deliverables were missing or incomplete, please specify:
+_____________________________________________________________________________
+_____________________________________________________________________________
+
+7. Accuracy and Attention to Detail
+
+How would you rate the accuracy and attention to detail in the work?
+
+☐ 5 - Excellent
+☐ 4 - Good
+☐ 3 - Adequate
+☐ 2 - Needs Improvement
+☐ 1 - Poor
+
+Examples or comments:
+_____________________________________________________________________________
+_____________________________________________________________________________
+
+8. Innovation and Creativity
+
+Did our team bring innovative ideas and creative solutions to your project?
+
+☐ 5 - Highly innovative
+☐ 4 - Innovative
+☐ 3 - Somewhat innovative
+☐ 2 - Not very innovative
+☐ 1 - Not innovative at all
+
+Please provide examples:
+_____________________________________________________________________________
+_____________________________________________________________________________
+
+═══════════════════════════════════════════════════════════════════════════════
+
+PROJECT MANAGEMENT
+
+9. Project Planning
+
+How effective was the initial project planning?
+
+☐ 5 - Excellent
+☐ 4 - Good
+☐ 3 - Adequate
+☐ 2 - Needs Improvement
+☐ 1 - Poor
+
+Comments:
+_____________________________________________________________________________
+_____________________________________________________________________________
+
+10. Timeline Management
+
+How well did we meet project deadlines and milestones?
+
+☐ 5 - Always met or beat deadlines
+☐ 4 - Usually met deadlines
+☐ 3 - Sometimes met deadlines
+☐ 2 - Rarely met deadlines
+☐ 1 - Consistently missed deadlines
+
+Specific feedback:
+_____________________________________________________________________________
+_____________________________________________________________________________
+
+11. Budget Management
+
+How well was the project managed within budget?
+
+☐ Under budget
+☐ On budget
+☐ Slightly over budget (1-10%)
+☐ Moderately over budget (11-25%)
+☐ Significantly over budget (>25%)
+☐ Not applicable / I don't know
+
+Comments:
+_____________________________________________________________________________
+_____________________________________________________________________________
+
+12. Scope Management
+
+How well were changes to project scope handled?
+
+☐ 5 - Excellent (Changes managed smoothly)
+☐ 4 - Good
+☐ 3 - Adequate
+☐ 2 - Needs Improvement
+☐ 1 - Poor (Scope creep was an issue)
+☐ N/A - No scope changes occurred
+
+Comments:
+_____________________________________________________________________________
+_____________________________________________________________________________
+
+13. Risk Management
+
+How effectively were project risks identified and managed?
+
+☐ 5 - Excellent
+☐ 4 - Good
+☐ 3 - Adequate
+☐ 2 - Needs Improvement
+☐ 1 - Poor
+☐ N/A - No significant risks occurred
+
+Comments:
+_____________________________________________________________________________
+_____________________________________________________________________________
+
+14. Issue Resolution
+
+How quickly and effectively were issues and problems resolved?
+
+☐ 5 - Excellent (Issues resolved quickly and thoroughly)
+☐ 4 - Good
+☐ 3 - Adequate
+☐ 2 - Needs Improvement
+☐ 1 - Poor (Issues were not addressed properly)
+
+Please provide examples:
+_____________________________________________________________________________
+_____________________________________________________________________________
+
+═══════════════════════════════════════════════════════════════════════════════
+
+COMMUNICATION & COLLABORATION
+
+15. Communication Frequency
+
+Was the frequency of communication appropriate?
+
+☐ Too frequent
+☐ Just right
+☐ Too infrequent
+
+Comments:
+_____________________________________________________________________________
+_____________________________________________________________________________
+
+16. Communication Quality
+
+How would you rate the quality of communication?
+
+☐ 5 - Excellent (Clear, professional, informative)
+☐ 4 - Good
+☐ 3 - Adequate
+☐ 2 - Needs Improvement
+☐ 1 - Poor
+
+Comments:
+_____________________________________________________________________________
+_____________________________________________________________________________
+
+17. Responsiveness
+
+How responsive was our team to your questions and requests?
+
+☐ 5 - Extremely responsive (Always quick to respond)
+☐ 4 - Very responsive
+☐ 3 - Moderately responsive
+☐ 2 - Somewhat unresponsive
+☐ 1 - Very unresponsive
+
+Average response time you experienced:
+☐ Within hours
+☐ Within 1 day
+☐ Within 2-3 days
+☐ Longer than 3 days
+
+Comments:
+_____________________________________________________________________________
+_____________________________________________________________________________
+
+18. Status Updates and Reporting
+
+How effective were the project status updates and reports?
+
+☐ 5 - Excellent (Clear, timely, comprehensive)
+☐ 4 - Good
+☐ 3 - Adequate
+☐ 2 - Needs Improvement
+☐ 1 - Poor
+
+What would have improved the status updates?
+_____________________________________________________________________________
+_____________________________________________________________________________
+
+19. Collaboration Tools and Technology
+
+How effective were the collaboration tools and technology used?
+
+☐ 5 - Excellent
+☐ 4 - Good
+☐ 3 - Adequate
+☐ 2 - Needs Improvement
+☐ 1 - Poor
+
+Which tools worked well?
+_____________________________________________________________________________
+
+Which tools could be improved?
+_____________________________________________________________________________
+
+20. Understanding of Your Needs
+
+How well did our team understand your business needs and objectives?
+
+☐ 5 - Excellent understanding
+☐ 4 - Good understanding
+☐ 3 - Adequate understanding
+☐ 2 - Limited understanding
+☐ 1 - Poor understanding
+
+Comments:
+_____________________________________________________________________________
+_____________________________________________________________________________
+
+═══════════════════════════════════════════════════════════════════════════════
+
+TEAM PERFORMANCE
+
+21. Team Expertise and Skills
+
+How would you rate the expertise and skills of the team?
+
+☐ 5 - Exceptional expertise
+☐ 4 - Strong expertise
+☐ 3 - Adequate expertise
+☐ 2 - Limited expertise
+☐ 1 - Insufficient expertise
+
+Specific comments:
+_____________________________________________________________________________
+_____________________________________________________________________________
+
+22. Team Professionalism
+
+How would you rate the professionalism of the team?
+
+☐ 5 - Highly professional
+☐ 4 - Professional
+☐ 3 - Adequately professional
+☐ 2 - Somewhat unprofessional
+☐ 1 - Unprofessional
+
+Comments:
+_____________________________________________________________________________
+_____________________________________________________________________________
+
+23. Team Collaboration
+
+How well did the team collaborate with your internal staff?
+
+☐ 5 - Excellent collaboration
+☐ 4 - Good collaboration
+☐ 3 - Adequate collaboration
+☐ 2 - Limited collaboration
+☐ 1 - Poor collaboration
+☐ N/A - Limited interaction with our staff
+
+Comments:
+_____________________________________________________________________________
+_____________________________________________________________________________
+
+24. Knowledge Transfer
+
+How effective was the team in transferring knowledge and training your staff?
+
+☐ 5 - Excellent
+☐ 4 - Good
+☐ 3 - Adequate
+☐ 2 - Needs Improvement
+☐ 1 - Poor
+☐ N/A - Knowledge transfer was not part of this project
+
+Comments:
+_____________________________________________________________________________
+_____________________________________________________________________________
+
+25. Project Manager Performance
+
+How would you rate the performance of the Project Manager?
+
+Name of PM: [Name]
+
+☐ 5 - Excellent
+☐ 4 - Good
+☐ 3 - Adequate
+☐ 2 - Needs Improvement
+☐ 1 - Poor
+
+Specific feedback:
+_____________________________________________________________________________
+_____________________________________________________________________________
+
+═══════════════════════════════════════════════════════════════════════════════
+
+PROCESS & METHODOLOGY
+
+26. Project Methodology
+
+How appropriate was the project methodology used?
+
+☐ 5 - Very appropriate
+☐ 4 - Appropriate
+☐ 3 - Somewhat appropriate
+☐ 2 - Not very appropriate
+☐ 1 - Inappropriate
+☐ I don't know / Not sure
+
+Comments:
+_____________________________________________________________________________
+_____________________________________________________________________________
+
+27. Documentation
+
+How would you rate the project documentation?
+
+☐ 5 - Excellent (Comprehensive and clear)
+☐ 4 - Good
+☐ 3 - Adequate
+☐ 2 - Needs Improvement
+☐ 1 - Poor (Insufficient or unclear)
+
+What documentation was most useful?
+_____________________________________________________________________________
+
+What documentation was missing or needs improvement?
+_____________________________________________________________________________
+
+28. Change Management Process
+
+How effective was the process for managing changes?
+
+☐ 5 - Excellent
+☐ 4 - Good
+☐ 3 - Adequate
+☐ 2 - Needs Improvement
+☐ 1 - Poor
+☐ N/A - No changes were requested
+
+Comments:
+_____________________________________________________________________________
+_____________________________________________________________________________
+
+═══════════════════════════════════════════════════════════════════════════════
+
+BUSINESS IMPACT
+
+29. Achievement of Business Objectives
+
+To what extent did the project achieve your business objectives?
+
+☐ 5 - Fully achieved all objectives
+☐ 4 - Achieved most objectives
+☐ 3 - Achieved some objectives
+☐ 2 - Achieved few objectives
+☐ 1 - Did not achieve objectives
+☐ Too early to tell
+
+Please explain:
+_____________________________________________________________________________
+_____________________________________________________________________________
+_____________________________________________________________________________
+
+30. Return on Investment (ROI)
+
+What is your assessment of the project's return on investment?
+
+☐ Excellent ROI (Exceeded expectations)
+☐ Good ROI (Met expectations)
+☐ Fair ROI (Somewhat met expectations)
+☐ Poor ROI (Did not meet expectations)
+☐ Too early to determine
+
+Comments:
+_____________________________________________________________________________
+_____________________________________________________________________________
+
+31. Long-term Value
+
+How confident are you that this project will deliver long-term value?
+
+☐ 5 - Very confident
+☐ 4 - Confident
+☐ 3 - Somewhat confident
+☐ 2 - Not very confident
+☐ 1 - Not confident at all
+
+Why?
+_____________________________________________________________________________
+_____________________________________________________________________________
+
+═══════════════════════════════════════════════════════════════════════════════
+
+AREAS OF STRENGTH
+
+32. What did we do particularly well?
+
+Please identify specific areas where our team excelled:
+
+_____________________________________________________________________________
+_____________________________________________________________________________
+_____________________________________________________________________________
+_____________________________________________________________________________
+_____________________________________________________________________________
+
+33. What was the most valuable aspect of working with us?
+
+_____________________________________________________________________________
+_____________________________________________________________________________
+_____________________________________________________________________________
+
+34. What exceeded your expectations?
+
+_____________________________________________________________________________
+_____________________________________________________________________________
+_____________________________________________________________________________
+
+═══════════════════════════════════════════════════════════════════════════════
+
+AREAS FOR IMPROVEMENT
+
+35. What could we have done better?
+
+Please be specific about areas where we fell short:
+
+_____________________________________________________________________________
+_____________________________________________________________________________
+_____________________________________________________________________________
+_____________________________________________________________________________
+_____________________________________________________________________________
+
+36. What was the biggest challenge in working with us?
+
+_____________________________________________________________________________
+_____________________________________________________________________________
+_____________________________________________________________________________
+
+37. What disappointed you or fell short of expectations?
+
+_____________________________________________________________________________
+_____________________________________________________________________________
+_____________________________________________________________________________
+
+38. What should we change or improve for future projects?
+
+_____________________________________________________________________________
+_____________________________________________________________________________
+_____________________________________________________________________________
+_____________________________________________________________________________
+
+═══════════════════════════════════════════════════════════════════════════════
+
+FUTURE ENGAGEMENT
+
+39. Future Project Needs
+
+Do you have any upcoming projects where you might need our services?
+
+☐ Yes, definitely
+☐ Possibly
+☐ Not at this time
+☐ No
+
+If yes, please describe:
+_____________________________________________________________________________
+_____________________________________________________________________________
+
+Expected timeframe: ___________
+
+40. Additional Services Interest
+
+What additional services would you be interested in? (Check all that apply)
+
+☐ Ongoing support and maintenance
+☐ Training and education
+☐ Consulting services
+☐ Additional development work
+☐ Integration with other systems
+☐ Performance optimization
+☐ Security assessment
+☐ Other: _________________________________________________________________
+
+41. Preferred Engagement Model for Future Projects
+
+☐ Fixed price projects
+☐ Time and materials
+☐ Retainer agreement
+☐ Managed services
+☐ Staff augmentation
+☐ Other: _________________________________________________________________
+
+═══════════════════════════════════════════════════════════════════════════════
+
+TESTIMONIAL
+
+42. Testimonial Request
+
+Would you be willing to provide a testimonial about your experience?
+
+☐ Yes
+☐ Maybe
+☐ No
+
+If yes, please provide a brief testimonial we could use (with your permission):
+
+_____________________________________________________________________________
+_____________________________________________________________________________
+_____________________________________________________________________________
+_____________________________________________________________________________
+
+Attribution:
+☐ You may use my name and company name
+☐ You may use my name only
+☐ Anonymous testimonial only
+☐ Please contact me to discuss
+
+43. Case Study Participation
+
+Would you be interested in participating in a case study about this project?
+
+☐ Yes, very interested
+☐ Possibly, tell me more
+☐ Not at this time
+☐ No
+
+═══════════════════════════════════════════════════════════════════════════════
+
+ADDITIONAL COMMENTS
+
+44. Is there anything else you would like to share about your experience?
+
+_____________________________________________________________________________
+_____________________________________________________________________________
+_____________________________________________________________________________
+_____________________________________________________________________________
+_____________________________________________________________________________
+_____________________________________________________________________________
+
+45. Additional Feedback or Suggestions
+
+_____________________________________________________________________________
+_____________________________________________________________________________
+_____________________________________________________________________________
+_____________________________________________________________________________
+
+═══════════════════════════════════════════════════════════════════════════════
+
+CONTACT FOR FOLLOW-UP
+
+May we contact you to discuss this feedback in more detail?
+
+☐ Yes
+☐ No
+
+Best way to reach you:
+☐ Email: [Email]
+☐ Phone: [Phone]
+☐ Video call
+
+Best time to contact:
+☐ Morning (9am-12pm)
+☐ Afternoon (12pm-5pm)
+☐ Evening (5pm-8pm)
+
+Preferred days: ☐ Monday  ☐ Tuesday  ☐ Wednesday  ☐ Thursday  ☐ Friday
+
+═══════════════════════════════════════════════════════════════════════════════
+
+FORM COMPLETION
+
+Completed By: [Name]
+Title: [Title]
+Signature: _________________________ Date: _____________
+
+Time to Complete Form: _______ minutes
+
+═══════════════════════════════════════════════════════════════════════════════
+
+INTERNAL USE ONLY
+
+Form Received By: [Name]
+Date Received: [Date]
+Follow-up Actions Required:
+☐ Schedule follow-up call
+☐ Address specific concerns
+☐ Share positive feedback with team
+☐ Update client relationship management system
+☐ Implement improvement suggestions
+☐ Request testimonial usage approval
+☐ Other: _________________________________________________________________
+
+Follow-up Completed By: [Name]
+Follow-up Date: [Date]
+
+Notes:
+_____________________________________________________________________________
+_____________________________________________________________________________
+
+═══════════════════════════════════════════════════════════════════════════════
+
+Thank you for taking the time to provide feedback!
+
+Your input is invaluable in helping us improve our services and deliver better results for our clients. We appreciate your partnership and look forward to working with you again.
+
+If you have any immediate concerns, please contact:
+[Name]
+[Title]
+[Email]
+[Phone]
+    `
+  },
+  {
+    id: 'pm-project-status-report',
+    title: 'Project Status Report Template',
+    description: 'Comprehensive status report template for communicating project progress to stakeholders',
+    category: 'project-management',
+    downloadCount: 1634,
+    fileSize: '51.9 KB',
+    rating: 4.8,
+    tags: ['status', 'report', 'progress', 'stakeholder', 'communication'],
+    createdAt: '2024-01-14T09:30:00Z',
+    updatedAt: '2024-01-31T13:15:00Z',
+    content: `
+PROJECT STATUS REPORT
+
+═══════════════════════════════════════════════════════════════════════════════
+
+REPORT HEADER
+
+Project Name: [Project Name]
+Project ID: [Project ID Number]
+Report Type: ☐ Weekly  ☐ Bi-Weekly  ☐ Monthly  ☐ Milestone  ☐ Ad-Hoc
+Reporting Period: [Start Date] to [End Date]
+Report Date: [Date]
+Report Number: [Report #]
+
+Prepared By: [Name]
+Title: [Title]
+Email: [Email]
+Phone: [Phone]
+
+Distribution List:
+• [Stakeholder 1] - [Title]
+• [Stakeholder 2] - [Title]
+• [Stakeholder 3] - [Title]
+• [Stakeholder 4] - [Title]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+EXECUTIVE SUMMARY
+
+OVERALL PROJECT STATUS: ☐ Green (On Track)  ☐ Yellow (At Risk)  ☐ Red (Critical Issues)
+
+Key Highlights:
+• [Key highlight 1]
+• [Key highlight 2]
+• [Key highlight 3]
+
+Major Accomplishments This Period:
+• [Accomplishment 1]
+• [Accomplishment 2]
+• [Accomplishment 3]
+
+Critical Issues Requiring Attention:
+• [Issue 1] - ☐ High  ☐ Medium  ☐ Low Priority
+• [Issue 2] - ☐ High  ☐ Medium  ☐ Low Priority
+• [Issue 3] - ☐ High  ☐ Medium  ☐ Low Priority
+
+Upcoming Milestones:
+• [Milestone 1] - Due: [Date]
+• [Milestone 2] - Due: [Date]
+
+Decisions Needed:
+• [Decision 1] - By: [Date]
+• [Decision 2] - By: [Date]
+
+Project Health Summary:
+• Schedule: ☐ Green  ☐ Yellow  ☐ Red  |  Variance: [X] days ahead/behind
+• Budget: ☐ Green  ☐ Yellow  ☐ Red  |  Variance: [X]% under/over
+• Scope: ☐ Green  ☐ Yellow  ☐ Red  |  Changes: [Number] pending
+• Quality: ☐ Green  ☐ Yellow  ☐ Red  |  Issues: [Number] open
+• Risk: ☐ Green  ☐ Yellow  ☐ Red  |  High risks: [Number]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+PROJECT OVERVIEW
+
+Project Description:
+[Brief description of the project]
+
+Project Sponsor: [Name]
+Project Manager: [Name]
+Client/Customer: [Name/Organization]
+
+Project Dates:
+Original Start Date: [Date]
+Actual Start Date: [Date]
+Planned Completion Date: [Date]
+Forecast Completion Date: [Date]
+Days Variance: [Number] days ahead/behind schedule
+
+Project Budget:
+Total Approved Budget: $[Amount]
+Budget Spent to Date: $[Amount] ([Percentage]%)
+Budget Remaining: $[Amount] ([Percentage]%)
+Forecast at Completion: $[Amount]
+Budget Variance: $[Amount] ([Percentage]%) under/over
+
+Overall Completion: [Percentage]% complete
+
+Current Phase: [Phase Name]
+Phase Status: ☐ On Track  ☐ At Risk  ☐ Delayed
+Phase Completion: [Percentage]% complete
+
+═══════════════════════════════════════════════════════════════════════════════
+
+DETAILED STATUS BY AREA
+
+SCHEDULE STATUS: ☐ Green  ☐ Yellow  ☐ Red
+
+Current Status:
+Project is currently [X days/weeks] ahead of/behind schedule. [Provide brief explanation of schedule status and any contributing factors.]
+
+Schedule Highlights:
+• [Highlight 1]
+• [Highlight 2]
+• [Highlight 3]
+
+Schedule Concerns:
+• [Concern 1]
+• [Concern 2]
+
+Recovery Actions (if behind schedule):
+• [Action 1] - Owner: [Name] - Due: [Date]
+• [Action 2] - Owner: [Name] - Due: [Date]
+
+BUDGET STATUS: ☐ Green  ☐ Yellow  ☐ Red
+
+Current Status:
+Project is currently [X%] under/over budget. [Provide brief explanation of budget status.]
+
+Budget Breakdown:
+
+Category | Budgeted | Actual to Date | Remaining | Forecast | Variance
+---------|----------|----------------|-----------|----------|----------
+Labor | $[Amount] | $[Amount] | $[Amount] | $[Amount] | $[Amount]
+Materials | $[Amount] | $[Amount] | $[Amount] | $[Amount] | $[Amount]
+Equipment | $[Amount] | $[Amount] | $[Amount] | $[Amount] | $[Amount]
+Software | $[Amount] | $[Amount] | $[Amount] | $[Amount] | $[Amount]
+Travel | $[Amount] | $[Amount] | $[Amount] | $[Amount] | $[Amount]
+Other | $[Amount] | $[Amount] | $[Amount] | $[Amount] | $[Amount]
+TOTAL | $[Amount] | $[Amount] | $[Amount] | $[Amount] | $[Amount]
+
+Budget Concerns:
+• [Concern 1]
+• [Concern 2]
+
+Cost Control Actions:
+• [Action 1]
+• [Action 2]
+
+SCOPE STATUS: ☐ Green  ☐ Yellow  ☐ Red
+
+Current Status:
+[Brief description of scope status]
+
+Scope Changes This Period:
+• [Change 1] - Status: [Approved/Pending/Rejected]
+• [Change 2] - Status: [Approved/Pending/Rejected]
+
+Pending Change Requests: [Number]
+Approved Changes to Date: [Number]
+
+Impact of Approved Changes:
+• Schedule Impact: [X days added/reduced]
+• Budget Impact: $[Amount added/reduced]
+
+Scope Risks:
+• [Risk 1]
+• [Risk 2]
+
+QUALITY STATUS: ☐ Green  ☐ Yellow  ☐ Red
+
+Current Status:
+[Brief description of quality status]
+
+Quality Metrics:
+
+Metric | Target | Current | Status
+-------|--------|---------|-------
+[Metric 1] | [Value] | [Value] | ☐ Met  ☐ Not Met
+[Metric 2] | [Value] | [Value] | ☐ Met  ☐ Not Met
+[Metric 3] | [Value] | [Value] | ☐ Met  ☐ Not Met
+[Metric 4] | [Value] | [Value] | ☐ Met  ☐ Not Met
+
+Quality Issues:
+• Open Issues: [Number]
+• Closed This Period: [Number]
+• Critical Issues: [Number]
+
+Testing Status:
+• Test Cases Planned: [Number]
+• Test Cases Executed: [Number]
+• Test Cases Passed: [Number]
+• Test Cases Failed: [Number]
+• Defects Found: [Number]
+• Defects Resolved: [Number]
+
+RISK STATUS: ☐ Green  ☐ Yellow  ☐ Red
+
+Current Status:
+[Brief description of overall risk posture]
+
+Risk Summary:
+• Total Active Risks: [Number]
+• High Priority Risks: [Number]
+• Medium Priority Risks: [Number]
+• Low Priority Risks: [Number]
+• New Risks This Period: [Number]
+• Closed Risks This Period: [Number]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+ACCOMPLISHMENTS THIS PERIOD
+
+Major Accomplishments:
+
+1. [Accomplishment Title]
+   Description: [Detailed description]
+   Completion Date: [Date]
+   Impact: [How this moves the project forward]
+
+2. [Accomplishment Title]
+   Description: [Detailed description]
+   Completion Date: [Date]
+   Impact: [Impact]
+
+3. [Accomplishment Title]
+   Description: [Detailed description]
+   Completion Date: [Date]
+   Impact: [Impact]
+
+4. [Accomplishment Title]
+   Description: [Detailed description]
+   Completion Date: [Date]
+   Impact: [Impact]
+
+Milestones Achieved:
+✓ [Milestone 1] - Completed: [Date] (☐ On Time  ☐ Early  ☐ Late)
+✓ [Milestone 2] - Completed: [Date] (☐ On Time  ☐ Early  ☐ Late)
+✓ [Milestone 3] - Completed: [Date] (☐ On Time  ☐ Early  ☐ Late)
+
+Deliverables Completed:
+✓ [Deliverable 1] - Accepted: [Date]
+✓ [Deliverable 2] - Accepted: [Date]
+✓ [Deliverable 3] - Accepted: [Date]
+
+Tasks Completed: [Number]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+WORK IN PROGRESS
+
+Current Activities:
+
+Activity | Owner | % Complete | Target Date | Status
+---------|-------|------------|-------------|-------
+[Activity 1] | [Name] | [%] | [Date] | ☐ On Track  ☐ At Risk  ☐ Delayed
+[Activity 2] | [Name] | [%] | [Date] | ☐ On Track  ☐ At Risk  ☐ Delayed
+[Activity 3] | [Name] | [%] | [Date] | ☐ On Track  ☐ At Risk  ☐ Delayed
+[Activity 4] | [Name] | [%] | [Date] | ☐ On Track  ☐ At Risk  ☐ Delayed
+[Activity 5] | [Name] | [%] | [Date] | ☐ On Track  ☐ At Risk  ☐ Delayed
+
+Work Package Status:
+
+Work Package | Planned % | Actual % | Variance | Status
+-------------|-----------|----------|----------|-------
+[Package 1] | [%] | [%] | [+/-]% | ☐ Green  ☐ Yellow  ☐ Red
+[Package 2] | [%] | [%] | [+/-]% | ☐ Green  ☐ Yellow  ☐ Red
+[Package 3] | [%] | [%] | [+/-]% | ☐ Green  ☐ Yellow  ☐ Red
+[Package 4] | [%] | [%] | [+/-]% | ☐ Green  ☐ Yellow  ☐ Red
+
+═══════════════════════════════════════════════════════════════════════════════
+
+PLANNED ACTIVITIES - NEXT PERIOD
+
+Upcoming Activities:
+
+Week/Period [Date Range]:
+☐ [Activity 1] - Owner: [Name] - Target: [Date]
+☐ [Activity 2] - Owner: [Name] - Target: [Date]
+☐ [Activity 3] - Owner: [Name] - Target: [Date]
+
+Week/Period [Date Range]:
+☐ [Activity 1] - Owner: [Name] - Target: [Date]
+☐ [Activity 2] - Owner: [Name] - Target: [Date]
+☐ [Activity 3] - Owner: [Name] - Target: [Date]
+
+Upcoming Milestones:
+
+Milestone | Description | Target Date | Status
+----------|-------------|-------------|-------
+[M1] | [Description] | [Date] | ☐ On Track  ☐ At Risk
+[M2] | [Description] | [Date] | ☐ On Track  ☐ At Risk
+[M3] | [Description] | [Date] | ☐ On Track  ☐ At Risk
+
+Planned Deliverables:
+☐ [Deliverable 1] - Due: [Date]
+☐ [Deliverable 2] - Due: [Date]
+☐ [Deliverable 3] - Due: [Date]
+
+Key Meetings Scheduled:
+• [Meeting 1] - [Date] - Purpose: [Purpose]
+• [Meeting 2] - [Date] - Purpose: [Purpose]
+• [Meeting 3] - [Date] - Purpose: [Purpose]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+ISSUES AND PROBLEMS
+
+CRITICAL ISSUES (Immediate Attention Required):
+
+Issue #1: [Issue Title]
+Priority: ☐ Critical  ☐ High  ☐ Medium  ☐ Low
+Status: ☐ New  ☐ Open  ☐ In Progress  ☐ Resolved  ☐ Closed
+Reported By: [Name]
+Date Identified: [Date]
+Description:
+[Detailed description of the issue]
+
+Impact:
+• Schedule Impact: [Description]
+• Budget Impact: [Description]
+• Quality Impact: [Description]
+
+Action Plan:
+[Steps being taken to resolve]
+
+Owner: [Name]
+Target Resolution Date: [Date]
+Escalation Required: ☐ Yes  ☐ No
+
+Issue #2: [Issue Title]
+[Same structure as Issue #1]
+
+HIGH PRIORITY ISSUES:
+
+Issue #3: [Issue Title]
+[Same structure as above]
+
+MEDIUM/LOW PRIORITY ISSUES:
+
+Issue # | Title | Priority | Owner | Status | Target Date
+--------|-------|----------|-------|--------|-------------
+[#] | [Title] | M/L | [Name] | [Status] | [Date]
+[#] | [Title] | M/L | [Name] | [Status] | [Date]
+[#] | [Title] | M/L | [Name] | [Status] | [Date]
+
+Issues Summary:
+• Total Open Issues: [Number]
+• New Issues This Period: [Number]
+• Closed Issues This Period: [Number]
+• Average Days to Resolution: [Number]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+RISKS
+
+TOP RISKS:
+
+Risk #1: [Risk Title]
+Probability: ☐ High (>70%)  ☐ Medium (30-70%)  ☐ Low (<30%)
+Impact: ☐ High  ☐ Medium  ☐ Low
+Risk Score: [Number] (Probability × Impact)
+Status: ☐ Open  ☐ Mitigated  ☐ Occurred  ☐ Closed
+
+Description:
+[Detailed description of the risk]
+
+Potential Impact:
+• Schedule: [Impact description]
+• Budget: [Impact description]
+• Quality: [Impact description]
+• Scope: [Impact description]
+
+Mitigation Strategy:
+[Actions to reduce probability or impact]
+
+Contingency Plan (if risk occurs):
+[Plan if risk materializes]
+
+Owner: [Name]
+Review Date: [Date]
+
+Risk #2: [Risk Title]
+[Same structure as Risk #1]
+
+Risk #3: [Risk Title]
+[Same structure as Risk #1]
+
+OTHER ACTIVE RISKS:
+
+Risk # | Title | Probability | Impact | Score | Owner | Status
+-------|-------|-------------|--------|-------|-------|-------
+[#] | [Title] | H/M/L | H/M/L | [#] | [Name] | [Status]
+[#] | [Title] | H/M/L | H/M/L | [#] | [Name] | [Status]
+[#] | [Title] | H/M/L | H/M/L | [#] | [Name] | [Status]
+
+Risk Summary:
+• Total Active Risks: [Number]
+• New Risks This Period: [Number]
+• Risks Closed This Period: [Number]
+• Risks That Occurred: [Number]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+CHANGE REQUESTS
+
+PENDING CHANGE REQUESTS:
+
+CR #1: [Change Request Title]
+Submitted By: [Name]
+Date Submitted: [Date]
+Priority: ☐ High  ☐ Medium  ☐ Low
+Status: ☐ Submitted  ☐ Under Review  ☐ Approved  ☐ Rejected
+
+Description:
+[Description of requested change]
+
+Business Justification:
+[Why this change is needed]
+
+Impact Assessment:
+• Schedule Impact: [X days] (☐ None  ☐ Minor  ☐ Moderate  ☐ Significant)
+• Budget Impact: $[Amount] (☐ None  ☐ Minor  ☐ Moderate  ☐ Significant)
+• Resource Impact: [Description]
+• Quality Impact: [Description]
+
+Recommendation: ☐ Approve  ☐ Reject  ☐ Defer  ☐ Need More Info
+Decision Required By: [Date]
+Decision Maker: [Name]
+
+CR #2: [Change Request Title]
+[Same structure as CR #1]
+
+APPROVED CHANGES THIS PERIOD:
+
+CR # | Title | Date Approved | Schedule Impact | Budget Impact
+-----|-------|---------------|-----------------|---------------
+[#] | [Title] | [Date] | [X days] | $[Amount]
+[#] | [Title] | [Date] | [X days] | $[Amount]
+
+Change Request Summary:
+• Pending CRs: [Number]
+• Approved This Period: [Number]
+• Rejected This Period: [Number]
+• Total Approved to Date: [Number]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+RESOURCE STATUS
+
+Team Members:
+
+Name | Role | Allocation | This Period Hours | Total Hours | Availability
+-----|------|------------|-------------------|-------------|-------------
+[Name] | PM | [%] | [Hours] | [Hours] | Full-time
+[Name] | [Role] | [%] | [Hours] | [Hours] | [Status]
+[Name] | [Role] | [%] | [Hours] | [Hours] | [Status]
+[Name] | [Role] | [%] | [Hours] | [Hours] | [Status]
+[Name] | [Role] | [%] | [Hours] | [Hours] | [Status]
+
+Resource Issues:
+• [Issue 1, e.g., "Developer A on leave next week"]
+• [Issue 2, e.g., "Need additional QA resource"]
+
+Resource Requests:
+• [Request 1] - Status: [Status]
+• [Request 2] - Status: [Status]
+
+Resource Utilization:
+• Planned Resource Hours: [Number]
+• Actual Resource Hours: [Number]
+• Utilization Rate: [Percentage]%
+
+Key Personnel Changes:
+• [Change 1, e.g., "New team member onboarding"]
+• [Change 2]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+STAKEHOLDER MANAGEMENT
+
+Stakeholder Engagement Activities This Period:
+• [Activity 1, e.g., "Executive steering committee meeting - Date"]
+• [Activity 2, e.g., "User group demo session - Date"]
+• [Activity 3]
+
+Key Stakeholder Feedback:
+• [Feedback 1]
+• [Feedback 2]
+• [Feedback 3]
+
+Stakeholder Concerns:
+• [Concern 1]
+• [Concern 2]
+
+Planned Stakeholder Communications:
+• [Communication 1] - Date: [Date] - Audience: [Audience]
+• [Communication 2] - Date: [Date] - Audience: [Audience]
+
+Decisions Needed from Stakeholders:
+
+Decision | Decision Maker | Required By | Status
+---------|----------------|-------------|-------
+[Decision 1] | [Name/Role] | [Date] | ☐ Pending  ☐ Made
+[Decision 2] | [Name/Role] | [Date] | ☐ Pending  ☐ Made
+[Decision 3] | [Name/Role] | [Date] | ☐ Pending  ☐ Made
+
+═══════════════════════════════════════════════════════════════════════════════
+
+DEPENDENCIES
+
+External Dependencies:
+
+Dependency | Description | Owner | Required By | Status | Risk
+-----------|-------------|-------|-------------|--------|-----
+[Dep 1] | [Description] | [Name/Org] | [Date] | ☐ On Track  ☐ At Risk  ☐ Delayed | H/M/L
+[Dep 2] | [Description] | [Name/Org] | [Date] | ☐ On Track  ☐ At Risk  ☐ Delayed | H/M/L
+[Dep 3] | [Description] | [Name/Org] | [Date] | ☐ On Track  ☐ At Risk  ☐ Delayed | H/M/L
+
+Critical Dependencies At Risk:
+• [Dependency and impact description]
+• [Dependency and impact description]
+
+Mitigation Actions for At-Risk Dependencies:
+• [Action 1] - Owner: [Name]
+• [Action 2] - Owner: [Name]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+KEY PERFORMANCE INDICATORS (KPIs)
+
+Project KPIs:
+
+KPI | Target | Current | Status | Trend
+----|--------|---------|--------|------
+Schedule Performance Index (SPI) | 1.0 | [Value] | ☐ Green  ☐ Yellow  ☐ Red | ☐ ↑  ☐ →  ☐ ↓
+Cost Performance Index (CPI) | 1.0 | [Value] | ☐ Green  ☐ Yellow  ☐ Red | ☐ ↑  ☐ →  ☐ ↓
+Planned vs Actual Completion | [%] | [%] | ☐ Green  ☐ Yellow  ☐ Red | ☐ ↑  ☐ →  ☐ ↓
+Quality Score | [Target] | [Current] | ☐ Green  ☐ Yellow  ☐ Red | ☐ ↑  ☐ →  ☐ ↓
+Stakeholder Satisfaction | [Target] | [Current] | ☐ Green  ☐ Yellow  ☐ Red | ☐ ↑  ☐ →  ☐ ↓
+Team Morale | [Target] | [Current] | ☐ Green  ☐ Yellow  ☐ Red | ☐ ↑  ☐ →  ☐ ↓
+
+Earned Value Metrics:
+• Planned Value (PV): $[Amount]
+• Earned Value (EV): $[Amount]
+• Actual Cost (AC): $[Amount]
+• Budget at Completion (BAC): $[Amount]
+• Estimate at Completion (EAC): $[Amount]
+• Estimate to Complete (ETC): $[Amount]
+• Variance at Completion (VAC): $[Amount]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+LESSONS LEARNED
+
+Lessons Learned This Period:
+
+What Went Well:
+• [Success 1]
+• [Success 2]
+• [Success 3]
+
+What Didn't Go Well:
+• [Challenge 1]
+• [Challenge 2]
+
+What We'll Do Differently:
+• [Change 1]
+• [Change 2]
+
+Best Practices Identified:
+• [Best practice 1]
+• [Best practice 2]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+ATTACHMENTS AND REFERENCES
+
+Supporting Documents:
+☐ Detailed Project Schedule (Gantt Chart)
+☐ Budget Breakdown
+☐ Risk Register
+☐ Issue Log
+☐ Change Request Log
+☐ Test Results
+☐ [Other attachment]
+
+Reference Materials:
+• [Document name] - [Link/Location]
+• [Document name] - [Link/Location]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+ACTION ITEMS
+
+Action Items from This Report:
+
+# | Action Item | Owner | Due Date | Priority | Status
+--|-------------|-------|----------|----------|-------
+1 | [Action description] | [Name] | [Date] | H/M/L | Not Started
+2 | [Action description] | [Name] | [Date] | H/M/L | Not Started
+3 | [Action description] | [Name] | [Date] | H/M/L | Not Started
+4 | [Action description] | [Name] | [Date] | H/M/L | Not Started
+5 | [Action description] | [Name] | [Date] | H/M/L | Not Started
+
+Overdue Action Items from Previous Reports:
+
+# | Action Item | Owner | Original Due | Days Overdue | Status
+--|-------------|-------|--------------|--------------|-------
+[#] | [Action] | [Name] | [Date] | [Number] | [Status/Update]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+RECOMMENDATIONS
+
+Project Manager Recommendations:
+
+1. [Recommendation 1]
+   Rationale: [Why this is recommended]
+   Impact: [Expected impact]
+   Decision Required: ☐ Yes  ☐ No
+   Decision Maker: [Name/Role]
+
+2. [Recommendation 2]
+   Rationale: [Why this is recommended]
+   Impact: [Expected impact]
+   Decision Required: ☐ Yes  ☐ No
+   Decision Maker: [Name/Role]
+
+3. [Recommendation 3]
+   Rationale: [Why this is recommended]
+   Impact: [Expected impact]
+   Decision Required: ☐ Yes  ☐ No
+   Decision Maker: [Name/Role]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+SIGN-OFF
+
+This status report has been prepared by:
+
+Project Manager: _________________________
+Name: [Name]
+Date: _______
+
+Reviewed and Approved by:
+
+Project Sponsor: _________________________
+Name: [Name]
+Date: _______
+
+═══════════════════════════════════════════════════════════════════════════════
+
+NEXT STATUS REPORT
+
+Next Report Due: [Date]
+Next Reporting Period: [Start Date] to [End Date]
+Distribution: [Same/Updated list]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+REPORT NOTES
+
+[Any additional notes, context, or information that doesn't fit in other sections]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+GLOSSARY (if needed)
+
+[Term]: [Definition]
+[Term]: [Definition]
+[Acronym]: [Full name and definition]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+END OF STATUS REPORT
+    `
+  },
+  {
+    id: 'pm-client-satisfaction-survey',
+    title: 'Client Satisfaction Survey',
+    description: 'Comprehensive survey template for measuring client satisfaction and gathering improvement insights',
+    category: 'project-management',
+    downloadCount: 1089,
+    fileSize: '45.3 KB',
+    rating: 4.6,
+    tags: ['survey', 'satisfaction', 'client', 'NPS', 'feedback'],
+    createdAt: '2024-01-17T10:45:00Z',
+    updatedAt: '2024-01-30T16:00:00Z',
+    content: `
+CLIENT SATISFACTION SURVEY
+
+═══════════════════════════════════════════════════════════════════════════════
+
+SURVEY INFORMATION
+
+Survey Title: [Client Satisfaction Survey - Year/Quarter]
+Survey Period: [Date Range]
+Survey Version: [Version Number]
+Distribution Date: [Date]
+Response Deadline: [Date]
+
+Your feedback is extremely valuable to us. This survey should take approximately 15-20 minutes to complete. All responses are confidential and will be used to improve our services.
+
+═══════════════════════════════════════════════════════════════════════════════
+
+RESPONDENT INFORMATION
+
+Company Information:
+Company Name: [Company Name]
+Industry: [Industry]
+Company Size: ☐ 1-50  ☐ 51-200  ☐ 201-500  ☐ 501-1000  ☐ 1000+
+
+Your Information:
+Name: [Optional]
+Title/Position: [Job Title]
+Department: [Department]
+Email: [Email Address]
+Phone: [Phone Number]
+
+How long have you been working with us?
+☐ Less than 6 months
+☐ 6 months to 1 year
+☐ 1-2 years
+☐ 2-5 years
+☐ More than 5 years
+
+Type of Services You Use: (Check all that apply)
+☐ [Service 1]
+☐ [Service 2]
+☐ [Service 3]
+☐ [Service 4]
+☐ Other: ______________
+
+Primary Contact for Your Account:
+Account Manager: [Name]
+Project Manager: [Name]
+Support Contact: [Name]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+SECTION 1: OVERALL SATISFACTION
+
+1. Overall Satisfaction with Our Services
+
+On a scale of 1-10, how satisfied are you with our services overall?
+
+☐ 1  ☐ 2  ☐ 3  ☐ 4  ☐ 5  ☐ 6  ☐ 7  ☐ 8  ☐ 9  ☐ 10
+(Very Dissatisfied)                                    (Very Satisfied)
+
+Please explain your rating:
+_____________________________________________________________________________
+_____________________________________________________________________________
+_____________________________________________________________________________
+
+2. Net Promoter Score (NPS)
+
+On a scale of 0-10, how likely are you to recommend our company to a colleague or peer?
+
+☐ 0  ☐ 1  ☐ 2  ☐ 3  ☐ 4  ☐ 5  ☐ 6  ☐ 7  ☐ 8  ☐ 9  ☐ 10
+(Not at all likely)                                    (Extremely likely)
+
+What is the primary reason for your score?
+_____________________________________________________________________________
+_____________________________________________________________________________
+_____________________________________________________________________________
+
+3. Value for Investment
+
+Do you feel you receive good value for your investment in our services?
+
+☐ Excellent value (Far exceeds expectations)
+☐ Very good value (Exceeds expectations)
+☐ Good value (Meets expectations)
+☐ Fair value (Somewhat meets expectations)
+☐ Poor value (Does not meet expectations)
+
+Please explain:
+_____________________________________________________________________________
+_____________________________________________________________________________
+
+4. Expectation vs. Reality
+
+How do our services compare to your expectations when you first engaged with us?
+
+☐ Significantly exceeded expectations
+☐ Exceeded expectations
+☐ Met expectations
+☐ Fell short of expectations
+☐ Significantly fell short of expectations
+
+Comments:
+_____________________________________________________________________________
+_____________________________________________________________________________
+
+5. Competitive Comparison
+
+Compared to other similar service providers you've worked with, how would you rate us?
+
+☐ Much better
+☐ Somewhat better
+☐ About the same
+☐ Somewhat worse
+☐ Much worse
+☐ We haven't worked with other providers
+
+What makes us better or worse?
+_____________________________________________________________________________
+_____________________________________________________________________________
+
+═══════════════════════════════════════════════════════════════════════════════
+
+SECTION 2: SERVICE QUALITY
+
+Rate the following aspects of our service quality (1 = Poor, 5 = Excellent):
+
+6. Quality of Work/Deliverables
+☐ 1  ☐ 2  ☐ 3  ☐ 4  ☐ 5  ☐ N/A
+
+Comments: _________________________________________________________________
+
+7. Accuracy and Attention to Detail
+☐ 1  ☐ 2  ☐ 3  ☐ 4  ☐ 5  ☐ N/A
+
+Comments: _________________________________________________________________
+
+8. Innovation and Creativity
+☐ 1  ☐ 2  ☐ 3  ☐ 4  ☐ 5  ☐ N/A
+
+Comments: _________________________________________________________________
+
+9. Technical Expertise
+☐ 1  ☐ 2  ☐ 3  ☐ 4  ☐ 5  ☐ N/A
+
+Comments: _________________________________________________________________
+
+10. Understanding of Your Business Needs
+☐ 1  ☐ 2  ☐ 3  ☐ 4  ☐ 5  ☐ N/A
+
+Comments: _________________________________________________________________
+
+11. Consistency of Service Quality
+☐ 1  ☐ 2  ☐ 3  ☐ 4  ☐ 5  ☐ N/A
+
+Comments: _________________________________________________________________
+
+12. Proactive Problem Solving
+☐ 1  ☐ 2  ☐ 3  ☐ 4  ☐ 5  ☐ N/A
+
+Comments: _________________________________________________________________
+
+13. Overall Service Quality Summary
+
+What aspects of our service quality are strongest?
+_____________________________________________________________________________
+_____________________________________________________________________________
+
+What aspects need improvement?
+_____________________________________________________________________________
+_____________________________________________________________________________
+
+═══════════════════════════════════════════════════════════════════════════════
+
+SECTION 3: COMMUNICATION & RESPONSIVENESS
+
+Rate the following aspects (1 = Poor, 5 = Excellent):
+
+14. Frequency of Communication
+☐ 1  ☐ 2  ☐ 3  ☐ 4  ☐ 5
+
+Is communication: ☐ Too frequent  ☐ Just right  ☐ Too infrequent
+
+15. Quality of Communication
+☐ 1  ☐ 2  ☐ 3  ☐ 4  ☐ 5
+
+Comments: _________________________________________________________________
+
+16. Response Time to Inquiries
+☐ 1  ☐ 2  ☐ 3  ☐ 4  ☐ 5
+
+Average response time you experience:
+☐ Within hours
+☐ Within 1 day
+☐ Within 2-3 days
+☐ More than 3 days
+
+17. Proactive Communication and Updates
+☐ 1  ☐ 2  ☐ 3  ☐ 4  ☐ 5
+
+Comments: _________________________________________________________________
+
+18. Clarity of Communication
+☐ 1  ☐ 2  ☐ 3  ☐ 4  ☐ 5
+
+Comments: _________________________________________________________________
+
+19. Ease of Reaching the Right Person
+☐ 1  ☐ 2  ☐ 3  ☐ 4  ☐ 5
+
+Comments: _________________________________________________________________
+
+20. Effectiveness of Meetings
+☐ 1  ☐ 2  ☐ 3  ☐ 4  ☐ 5
+
+Comments: _________________________________________________________________
+
+21. Communication Improvements
+
+What would improve our communication with you?
+_____________________________________________________________________________
+_____________________________________________________________________________
+
+═══════════════════════════════════════════════════════════════════════════════
+
+SECTION 4: RELATIONSHIP & TEAM
+
+Rate the following (1 = Poor, 5 = Excellent):
+
+22. Professionalism of Team Members
+☐ 1  ☐ 2  ☐ 3  ☐ 4  ☐ 5
+
+Comments: _________________________________________________________________
+
+23. Team's Knowledge and Expertise
+☐ 1  ☐ 2  ☐ 3  ☐ 4  ☐ 5
+
+Comments: _________________________________________________________________
+
+24. Ease of Working with the Team
+☐ 1  ☐ 2  ☐ 3  ☐ 4  ☐ 5
+
+Comments: _________________________________________________________________
+
+25. Understanding of Your Goals and Challenges
+☐ 1  ☐ 2  ☐ 3  ☐ 4  ☐ 5
+
+Comments: _________________________________________________________________
+
+26. Flexibility and Adaptability
+☐ 1  ☐ 2  ☐ 3  ☐ 4  ☐ 5
+
+Comments: _________________________________________________________________
+
+27. Partnership Approach
+
+Do you feel we act as a true partner to your organization?
+
+☐ Definitely yes
+☐ Somewhat yes
+☐ Neutral
+☐ Somewhat no
+☐ Definitely no
+
+Please explain:
+_____________________________________________________________________________
+_____________________________________________________________________________
+
+28. Account Manager Performance
+
+How would you rate your Account Manager?
+☐ 1  ☐ 2  ☐ 3  ☐ 4  ☐ 5  ☐ N/A
+
+What does your Account Manager do well?
+_____________________________________________________________________________
+
+What could your Account Manager improve?
+_____________________________________________________________________________
+
+29. Team Member Recognition
+
+Are there any team members who have provided exceptional service?
+
+Name: [Name]
+What made their service exceptional:
+_____________________________________________________________________________
+
+═══════════════════════════════════════════════════════════════════════════════
+
+SECTION 5: PROJECT MANAGEMENT & DELIVERY
+
+Rate the following (1 = Poor, 5 = Excellent):
+
+30. Project Planning and Organization
+☐ 1  ☐ 2  ☐ 3  ☐ 4  ☐ 5  ☐ N/A
+
+Comments: _________________________________________________________________
+
+31. Meeting Deadlines and Commitments
+☐ 1  ☐ 2  ☐ 3  ☐ 4  ☐ 5  ☐ N/A
+
+Comments: _________________________________________________________________
+
+32. Managing Project Scope and Changes
+☐ 1  ☐ 2  ☐ 3  ☐ 4  ☐ 5  ☐ N/A
+
+Comments: _________________________________________________________________
+
+33. Budget Management and Transparency
+☐ 1  ☐ 2  ☐ 3  ☐ 4  ☐ 5  ☐ N/A
+
+Comments: _________________________________________________________________
+
+34. Risk Management
+☐ 1  ☐ 2  ☐ 3  ☐ 4  ☐ 5  ☐ N/A
+
+Comments: _________________________________________________________________
+
+35. Issue Resolution
+☐ 1  ☐ 2  ☐ 3  ☐ 4  ☐ 5  ☐ N/A
+
+How quickly are issues typically resolved?
+☐ Immediately
+☐ Within 1-2 days
+☐ Within 1 week
+☐ Longer than 1 week
+
+36. Project Documentation
+☐ 1  ☐ 2  ☐ 3  ☐ 4  ☐ 5  ☐ N/A
+
+Comments: _________________________________________________________________
+
+37. Status Reporting
+☐ 1  ☐ 2  ☐ 3  ☐ 4  ☐ 5  ☐ N/A
+
+Comments: _________________________________________________________________
+
+═══════════════════════════════════════════════════════════════════════════════
+
+SECTION 6: SUPPORT & CUSTOMER SERVICE
+
+Rate the following (1 = Poor, 5 = Excellent):
+
+38. Availability of Support
+☐ 1  ☐ 2  ☐ 3  ☐ 4  ☐ 5  ☐ N/A
+
+Comments: _________________________________________________________________
+
+39. Quality of Support
+☐ 1  ☐ 2  ☐ 3  ☐ 4  ☐ 5  ☐ N/A
+
+Comments: _________________________________________________________________
+
+40. Technical Support Response Time
+☐ 1  ☐ 2  ☐ 3  ☐ 4  ☐ 5  ☐ N/A
+
+Comments: _________________________________________________________________
+
+41. Problem Resolution Effectiveness
+☐ 1  ☐ 2  ☐ 3  ☐ 4  ☐ 5  ☐ N/A
+
+Comments: _________________________________________________________________
+
+42. Support Documentation and Resources
+☐ 1  ☐ 2  ☐ 3  ☐ 4  ☐ 5  ☐ N/A
+
+Comments: _________________________________________________________________
+
+43. Support Experience
+
+Have you contacted support in the last 6 months?
+☐ Yes  ☐ No
+
+If yes, how satisfied were you with the support experience?
+☐ Very satisfied
+☐ Satisfied
+☐ Neutral
+☐ Dissatisfied
+☐ Very dissatisfied
+
+What would improve the support experience?
+_____________________________________________________________________________
+_____________________________________________________________________________
+
+═══════════════════════════════════════════════════════════════════════════════
+
+SECTION 7: BUSINESS IMPACT & RESULTS
+
+44. Achievement of Business Objectives
+
+To what extent have we helped you achieve your business objectives?
+
+☐ Fully achieved
+☐ Mostly achieved
+☐ Partially achieved
+☐ Minimally achieved
+☐ Not achieved
+
+Please explain:
+_____________________________________________________________________________
+_____________________________________________________________________________
+
+45. Return on Investment
+
+How would you rate the return on investment from our services?
+
+☐ Excellent ROI
+☐ Good ROI
+☐ Fair ROI
+☐ Poor ROI
+☐ Too early to determine
+
+Comments:
+_____________________________________________________________________________
+_____________________________________________________________________________
+
+46. Impact on Your Business
+
+What positive impacts have our services had on your business?
+
+☐ Increased efficiency
+☐ Cost savings
+☐ Revenue growth
+☐ Improved quality
+☐ Competitive advantage
+☐ Risk reduction
+☐ Other: _________________________________________________________________
+
+Please provide specific examples:
+_____________________________________________________________________________
+_____________________________________________________________________________
+
+47. Long-term Value
+
+How confident are you that our solutions will deliver long-term value?
+
+☐ Very confident
+☐ Confident
+☐ Somewhat confident
+☐ Not very confident
+☐ Not confident at all
+
+Why?
+_____________________________________________________________________________
+_____________________________________________________________________________
+
+═══════════════════════════════════════════════════════════════════════════════
+
+SECTION 8: AREAS OF EXCELLENCE
+
+48. What do we do best?
+
+What are the top 3 things we do exceptionally well?
+
+1. _________________________________________________________________________
+
+2. _________________________________________________________________________
+
+3. _________________________________________________________________________
+
+49. What Makes Us Different?
+
+What differentiates us from other service providers?
+
+_____________________________________________________________________________
+_____________________________________________________________________________
+_____________________________________________________________________________
+
+50. Success Stories
+
+Can you share a specific example where we exceeded your expectations?
+
+_____________________________________________________________________________
+_____________________________________________________________________________
+_____________________________________________________________________________
+
+═══════════════════════════════════════════════════════════════════════════════
+
+SECTION 9: AREAS FOR IMPROVEMENT
+
+51. What could we improve?
+
+What are the top 3 areas where we need to improve?
+
+1. _________________________________________________________________________
+
+2. _________________________________________________________________________
+
+3. _________________________________________________________________________
+
+52. Service Gaps
+
+Are there any services or capabilities you need that we don't currently offer?
+
+☐ Yes  ☐ No
+
+If yes, please describe:
+_____________________________________________________________________________
+_____________________________________________________________________________
+
+53. Biggest Challenges
+
+What has been the biggest challenge in working with us?
+
+_____________________________________________________________________________
+_____________________________________________________________________________
+_____________________________________________________________________________
+
+54. Disappointments
+
+What has disappointed you or fallen short of your expectations?
+
+_____________________________________________________________________________
+_____________________________________________________________________________
+_____________________________________________________________________________
+
+55. If You Could Change One Thing
+
+If you could change one thing about our services, what would it be?
+
+_____________________________________________________________________________
+_____________________________________________________________________________
+_____________________________________________________________________________
+
+═══════════════════════════════════════════════════════════════════════════════
+
+SECTION 10: SPECIFIC SERVICE RATINGS
+
+Please rate your satisfaction with each specific service you use:
+
+56. [Service/Product 1 Name]
+☐ 1  ☐ 2  ☐ 3  ☐ 4  ☐ 5  ☐ Don't use this service
+
+Comments: _________________________________________________________________
+
+57. [Service/Product 2 Name]
+☐ 1  ☐ 2  ☐ 3  ☐ 4  ☐ 5  ☐ Don't use this service
+
+Comments: _________________________________________________________________
+
+58. [Service/Product 3 Name]
+☐ 1  ☐ 2  ☐ 3  ☐ 4  ☐ 5  ☐ Don't use this service
+
+Comments: _________________________________________________________________
+
+59. [Service/Product 4 Name]
+☐ 1  ☐ 2  ☐ 3  ☐ 4  ☐ 5  ☐ Don't use this service
+
+Comments: _________________________________________________________________
+
+60. Which of our services do you find most valuable?
+
+_____________________________________________________________________________
+
+61. Which services do you use least and why?
+
+_____________________________________________________________________________
+
+═══════════════════════════════════════════════════════════════════════════════
+
+SECTION 11: FUTURE ENGAGEMENT
+
+62. Likelihood of Continued Partnership
+
+How likely are you to continue working with us?
+
+☐ Definitely will continue
+☐ Probably will continue
+☐ Not sure
+☐ Probably will not continue
+☐ Definitely will not continue
+
+Please explain:
+_____________________________________________________________________________
+_____________________________________________________________________________
+
+63. Expanding the Relationship
+
+Are you interested in expanding the services you use?
+
+☐ Yes, definitely
+☐ Possibly
+☐ Not at this time
+☐ No
+
+What additional services interest you?
+_____________________________________________________________________________
+_____________________________________________________________________________
+
+64. Upcoming Needs
+
+Do you have any upcoming projects or needs we should discuss?
+
+☐ Yes  ☐ No  ☐ Not sure
+
+If yes, please describe:
+_____________________________________________________________________________
+_____________________________________________________________________________
+
+When: ☐ Next 3 months  ☐ 3-6 months  ☐ 6-12 months  ☐ 12+ months
+
+65. Budget Outlook
+
+How do you expect your budget for our services to change in the next 12 months?
+
+☐ Increase significantly (>25%)
+☐ Increase somewhat (10-25%)
+☐ Stay about the same
+☐ Decrease somewhat (10-25%)
+☐ Decrease significantly (>25%)
+☐ Uncertain
+
+═══════════════════════════════════════════════════════════════════════════════
+
+SECTION 12: TESTIMONIALS & REFERRALS
+
+66. Testimonial
+
+Would you be willing to provide a testimonial about your experience?
+
+☐ Yes
+☐ Maybe (contact me to discuss)
+☐ No
+
+If yes, please provide a brief testimonial (optional):
+
+_____________________________________________________________________________
+_____________________________________________________________________________
+_____________________________________________________________________________
+_____________________________________________________________________________
+
+May we use your name and company name?
+☐ Yes, both name and company
+☐ Name only
+☐ Company only
+☐ Anonymous only
+
+67. Case Study Participation
+
+Would you be interested in participating in a case study?
+
+☐ Yes, very interested
+☐ Possibly, tell me more
+☐ Not at this time
+☐ No
+
+68. Referrals
+
+Would you be willing to provide referrals to other potential clients?
+
+☐ Yes
+☐ Maybe
+☐ No
+
+Have you already referred someone to us?
+☐ Yes  ☐ No
+
+═══════════════════════════════════════════════════════════════════════════════
+
+SECTION 13: COMPANY & INDUSTRY
+
+69. Your Industry Challenges
+
+What are the biggest challenges facing your industry right now?
+
+_____________________________________________________________________________
+_____________________________________________________________________________
+_____________________________________________________________________________
+
+70. How We Can Help
+
+How can we better support you in addressing your industry challenges?
+
+_____________________________________________________________________________
+_____________________________________________________________________________
+_____________________________________________________________________________
+
+71. Industry Trends
+
+Are there any emerging trends in your industry we should be aware of?
+
+_____________________________________________________________________________
+_____________________________________________________________________________
+
+═══════════════════════════════════════════════════════════════════════════════
+
+SECTION 14: ADDITIONAL FEEDBACK
+
+72. Additional Comments
+
+Is there anything else you'd like to share about your experience with us?
+
+_____________________________________________________________________________
+_____________________________________________________________________________
+_____________________________________________________________________________
+_____________________________________________________________________________
+_____________________________________________________________________________
+
+73. Suggestions for New Services or Features
+
+_____________________________________________________________________________
+_____________________________________________________________________________
+_____________________________________________________________________________
+
+74. Final Thoughts
+
+What's the one thing you want us to know?
+
+_____________________________________________________________________________
+_____________________________________________________________________________
+_____________________________________________________________________________
+
+═══════════════════════════════════════════════════════════════════════════════
+
+SECTION 15: FOLLOW-UP
+
+75. May we contact you to discuss your feedback?
+
+☐ Yes, please contact me
+☐ Only if there are concerns to address
+☐ No, prefer not to be contacted
+
+Best method to reach you:
+☐ Email: [Email]
+☐ Phone: [Phone]
+☐ Video call
+
+Best time to contact:
+☐ Morning (9am-12pm)
+☐ Afternoon (12pm-5pm)
+☐ Anytime
+
+Preferred days: ☐ Mon  ☐ Tue  ☐ Wed  ☐ Thu  ☐ Fri
+
+76. Would you like to receive a summary of survey results?
+
+☐ Yes  ☐ No
+
+═══════════════════════════════════════════════════════════════════════════════
+
+DEMOGRAPHIC INFORMATION (Optional)
+
+This information helps us analyze results by segment:
+
+77. What is your role in decision-making regarding our services?
+
+☐ Primary decision maker
+☐ Influencer
+☐ End user
+☐ Administrator
+☐ Other: ______________
+
+78. How many people in your organization use our services?
+
+☐ Just me
+☐ 2-5 people
+☐ 6-10 people
+☐ 11-25 people
+☐ 26-50 people
+☐ 51+ people
+
+79. Your Department:
+
+☐ Executive/C-Level
+☐ Operations
+☐ IT/Technology
+☐ Marketing
+☐ Sales
+☐ Finance
+☐ HR
+☐ Other: ______________
+
+═══════════════════════════════════════════════════════════════════════════════
+
+SURVEY COMPLETION
+
+Survey Completed By: [Name]
+Title: [Title]
+Date: [Date]
+Time to Complete: Approximately _____ minutes
+
+Thank you for completing this survey!
+
+Your feedback is invaluable and will be carefully reviewed by our leadership team. We are committed to continuous improvement and your insights help us serve you better.
+
+Next Steps:
+• Your responses will be reviewed within 5 business days
+• If you indicated concerns, someone will contact you within 3 business days
+• If you requested a follow-up, we'll reach out within 1 week
+• Summary results will be shared (if you opted in)
+
+Questions or immediate concerns?
+Contact: [Name]
+Email: [Email]
+Phone: [Phone]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+INTERNAL USE ONLY
+
+Survey ID: [ID]
+Response Date: [Date]
+Received By: [Name]
+NPS Score: [Score]
+Overall Satisfaction Score: [Score]
+Priority Level: ☐ High  ☐ Medium  ☐ Low
+Follow-up Required: ☐ Yes  ☐ No
+Follow-up Assigned To: [Name]
+Follow-up Completed: ☐ Yes  ☐ No - Date: _______
+Action Items:
+☐ [Action 1]
+☐ [Action 2]
+
+Notes:
+_____________________________________________________________________________
+
+═══════════════════════════════════════════════════════════════════════════════
+
+Thank you for your partnership!
+    `
   }
 ];
 
