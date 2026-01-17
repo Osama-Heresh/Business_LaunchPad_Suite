@@ -19181,8 +19181,4049 @@ Thank you for your partnership!
   }
 ];
 
+// Business Strategy & Planning Templates
+const strategyTemplates: DocumentTemplate[] = [
+  {
+    id: 'strategy-business-plan',
+    title: 'Business Plan Template',
+    description: 'Comprehensive business plan template covering all essential aspects of your business strategy and operations',
+    category: 'strategy',
+    downloadCount: 2847,
+    fileSize: '156.3 KB',
+    rating: 4.9,
+    tags: ['business plan', 'strategy', 'planning', 'startup', 'growth'],
+    createdAt: '2024-01-10T09:00:00Z',
+    updatedAt: '2024-01-30T11:20:00Z',
+    content: `
+BUSINESS PLAN
+[Company Name]
+
+[Company Logo]
+[Address]
+[Phone] | [Email] | [Website]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+CONFIDENTIAL BUSINESS PLAN
+Prepared: [Date]
+Version: [Version Number]
+
+This document contains confidential and proprietary information. Do not distribute without authorization.
+
+═══════════════════════════════════════════════════════════════════════════════
+
+TABLE OF CONTENTS
+
+1. Executive Summary
+2. Company Overview
+3. Products and Services
+4. Market Analysis
+5. Competitive Analysis
+6. Marketing and Sales Strategy
+7. Operations Plan
+8. Management Team
+9. Financial Projections
+10. Funding Requirements
+11. Risk Analysis
+12. Appendices
+
+═══════════════════════════════════════════════════════════════════════════════
+
+1. EXECUTIVE SUMMARY
+
+Business Concept
+[Provide a brief overview of your business concept, what problem you solve, and your unique value proposition]
+
+Mission Statement
+[Your company mission]
+
+Vision Statement
+[Your long-term vision]
+
+Key Success Factors
+• [Success factor 1]
+• [Success factor 2]
+• [Success factor 3]
+
+Financial Highlights
+• Year 1 Revenue: $[Amount]
+• Year 3 Revenue: $[Amount]
+• Break-even: [Timeframe]
+• Funding Required: $[Amount]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+2. COMPANY OVERVIEW
+
+Company Name: [Name]
+Legal Structure: [LLC/Corporation/etc.]
+Founded: [Date]
+Location: [Location]
+Website: [URL]
+
+Company Description
+[Detailed description of your company, its history, and what makes it unique]
+
+Core Values
+• [Value 1]: [Description]
+• [Value 2]: [Description]
+• [Value 3]: [Description]
+
+Business Objectives
+• Short-term (1 year):
+  - [Objective 1]
+  - [Objective 2]
+  - [Objective 3]
+
+• Medium-term (2-3 years):
+  - [Objective 1]
+  - [Objective 2]
+  - [Objective 3]
+
+• Long-term (5+ years):
+  - [Objective 1]
+  - [Objective 2]
+  - [Objective 3]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+3. PRODUCTS AND SERVICES
+
+Product/Service Portfolio
+
+[Product/Service 1]
+• Description: [Detailed description]
+• Features: [Key features]
+• Benefits: [Customer benefits]
+• Pricing: $[Price]
+• Target Market: [Market segment]
+
+[Product/Service 2]
+• Description: [Detailed description]
+• Features: [Key features]
+• Benefits: [Customer benefits]
+• Pricing: $[Price]
+• Target Market: [Market segment]
+
+Unique Value Proposition
+[What makes your offering unique and why customers choose you]
+
+Product Development Roadmap
+• Q1: [Plans]
+• Q2: [Plans]
+• Q3: [Plans]
+• Q4: [Plans]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+4. MARKET ANALYSIS
+
+Industry Overview
+• Industry Size: $[Amount]
+• Annual Growth Rate: [Percentage]%
+• Key Trends:
+  - [Trend 1]
+  - [Trend 2]
+  - [Trend 3]
+
+Target Market
+
+Primary Market Segment
+• Demographics: [Details]
+• Size: [Number] customers
+• Market Value: $[Amount]
+• Pain Points: [Key problems]
+• Buying Behavior: [Description]
+
+Secondary Market Segment
+• Demographics: [Details]
+• Size: [Number] customers
+• Market Value: $[Amount]
+
+Market Needs
+• [Need 1]: [Description]
+• [Need 2]: [Description]
+• [Need 3]: [Description]
+
+Market Growth Projections
+• Year 1: [Projection]
+• Year 2: [Projection]
+• Year 3: [Projection]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+5. COMPETITIVE ANALYSIS
+
+Competitive Landscape
+
+Main Competitors
+
+[Competitor 1]
+• Strengths: [List]
+• Weaknesses: [List]
+• Market Share: [Percentage]%
+• Pricing: [Details]
+
+[Competitor 2]
+• Strengths: [List]
+• Weaknesses: [List]
+• Market Share: [Percentage]%
+• Pricing: [Details]
+
+[Competitor 3]
+• Strengths: [List]
+• Weaknesses: [List]
+• Market Share: [Percentage]%
+• Pricing: [Details]
+
+Our Competitive Advantages
+• [Advantage 1]: [How we're better]
+• [Advantage 2]: [How we're better]
+• [Advantage 3]: [How we're better]
+
+Barriers to Entry
+• [Barrier 1]
+• [Barrier 2]
+• [Barrier 3]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+6. MARKETING AND SALES STRATEGY
+
+Marketing Strategy
+
+Brand Positioning
+[How you want to be perceived in the market]
+
+Marketing Mix
+
+Product Strategy
+• [Strategy points]
+
+Pricing Strategy
+• Pricing Model: [Model]
+• Price Point: $[Amount]
+• Rationale: [Explanation]
+
+Distribution Strategy
+• [Channel 1]: [Details]
+• [Channel 2]: [Details]
+• [Channel 3]: [Details]
+
+Promotion Strategy
+• Digital Marketing:
+  - SEO/SEM
+  - Social Media: [Platforms]
+  - Content Marketing
+  - Email Marketing
+
+• Traditional Marketing:
+  - [Channel 1]
+  - [Channel 2]
+
+• Public Relations
+• Events and Partnerships
+
+Marketing Budget
+• Year 1: $[Amount] ([Percentage]% of revenue)
+• Breakdown:
+  - Digital: $[Amount]
+  - Traditional: $[Amount]
+  - Events: $[Amount]
+
+Sales Strategy
+
+Sales Model
+• [Direct Sales/Channel Partners/Online/Hybrid]
+
+Sales Process
+1. [Step 1]
+2. [Step 2]
+3. [Step 3]
+4. [Step 4]
+5. [Step 5]
+
+Sales Team Structure
+• Sales Representatives: [Number]
+• Account Managers: [Number]
+• Sales Support: [Number]
+
+Sales Targets
+• Year 1: $[Amount]
+• Year 2: $[Amount]
+• Year 3: $[Amount]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+7. OPERATIONS PLAN
+
+Operational Structure
+
+Location and Facilities
+• Primary Location: [Address]
+• Size: [Square footage]
+• Lease Terms: [Details]
+• Additional Locations: [If applicable]
+
+Technology Infrastructure
+• [System 1]: [Purpose]
+• [System 2]: [Purpose]
+• [System 3]: [Purpose]
+
+Equipment and Assets
+• [Asset 1]: [Value]
+• [Asset 2]: [Value]
+• [Asset 3]: [Value]
+
+Supply Chain
+• Key Suppliers:
+  - [Supplier 1]: [Products/Services]
+  - [Supplier 2]: [Products/Services]
+  - [Supplier 3]: [Products/Services]
+
+Production/Service Delivery Process
+1. [Step 1]
+2. [Step 2]
+3. [Step 3]
+4. [Step 4]
+
+Quality Control
+• [Process 1]
+• [Process 2]
+• [Process 3]
+
+Customer Service
+• Support Channels: [List]
+• Response Time: [Target]
+• Satisfaction Goal: [Percentage]%
+
+═══════════════════════════════════════════════════════════════════════════════
+
+8. MANAGEMENT TEAM
+
+Organizational Structure
+
+[Include organizational chart]
+
+Key Personnel
+
+[Name], [Title]
+• Background: [Experience]
+• Responsibilities: [Key duties]
+• Compensation: $[Amount]
+
+[Name], [Title]
+• Background: [Experience]
+• Responsibilities: [Key duties]
+• Compensation: $[Amount]
+
+[Name], [Title]
+• Background: [Experience]
+• Responsibilities: [Key duties]
+• Compensation: $[Amount]
+
+Board of Directors/Advisors
+• [Name]: [Expertise]
+• [Name]: [Expertise]
+• [Name]: [Expertise]
+
+Staffing Plan
+• Current Employees: [Number]
+• Year 1 Hires: [Number]
+• Year 2 Hires: [Number]
+• Year 3 Hires: [Number]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+9. FINANCIAL PROJECTIONS
+
+Revenue Projections
+
+Year 1
+• Q1: $[Amount]
+• Q2: $[Amount]
+• Q3: $[Amount]
+• Q4: $[Amount]
+• Total: $[Amount]
+
+Year 2: $[Amount]
+Year 3: $[Amount]
+
+Expense Projections
+
+Operating Expenses (Year 1)
+• Personnel: $[Amount]
+• Marketing: $[Amount]
+• Rent/Facilities: $[Amount]
+• Technology: $[Amount]
+• Professional Services: $[Amount]
+• Insurance: $[Amount]
+• Other: $[Amount]
+• Total: $[Amount]
+
+Profitability Analysis
+• Gross Margin: [Percentage]%
+• Operating Margin: [Percentage]%
+• Net Margin: [Percentage]%
+
+Break-Even Analysis
+• Fixed Costs: $[Amount]
+• Variable Costs: $[Amount]
+• Break-even Point: [Units or $ amount]
+• Time to Break-even: [Months]
+
+Cash Flow Projections
+• Year 1 Cash Flow: $[Amount]
+• Year 2 Cash Flow: $[Amount]
+• Year 3 Cash Flow: $[Amount]
+
+Key Financial Metrics
+• Customer Acquisition Cost (CAC): $[Amount]
+• Lifetime Value (LTV): $[Amount]
+• LTV:CAC Ratio: [Ratio]:1
+• Monthly Burn Rate: $[Amount]
+• Runway: [Months]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+10. FUNDING REQUIREMENTS
+
+Capital Requirements
+
+Total Funding Needed: $[Amount]
+
+Use of Funds
+• Product Development: $[Amount] ([Percentage]%)
+• Marketing and Sales: $[Amount] ([Percentage]%)
+• Operations: $[Amount] ([Percentage]%)
+• Personnel: $[Amount] ([Percentage]%)
+• Working Capital: $[Amount] ([Percentage]%)
+• Equipment: $[Amount] ([Percentage]%)
+• Contingency: $[Amount] ([Percentage]%)
+
+Funding Strategy
+• [Equity/Debt/Hybrid]
+• Terms: [Details]
+• Timeline: [When needed]
+
+Expected Returns
+• Year 1 EBITDA: $[Amount]
+• Year 3 EBITDA: $[Amount]
+• Year 5 Projected Value: $[Amount]
+• Exit Strategy: [IPO/Acquisition/etc.]
+
+Current Funding Status
+• Already Invested: $[Amount]
+• Committed: $[Amount]
+• Seeking: $[Amount]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+11. RISK ANALYSIS
+
+Key Risks and Mitigation Strategies
+
+Market Risks
+• Risk: [Description]
+  Likelihood: [High/Medium/Low]
+  Impact: [High/Medium/Low]
+  Mitigation: [Strategy]
+
+Competitive Risks
+• Risk: [Description]
+  Likelihood: [High/Medium/Low]
+  Impact: [High/Medium/Low]
+  Mitigation: [Strategy]
+
+Financial Risks
+• Risk: [Description]
+  Likelihood: [High/Medium/Low]
+  Impact: [High/Medium/Low]
+  Mitigation: [Strategy]
+
+Operational Risks
+• Risk: [Description]
+  Likelihood: [High/Medium/Low]
+  Impact: [High/Medium/Low]
+  Mitigation: [Strategy]
+
+Regulatory Risks
+• Risk: [Description]
+  Likelihood: [High/Medium/Low]
+  Impact: [High/Medium/Low]
+  Mitigation: [Strategy]
+
+Technology Risks
+• Risk: [Description]
+  Likelihood: [High/Medium/Low]
+  Impact: [High/Medium/Low]
+  Mitigation: [Strategy]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+12. APPENDICES
+
+Appendix A: Market Research Data
+[Include detailed market research, surveys, focus group results]
+
+Appendix B: Product/Service Details
+[Include technical specifications, mockups, prototypes]
+
+Appendix C: Financial Statements
+[Include detailed P&L, balance sheet, cash flow statements]
+
+Appendix D: Legal Documents
+[Include articles of incorporation, contracts, patents]
+
+Appendix E: Management Team Resumes
+[Include full resumes of key team members]
+
+Appendix F: Letters of Intent/Partnerships
+[Include any signed agreements or commitments]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+Contact Information
+
+[Company Name]
+[Address]
+[City, State, ZIP Code]
+[Phone]
+[Email]
+[Website]
+
+Primary Contact: [Name], [Title]
+Email: [Email]
+Phone: [Phone]
+
+═══════════════════════════════════════════════════════════════════════════════
+    `
+  },
+  {
+    id: 'strategy-executive-summary',
+    title: 'Executive Summary',
+    description: 'Professional executive summary template for business plans, proposals, and strategic documents',
+    category: 'strategy',
+    downloadCount: 1956,
+    fileSize: '38.4 KB',
+    rating: 4.8,
+    tags: ['executive summary', 'overview', 'business', 'proposal', 'strategy'],
+    createdAt: '2024-01-12T10:00:00Z',
+    updatedAt: '2024-01-28T09:45:00Z',
+    content: `
+EXECUTIVE SUMMARY
+
+[Company Name]
+[Document Title]
+
+[Company Logo]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+Prepared by: [Name/Department]
+Date: [Date]
+Version: [Version Number]
+Classification: [Confidential/Internal/Public]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+OVERVIEW
+
+Company/Project Name: [Name]
+Industry: [Industry]
+Location: [Location]
+Founded/Start Date: [Date]
+
+Quick Summary
+[2-3 sentences capturing the essence of your business or project - what you do, who you serve, and what makes you unique]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+THE OPPORTUNITY
+
+Problem Statement
+[Clearly describe the problem or need in the market]
+
+Market Opportunity
+• Market Size: $[Amount] ([Region/Global])
+• Growth Rate: [Percentage]% annually
+• Target Market: [Description]
+• Addressable Market: $[Amount]
+
+Industry Trends
+• [Trend 1]: [Impact]
+• [Trend 2]: [Impact]
+• [Trend 3]: [Impact]
+
+Why Now?
+[Explain why this is the right time for this opportunity]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+OUR SOLUTION
+
+Product/Service Overview
+[Describe your product or service and how it solves the problem]
+
+Key Features
+• [Feature 1]: [Benefit]
+• [Feature 2]: [Benefit]
+• [Feature 3]: [Benefit]
+
+Unique Value Proposition
+[What makes your solution unique and better than alternatives]
+
+Competitive Advantages
+• [Advantage 1]
+• [Advantage 2]
+• [Advantage 3]
+
+Innovation/Differentiation
+[What's innovative about your approach]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+BUSINESS MODEL
+
+Revenue Streams
+• [Stream 1]: [Description] - [Percentage]% of revenue
+• [Stream 2]: [Description] - [Percentage]% of revenue
+• [Stream 3]: [Description] - [Percentage]% of revenue
+
+Pricing Strategy
+• [Product/Service]: $[Price] per [unit/month/year]
+• Target Margins: [Percentage]%
+
+Go-to-Market Strategy
+[Brief description of how you'll reach customers]
+
+Customer Acquisition
+• Primary Channels: [List]
+• Customer Acquisition Cost (CAC): $[Amount]
+• Lifetime Value (LTV): $[Amount]
+• LTV:CAC Ratio: [Ratio]:1
+
+═══════════════════════════════════════════════════════════════════════════════
+
+MARKET ANALYSIS
+
+Target Customers
+
+Primary Customer Segment
+• Profile: [Description]
+• Size: [Number] potential customers
+• Needs: [Key needs]
+• Pain Points: [Problems they face]
+
+Secondary Customer Segment
+• Profile: [Description]
+• Size: [Number] potential customers
+
+Market Validation
+• [Evidence 1]: [Details]
+• [Evidence 2]: [Details]
+• [Evidence 3]: [Details]
+
+Competitive Landscape
+• Direct Competitors: [Names]
+• Indirect Competitors: [Names]
+• Our Position: [Description]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+TRACTION & MILESTONES
+
+Current Status
+[Where you are today - product development stage, customers, revenue, etc.]
+
+Key Achievements to Date
+• [Achievement 1]: [Date]
+• [Achievement 2]: [Date]
+• [Achievement 3]: [Date]
+
+Performance Metrics
+• Customers/Users: [Number]
+• Revenue (if applicable): $[Amount]
+• Growth Rate: [Percentage]%
+• Other Key Metrics: [Details]
+
+Upcoming Milestones
+• [Milestone 1]: [Target Date]
+• [Milestone 2]: [Target Date]
+• [Milestone 3]: [Target Date]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+FINANCIAL SUMMARY
+
+Revenue Projections
+• Year 1: $[Amount]
+• Year 2: $[Amount]
+• Year 3: $[Amount]
+• Year 5: $[Amount]
+
+Profitability Timeline
+• Break-even: [Quarter/Year]
+• First Profitable Quarter: [Quarter/Year]
+• Year 3 Net Margin: [Percentage]%
+
+Key Financial Metrics
+• Gross Margin: [Percentage]%
+• Operating Expenses: $[Amount] (Year 1)
+• EBITDA (Year 3): $[Amount]
+• Cash Flow Positive: [Date/Quarter]
+
+Capital Efficiency
+• Monthly Burn Rate: $[Amount]
+• Current Runway: [Months]
+• Path to Profitability: [Description]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+TEAM
+
+Leadership Team
+
+[Name], [Title]
+• [Key expertise/experience - 1 line]
+• [Notable achievement]
+
+[Name], [Title]
+• [Key expertise/experience - 1 line]
+• [Notable achievement]
+
+[Name], [Title]
+• [Key expertise/experience - 1 line]
+• [Notable achievement]
+
+Advisory Board/Key Supporters
+• [Name]: [Title/Expertise]
+• [Name]: [Title/Expertise]
+• [Name]: [Title/Expertise]
+
+Team Strengths
+• [Strength 1]
+• [Strength 2]
+• [Strength 3]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+FUNDING REQUEST (If Applicable)
+
+Capital Required: $[Amount]
+
+Use of Funds
+• [Category 1]: $[Amount] ([Percentage]%)
+• [Category 2]: $[Amount] ([Percentage]%)
+• [Category 3]: $[Amount] ([Percentage]%)
+• [Category 4]: $[Amount] ([Percentage]%)
+
+Investment Terms
+• Type: [Equity/Debt/Convertible]
+• Valuation: $[Amount]
+• Equity Offered: [Percentage]%
+
+Expected Returns
+• Year 3 Company Value: $[Amount]
+• Projected ROI: [Multiple]x
+• Exit Timeline: [Years]
+• Exit Strategy: [IPO/Acquisition/etc.]
+
+Previous Funding
+• Date: [Date]
+• Amount: $[Amount]
+• Investors: [Names]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+STRATEGIC OBJECTIVES
+
+Short-Term Goals (12 months)
+• [Goal 1]
+• [Goal 2]
+• [Goal 3]
+
+Medium-Term Goals (2-3 years)
+• [Goal 1]
+• [Goal 2]
+• [Goal 3]
+
+Long-Term Vision (5+ years)
+[Description of where you see the company/project in 5+ years]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+RISKS & MITIGATION
+
+Key Risks
+• [Risk 1]: [Brief description]
+  Mitigation: [Strategy]
+
+• [Risk 2]: [Brief description]
+  Mitigation: [Strategy]
+
+• [Risk 3]: [Brief description]
+  Mitigation: [Strategy]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+CONCLUSION
+
+[2-3 paragraphs summarizing why this is a compelling opportunity and what makes this venture/project likely to succeed]
+
+Key Takeaways
+• [Takeaway 1]
+• [Takeaway 2]
+• [Takeaway 3]
+
+Call to Action
+[What you want the reader to do next]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+CONTACT INFORMATION
+
+[Name], [Title]
+[Company Name]
+[Address]
+[City, State, ZIP Code]
+
+Phone: [Phone]
+Email: [Email]
+Website: [Website]
+
+═══════════════════════════════════════════════════════════════════════════════
+    `
+  },
+  {
+    id: 'strategy-vision-mission',
+    title: 'Vision & Mission Statement',
+    description: 'Template for crafting compelling vision and mission statements that define your company purpose and direction',
+    category: 'strategy',
+    downloadCount: 1534,
+    fileSize: '29.6 KB',
+    rating: 4.7,
+    tags: ['vision', 'mission', 'values', 'purpose', 'strategy'],
+    createdAt: '2024-01-14T11:00:00Z',
+    updatedAt: '2024-01-26T15:30:00Z',
+    content: `
+VISION & MISSION STATEMENT
+
+[Company Name]
+
+[Company Logo]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+COMPANY PURPOSE & DIRECTION
+
+Prepared by: [Leadership Team]
+Date: [Date]
+Version: [Version]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+OUR VISION STATEMENT
+
+[Your inspiring vision of the future - where you want to be]
+
+Example Format:
+"To [ultimate goal] by [method/approach] so that [impact on world/customers/industry]."
+
+Vision Elements:
+• Aspirational: Where we want to be
+• Future-focused: Our long-term destination
+• Inspirational: Motivates and energizes
+• Clear: Easy to understand and remember
+
+═══════════════════════════════════════════════════════════════════════════════
+
+OUR MISSION STATEMENT
+
+[Your current purpose - what you do and why]
+
+Example Format:
+"To [primary action] for [target audience] through [method/products/services], enabling [benefit/outcome]."
+
+Mission Elements:
+• Present-focused: What we do today
+• Action-oriented: Clear about our activities
+• Customer-centric: Focused on who we serve
+• Differentiating: What makes us unique
+
+═══════════════════════════════════════════════════════════════════════════════
+
+WHY WE EXIST
+
+Our Purpose
+[The fundamental reason your company exists - the problem you solve or the need you fulfill]
+
+The Problem We Solve
+[Describe the challenge, gap, or need in the world that drives your work]
+
+The Change We Create
+[The positive impact and transformation you bring to customers, industry, or society]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+OUR CORE VALUES
+
+Value 1: [NAME]
+Definition: [What this value means to us]
+In Practice: [How we demonstrate this value]
+Behaviors:
+• [Behavior 1]
+• [Behavior 2]
+• [Behavior 3]
+
+Value 2: [NAME]
+Definition: [What this value means to us]
+In Practice: [How we demonstrate this value]
+Behaviors:
+• [Behavior 1]
+• [Behavior 2]
+• [Behavior 3]
+
+Value 3: [NAME]
+Definition: [What this value means to us]
+In Practice: [How we demonstrate this value]
+Behaviors:
+• [Behavior 1]
+• [Behavior 2]
+• [Behavior 3]
+
+Value 4: [NAME]
+Definition: [What this value means to us]
+In Practice: [How we demonstrate this value]
+Behaviors:
+• [Behavior 1]
+• [Behavior 2]
+• [Behavior 3]
+
+Value 5: [NAME]
+Definition: [What this value means to us]
+In Practice: [How we demonstrate this value]
+Behaviors:
+• [Behavior 1]
+• [Behavior 2]
+• [Behavior 3]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+STRATEGIC PILLARS
+
+These pillars support our vision and guide our strategic decisions:
+
+Pillar 1: [NAME]
+Focus: [What this pillar encompasses]
+Objectives:
+• [Objective 1]
+• [Objective 2]
+• [Objective 3]
+
+Pillar 2: [NAME]
+Focus: [What this pillar encompasses]
+Objectives:
+• [Objective 1]
+• [Objective 2]
+• [Objective 3]
+
+Pillar 3: [NAME]
+Focus: [What this pillar encompasses]
+Objectives:
+• [Objective 1]
+• [Objective 2]
+• [Objective 3]
+
+Pillar 4: [NAME]
+Focus: [What this pillar encompasses]
+Objectives:
+• [Objective 1]
+• [Objective 2]
+• [Objective 3]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+OUR BRAND PROMISE
+
+To Our Customers
+[What customers can always expect from us]
+
+To Our Employees
+[What employees can expect from working here]
+
+To Our Partners
+[What partners can expect from collaborating with us]
+
+To Our Community
+[Our commitment to the broader community]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+WHO WE SERVE
+
+Primary Customers
+[Description of your ideal customers]
+
+Their Needs
+• [Need 1]
+• [Need 2]
+• [Need 3]
+
+How We Help
+[How your products/services address these needs]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+HOW WE WORK
+
+Our Approach
+[Description of your unique methodology or approach]
+
+What Makes Us Different
+• [Differentiator 1]
+• [Differentiator 2]
+• [Differentiator 3]
+
+Our Commitments
+• [Commitment 1]
+• [Commitment 2]
+• [Commitment 3]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+OUR CULTURE
+
+Work Environment
+[Description of your workplace culture and atmosphere]
+
+How We Treat Each Other
+• [Principle 1]
+• [Principle 2]
+• [Principle 3]
+
+How We Make Decisions
+[Description of decision-making principles]
+
+How We Measure Success
+• [Metric/Indicator 1]
+• [Metric/Indicator 2]
+• [Metric/Indicator 3]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+OUR LONG-TERM GOALS
+
+5-Year Vision
+[Where we want to be in 5 years]
+
+Key Targets
+• [Target 1]
+• [Target 2]
+• [Target 3]
+
+Impact Goals
+• [Impact 1]
+• [Impact 2]
+• [Impact 3]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+LIVING OUR VISION & MISSION
+
+Application in Daily Work
+
+For Leadership
+• [How leaders embody vision/mission]
+• [Leadership expectations]
+• [Leadership behaviors]
+
+For Employees
+• [How employees embody vision/mission]
+• [Employee expectations]
+• [Employee behaviors]
+
+For Teams
+• [How teams embody vision/mission]
+• [Team expectations]
+• [Team behaviors]
+
+In Decision Making
+• [How to use vision/mission in decisions]
+• [Decision criteria based on values]
+• [Examples of aligned decisions]
+
+In Customer Interactions
+• [How to reflect values with customers]
+• [Customer service principles]
+• [Communication guidelines]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+ALIGNMENT CHECK
+
+Use these questions to ensure decisions align with our vision and mission:
+
+Strategic Decisions
+☐ Does this move us toward our vision?
+☐ Is it consistent with our mission?
+☐ Does it reflect our core values?
+☐ Will it serve our customers better?
+☐ Is it sustainable long-term?
+
+Daily Decisions
+☐ Is this the right thing to do?
+☐ Does it align with our values?
+☐ How will customers be impacted?
+☐ What message does this send?
+☐ Would we be proud of this?
+
+═══════════════════════════════════════════════════════════════════════════════
+
+COMMUNICATING OUR PURPOSE
+
+Internal Communication
+• [How we share with employees]
+• [Frequency of reinforcement]
+• [Integration in meetings]
+
+External Communication
+• [How we share with customers]
+• [Marketing messages]
+• [Public representation]
+
+Onboarding New Members
+• [How we introduce vision/mission]
+• [Training components]
+• [Cultural integration]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+EVOLUTION & UPDATES
+
+Review Schedule
+• Annual Review: [Month]
+• Led by: [Role/Team]
+• Participants: [Who's involved]
+
+Criteria for Changes
+[When and why we might update our vision/mission]
+
+Version History
+• Version 1.0: [Date] - Initial creation
+• Version [X]: [Date] - [Changes made]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+APPENDIX: DEVELOPMENT PROCESS
+
+How We Created This
+
+Participants
+• [Name/Role]
+• [Name/Role]
+• [Name/Role]
+
+Process
+1. [Step 1]
+2. [Step 2]
+3. [Step 3]
+4. [Step 4]
+
+Input Sources
+• [Source 1]
+• [Source 2]
+• [Source 3]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+EXAMPLES & INSPIRATION
+
+Well-Known Vision Statements
+• [Company]: "[Vision]"
+• [Company]: "[Vision]"
+
+Well-Known Mission Statements
+• [Company]: "[Mission]"
+• [Company]: "[Mission]"
+
+What We Can Learn
+[Key lessons from these examples]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+[Company Name]
+Living our vision and mission every day.
+
+═══════════════════════════════════════════════════════════════════════════════
+    `
+  },
+  {
+    id: 'strategy-okr-sheet',
+    title: 'OKR (Objectives & Key Results) Sheet',
+    description: 'Goal-setting framework template for defining and tracking objectives and key results',
+    category: 'strategy',
+    downloadCount: 2234,
+    fileSize: '45.8 KB',
+    rating: 4.9,
+    tags: ['OKR', 'goals', 'objectives', 'key results', 'performance'],
+    createdAt: '2024-01-11T14:00:00Z',
+    updatedAt: '2024-01-29T10:15:00Z',
+    content: `
+OKR (OBJECTIVES & KEY RESULTS)
+
+[Company/Department Name]
+[Time Period: Q1/Q2/Q3/Q4 20XX]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+OKR OVERVIEW
+
+Period: [Quarter/Year]
+Owner: [Name/Department]
+Date Created: [Date]
+Last Updated: [Date]
+Status: [On Track/At Risk/Off Track]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+COMPANY-LEVEL OKRs
+
+OBJECTIVE 1: [Inspiring, qualitative goal]
+
+Why This Matters:
+[Brief explanation of strategic importance]
+
+Key Result 1.1: [Specific, measurable outcome]
+• Baseline: [Starting point]
+• Target: [End goal]
+• Current: [Current status]
+• Progress: [Percentage]%
+• Status: [On Track/At Risk/Off Track]
+• Owner: [Name]
+• Due Date: [Date]
+
+Key Result 1.2: [Specific, measurable outcome]
+• Baseline: [Starting point]
+• Target: [End goal]
+• Current: [Current status]
+• Progress: [Percentage]%
+• Status: [On Track/At Risk/Off Track]
+• Owner: [Name]
+• Due Date: [Date]
+
+Key Result 1.3: [Specific, measurable outcome]
+• Baseline: [Starting point]
+• Target: [End goal]
+• Current: [Current status]
+• Progress: [Percentage]%
+• Status: [On Track/At Risk/Off Track]
+• Owner: [Name]
+• Due Date: [Date]
+
+Overall Objective Progress: [Percentage]%
+Confidence Level: [High/Medium/Low]
+
+───────────────────────────────────────────────────────────────────────────────
+
+OBJECTIVE 2: [Inspiring, qualitative goal]
+
+Why This Matters:
+[Brief explanation of strategic importance]
+
+Key Result 2.1: [Specific, measurable outcome]
+• Baseline: [Starting point]
+• Target: [End goal]
+• Current: [Current status]
+• Progress: [Percentage]%
+• Status: [On Track/At Risk/Off Track]
+• Owner: [Name]
+• Due Date: [Date]
+
+Key Result 2.2: [Specific, measurable outcome]
+• Baseline: [Starting point]
+• Target: [End goal]
+• Current: [Current status]
+• Progress: [Percentage]%
+• Status: [On Track/At Risk/Off Track]
+• Owner: [Name]
+• Due Date: [Date]
+
+Key Result 2.3: [Specific, measurable outcome]
+• Baseline: [Starting point]
+• Target: [End goal]
+• Current: [Current status]
+• Progress: [Percentage]%
+• Status: [On Track/At Risk/Off Track]
+• Owner: [Name]
+• Due Date: [Date]
+
+Overall Objective Progress: [Percentage]%
+Confidence Level: [High/Medium/Low]
+
+───────────────────────────────────────────────────────────────────────────────
+
+OBJECTIVE 3: [Inspiring, qualitative goal]
+
+Why This Matters:
+[Brief explanation of strategic importance]
+
+Key Result 3.1: [Specific, measurable outcome]
+• Baseline: [Starting point]
+• Target: [End goal]
+• Current: [Current status]
+• Progress: [Percentage]%
+• Status: [On Track/At Risk/Off Track]
+• Owner: [Name]
+• Due Date: [Date]
+
+Key Result 3.2: [Specific, measurable outcome]
+• Baseline: [Starting point]
+• Target: [End goal]
+• Current: [Current status]
+• Progress: [Percentage]%
+• Status: [On Track/At Risk/Off Track]
+• Owner: [Name]
+• Due Date: [Date]
+
+Key Result 3.3: [Specific, measurable outcome]
+• Baseline: [Starting point]
+• Target: [End goal]
+• Current: [Current status]
+• Progress: [Percentage]%
+• Status: [On Track/At Risk/Off Track]
+• Owner: [Name]
+• Due Date: [Date]
+
+Overall Objective Progress: [Percentage]%
+Confidence Level: [High/Medium/Low]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+DEPARTMENT/TEAM OKRs
+
+Department: [Department Name]
+Department Lead: [Name]
+
+OBJECTIVE 1: [Department-specific objective aligned with company OKRs]
+
+Alignment: Supports Company Objective [Number]
+
+Key Result 1.1: [Specific, measurable outcome]
+• Baseline: [Starting point]
+• Target: [End goal]
+• Current: [Current status]
+• Progress: [Percentage]%
+• Status: [On Track/At Risk/Off Track]
+• Owner: [Name]
+• Due Date: [Date]
+• Initiative/Project: [Name of project/initiative supporting this KR]
+
+Key Result 1.2: [Specific, measurable outcome]
+• Baseline: [Starting point]
+• Target: [End goal]
+• Current: [Current status]
+• Progress: [Percentage]%
+• Status: [On Track/At Risk/Off Track]
+• Owner: [Name]
+• Due Date: [Date]
+• Initiative/Project: [Name of project/initiative supporting this KR]
+
+Key Result 1.3: [Specific, measurable outcome]
+• Baseline: [Starting point]
+• Target: [End goal]
+• Current: [Current status]
+• Progress: [Percentage]%
+• Status: [On Track/At Risk/Off Track]
+• Owner: [Name]
+• Due Date: [Date]
+• Initiative/Project: [Name of project/initiative supporting this KR]
+
+Overall Objective Progress: [Percentage]%
+Confidence Level: [High/Medium/Low]
+
+───────────────────────────────────────────────────────────────────────────────
+
+OBJECTIVE 2: [Department-specific objective]
+
+Alignment: Supports Company Objective [Number]
+
+Key Result 2.1: [Specific, measurable outcome]
+• Baseline: [Starting point]
+• Target: [End goal]
+• Current: [Current status]
+• Progress: [Percentage]%
+• Status: [On Track/At Risk/Off Track]
+• Owner: [Name]
+• Due Date: [Date]
+• Initiative/Project: [Name of project/initiative supporting this KR]
+
+Key Result 2.2: [Specific, measurable outcome]
+• Baseline: [Starting point]
+• Target: [End goal]
+• Current: [Current status]
+• Progress: [Percentage]%
+• Status: [On Track/At Risk/Off Track]
+• Owner: [Name]
+• Due Date: [Date]
+• Initiative/Project: [Name of project/initiative supporting this KR]
+
+Key Result 2.3: [Specific, measurable outcome]
+• Baseline: [Starting point]
+• Target: [End goal]
+• Current: [Current status]
+• Progress: [Percentage]%
+• Status: [On Track/At Risk/Off Track]
+• Owner: [Name]
+• Due Date: [Date]
+• Initiative/Project: [Name of project/initiative supporting this KR]
+
+Overall Objective Progress: [Percentage]%
+Confidence Level: [High/Medium/Low]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+INDIVIDUAL OKRs
+
+Employee: [Name]
+Manager: [Manager Name]
+Department: [Department]
+
+OBJECTIVE 1: [Individual objective aligned with department/company OKRs]
+
+Alignment: Supports [Department] Objective [Number]
+
+Key Result 1.1: [Specific, measurable outcome]
+• Baseline: [Starting point]
+• Target: [End goal]
+• Current: [Current status]
+• Progress: [Percentage]%
+• Status: [On Track/At Risk/Off Track]
+• Due Date: [Date]
+
+Key Result 1.2: [Specific, measurable outcome]
+• Baseline: [Starting point]
+• Target: [End goal]
+• Current: [Current status]
+• Progress: [Percentage]%
+• Status: [On Track/At Risk/Off Track]
+• Due Date: [Date]
+
+Key Result 1.3: [Specific, measurable outcome]
+• Baseline: [Starting point]
+• Target: [End goal]
+• Current: [Current status]
+• Progress: [Percentage]%
+• Status: [On Track/At Risk/Off Track]
+• Due Date: [Date]
+
+Overall Objective Progress: [Percentage]%
+Confidence Level: [High/Medium/Low]
+
+───────────────────────────────────────────────────────────────────────────────
+
+OBJECTIVE 2: [Individual objective]
+
+Alignment: Supports [Department] Objective [Number]
+
+Key Result 2.1: [Specific, measurable outcome]
+• Baseline: [Starting point]
+• Target: [End goal]
+• Current: [Current status]
+• Progress: [Percentage]%
+• Status: [On Track/At Risk/Off Track]
+• Due Date: [Date]
+
+Key Result 2.2: [Specific, measurable outcome]
+• Baseline: [Starting point]
+• Target: [End goal]
+• Current: [Current status]
+• Progress: [Percentage]%
+• Status: [On Track/At Risk/Off Track]
+• Due Date: [Date]
+
+Overall Objective Progress: [Percentage]%
+Confidence Level: [High/Medium/Low]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+WEEKLY CHECK-IN
+
+Week of: [Date]
+Completed by: [Name]
+Check-in Date: [Date]
+
+Progress Updates
+
+Objective 1: [Name]
+• This Week's Progress: [Description]
+• Wins: [Accomplishments]
+• Challenges: [Issues encountered]
+• Next Steps: [Planned actions]
+
+Objective 2: [Name]
+• This Week's Progress: [Description]
+• Wins: [Accomplishments]
+• Challenges: [Issues encountered]
+• Next Steps: [Planned actions]
+
+Objective 3: [Name]
+• This Week's Progress: [Description]
+• Wins: [Accomplishments]
+• Challenges: [Issues encountered]
+• Next Steps: [Planned actions]
+
+Blockers & Support Needed
+• [Blocker 1]: [Description and help needed]
+• [Blocker 2]: [Description and help needed]
+
+Confidence Level Changes
+• [Any changes to confidence levels and why]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+MID-QUARTER REVIEW
+
+Review Date: [Date]
+Participants: [Names]
+
+Overall Progress
+• Company OKRs: [Percentage]% complete
+• Department OKRs: [Percentage]% complete
+• Individual OKRs: [Percentage]% complete
+
+What's Working Well
+• [Success 1]
+• [Success 2]
+• [Success 3]
+
+What Needs Attention
+• [Issue 1]: [Action plan]
+• [Issue 2]: [Action plan]
+• [Issue 3]: [Action plan]
+
+Adjustments Needed
+• [Adjustment 1]: [Rationale]
+• [Adjustment 2]: [Rationale]
+
+Resource Needs
+• [Resource need 1]
+• [Resource need 2]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+END-OF-QUARTER REVIEW
+
+Review Date: [Date]
+Participants: [Names]
+
+Final Scores
+
+Company Objectives
+• Objective 1: [Percentage]% achieved
+• Objective 2: [Percentage]% achieved
+• Objective 3: [Percentage]% achieved
+• Overall: [Percentage]% achieved
+
+Department Objectives
+• Objective 1: [Percentage]% achieved
+• Objective 2: [Percentage]% achieved
+• Overall: [Percentage]% achieved
+
+Individual Objectives
+• Objective 1: [Percentage]% achieved
+• Objective 2: [Percentage]% achieved
+• Overall: [Percentage]% achieved
+
+Key Achievements
+• [Achievement 1]
+• [Achievement 2]
+• [Achievement 3]
+
+Lessons Learned
+• [Lesson 1]
+• [Lesson 2]
+• [Lesson 3]
+
+What to Continue
+• [Practice 1]
+• [Practice 2]
+
+What to Change
+• [Change 1]
+• [Change 2]
+
+Impact Assessment
+[Description of the impact achieved through these OKRs]
+
+Next Quarter Priorities
+• [Priority 1]
+• [Priority 2]
+• [Priority 3]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+OKR BEST PRACTICES
+
+Writing Good Objectives
+• Qualitative and inspirational
+• Ambitious but achievable
+• Action-oriented
+• Aligned with company strategy
+• Time-bound
+
+Writing Good Key Results
+• Quantitative and measurable
+• Specific and verifiable
+• Challenging but realistic
+• Outcome-focused (not activity-focused)
+• Limited to 3-5 per objective
+
+Grading Scale
+• 0.0-0.3: Failed to make progress
+• 0.4-0.6: Made progress but fell short
+• 0.7-0.8: Achieved the goal (sweet spot)
+• 0.9-1.0: Exceeded expectations (may have been too easy)
+
+Update Frequency
+• Individual: Weekly
+• Team: Weekly
+• Company: Bi-weekly or monthly
+• Formal Review: Mid-quarter and end-of-quarter
+
+═══════════════════════════════════════════════════════════════════════════════
+
+ALIGNMENT MAP
+
+Company Objective 1
+├── Department A Objective 1
+│   ├── Individual OKR 1
+│   └── Individual OKR 2
+└── Department B Objective 1
+    ├── Individual OKR 3
+    └── Individual OKR 4
+
+Company Objective 2
+├── Department A Objective 2
+│   └── Individual OKR 5
+└── Department C Objective 1
+    ├── Individual OKR 6
+    └── Individual OKR 7
+
+Company Objective 3
+└── Department B Objective 2
+    ├── Individual OKR 8
+    └── Individual OKR 9
+
+═══════════════════════════════════════════════════════════════════════════════
+
+[Company Name]
+[Period]
+Created: [Date] | Updated: [Date]
+
+═══════════════════════════════════════════════════════════════════════════════
+    `
+  },
+  {
+    id: 'strategy-kpi-dashboard',
+    title: 'KPI Dashboard Template',
+    description: 'Key Performance Indicator dashboard template for tracking and reporting business metrics',
+    category: 'strategy',
+    downloadCount: 2678,
+    fileSize: '52.1 KB',
+    rating: 4.8,
+    tags: ['KPI', 'metrics', 'dashboard', 'performance', 'analytics'],
+    createdAt: '2024-01-13T09:00:00Z',
+    updatedAt: '2024-01-30T14:20:00Z',
+    content: `
+KPI DASHBOARD
+
+[Company/Department Name]
+[Reporting Period: Month/Quarter/Year]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+EXECUTIVE SUMMARY
+
+Reporting Period: [Date Range]
+Report Generated: [Date]
+Prepared By: [Name/Department]
+Distribution: [Recipients]
+
+Overall Performance: [Excellent/Good/Needs Improvement/Poor]
+
+Key Highlights
+• [Highlight 1]
+• [Highlight 2]
+• [Highlight 3]
+
+Areas of Concern
+• [Concern 1]
+• [Concern 2]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+FINANCIAL KPIs
+
+Revenue Metrics
+
+Total Revenue
+• Current Period: $[Amount]
+• Previous Period: $[Amount]
+• Change: [+/-][Percentage]%
+• Target: $[Amount]
+• Achievement: [Percentage]%
+• Status: [On Track/Behind/Exceeded]
+• Trend: [↑ Growing / → Stable / ↓ Declining]
+
+Revenue Growth Rate
+• Current: [Percentage]%
+• Previous: [Percentage]%
+• Target: [Percentage]%
+• YoY Comparison: [Percentage]%
+• Status: [On Track/Behind/Exceeded]
+
+Monthly Recurring Revenue (MRR)
+• Current: $[Amount]
+• Previous: $[Amount]
+• Change: [+/-][Percentage]%
+• Target: $[Amount]
+• Status: [On Track/Behind/Exceeded]
+
+Annual Recurring Revenue (ARR)
+• Current: $[Amount]
+• Previous: $[Amount]
+• Change: [+/-][Percentage]%
+• Target: $[Amount]
+• Status: [On Track/Behind/Exceeded]
+
+Profitability Metrics
+
+Gross Profit
+• Amount: $[Amount]
+• Margin: [Percentage]%
+• Target Margin: [Percentage]%
+• Status: [On Track/Behind/Exceeded]
+
+Net Profit
+• Amount: $[Amount]
+• Margin: [Percentage]%
+• Target Margin: [Percentage]%
+• Status: [On Track/Behind/Exceeded]
+
+EBITDA
+• Amount: $[Amount]
+• Margin: [Percentage]%
+• Target: $[Amount]
+• Status: [On Track/Behind/Exceeded]
+
+Operating Expenses
+• Total: $[Amount]
+• As % of Revenue: [Percentage]%
+• Budget: $[Amount]
+• Variance: [+/-]$[Amount]
+• Status: [Within/Over/Under Budget]
+
+Cash Flow Metrics
+
+Operating Cash Flow
+• Current Period: $[Amount]
+• Previous Period: $[Amount]
+• Change: [+/-][Percentage]%
+• Status: [Healthy/Concerning]
+
+Cash Balance
+• Current: $[Amount]
+• Burn Rate: $[Amount]/month
+• Runway: [Number] months
+• Status: [Healthy/Warning/Critical]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+CUSTOMER KPIs
+
+Acquisition Metrics
+
+New Customers
+• Current Period: [Number]
+• Previous Period: [Number]
+• Change: [+/-][Percentage]%
+• Target: [Number]
+• Achievement: [Percentage]%
+• Status: [On Track/Behind/Exceeded]
+
+Customer Acquisition Cost (CAC)
+• Current: $[Amount]
+• Previous: $[Amount]
+• Target: $[Amount]
+• Trend: [Improving/Stable/Worsening]
+• Status: [Good/Concerning]
+
+Lead Conversion Rate
+• Current: [Percentage]%
+• Previous: [Percentage]%
+• Target: [Percentage]%
+• Status: [On Track/Behind/Exceeded]
+
+Retention Metrics
+
+Customer Retention Rate
+• Current: [Percentage]%
+• Previous: [Percentage]%
+• Target: [Percentage]%
+• Industry Benchmark: [Percentage]%
+• Status: [Excellent/Good/Needs Improvement]
+
+Customer Churn Rate
+• Current: [Percentage]%
+• Previous: [Percentage]%
+• Target: [Percentage]%
+• Status: [Good/Warning/Critical]
+
+Revenue Churn Rate
+• Current: [Percentage]%
+• Previous: [Percentage]%
+• Target: [Percentage]%
+• Status: [Good/Warning/Critical]
+
+Value Metrics
+
+Customer Lifetime Value (LTV)
+• Current: $[Amount]
+• Previous: $[Amount]
+• Target: $[Amount]
+• Status: [On Track/Behind/Exceeded]
+
+LTV:CAC Ratio
+• Current: [Ratio]:1
+• Previous: [Ratio]:1
+• Target: [Ratio]:1 (typically 3:1)
+• Status: [Healthy/Concerning]
+
+Average Revenue Per User (ARPU)
+• Current: $[Amount]
+• Previous: $[Amount]
+• Change: [+/-][Percentage]%
+• Target: $[Amount]
+• Status: [On Track/Behind/Exceeded]
+
+Satisfaction Metrics
+
+Net Promoter Score (NPS)
+• Current: [Score]
+• Previous: [Score]
+• Target: [Score]
+• Industry Benchmark: [Score]
+• Status: [Excellent/Good/Needs Improvement]
+
+Customer Satisfaction Score (CSAT)
+• Current: [Percentage]% or [Score]/5
+• Previous: [Percentage]% or [Score]/5
+• Target: [Percentage]% or [Score]/5
+• Status: [Excellent/Good/Needs Improvement]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+SALES KPIs
+
+Pipeline Metrics
+
+Total Pipeline Value
+• Current: $[Amount]
+• Previous: $[Amount]
+• Change: [+/-][Percentage]%
+• Target: $[Amount]
+• Status: [On Track/Behind/Exceeded]
+
+Number of Opportunities
+• Current: [Number]
+• Previous: [Number]
+• By Stage:
+  - Prospecting: [Number]
+  - Qualification: [Number]
+  - Proposal: [Number]
+  - Negotiation: [Number]
+
+Average Deal Size
+• Current: $[Amount]
+• Previous: $[Amount]
+• Target: $[Amount]
+• Status: [On Track/Behind/Exceeded]
+
+Performance Metrics
+
+Win Rate
+• Current: [Percentage]%
+• Previous: [Percentage]%
+• Target: [Percentage]%
+• Status: [On Track/Behind/Exceeded]
+
+Sales Cycle Length
+• Current: [Number] days
+• Previous: [Number] days
+• Target: [Number] days
+• Status: [On Track/Behind/Exceeded]
+
+Quota Attainment
+• Current Period: [Percentage]%
+• Number of Reps at Quota: [Number]/[Total]
+• Average Across Team: [Percentage]%
+• Status: [On Track/Behind/Exceeded]
+
+Activity Metrics
+
+Sales Activities
+• Calls Made: [Number]
+• Emails Sent: [Number]
+• Meetings Held: [Number]
+• Demos Given: [Number]
+• Proposals Sent: [Number]
+
+Response Rates
+• Email Response: [Percentage]%
+• Call Connect: [Percentage]%
+• Meeting Show: [Percentage]%
+
+═══════════════════════════════════════════════════════════════════════════════
+
+MARKETING KPIs
+
+Traffic Metrics
+
+Website Traffic
+• Total Visits: [Number]
+• Unique Visitors: [Number]
+• Previous Period: [Number]
+• Change: [+/-][Percentage]%
+• Target: [Number]
+• Status: [On Track/Behind/Exceeded]
+
+Traffic Sources
+• Organic: [Number] ([Percentage]%)
+• Paid: [Number] ([Percentage]%)
+• Direct: [Number] ([Percentage]%)
+• Referral: [Number] ([Percentage]%)
+• Social: [Number] ([Percentage]%)
+
+Engagement Metrics
+
+Bounce Rate
+• Current: [Percentage]%
+• Previous: [Percentage]%
+• Target: [Percentage]%
+• Status: [Good/Needs Improvement]
+
+Average Session Duration
+• Current: [Minutes:Seconds]
+• Previous: [Minutes:Seconds]
+• Target: [Minutes:Seconds]
+• Status: [On Track/Behind/Exceeded]
+
+Pages Per Session
+• Current: [Number]
+• Previous: [Number]
+• Target: [Number]
+• Status: [On Track/Behind/Exceeded]
+
+Conversion Metrics
+
+Conversion Rate
+• Overall: [Percentage]%
+• By Channel:
+  - Organic: [Percentage]%
+  - Paid: [Percentage]%
+  - Email: [Percentage]%
+  - Social: [Percentage]%
+• Target: [Percentage]%
+• Status: [On Track/Behind/Exceeded]
+
+Cost Per Lead (CPL)
+• Current: $[Amount]
+• Previous: $[Amount]
+• Target: $[Amount]
+• Status: [On Track/Behind/Exceeded]
+
+Marketing Qualified Leads (MQLs)
+• Current Period: [Number]
+• Previous Period: [Number]
+• MQL to SQL Conversion: [Percentage]%
+• Target: [Number]
+• Status: [On Track/Behind/Exceeded]
+
+Campaign Performance
+
+Campaign ROI
+• Investment: $[Amount]
+• Return: $[Amount]
+• ROI: [Percentage]%
+• Status: [Positive/Negative]
+
+Email Marketing
+• List Size: [Number]
+• Open Rate: [Percentage]%
+• Click Rate: [Percentage]%
+• Conversion Rate: [Percentage]%
+
+Social Media
+• Followers: [Number]
+• Engagement Rate: [Percentage]%
+• Reach: [Number]
+• Leads Generated: [Number]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+OPERATIONAL KPIs
+
+Productivity Metrics
+
+Revenue Per Employee
+• Current: $[Amount]
+• Previous: $[Amount]
+• Industry Benchmark: $[Amount]
+• Status: [Above/At/Below Benchmark]
+
+Project Completion Rate
+• On Time: [Percentage]%
+• On Budget: [Percentage]%
+• Target: [Percentage]%
+• Status: [On Track/Behind/Exceeded]
+
+Capacity Utilization
+• Current: [Percentage]%
+• Target: [Percentage]%
+• Status: [Optimal/Underutilized/Overutilized]
+
+Quality Metrics
+
+Error Rate
+• Current: [Percentage]%
+• Previous: [Percentage]%
+• Target: [Percentage]%
+• Status: [On Track/Behind/Exceeded]
+
+Quality Score
+• Current: [Score]/10
+• Previous: [Score]/10
+• Target: [Score]/10
+• Status: [On Track/Behind/Exceeded]
+
+Rework Rate
+• Current: [Percentage]%
+• Previous: [Percentage]%
+• Target: [Percentage]%
+• Status: [On Track/Behind/Exceeded]
+
+Efficiency Metrics
+
+Average Handle Time
+• Current: [Duration]
+• Previous: [Duration]
+• Target: [Duration]
+• Status: [On Track/Behind/Exceeded]
+
+First Response Time
+• Current: [Duration]
+• Previous: [Duration]
+• Target: [Duration]
+• Status: [On Track/Behind/Exceeded]
+
+Resolution Time
+• Current: [Duration]
+• Previous: [Duration]
+• Target: [Duration]
+• Status: [On Track/Behind/Exceeded]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+PRODUCT KPIs
+
+Usage Metrics
+
+Active Users
+• Daily Active Users (DAU): [Number]
+• Monthly Active Users (MAU): [Number]
+• DAU/MAU Ratio: [Percentage]%
+• Change: [+/-][Percentage]%
+• Status: [Growing/Stable/Declining]
+
+Feature Adoption
+• [Feature 1]: [Percentage]% of users
+• [Feature 2]: [Percentage]% of users
+• [Feature 3]: [Percentage]% of users
+• Status: [High/Medium/Low Adoption]
+
+Session Frequency
+• Average: [Number] sessions/user/[period]
+• Target: [Number]
+• Status: [On Track/Behind/Exceeded]
+
+Performance Metrics
+
+App Performance
+• Load Time: [Seconds]
+• Crash Rate: [Percentage]%
+• Error Rate: [Percentage]%
+• Uptime: [Percentage]%
+• Status: [Excellent/Good/Needs Improvement]
+
+API Performance
+• Response Time: [Milliseconds]
+• Success Rate: [Percentage]%
+• Throughput: [Requests]/second
+• Status: [Excellent/Good/Needs Improvement]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+HUMAN RESOURCES KPIs
+
+Workforce Metrics
+
+Headcount
+• Current: [Number]
+• New Hires: [Number]
+• Departures: [Number]
+• Net Change: [+/-][Number]
+• Target Headcount: [Number]
+
+Employee Turnover Rate
+• Current: [Percentage]%
+• Previous: [Percentage]%
+• Voluntary: [Percentage]%
+• Involuntary: [Percentage]%
+• Industry Benchmark: [Percentage]%
+• Status: [Good/Concerning/Critical]
+
+Time to Fill
+• Average: [Number] days
+• Target: [Number] days
+• Status: [On Track/Behind/Exceeded]
+
+Engagement Metrics
+
+Employee Satisfaction
+• Current: [Score]/10 or [Percentage]%
+• Previous: [Score]/10 or [Percentage]%
+• Target: [Score]/10 or [Percentage]%
+• Status: [High/Medium/Low]
+
+Employee Net Promoter Score (eNPS)
+• Current: [Score]
+• Previous: [Score]
+• Target: [Score]
+• Status: [Excellent/Good/Needs Improvement]
+
+Training & Development
+
+Training Hours
+• Average per Employee: [Number] hours
+• Completion Rate: [Percentage]%
+• Target: [Number] hours
+• Status: [On Track/Behind/Exceeded]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+TRENDS & ANALYSIS
+
+Performance Trends (Last 6 Periods)
+
+Revenue: [Chart/Graph representation]
+Period 1: $[Amount]
+Period 2: $[Amount]
+Period 3: $[Amount]
+Period 4: $[Amount]
+Period 5: $[Amount]
+Period 6: $[Amount]
+Trend: [Growing/Stable/Declining]
+
+Customer Acquisition: [Chart/Graph representation]
+Period 1: [Number]
+Period 2: [Number]
+Period 3: [Number]
+Period 4: [Number]
+Period 5: [Number]
+Period 6: [Number]
+Trend: [Growing/Stable/Declining]
+
+Year-over-Year Comparison
+
+Metric                  | This Year  | Last Year  | Change
+─────────────────────────────────────────────────────────
+Revenue                 | $[Amount]  | $[Amount]  | [+/-]%
+Customers               | [Number]   | [Number]   | [+/-]%
+Profit Margin           | [%]        | [%]        | [+/-]%
+Customer Satisfaction   | [Score]    | [Score]    | [+/-]%
+
+═══════════════════════════════════════════════════════════════════════════════
+
+KEY INSIGHTS
+
+Wins
+• [Insight 1]: [Supporting data]
+• [Insight 2]: [Supporting data]
+• [Insight 3]: [Supporting data]
+
+Challenges
+• [Challenge 1]: [Impact and data]
+• [Challenge 2]: [Impact and data]
+• [Challenge 3]: [Impact and data]
+
+Opportunities
+• [Opportunity 1]: [Potential impact]
+• [Opportunity 2]: [Potential impact]
+• [Opportunity 3]: [Potential impact]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+ACTION ITEMS
+
+Priority Actions
+
+High Priority
+• [Action 1]: [Owner] - [Due Date]
+• [Action 2]: [Owner] - [Due Date]
+• [Action 3]: [Owner] - [Due Date]
+
+Medium Priority
+• [Action 4]: [Owner] - [Due Date]
+• [Action 5]: [Owner] - [Due Date]
+
+Low Priority
+• [Action 6]: [Owner] - [Due Date]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+FORECAST
+
+Next Period Projections
+
+Expected Results
+• Revenue: $[Amount] ([+/-][Percentage]%)
+• New Customers: [Number]
+• Churn Rate: [Percentage]%
+
+Confidence Level: [High/Medium/Low]
+
+Assumptions
+• [Assumption 1]
+• [Assumption 2]
+• [Assumption 3]
+
+Risks to Forecast
+• [Risk 1]
+• [Risk 2]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+NOTES & COMMENTARY
+
+[Additional context, explanations for anomalies, external factors affecting metrics, etc.]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+Report Information
+
+Prepared By: [Name]
+Date: [Date]
+Review Date: [Date]
+Next Report: [Date]
+Distribution: [List of recipients]
+
+Questions or feedback? Contact: [Name/Email]
+
+═══════════════════════════════════════════════════════════════════════════════
+    `
+  },
+  {
+    id: 'strategy-competitive-analysis',
+    title: 'Competitive Analysis Template',
+    description: 'Comprehensive competitive analysis template for evaluating competitors and market positioning',
+    category: 'strategy',
+    downloadCount: 2145,
+    fileSize: '67.9 KB',
+    rating: 4.8,
+    tags: ['competitive analysis', 'market research', 'strategy', 'competitors', 'swot'],
+    createdAt: '2024-01-15T13:00:00Z',
+    updatedAt: '2024-01-31T16:00:00Z',
+    content: `
+COMPETITIVE ANALYSIS
+
+[Your Company Name]
+[Market/Industry]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+ANALYSIS OVERVIEW
+
+Analysis Date: [Date]
+Conducted By: [Name/Team]
+Industry: [Industry]
+Market Segment: [Segment]
+Geographic Focus: [Region/Global]
+Purpose: [Reason for analysis]
+
+Key Questions
+• Who are our main competitors?
+• What are their strengths and weaknesses?
+• How do we compare?
+• What opportunities and threats exist?
+• What can we learn from them?
+
+═══════════════════════════════════════════════════════════════════════════════
+
+MARKET OVERVIEW
+
+Industry Landscape
+
+Market Size: $[Amount]
+Market Growth Rate: [Percentage]% annually
+Market Maturity: [Emerging/Growing/Mature/Declining]
+Market Concentration: [Fragmented/Consolidated]
+
+Key Market Trends
+• [Trend 1]: [Description and impact]
+• [Trend 2]: [Description and impact]
+• [Trend 3]: [Description and impact]
+
+Market Drivers
+• [Driver 1]
+• [Driver 2]
+• [Driver 3]
+
+Market Barriers
+• [Barrier 1]
+• [Barrier 2]
+• [Barrier 3]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+COMPETITOR IDENTIFICATION
+
+Direct Competitors
+[Companies offering similar products/services to the same customers]
+
+1. [Competitor Name]
+   • Market Position: [Leader/Challenger/Follower/Nicher]
+   • Market Share: [Percentage]%
+   • Target Customers: [Description]
+
+2. [Competitor Name]
+   • Market Position: [Leader/Challenger/Follower/Nicher]
+   • Market Share: [Percentage]%
+   • Target Customers: [Description]
+
+3. [Competitor Name]
+   • Market Position: [Leader/Challenger/Follower/Nicher]
+   • Market Share: [Percentage]%
+   • Target Customers: [Description]
+
+Indirect Competitors
+[Companies offering alternative solutions to the same customer need]
+
+1. [Competitor Name]
+   • Alternative Solution: [Description]
+   • Market Position: [Description]
+
+2. [Competitor Name]
+   • Alternative Solution: [Description]
+   • Market Position: [Description]
+
+Potential/Emerging Competitors
+[New entrants or companies that could enter the market]
+
+• [Company 1]: [Why they're a potential threat]
+• [Company 2]: [Why they're a potential threat]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+COMPETITOR PROFILE 1
+
+Company Name: [Competitor 1 Name]
+
+Basic Information
+• Founded: [Year]
+• Headquarters: [Location]
+• CEO: [Name]
+• Employees: [Number]
+• Revenue: $[Amount] ([Year])
+• Funding: $[Amount]
+• Ownership: [Public/Private/VC-backed]
+
+Company Overview
+[Brief description of the company, its history, and current status]
+
+Products & Services
+
+Main Offerings
+• [Product/Service 1]:
+  - Description: [Details]
+  - Price: $[Amount]
+  - Target Market: [Segment]
+  - Key Features: [List]
+
+• [Product/Service 2]:
+  - Description: [Details]
+  - Price: $[Amount]
+  - Target Market: [Segment]
+  - Key Features: [List]
+
+Product Portfolio Breadth: [Narrow/Moderate/Wide]
+Innovation Level: [Low/Medium/High]
+
+Target Market
+
+Primary Customers
+• Industry: [Industries]
+• Company Size: [Size range]
+• Geography: [Regions]
+• Demographics: [Details]
+
+Market Position
+• Positioning Statement: [How they position themselves]
+• Brand Perception: [How they're perceived]
+
+Market Share & Performance
+
+Market Share: [Percentage]%
+Revenue Growth: [Percentage]% YoY
+Customer Base: [Number] customers
+Growth Stage: [Startup/Growth/Mature/Decline]
+
+Pricing Strategy
+
+Pricing Model: [Model description]
+Price Point: [Premium/Mid-tier/Budget]
+Pricing Flexibility: [High/Medium/Low]
+
+Representative Pricing:
+• [Product/Service 1]: $[Amount]
+• [Product/Service 2]: $[Amount]
+
+Marketing & Sales
+
+Marketing Channels
+• Digital Marketing: [Channels and estimated spend]
+• Traditional Marketing: [Channels]
+• Content Marketing: [Strategy and focus]
+• Events/Sponsorships: [Activities]
+
+Sales Strategy
+• Sales Model: [Direct/Channel/Hybrid]
+• Sales Team Size: [Estimated number]
+• Sales Cycle: [Estimated length]
+
+Brand Presence
+• Website Traffic: [Estimated visits/month]
+• Social Media Followers:
+  - LinkedIn: [Number]
+  - Twitter: [Number]
+  - Facebook: [Number]
+  - Instagram: [Number]
+• Brand Awareness: [High/Medium/Low]
+
+Customer Experience
+
+Customer Service
+• Support Channels: [List]
+• Support Hours: [Hours]
+• Response Time: [Estimated]
+• Self-Service Options: [Available tools]
+
+Customer Satisfaction
+• Reviews/Ratings: [Average score] ([Platform])
+• NPS (if known): [Score]
+• Common Praise: [Themes]
+• Common Complaints: [Themes]
+
+Technology & Innovation
+
+Technology Stack
+• [Technology 1]
+• [Technology 2]
+• [Technology 3]
+
+Product Development
+• Release Frequency: [Frequency]
+• Innovation Focus: [Areas]
+• R&D Investment: [Estimated % of revenue]
+
+Patents/IP: [Number and focus areas]
+
+Strengths
+
+• [Strength 1]: [Description and impact]
+• [Strength 2]: [Description and impact]
+• [Strength 3]: [Description and impact]
+• [Strength 4]: [Description and impact]
+• [Strength 5]: [Description and impact]
+
+Weaknesses
+
+• [Weakness 1]: [Description and impact]
+• [Weakness 2]: [Description and impact]
+• [Weakness 3]: [Description and impact]
+• [Weakness 4]: [Description and impact]
+• [Weakness 5]: [Description and impact]
+
+Recent Developments
+
+• [Date]: [Development 1]
+• [Date]: [Development 2]
+• [Date]: [Development 3]
+
+Strategic Direction
+
+Apparent Strategy: [Description]
+Growth Plans: [Observable plans]
+Expansion Areas: [New markets, products, etc.]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+COMPETITOR PROFILE 2
+
+[Repeat the same structure as Competitor Profile 1]
+
+Company Name: [Competitor 2 Name]
+
+[Complete analysis...]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+COMPETITOR PROFILE 3
+
+[Repeat the same structure as Competitor Profile 1]
+
+Company Name: [Competitor 3 Name]
+
+[Complete analysis...]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+COMPETITIVE COMPARISON MATRIX
+
+Feature/Attribute          | Us        | Comp 1    | Comp 2    | Comp 3
+──────────────────────────────────────────────────────────────────────
+Market Share              | [%]       | [%]       | [%]       | [%]
+Revenue                   | $[Amount] | $[Amount] | $[Amount] | $[Amount]
+Customers                 | [Number]  | [Number]  | [Number]  | [Number]
+Employees                 | [Number]  | [Number]  | [Number]  | [Number]
+Founded                   | [Year]    | [Year]    | [Year]    | [Year]
+Price Point               | [Level]   | [Level]   | [Level]   | [Level]
+Product Quality           | [Rating]  | [Rating]  | [Rating]  | [Rating]
+Feature Set               | [Rating]  | [Rating]  | [Rating]  | [Rating]
+Customer Service          | [Rating]  | [Rating]  | [Rating]  | [Rating]
+Brand Strength            | [Rating]  | [Rating]  | [Rating]  | [Rating]
+Innovation                | [Rating]  | [Rating]  | [Rating]  | [Rating]
+Market Reach              | [Rating]  | [Rating]  | [Rating]  | [Rating]
+Financial Strength        | [Rating]  | [Rating]  | [Rating]  | [Rating]
+
+Rating Scale: 1 (Weak) to 5 (Strong)
+
+Product Feature Comparison
+
+Feature                   | Us    | Comp 1 | Comp 2 | Comp 3
+─────────────────────────────────────────────────────────────
+[Feature 1]              | ✓     | ✓      | ✗      | ✓
+[Feature 2]              | ✓     | ✗      | ✓      | ✓
+[Feature 3]              | ✓     | ✓      | ✓      | ✗
+[Feature 4]              | ✗     | ✓      | ✗      | ✓
+[Feature 5]              | ✓     | ✗      | ✗      | ✗
+[Feature 6]              | ✓     | ✓      | ✓      | ✓
+
+═══════════════════════════════════════════════════════════════════════════════
+
+POSITIONING MAP
+
+[Visual representation of competitive positioning]
+
+High Price
+     │
+     │    [Comp 1]
+     │
+     │                    [Comp 3]
+     │
+     ├────────────────────────────────────
+     │         [Us]
+     │
+     │   [Comp 2]
+     │
+     │
+Low Price
+
+Low Quality ────────────────────────── High Quality
+
+═══════════════════════════════════════════════════════════════════════════════
+
+SWOT ANALYSIS
+
+Our Company SWOT
+
+STRENGTHS
+• [Strength 1]
+• [Strength 2]
+• [Strength 3]
+• [Strength 4]
+• [Strength 5]
+
+WEAKNESSES
+• [Weakness 1]
+• [Weakness 2]
+• [Weakness 3]
+• [Weakness 4]
+• [Weakness 5]
+
+OPPORTUNITIES
+• [Opportunity 1]
+• [Opportunity 2]
+• [Opportunity 3]
+• [Opportunity 4]
+• [Opportunity 5]
+
+THREATS
+• [Threat 1]
+• [Threat 2]
+• [Threat 3]
+• [Threat 4]
+• [Threat 5]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+COMPETITIVE ADVANTAGES
+
+Our Unique Advantages
+• [Advantage 1]: [Description and proof points]
+• [Advantage 2]: [Description and proof points]
+• [Advantage 3]: [Description and proof points]
+
+Sustainable Advantages
+(Difficult for competitors to replicate)
+• [Advantage 1]: [Why it's sustainable]
+• [Advantage 2]: [Why it's sustainable]
+
+Temporary Advantages
+(Could be copied or overcome)
+• [Advantage 1]: [Duration of advantage]
+• [Advantage 2]: [Duration of advantage]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+GAP ANALYSIS
+
+Areas Where We Lead
+• [Area 1]: [Our advantage]
+• [Area 2]: [Our advantage]
+• [Area 3]: [Our advantage]
+
+Areas Where We're Competitive
+• [Area 1]: [Status]
+• [Area 2]: [Status]
+
+Areas Where We Lag
+• [Area 1]: [The gap and impact]
+• [Area 2]: [The gap and impact]
+• [Area 3]: [The gap and impact]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+KEY LEARNINGS
+
+What We Can Learn from Competitors
+
+Best Practices to Adopt
+• [Practice 1]: [From Competitor X]
+• [Practice 2]: [From Competitor Y]
+• [Practice 3]: [From Competitor Z]
+
+Mistakes to Avoid
+• [Mistake 1]: [Observed at Competitor X]
+• [Mistake 2]: [Observed at Competitor Y]
+
+Market Insights
+• [Insight 1]: [Implication]
+• [Insight 2]: [Implication]
+• [Insight 3]: [Implication]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+STRATEGIC RECOMMENDATIONS
+
+Defensive Strategies
+(Protecting our position)
+
+• [Recommendation 1]: [Rationale]
+• [Recommendation 2]: [Rationale]
+• [Recommendation 3]: [Rationale]
+
+Offensive Strategies
+(Capturing more market)
+
+• [Recommendation 1]: [Rationale]
+• [Recommendation 2]: [Rationale]
+• [Recommendation 3]: [Rationale]
+
+Differentiation Opportunities
+
+• [Opportunity 1]: [How to differentiate]
+• [Opportunity 2]: [How to differentiate]
+• [Opportunity 3]: [How to differentiate]
+
+Priority Actions
+
+High Priority
+1. [Action]: [Expected impact]
+2. [Action]: [Expected impact]
+3. [Action]: [Expected impact]
+
+Medium Priority
+1. [Action]: [Expected impact]
+2. [Action]: [Expected impact]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+MONITORING PLAN
+
+Ongoing Monitoring
+
+Metrics to Track
+• [Competitor 1]: [Key metrics to monitor]
+• [Competitor 2]: [Key metrics to monitor]
+• [Competitor 3]: [Key metrics to monitor]
+
+Information Sources
+• Company websites and blogs
+• Social media channels
+• Press releases and news
+• Job postings
+• Customer reviews
+• Industry reports
+• Trade publications
+• Conferences and events
+• Sales team feedback
+• Customer feedback
+
+Review Frequency
+• Quick Scan: [Weekly/Monthly]
+• Detailed Review: [Quarterly]
+• Full Analysis Update: [Annually]
+
+Responsible Party: [Name/Team]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+APPENDICES
+
+Appendix A: Detailed Financial Data
+[Detailed financial information if available]
+
+Appendix B: Product Specifications
+[Detailed product comparison data]
+
+Appendix C: Marketing Materials
+[Screenshots, examples of competitor marketing]
+
+Appendix D: Customer Reviews Analysis
+[Detailed analysis of customer feedback]
+
+Appendix E: Data Sources
+[List of all sources used in the analysis]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+Document Information
+
+Prepared By: [Name/Team]
+Date: [Date]
+Version: [Version]
+Next Review: [Date]
+Classification: [Confidential/Internal]
+
+═══════════════════════════════════════════════════════════════════════════════
+    `
+  },
+  {
+    id: 'strategy-risk-assessment',
+    title: 'Risk Assessment Matrix',
+    description: 'Comprehensive risk assessment and mitigation planning template for identifying and managing business risks',
+    category: 'strategy',
+    downloadCount: 1876,
+    fileSize: '54.2 KB',
+    rating: 4.7,
+    tags: ['risk assessment', 'risk management', 'mitigation', 'planning', 'strategy'],
+    createdAt: '2024-01-16T10:00:00Z',
+    updatedAt: '2024-01-30T13:45:00Z',
+    content: `
+RISK ASSESSMENT MATRIX
+
+[Company/Project Name]
+[Assessment Period/Project Phase]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+ASSESSMENT OVERVIEW
+
+Assessment Date: [Date]
+Assessment Team: [Names/Roles]
+Scope: [What this assessment covers]
+Review Period: [Time period]
+Next Review Date: [Date]
+
+Purpose
+[Why this risk assessment is being conducted]
+
+Methodology
+[Brief description of approach used]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+RISK RATING SYSTEM
+
+Probability Scale
+
+5 - Almost Certain: >90% chance of occurring
+4 - Likely: 60-90% chance of occurring
+3 - Possible: 30-60% chance of occurring
+2 - Unlikely: 10-30% chance of occurring
+1 - Rare: <10% chance of occurring
+
+Impact Scale
+
+5 - Catastrophic: Could cause business failure or >$[Amount] loss
+4 - Major: Significant impact, $[Amount]-$[Amount] loss
+3 - Moderate: Noticeable impact, $[Amount]-$[Amount] loss
+2 - Minor: Limited impact, $[Amount]-$[Amount] loss
+1 - Negligible: Minimal impact, <$[Amount] loss
+
+Risk Score = Probability × Impact
+
+Risk Level Guide:
+• 20-25: Critical Risk (Red)
+• 12-19: High Risk (Orange)
+• 6-11: Medium Risk (Yellow)
+• 1-5: Low Risk (Green)
+
+═══════════════════════════════════════════════════════════════════════════════
+
+RISK MATRIX VISUAL
+
+                          IMPACT
+         │  1       │  2      │  3       │  4     │  5
+    ─────┼──────────┼─────────┼──────────┼────────┼────────────
+    5    │    5     │   10    │    15    │   20   │    25
+         │  [Low]   │ [Medium]│  [High]  │[High]  │[Critical]
+    ─────┼──────────┼─────────┼──────────┼────────┼────────────
+    4    │    4     │    8    │    12    │   16   │    20
+ P       │  [Low]   │ [Medium]│  [High]  │[High]  │[Critical]
+ R  ─────┼──────────┼─────────┼──────────┼────────┼────────────
+ O  3    │    3     │    6    │     9    │   12   │    15
+ B       │  [Low]   │ [Medium]│ [Medium] │[High]  │  [High]
+ A  ─────┼──────────┼─────────┼──────────┼────────┼────────────
+ B  2    │    2     │    4    │     6    │    8   │    10
+ I       │  [Low]   │  [Low]  │ [Medium] │[Medium]│ [Medium]
+ L  ─────┼──────────┼─────────┼──────────┼────────┼────────────
+ I  1    │    1     │    2    │     3    │    4   │     5
+ T       │  [Low]   │  [Low]  │  [Low]   │ [Low]  │  [Low]
+ Y  ─────┴──────────┴─────────┴──────────┴────────┴────────────
+
+═══════════════════════════════════════════════════════════════════════════════
+
+STRATEGIC RISKS
+
+RISK S1: [Risk Name/Description]
+
+Category: Strategic
+Description: [Detailed description of the risk]
+
+Risk Details
+• Probability: [1-5]: [Rating]
+• Impact: [1-5]: [Rating]
+• Risk Score: [Number]
+• Risk Level: [Critical/High/Medium/Low]
+
+Triggers/Warning Signs
+• [Sign 1]
+• [Sign 2]
+• [Sign 3]
+
+Potential Consequences
+• [Consequence 1]
+• [Consequence 2]
+• [Consequence 3]
+
+Current Controls
+• [Control 1]: [Effectiveness - High/Medium/Low]
+• [Control 2]: [Effectiveness - High/Medium/Low]
+
+Residual Risk (after current controls): [Score]
+
+Mitigation Strategy
+• Action 1: [Description]
+  - Owner: [Name]
+  - Timeline: [Date]
+  - Cost: $[Amount]
+  - Expected Reduction: [New risk score]
+
+• Action 2: [Description]
+  - Owner: [Name]
+  - Timeline: [Date]
+  - Cost: $[Amount]
+
+Contingency Plan
+[What to do if the risk occurs]
+
+Monitoring
+• KPIs/Indicators: [Metrics to watch]
+• Review Frequency: [Frequency]
+• Owner: [Name]
+
+───────────────────────────────────────────────────────────────────────────────
+
+RISK S2: [Risk Name/Description]
+
+[Repeat same structure as Risk S1]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+FINANCIAL RISKS
+
+RISK F1: [Risk Name/Description]
+
+Category: Financial
+Description: [Detailed description]
+
+Risk Details
+• Probability: [1-5]: [Rating]
+• Impact: [1-5]: [Rating]
+• Risk Score: [Number]
+• Risk Level: [Critical/High/Medium/Low]
+• Financial Impact: $[Amount]
+
+Triggers/Warning Signs
+• [Sign 1]
+• [Sign 2]
+• [Sign 3]
+
+Potential Consequences
+• [Consequence 1]
+• [Consequence 2]
+• [Consequence 3]
+
+Current Controls
+• [Control 1]: [Effectiveness]
+• [Control 2]: [Effectiveness]
+
+Residual Risk: [Score]
+
+Mitigation Strategy
+• Action 1: [Description]
+  - Owner: [Name]
+  - Timeline: [Date]
+  - Cost: $[Amount]
+  - Expected Reduction: [New risk score]
+
+• Action 2: [Description]
+  - Owner: [Name]
+  - Timeline: [Date]
+  - Cost: $[Amount]
+
+Contingency Plan
+[What to do if the risk occurs]
+
+Monitoring
+• KPIs/Indicators: [Metrics]
+• Review Frequency: [Frequency]
+• Owner: [Name]
+
+───────────────────────────────────────────────────────────────────────────────
+
+RISK F2: [Risk Name/Description]
+
+[Repeat same structure]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+OPERATIONAL RISKS
+
+RISK O1: [Risk Name/Description]
+
+Category: Operational
+Description: [Detailed description]
+
+[Complete risk assessment using same structure]
+
+───────────────────────────────────────────────────────────────────────────────
+
+RISK O2: [Risk Name/Description]
+
+[Repeat same structure]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+COMPLIANCE & LEGAL RISKS
+
+RISK C1: [Risk Name/Description]
+
+Category: Compliance/Legal
+Description: [Detailed description]
+
+[Complete risk assessment using same structure]
+
+───────────────────────────────────────────────────────────────────────────────
+
+RISK C2: [Risk Name/Description]
+
+[Repeat same structure]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+TECHNOLOGY RISKS
+
+RISK T1: [Risk Name/Description]
+
+Category: Technology
+Description: [Detailed description]
+
+[Complete risk assessment using same structure]
+
+───────────────────────────────────────────────────────────────────────────────
+
+RISK T2: [Risk Name/Description]
+
+[Repeat same structure]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+REPUTATIONAL RISKS
+
+RISK R1: [Risk Name/Description]
+
+Category: Reputational
+Description: [Detailed description]
+
+[Complete risk assessment using same structure]
+
+───────────────────────────────────────────────────────────────────────────────
+
+RISK R2: [Risk Name/Description]
+
+[Repeat same structure]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+HUMAN RESOURCES RISKS
+
+RISK H1: [Risk Name/Description]
+
+Category: Human Resources
+Description: [Detailed description]
+
+[Complete risk assessment using same structure]
+
+───────────────────────────────────────────────────────────────────────────────
+
+RISK H2: [Risk Name/Description]
+
+[Repeat same structure]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+MARKET/COMPETITIVE RISKS
+
+RISK M1: [Risk Name/Description]
+
+Category: Market/Competitive
+Description: [Detailed description]
+
+[Complete risk assessment using same structure]
+
+───────────────────────────────────────────────────────────────────────────────
+
+RISK M2: [Risk Name/Description]
+
+[Repeat same structure]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+RISK SUMMARY
+
+Critical Risks (Score 20-25)
+• [Risk ID]: [Risk Name] - Score: [Number]
+• [Risk ID]: [Risk Name] - Score: [Number]
+
+High Risks (Score 12-19)
+• [Risk ID]: [Risk Name] - Score: [Number]
+• [Risk ID]: [Risk Name] - Score: [Number]
+• [Risk ID]: [Risk Name] - Score: [Number]
+
+Medium Risks (Score 6-11)
+• [Risk ID]: [Risk Name] - Score: [Number]
+• [Risk ID]: [Risk Name] - Score: [Number]
+• [Risk ID]: [Risk Name] - Score: [Number]
+
+Low Risks (Score 1-5)
+• [Risk ID]: [Risk Name] - Score: [Number]
+• [Risk ID]: [Risk Name] - Score: [Number]
+
+Total Risks Identified: [Number]
+Average Risk Score: [Number]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+RISK DISTRIBUTION
+
+By Category
+• Strategic: [Number] risks
+• Financial: [Number] risks
+• Operational: [Number] risks
+• Compliance/Legal: [Number] risks
+• Technology: [Number] risks
+• Reputational: [Number] risks
+• Human Resources: [Number] risks
+• Market/Competitive: [Number] risks
+
+By Level
+• Critical: [Number] ([Percentage]%)
+• High: [Number] ([Percentage]%)
+• Medium: [Number] ([Percentage]%)
+• Low: [Number] ([Percentage]%)
+
+═══════════════════════════════════════════════════════════════════════════════
+
+PRIORITY ACTION PLAN
+
+Immediate Actions (Next 30 Days)
+
+1. [Risk ID] - [Risk Name]
+   Action: [Action]
+   Owner: [Name]
+   Due Date: [Date]
+   Budget: $[Amount]
+
+2. [Risk ID] - [Risk Name]
+   Action: [Action]
+   Owner: [Name]
+   Due Date: [Date]
+   Budget: $[Amount]
+
+3. [Risk ID] - [Risk Name]
+   Action: [Action]
+   Owner: [Name]
+   Due Date: [Date]
+   Budget: $[Amount]
+
+Short-Term Actions (30-90 Days)
+
+1. [Action]: [Risk addressed]
+   Owner: [Name]
+   Due Date: [Date]
+
+2. [Action]: [Risk addressed]
+   Owner: [Name]
+   Due Date: [Date]
+
+Long-Term Actions (90+ Days)
+
+1. [Action]: [Risk addressed]
+   Owner: [Name]
+   Due Date: [Date]
+
+2. [Action]: [Risk addressed]
+   Owner: [Name]
+   Due Date: [Date]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+RESOURCE REQUIREMENTS
+
+Budget Summary
+• Critical Risk Mitigation: $[Amount]
+• High Risk Mitigation: $[Amount]
+• Medium Risk Mitigation: $[Amount]
+• Total: $[Amount]
+
+Personnel Requirements
+• [Skill/Role 1]: [Hours/FTE]
+• [Skill/Role 2]: [Hours/FTE]
+• [Skill/Role 3]: [Hours/FTE]
+
+External Resources
+• [Consultant/Service 1]: $[Amount]
+• [Consultant/Service 2]: $[Amount]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+MONITORING & REPORTING
+
+Risk Monitoring Schedule
+
+Daily Monitoring
+• [Risk indicators to check daily]
+
+Weekly Monitoring
+• [Risk indicators to check weekly]
+
+Monthly Monitoring
+• [Risk indicators to check monthly]
+
+Quarterly Review
+• Full risk assessment update
+• Responsible: [Name/Team]
+• Next Review: [Date]
+
+Reporting Structure
+
+Internal Reporting
+• Management Team: [Frequency] - [Report type]
+• Board of Directors: [Frequency] - [Report type]
+• Department Heads: [Frequency] - [Report type]
+
+Key Risk Indicators (KRIs)
+• [KRI 1]: [Threshold/Target]
+• [KRI 2]: [Threshold/Target]
+• [KRI 3]: [Threshold/Target]
+• [KRI 4]: [Threshold/Target]
+
+Escalation Protocol
+• Medium Risk Escalation: [To whom]
+• High Risk Escalation: [To whom]
+• Critical Risk Escalation: [To whom - immediate]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+RISK APPETITE & TOLERANCE
+
+Risk Appetite Statement
+[Organization's willingness to accept risk in pursuit of objectives]
+
+Risk Tolerance Levels
+
+Strategic Risks: [High/Medium/Low tolerance]
+Financial Risks: [High/Medium/Low tolerance]
+Operational Risks: [High/Medium/Low tolerance]
+Compliance Risks: [High/Medium/Low tolerance]
+
+Acceptable Risk Thresholds
+• Critical Risks: [Number] acceptable
+• High Risks: [Number] acceptable
+• Total Risk Exposure: $[Amount] maximum
+
+═══════════════════════════════════════════════════════════════════════════════
+
+LESSONS LEARNED
+
+Risks That Materialized
+• [Risk]: [What happened and impact]
+  Lesson: [What we learned]
+
+• [Risk]: [What happened and impact]
+  Lesson: [What we learned]
+
+Successful Mitigations
+• [Risk]: [How mitigation prevented/reduced impact]
+
+Areas for Improvement
+• [Improvement 1]
+• [Improvement 2]
+• [Improvement 3]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+ASSUMPTIONS & LIMITATIONS
+
+Assumptions
+• [Assumption 1]
+• [Assumption 2]
+• [Assumption 3]
+
+Limitations
+• [Limitation 1]
+• [Limitation 2]
+• [Limitation 3]
+
+Data Sources
+• [Source 1]
+• [Source 2]
+• [Source 3]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+APPROVAL & SIGN-OFF
+
+Prepared By:
+Name: [Name]
+Title: [Title]
+Date: [Date]
+Signature: _______________________
+
+Reviewed By:
+Name: [Name]
+Title: [Title]
+Date: [Date]
+Signature: _______________________
+
+Approved By:
+Name: [Name]
+Title: [Title]
+Date: [Date]
+Signature: _______________________
+
+═══════════════════════════════════════════════════════════════════════════════
+
+APPENDICES
+
+Appendix A: Detailed Risk Scenarios
+[Detailed descriptions of potential risk scenarios]
+
+Appendix B: Historical Risk Data
+[Past risk assessments and outcomes]
+
+Appendix C: Industry Benchmarks
+[Comparative risk data from industry]
+
+Appendix D: Risk Management Policies
+[Related policies and procedures]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+Document Information
+
+Version: [Version]
+Date: [Date]
+Classification: [Confidential/Internal]
+Next Review: [Date]
+Contact: [Name/Email]
+
+═══════════════════════════════════════════════════════════════════════════════
+    `
+  },
+  {
+    id: 'strategy-growth-roadmap',
+    title: 'Growth Roadmap',
+    description: 'Strategic growth planning template for mapping company expansion and development initiatives',
+    category: 'strategy',
+    downloadCount: 2012,
+    fileSize: '61.4 KB',
+    rating: 4.9,
+    tags: ['growth', 'roadmap', 'strategy', 'planning', 'expansion'],
+    createdAt: '2024-01-17T11:00:00Z',
+    updatedAt: '2024-01-31T09:30:00Z',
+    content: `
+GROWTH ROADMAP
+
+[Company Name]
+[Time Horizon: Year Range]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+ROADMAP OVERVIEW
+
+Planning Horizon: [Start Date] to [End Date]
+Created By: [Name/Team]
+Date: [Date]
+Version: [Version]
+Status: [Draft/Approved/Active]
+
+Purpose
+[Why this roadmap is being created and what it aims to achieve]
+
+Vision
+[Where we want to be at the end of this roadmap period]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+CURRENT STATE ASSESSMENT
+
+Starting Point ([Current Date])
+
+Company Metrics
+• Revenue: $[Amount]
+• Customers: [Number]
+• Employees: [Number]
+• Markets: [Number] ([List])
+• Products/Services: [Number]
+• Market Share: [Percentage]%
+
+Strengths
+• [Strength 1]
+• [Strength 2]
+• [Strength 3]
+
+Challenges
+• [Challenge 1]
+• [Challenge 2]
+• [Challenge 3]
+
+Market Position
+[Description of current market position]
+
+Competitive Standing
+[Where we stand relative to competitors]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+GROWTH OBJECTIVES
+
+3-Year Vision ([Target Year])
+
+North Star Metrics
+• Revenue Target: $[Amount] ([X]x growth)
+• Customer Target: [Number] ([X]x growth)
+• Market Share Target: [Percentage]%
+• Employee Target: [Number]
+• Valuation Target: $[Amount]
+
+Strategic Goals
+
+Goal 1: [Name]
+• Description: [What we want to achieve]
+• Success Metrics: [How we'll measure success]
+• Target Date: [Date]
+• Impact: [Expected impact]
+
+Goal 2: [Name]
+• Description: [What we want to achieve]
+• Success Metrics: [How we'll measure success]
+• Target Date: [Date]
+• Impact: [Expected impact]
+
+Goal 3: [Name]
+• Description: [What we want to achieve]
+• Success Metrics: [How we'll measure success]
+• Target Date: [Date]
+• Impact: [Expected impact]
+
+Goal 4: [Name]
+• Description: [What we want to achieve]
+• Success Metrics: [How we'll measure success]
+• Target Date: [Date]
+• Impact: [Expected impact]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+GROWTH STRATEGY
+
+Primary Growth Drivers
+
+1. [Growth Driver 1]
+   • Description: [How this drives growth]
+   • Contribution to Growth: [Percentage]%
+   • Timeline: [When it kicks in]
+   • Investment Required: $[Amount]
+
+2. [Growth Driver 2]
+   • Description: [How this drives growth]
+   • Contribution to Growth: [Percentage]%
+   • Timeline: [When it kicks in]
+   • Investment Required: $[Amount]
+
+3. [Growth Driver 3]
+   • Description: [How this drives growth]
+   • Contribution to Growth: [Percentage]%
+   • Timeline: [When it kicks in]
+   • Investment Required: $[Amount]
+
+Growth Tactics
+
+Market Penetration
+• [Tactic 1]: [Description]
+• [Tactic 2]: [Description]
+• [Tactic 3]: [Description]
+
+Market Development
+• [New Market 1]: [Approach]
+• [New Market 2]: [Approach]
+
+Product Development
+• [New Product 1]: [Description]
+• [New Product 2]: [Description]
+
+Diversification
+• [Opportunity 1]: [Description]
+• [Opportunity 2]: [Description]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+YEAR 1: FOUNDATION & ACCELERATION
+
+Year 1 Objectives ([Year])
+
+Financial Targets
+• Revenue: $[Amount]
+• Growth Rate: [Percentage]%
+• Profit Margin: [Percentage]%
+• Customer Acquisition: [Number]
+
+Key Initiatives
+
+Q1 [Year] - [Quarter Theme]
+
+Initiative 1: [Name]
+• Objective: [What we're achieving]
+• Key Activities:
+  - [Activity 1]: [Details]
+  - [Activity 2]: [Details]
+  - [Activity 3]: [Details]
+• Owner: [Name/Team]
+• Budget: $[Amount]
+• Success Metrics: [Metrics]
+• Dependencies: [What this depends on]
+
+Initiative 2: [Name]
+• Objective: [What we're achieving]
+• Key Activities:
+  - [Activity 1]: [Details]
+  - [Activity 2]: [Details]
+• Owner: [Name/Team]
+• Budget: $[Amount]
+• Success Metrics: [Metrics]
+
+Initiative 3: [Name]
+• Objective: [What we're achieving]
+• Key Activities:
+  - [Activity 1]: [Details]
+  - [Activity 2]: [Details]
+• Owner: [Name/Team]
+• Budget: $[Amount]
+• Success Metrics: [Metrics]
+
+Q1 Milestones
+☐ [Milestone 1]: [Target Date]
+☐ [Milestone 2]: [Target Date]
+☐ [Milestone 3]: [Target Date]
+
+Q2 [Year] - [Quarter Theme]
+
+Initiative 1: [Name]
+• Objective: [What we're achieving]
+• Key Activities:
+  - [Activity 1]: [Details]
+  - [Activity 2]: [Details]
+• Owner: [Name/Team]
+• Budget: $[Amount]
+• Success Metrics: [Metrics]
+
+Initiative 2: [Name]
+[Complete details]
+
+Initiative 3: [Name]
+[Complete details]
+
+Q2 Milestones
+☐ [Milestone 1]: [Target Date]
+☐ [Milestone 2]: [Target Date]
+☐ [Milestone 3]: [Target Date]
+
+Q3 [Year] - [Quarter Theme]
+
+Initiative 1: [Name]
+[Complete details]
+
+Initiative 2: [Name]
+[Complete details]
+
+Initiative 3: [Name]
+[Complete details]
+
+Q3 Milestones
+☐ [Milestone 1]: [Target Date]
+☐ [Milestone 2]: [Target Date]
+☐ [Milestone 3]: [Target Date]
+
+Q4 [Year] - [Quarter Theme]
+
+Initiative 1: [Name]
+[Complete details]
+
+Initiative 2: [Name]
+[Complete details]
+
+Initiative 3: [Name]
+[Complete details]
+
+Q4 Milestones
+☐ [Milestone 1]: [Target Date]
+☐ [Milestone 2]: [Target Date]
+☐ [Milestone 3]: [Target Date]
+
+Year 1 Investment Summary
+• Product Development: $[Amount]
+• Marketing & Sales: $[Amount]
+• Operations: $[Amount]
+• People & Culture: $[Amount]
+• Technology: $[Amount]
+• Total Year 1 Investment: $[Amount]
+
+Year 1 Expected Outcomes
+• Revenue: $[Amount]
+• New Customers: [Number]
+• New Products Launched: [Number]
+• New Markets Entered: [Number]
+• Team Size: [Number] employees
+
+═══════════════════════════════════════════════════════════════════════════════
+
+YEAR 2: SCALE & EXPANSION
+
+Year 2 Objectives ([Year])
+
+Financial Targets
+• Revenue: $[Amount]
+• Growth Rate: [Percentage]%
+• Profit Margin: [Percentage]%
+• Customer Acquisition: [Number]
+
+Key Initiatives
+
+Q1 [Year] - [Quarter Theme]
+[Key initiatives and milestones]
+
+Q2 [Year] - [Quarter Theme]
+[Key initiatives and milestones]
+
+Q3 [Year] - [Quarter Theme]
+[Key initiatives and milestones]
+
+Q4 [Year] - [Quarter Theme]
+[Key initiatives and milestones]
+
+Year 2 Investment Summary
+• Product Development: $[Amount]
+• Marketing & Sales: $[Amount]
+• Operations: $[Amount]
+• People & Culture: $[Amount]
+• Technology: $[Amount]
+• Total Year 2 Investment: $[Amount]
+
+Year 2 Expected Outcomes
+• Revenue: $[Amount]
+• New Customers: [Number]
+• New Products Launched: [Number]
+• New Markets Entered: [Number]
+• Team Size: [Number] employees
+
+═══════════════════════════════════════════════════════════════════════════════
+
+YEAR 3: OPTIMIZATION & LEADERSHIP
+
+Year 3 Objectives ([Year])
+
+Financial Targets
+• Revenue: $[Amount]
+• Growth Rate: [Percentage]%
+• Profit Margin: [Percentage]%
+• Customer Acquisition: [Number]
+
+Key Initiatives
+
+Q1 [Year] - [Quarter Theme]
+[Key initiatives and milestones]
+
+Q2 [Year] - [Quarter Theme]
+[Key initiatives and milestones]
+
+Q3 [Year] - [Quarter Theme]
+[Key initiatives and milestones]
+
+Q4 [Year] - [Quarter Theme]
+[Key initiatives and milestones]
+
+Year 3 Investment Summary
+• Product Development: $[Amount]
+• Marketing & Sales: $[Amount]
+• Operations: $[Amount]
+• People & Culture: $[Amount]
+• Technology: $[Amount]
+• Total Year 3 Investment: $[Amount]
+
+Year 3 Expected Outcomes
+• Revenue: $[Amount]
+• New Customers: [Number]
+• New Products Launched: [Number]
+• New Markets Entered: [Number]
+• Team Size: [Number] employees
+
+═══════════════════════════════════════════════════════════════════════════════
+
+PRODUCT ROADMAP
+
+Current Products
+• [Product 1]: [Status and evolution plan]
+• [Product 2]: [Status and evolution plan]
+
+New Product Development
+
+[Product Name 1]
+• Description: [What it is]
+• Target Market: [Who it's for]
+• Development Timeline: [Start] to [Launch]
+• Development Cost: $[Amount]
+• Revenue Potential: $[Amount] (Year 3)
+• Key Milestones:
+  - [Milestone 1]: [Date]
+  - [Milestone 2]: [Date]
+  - [Milestone 3]: [Date]
+
+[Product Name 2]
+• Description: [What it is]
+• Target Market: [Who it's for]
+• Development Timeline: [Start] to [Launch]
+• Development Cost: $[Amount]
+• Revenue Potential: $[Amount] (Year 3)
+• Key Milestones:
+  - [Milestone 1]: [Date]
+  - [Milestone 2]: [Date]
+
+Product Enhancement Roadmap
+• [Enhancement 1]: [Timeline]
+• [Enhancement 2]: [Timeline]
+• [Enhancement 3]: [Timeline]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+MARKET EXPANSION ROADMAP
+
+Current Markets
+• [Market 1]: [Current status]
+• [Market 2]: [Current status]
+
+New Market Entry
+
+[Market Name 1]
+• Entry Date: [Date]
+• Market Size: $[Amount]
+• Entry Strategy: [Approach]
+• Investment Required: $[Amount]
+• Year 1 Target Revenue: $[Amount]
+• Year 3 Target Revenue: $[Amount]
+• Key Activities:
+  - [Activity 1]: [Timeline]
+  - [Activity 2]: [Timeline]
+  - [Activity 3]: [Timeline]
+
+[Market Name 2]
+• Entry Date: [Date]
+• Market Size: $[Amount]
+• Entry Strategy: [Approach]
+• Investment Required: $[Amount]
+• Year 1 Target Revenue: $[Amount]
+• Year 3 Target Revenue: $[Amount]
+
+Geographic Expansion
+• Year 1: [Locations]
+• Year 2: [Locations]
+• Year 3: [Locations]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+CUSTOMER GROWTH STRATEGY
+
+Customer Acquisition
+
+Target Customer Segments
+• [Segment 1]: [Size and approach]
+• [Segment 2]: [Size and approach]
+• [Segment 3]: [Size and approach]
+
+Acquisition Channels
+• [Channel 1]: [Strategy and investment]
+• [Channel 2]: [Strategy and investment]
+• [Channel 3]: [Strategy and investment]
+
+Acquisition Targets
+• Year 1: [Number] new customers
+• Year 2: [Number] new customers
+• Year 3: [Number] new customers
+
+Customer Retention & Expansion
+
+Retention Initiatives
+• [Initiative 1]: [Description]
+• [Initiative 2]: [Description]
+• [Initiative 3]: [Description]
+
+Upsell/Cross-sell Strategy
+• [Strategy 1]: [Revenue potential]
+• [Strategy 2]: [Revenue potential]
+
+Net Revenue Retention Target: [Percentage]%
+
+═══════════════════════════════════════════════════════════════════════════════
+
+TEAM & ORGANIZATIONAL GROWTH
+
+Current Team: [Number] employees
+
+Hiring Roadmap
+
+Year 1 Hiring
+• [Department]: [Number] hires
+• [Department]: [Number] hires
+• [Department]: [Number] hires
+• Total Year 1: [Number] hires
+
+Year 2 Hiring
+• [Department]: [Number] hires
+• [Department]: [Number] hires
+• [Department]: [Number] hires
+• Total Year 2: [Number] hires
+
+Year 3 Hiring
+• [Department]: [Number] hires
+• [Department]: [Number] hires
+• [Department]: [Number] hires
+• Total Year 3: [Number] hires
+
+Target Year 3 Team Size: [Number] employees
+
+Key Leadership Hires
+• [Position 1]: [Target hire date]
+• [Position 2]: [Target hire date]
+• [Position 3]: [Target hire date]
+
+Organizational Development
+• [Initiative 1]: [Timeline]
+• [Initiative 2]: [Timeline]
+• [Initiative 3]: [Timeline]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+TECHNOLOGY & INFRASTRUCTURE ROADMAP
+
+Current Infrastructure
+[Description of current state]
+
+Technology Initiatives
+
+Year 1
+• [Initiative 1]: [Description and timeline]
+• [Initiative 2]: [Description and timeline]
+• [Initiative 3]: [Description and timeline]
+
+Year 2
+• [Initiative 1]: [Description and timeline]
+• [Initiative 2]: [Description and timeline]
+
+Year 3
+• [Initiative 1]: [Description and timeline]
+• [Initiative 2]: [Description and timeline]
+
+Infrastructure Investment
+• Year 1: $[Amount]
+• Year 2: $[Amount]
+• Year 3: $[Amount]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+FINANCIAL PROJECTIONS
+
+3-Year Financial Summary
+
+                    | Year 1      | Year 2      | Year 3
+────────────────────────────────────────────────────────────
+Revenue             | $[Amount]   | $[Amount]   | $[Amount]
+Growth Rate         | [%]         | [%]         | [%]
+Gross Profit        | $[Amount]   | $[Amount]   | $[Amount]
+Gross Margin        | [%]         | [%]         | [%]
+Operating Expenses  | $[Amount]   | $[Amount]   | $[Amount]
+EBITDA              | $[Amount]   | $[Amount]   | $[Amount]
+Net Profit          | $[Amount]   | $[Amount]   | $[Amount]
+Net Margin          | [%]         | [%]         | [%]
+
+Revenue by Source
+
+Year 1
+• [Source 1]: $[Amount] ([Percentage]%)
+• [Source 2]: $[Amount] ([Percentage]%)
+• [Source 3]: $[Amount] ([Percentage]%)
+
+Year 2
+• [Source 1]: $[Amount] ([Percentage]%)
+• [Source 2]: $[Amount] ([Percentage]%)
+• [Source 3]: $[Amount] ([Percentage]%)
+
+Year 3
+• [Source 1]: $[Amount] ([Percentage]%)
+• [Source 2]: $[Amount] ([Percentage]%)
+• [Source 3]: $[Amount] ([Percentage]%)
+
+Investment Requirements
+
+Total 3-Year Investment: $[Amount]
+
+By Year
+• Year 1: $[Amount]
+• Year 2: $[Amount]
+• Year 3: $[Amount]
+
+By Category
+• Product Development: $[Amount]
+• Marketing & Sales: $[Amount]
+• Operations: $[Amount]
+• People & Culture: $[Amount]
+• Technology: $[Amount]
+
+Funding Strategy
+[How the growth will be funded]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+KEY PERFORMANCE INDICATORS
+
+Strategic KPIs
+
+Revenue Metrics
+• Monthly Recurring Revenue (MRR): [Target trajectory]
+• Annual Recurring Revenue (ARR): [Target trajectory]
+• Average Contract Value (ACV): [Target trajectory]
+
+Customer Metrics
+• Total Customers: [Target trajectory]
+• Customer Acquisition Cost (CAC): [Target]
+• Lifetime Value (LTV): [Target]
+• LTV:CAC Ratio: [Target ratio]
+• Net Revenue Retention: [Target %]
+
+Growth Metrics
+• Revenue Growth Rate: [Target %]
+• Customer Growth Rate: [Target %]
+• Market Share: [Target %]
+
+Efficiency Metrics
+• Rule of 40: [Growth % + Profit Margin %]
+• Burn Multiple: [Target]
+• Sales Efficiency: [Target]
+
+Quarterly Targets
+
+[Quarter]: [Targets]
+[Quarter]: [Targets]
+[Quarter]: [Targets]
+[Quarter]: [Targets]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+RISK ASSESSMENT
+
+Key Risks
+
+Risk 1: [Description]
+• Probability: [High/Medium/Low]
+• Impact: [High/Medium/Low]
+• Mitigation: [Strategy]
+
+Risk 2: [Description]
+• Probability: [High/Medium/Low]
+• Impact: [High/Medium/Low]
+• Mitigation: [Strategy]
+
+Risk 3: [Description]
+• Probability: [High/Medium/Low]
+• Impact: [High/Medium/Low]
+• Mitigation: [Strategy]
+
+Critical Assumptions
+• [Assumption 1]
+• [Assumption 2]
+• [Assumption 3]
+
+Contingency Plans
+• [Scenario 1]: [Plan]
+• [Scenario 2]: [Plan]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+SUCCESS METRICS
+
+How We'll Know We're Successful
+
+By End of Year 1
+☐ [Success Metric 1]
+☐ [Success Metric 2]
+☐ [Success Metric 3]
+
+By End of Year 2
+☐ [Success Metric 1]
+☐ [Success Metric 2]
+☐ [Success Metric 3]
+
+By End of Year 3
+☐ [Success Metric 1]
+☐ [Success Metric 2]
+☐ [Success Metric 3]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+GOVERNANCE & MONITORING
+
+Review Schedule
+
+Weekly
+• [What's reviewed]
+• Attendees: [Who]
+
+Monthly
+• [What's reviewed]
+• Attendees: [Who]
+
+Quarterly
+• Full roadmap review
+• Adjust priorities as needed
+• Update projections
+• Attendees: [Who]
+
+Annual
+• Comprehensive roadmap refresh
+• Year-end assessment
+• Next year planning
+
+Accountability
+• Overall Owner: [Name/Title]
+• Strategic Initiatives: [Name per initiative]
+• Financial Performance: [Name/Title]
+• Product Roadmap: [Name/Title]
+• Customer Success: [Name/Title]
+
+Communication Plan
+• Board Updates: [Frequency]
+• Team Updates: [Frequency]
+• Customer Updates: [Frequency]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+ROADMAP APPROVAL
+
+Prepared By:
+Name: [Name]
+Title: [Title]
+Date: [Date]
+Signature: _______________________
+
+Reviewed By:
+Name: [Name]
+Title: [Title]
+Date: [Date]
+Signature: _______________________
+
+Approved By:
+Name: [Name] (CEO/Board)
+Title: [Title]
+Date: [Date]
+Signature: _______________________
+
+═══════════════════════════════════════════════════════════════════════════════
+
+[Company Name] Growth Roadmap
+Created: [Date] | Version: [Version]
+Next Review: [Date]
+
+═══════════════════════════════════════════════════════════════════════════════
+    `
+  }
+];
+
 // Add Client & Project Management templates to the main templates array
 templates.push(...clientProjectTemplates);
+
+// Add Business Strategy & Planning templates to the main templates array
+templates.push(...strategyTemplates);
 
 class DocumentService {
   getTemplates(): DocumentTemplate[] {
