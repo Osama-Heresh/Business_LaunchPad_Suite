@@ -14457,6 +14457,2454 @@ Retention: [Date]
 // Add IT templates to the main templates array
 templates.push(...itTemplates);
 
+// Client & Project Management Templates
+const clientProjectTemplates: DocumentTemplate[] = [
+  {
+    id: 'pm-project-proposal',
+    title: 'Project Proposal Template',
+    description: 'Professional project proposal template for pitching new projects and securing client approval',
+    category: 'project-management',
+    downloadCount: 1423,
+    fileSize: '58.7 KB',
+    rating: 4.8,
+    tags: ['proposal', 'project', 'client', 'pitch', 'business'],
+    createdAt: '2024-01-15T09:00:00Z',
+    updatedAt: '2024-01-29T16:30:00Z',
+    content: `
+PROJECT PROPOSAL
+
+[Company Logo]
+[Company Name]
+[Address]
+[Phone] | [Email] | [Website]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+PROPOSAL FOR: [Client Name]
+PREPARED BY: [Your Name/Company Name]
+DATE: [Date]
+PROPOSAL NUMBER: [Proposal ID]
+VALID UNTIL: [Expiration Date]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+TABLE OF CONTENTS
+
+1. Executive Summary
+2. Project Overview
+3. Problem Statement
+4. Proposed Solution
+5. Project Scope
+6. Deliverables
+7. Project Timeline
+8. Budget and Pricing
+9. Team and Resources
+10. Success Metrics
+11. Risk Management
+12. Terms and Conditions
+13. Next Steps
+14. Acceptance
+
+═══════════════════════════════════════════════════════════════════════════════
+
+1. EXECUTIVE SUMMARY
+
+[Provide a high-level overview of the proposal in 3-5 paragraphs. This should be compelling and concise, highlighting:
+- The client's need or opportunity
+- Your proposed solution
+- Key benefits and value proposition
+- Expected outcomes
+- Investment required]
+
+Example:
+This proposal outlines a comprehensive solution to [Client Name]'s need for [specific need]. Our team at [Company Name] has extensive experience in [relevant area] and is uniquely positioned to deliver [key benefit]. By implementing this project, [Client Name] will achieve [primary outcomes] within [timeframe], resulting in [quantifiable benefits]. The total investment for this project is [amount], with an expected ROI of [percentage/value] within [timeframe].
+
+═══════════════════════════════════════════════════════════════════════════════
+
+2. PROJECT OVERVIEW
+
+PROJECT TITLE:
+[Descriptive Project Title]
+
+PROJECT OBJECTIVE:
+[Clear, concise statement of what the project aims to achieve]
+
+PROJECT BACKGROUND:
+[Context and background information about why this project is being proposed]
+- Current situation
+- Business drivers
+- Strategic alignment
+- Opportunity or challenge being addressed
+
+PROJECT VISION:
+[Aspirational statement of the desired future state after project completion]
+
+KEY STAKEHOLDERS:
+• [Stakeholder 1] - [Role/Interest]
+• [Stakeholder 2] - [Role/Interest]
+• [Stakeholder 3] - [Role/Interest]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+3. PROBLEM STATEMENT
+
+CURRENT CHALLENGES:
+[Describe the current situation, pain points, and challenges the client is facing]
+
+Challenge #1: [Challenge Name]
+Description: [Detailed explanation of the challenge]
+Impact: [How this affects the business/operations]
+Evidence: [Data, statistics, or examples that demonstrate the problem]
+
+Challenge #2: [Challenge Name]
+Description: [Detailed explanation]
+Impact: [Business impact]
+
+Challenge #3: [Challenge Name]
+Description: [Detailed explanation]
+Impact: [Business impact]
+
+BUSINESS IMPACT:
+Without addressing these challenges, [Client Name] faces:
+• [Negative consequence 1]
+• [Negative consequence 2]
+• [Negative consequence 3]
+• Estimated annual cost/loss: [Amount]
+
+OPPORTUNITY:
+By addressing these challenges, [Client Name] can:
+• [Positive outcome 1]
+• [Positive outcome 2]
+• [Positive outcome 3]
+• Estimated annual benefit/gain: [Amount]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+4. PROPOSED SOLUTION
+
+SOLUTION OVERVIEW:
+[High-level description of your proposed solution and approach]
+
+OUR APPROACH:
+We propose a [duration]-phase approach to address [Client Name]'s challenges:
+
+Phase 1: [Phase Name] (Weeks 1-X)
+• [Key activity 1]
+• [Key activity 2]
+• [Key activity 3]
+Outcome: [What will be achieved]
+
+Phase 2: [Phase Name] (Weeks X-Y)
+• [Key activity 1]
+• [Key activity 2]
+• [Key activity 3]
+Outcome: [What will be achieved]
+
+Phase 3: [Phase Name] (Weeks Y-Z)
+• [Key activity 1]
+• [Key activity 2]
+• [Key activity 3]
+Outcome: [What will be achieved]
+
+METHODOLOGY:
+We will utilize [methodology name, e.g., Agile, Waterfall, Design Thinking] to ensure:
+• [Benefit 1]
+• [Benefit 2]
+• [Benefit 3]
+
+TECHNOLOGY/TOOLS:
+[List key technologies, platforms, or tools that will be used]
+• [Technology 1] - [Purpose]
+• [Technology 2] - [Purpose]
+• [Technology 3] - [Purpose]
+
+KEY FEATURES:
+1. [Feature Name]
+   Description: [What it does and why it matters]
+   Benefit: [Value to client]
+
+2. [Feature Name]
+   Description: [What it does]
+   Benefit: [Value to client]
+
+3. [Feature Name]
+   Description: [What it does]
+   Benefit: [Value to client]
+
+WHY OUR SOLUTION:
+• [Unique advantage 1]
+• [Unique advantage 2]
+• [Unique advantage 3]
+• Proven track record: [Relevant statistics or case studies]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+5. PROJECT SCOPE
+
+IN SCOPE:
+The following activities and deliverables are included in this project:
+
+✓ [Scope item 1 - detailed description]
+✓ [Scope item 2 - detailed description]
+✓ [Scope item 3 - detailed description]
+✓ [Scope item 4 - detailed description]
+✓ [Scope item 5 - detailed description]
+
+OUT OF SCOPE:
+The following are explicitly excluded from this project:
+
+✗ [Out of scope item 1]
+✗ [Out of scope item 2]
+✗ [Out of scope item 3]
+
+Note: Any changes to scope will require a formal change request and may impact timeline and budget.
+
+ASSUMPTIONS:
+This proposal is based on the following assumptions:
+• [Assumption 1]
+• [Assumption 2]
+• [Assumption 3]
+• [Assumption 4]
+
+CLIENT RESPONSIBILITIES:
+For successful project completion, [Client Name] will need to:
+• [Client responsibility 1]
+• [Client responsibility 2]
+• [Client responsibility 3]
+• [Client responsibility 4]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+6. DELIVERABLES
+
+MAJOR DELIVERABLES:
+
+Deliverable #1: [Deliverable Name]
+Description: [What will be delivered]
+Format: [File format, physical item, etc.]
+Acceptance Criteria: [How success will be measured]
+Due Date: [Date or milestone]
+
+Deliverable #2: [Deliverable Name]
+Description: [What will be delivered]
+Format: [Format]
+Acceptance Criteria: [Criteria]
+Due Date: [Date]
+
+Deliverable #3: [Deliverable Name]
+Description: [What will be delivered]
+Format: [Format]
+Acceptance Criteria: [Criteria]
+Due Date: [Date]
+
+Deliverable #4: [Deliverable Name]
+Description: [What will be delivered]
+Format: [Format]
+Acceptance Criteria: [Criteria]
+Due Date: [Date]
+
+DOCUMENTATION:
+• Project plan and schedule
+• Technical documentation
+• User guides and training materials
+• Test results and quality assurance reports
+• Final project report
+
+KNOWLEDGE TRANSFER:
+• Training sessions for [Client Name] team
+• Documentation handover
+• Ongoing support period: [Duration]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+7. PROJECT TIMELINE
+
+PROJECT DURATION: [Total duration, e.g., 12 weeks]
+ESTIMATED START DATE: [Date]
+ESTIMATED COMPLETION DATE: [Date]
+
+PHASE BREAKDOWN:
+
+Phase 1: [Phase Name]
+Duration: [Weeks/Days]
+Start: [Date]
+End: [Date]
+Key Milestones:
+  • [Milestone 1] - [Date]
+  • [Milestone 2] - [Date]
+
+Phase 2: [Phase Name]
+Duration: [Weeks/Days]
+Start: [Date]
+End: [Date]
+Key Milestones:
+  • [Milestone 1] - [Date]
+  • [Milestone 2] - [Date]
+
+Phase 3: [Phase Name]
+Duration: [Weeks/Days]
+Start: [Date]
+End: [Date]
+Key Milestones:
+  • [Milestone 1] - [Date]
+  • [Milestone 2] - [Date]
+
+CRITICAL MILESTONES:
+
+Milestone | Description | Target Date | Dependencies
+----------|-------------|-------------|-------------
+[M1] | [Description] | [Date] | [Dependencies]
+[M2] | [Description] | [Date] | [Dependencies]
+[M3] | [Description] | [Date] | [Dependencies]
+[M4] | [Description] | [Date] | [Dependencies]
+
+Note: Timeline is subject to client approval timelines and availability of required resources and information.
+
+═══════════════════════════════════════════════════════════════════════════════
+
+8. BUDGET AND PRICING
+
+INVESTMENT SUMMARY:
+
+Total Project Investment: $[Total Amount]
+
+DETAILED PRICING:
+
+Phase 1: [Phase Name]
+[Line item 1]: $[Amount]
+[Line item 2]: $[Amount]
+[Line item 3]: $[Amount]
+Phase 1 Subtotal: $[Amount]
+
+Phase 2: [Phase Name]
+[Line item 1]: $[Amount]
+[Line item 2]: $[Amount]
+[Line item 3]: $[Amount]
+Phase 2 Subtotal: $[Amount]
+
+Phase 3: [Phase Name]
+[Line item 1]: $[Amount]
+[Line item 2]: $[Amount]
+Phase 3 Subtotal: $[Amount]
+
+Additional Costs:
+[Item]: $[Amount]
+[Item]: $[Amount]
+
+Total Project Cost: $[Total Amount]
+
+PAYMENT SCHEDULE:
+
+Payment | Amount | Due Date | Milestone
+--------|--------|----------|----------
+Deposit | $[Amount] ([%]) | Upon contract signing | Project initiation
+Payment 2 | $[Amount] ([%]) | [Date] | [Milestone]
+Payment 3 | $[Amount] ([%]) | [Date] | [Milestone]
+Final Payment | $[Amount] ([%]) | Project completion | Final deliverable acceptance
+
+PAYMENT TERMS:
+• Invoices due within [number] days of receipt
+• Payment methods accepted: [List methods]
+• Late payment fee: [Percentage] per month on overdue balance
+
+EXPENSES:
+• Travel expenses billed at cost with prior approval
+• Third-party services billed at cost plus [percentage] administrative fee
+• Client will be notified of any expenses exceeding $[amount]
+
+VALUE PROPOSITION:
+Return on Investment (ROI):
+• Expected cost savings: $[Amount] annually
+• Expected revenue increase: $[Amount] annually
+• Payback period: [Timeframe]
+• ROI: [Percentage] over [timeframe]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+9. TEAM AND RESOURCES
+
+OUR TEAM:
+
+Project Manager: [Name]
+Role & Responsibilities: [Description]
+Experience: [Relevant experience]
+Allocation: [Percentage or hours per week]
+
+[Role Title]: [Name]
+Role & Responsibilities: [Description]
+Experience: [Relevant experience]
+Allocation: [Percentage]
+
+[Role Title]: [Name]
+Role & Responsibilities: [Description]
+Experience: [Relevant experience]
+Allocation: [Percentage]
+
+[Role Title]: [Name]
+Role & Responsibilities: [Description]
+Experience: [Relevant experience]
+Allocation: [Percentage]
+
+COMPANY QUALIFICATIONS:
+• [Number] years of experience in [industry/field]
+• [Number] successful projects completed
+• [Relevant certifications or awards]
+• Expertise in [key areas]
+
+RELEVANT EXPERIENCE:
+Similar Project #1: [Client Name/Project Name]
+Challenge: [Brief description]
+Solution: [What we delivered]
+Results: [Quantifiable outcomes]
+
+Similar Project #2: [Client Name/Project Name]
+Challenge: [Brief description]
+Solution: [What we delivered]
+Results: [Quantifiable outcomes]
+
+CLIENT TESTIMONIALS:
+"[Quote from previous client]"
+- [Name, Title, Company]
+
+"[Quote from previous client]"
+- [Name, Title, Company]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+10. SUCCESS METRICS
+
+PROJECT SUCCESS WILL BE MEASURED BY:
+
+Metric #1: [Metric Name]
+Target: [Specific, measurable goal]
+Measurement Method: [How it will be tracked]
+Timeframe: [When it will be measured]
+
+Metric #2: [Metric Name]
+Target: [Specific, measurable goal]
+Measurement Method: [How it will be tracked]
+Timeframe: [When it will be measured]
+
+Metric #3: [Metric Name]
+Target: [Specific, measurable goal]
+Measurement Method: [How it will be tracked]
+Timeframe: [When it will be measured]
+
+KEY PERFORMANCE INDICATORS (KPIs):
+• [KPI 1]: [Target value]
+• [KPI 2]: [Target value]
+• [KPI 3]: [Target value]
+• [KPI 4]: [Target value]
+
+QUALITY ASSURANCE:
+• [Quality measure 1]
+• [Quality measure 2]
+• [Quality measure 3]
+• Regular status reports and reviews
+
+═══════════════════════════════════════════════════════════════════════════════
+
+11. RISK MANAGEMENT
+
+POTENTIAL RISKS AND MITIGATION STRATEGIES:
+
+Risk #1: [Risk Description]
+Probability: ☐ Low  ☐ Medium  ☐ High
+Impact: ☐ Low  ☐ Medium  ☐ High
+Mitigation Strategy: [How we will prevent or address this risk]
+
+Risk #2: [Risk Description]
+Probability: ☐ Low  ☐ Medium  ☐ High
+Impact: ☐ Low  ☐ Medium  ☐ High
+Mitigation Strategy: [Mitigation approach]
+
+Risk #3: [Risk Description]
+Probability: ☐ Low  ☐ Medium  ☐ High
+Impact: ☐ Low  ☐ Medium  ☐ High
+Mitigation Strategy: [Mitigation approach]
+
+CONTINGENCY PLANS:
+[Describe backup plans for critical aspects of the project]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+12. TERMS AND CONDITIONS
+
+CONTRACT PERIOD:
+This proposal is valid for [number] days from the date above.
+
+INTELLECTUAL PROPERTY:
+• [Specify IP ownership terms]
+• [Client owns all deliverables upon final payment]
+• [Any retained rights or licenses]
+
+CONFIDENTIALITY:
+Both parties agree to maintain confidentiality of proprietary information shared during this project.
+
+TERMINATION:
+Either party may terminate this agreement with [number] days written notice. In case of termination:
+• Client pays for work completed to date
+• All deliverables completed to date will be provided to client
+• [Any other termination terms]
+
+WARRANTY:
+We warrant that:
+• Work will be performed in a professional manner
+• Deliverables will meet specified requirements
+• [Warranty period]: [Duration]
+• [Warranty coverage details]
+
+SUPPORT AND MAINTENANCE:
+• Post-project support: [Duration and terms]
+• Ongoing maintenance: [Available options and pricing]
+• Response times: [SLA details]
+
+CHANGE MANAGEMENT:
+• Scope changes require written approval
+• Change requests will be evaluated for impact on timeline and budget
+• Client will be provided with revised estimate before proceeding
+
+LIABILITY:
+[Limitation of liability clause - consult with legal counsel]
+
+GOVERNING LAW:
+This agreement shall be governed by the laws of [State/Country].
+
+═══════════════════════════════════════════════════════════════════════════════
+
+13. NEXT STEPS
+
+TO PROCEED WITH THIS PROJECT:
+
+1. Review this proposal and provide feedback or questions
+2. Schedule a meeting to discuss any clarifications needed
+3. Approve the proposal and sign the acceptance form below
+4. Execute the formal contract
+5. Provide initial payment/deposit
+6. Project kickoff meeting scheduled
+7. Work begins!
+
+TIMELINE FOR DECISION:
+We respectfully request a decision by [Date] to ensure the proposed start date can be met.
+
+QUESTIONS OR CLARIFICATIONS:
+Please contact:
+[Name]
+[Title]
+[Phone]
+[Email]
+
+We look forward to the opportunity to work with [Client Name] on this exciting project!
+
+═══════════════════════════════════════════════════════════════════════════════
+
+14. PROPOSAL ACCEPTANCE
+
+By signing below, [Client Name] accepts this proposal and authorizes [Company Name] to proceed with the project as outlined.
+
+CLIENT ACCEPTANCE:
+
+Client Name (Print): _______________________
+Client Signature: _________________________ Date: _______
+Title: _______________________
+Company: _______________________
+
+PROVIDER ACCEPTANCE:
+
+Provider Name (Print): _______________________
+Provider Signature: _________________________ Date: _______
+Title: _______________________
+Company: [Company Name]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+APPENDICES
+
+APPENDIX A: Detailed Technical Specifications
+[Attach detailed technical documentation]
+
+APPENDIX B: Case Studies
+[Attach relevant case studies]
+
+APPENDIX C: Team Resumes/CVs
+[Attach team member qualifications]
+
+APPENDIX D: References
+[Attach client references]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+Thank you for considering [Company Name] for this project.
+We are excited about the opportunity to partner with [Client Name].
+
+[Company Name]
+[Address]
+[Phone] | [Email] | [Website]
+    `
+  },
+  {
+    id: 'pm-statement-of-work',
+    title: 'Statement of Work (SOW)',
+    description: 'Comprehensive SOW template defining project scope, deliverables, and responsibilities',
+    category: 'project-management',
+    downloadCount: 1567,
+    fileSize: '64.3 KB',
+    rating: 4.9,
+    tags: ['SOW', 'contract', 'scope', 'project', 'deliverables'],
+    createdAt: '2024-01-12T10:30:00Z',
+    updatedAt: '2024-01-30T11:45:00Z',
+    content: `
+STATEMENT OF WORK (SOW)
+
+[Company Logo]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+DOCUMENT INFORMATION
+
+SOW Number: [SOW-YYYY-###]
+Document Version: [Version Number]
+Date Prepared: [Date]
+Effective Date: [Date]
+Contract/PO Number: [Reference Number]
+
+CLIENT INFORMATION:
+Company Name: [Client Company Name]
+Address: [Full Address]
+Primary Contact: [Name]
+Title: [Title]
+Email: [Email]
+Phone: [Phone Number]
+
+PROVIDER INFORMATION:
+Company Name: [Provider Company Name]
+Address: [Full Address]
+Primary Contact: [Name]
+Title: [Title]
+Email: [Email]
+Phone: [Phone Number]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+TABLE OF CONTENTS
+
+1. Executive Summary
+2. Project Overview
+3. Scope of Work
+4. Deliverables
+5. Project Timeline and Milestones
+6. Roles and Responsibilities
+7. Project Management
+8. Acceptance Criteria
+9. Payment Terms
+10. Change Management
+11. Assumptions and Constraints
+12. Risk Management
+13. Communication Plan
+14. Terms and Conditions
+15. Signatures
+
+═══════════════════════════════════════════════════════════════════════════════
+
+1. EXECUTIVE SUMMARY
+
+This Statement of Work ("SOW") is entered into between [Client Company Name] ("Client") and [Provider Company Name] ("Provider") for the purpose of [brief description of project purpose].
+
+Project Name: [Project Name]
+Project Description: [2-3 sentence summary]
+
+The Provider agrees to perform the services and deliver the items described in this SOW in accordance with the terms and conditions outlined herein.
+
+Project Value: $[Total Amount]
+Project Duration: [Start Date] to [End Date]
+Total Duration: [Number of weeks/months]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+2. PROJECT OVERVIEW
+
+2.1 PROJECT BACKGROUND
+[Provide context about why this project is being undertaken, including business drivers, opportunities, or challenges being addressed]
+
+2.2 PROJECT OBJECTIVES
+The primary objectives of this project are:
+
+1. [Objective 1 - Specific, Measurable, Achievable, Relevant, Time-bound]
+2. [Objective 2]
+3. [Objective 3]
+4. [Objective 4]
+
+2.3 PROJECT GOALS
+Upon successful completion of this project:
+• [Goal 1]
+• [Goal 2]
+• [Goal 3]
+• [Goal 4]
+
+2.4 BUSINESS VALUE
+This project will deliver the following business value:
+• [Value proposition 1]
+• [Value proposition 2]
+• [Value proposition 3]
+• Expected ROI: [Percentage or amount]
+
+2.5 SUCCESS CRITERIA
+Project success will be measured by:
+• [Success criterion 1]
+• [Success criterion 2]
+• [Success criterion 3]
+• [Success criterion 4]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+3. SCOPE OF WORK
+
+3.1 IN-SCOPE ACTIVITIES
+
+The Provider shall perform the following services:
+
+3.1.1 Phase 1: [Phase Name] ([Duration])
+
+Task 1.1: [Task Name]
+Description: [Detailed description of what will be done]
+Activities:
+• [Activity 1]
+• [Activity 2]
+• [Activity 3]
+
+Task 1.2: [Task Name]
+Description: [Detailed description]
+Activities:
+• [Activity 1]
+• [Activity 2]
+
+Task 1.3: [Task Name]
+Description: [Detailed description]
+Activities:
+• [Activity 1]
+• [Activity 2]
+
+3.1.2 Phase 2: [Phase Name] ([Duration])
+
+Task 2.1: [Task Name]
+Description: [Detailed description]
+Activities:
+• [Activity 1]
+• [Activity 2]
+• [Activity 3]
+
+Task 2.2: [Task Name]
+Description: [Detailed description]
+Activities:
+• [Activity 1]
+• [Activity 2]
+
+3.1.3 Phase 3: [Phase Name] ([Duration])
+
+Task 3.1: [Task Name]
+Description: [Detailed description]
+Activities:
+• [Activity 1]
+• [Activity 2]
+
+Task 3.2: [Task Name]
+Description: [Detailed description]
+Activities:
+• [Activity 1]
+• [Activity 2]
+
+3.2 OUT-OF-SCOPE ACTIVITIES
+
+The following activities are explicitly excluded from this SOW:
+
+✗ [Out of scope item 1 - with explanation if needed]
+✗ [Out of scope item 2]
+✗ [Out of scope item 3]
+✗ [Out of scope item 4]
+✗ [Out of scope item 5]
+
+Note: Any work outside the defined scope will require a formal change request and may result in additional costs and timeline adjustments.
+
+3.3 SCOPE BOUNDARIES
+
+Geographic Scope: [Locations covered]
+Functional Scope: [Departments/functions included]
+Technical Scope: [Systems/platforms included]
+User Scope: [User groups included]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+4. DELIVERABLES
+
+4.1 PROJECT DELIVERABLES
+
+All deliverables shall be provided in accordance with the schedule outlined in Section 5.
+
+Deliverable #1: [Deliverable Name]
+Description: [Comprehensive description of what will be delivered]
+Format: [File format, medium, quantity]
+Delivery Date: [Date or milestone reference]
+Acceptance Criteria:
+  • [Criterion 1]
+  • [Criterion 2]
+  • [Criterion 3]
+
+Deliverable #2: [Deliverable Name]
+Description: [Comprehensive description]
+Format: [Format details]
+Delivery Date: [Date]
+Acceptance Criteria:
+  • [Criterion 1]
+  • [Criterion 2]
+  • [Criterion 3]
+
+Deliverable #3: [Deliverable Name]
+Description: [Comprehensive description]
+Format: [Format details]
+Delivery Date: [Date]
+Acceptance Criteria:
+  • [Criterion 1]
+  • [Criterion 2]
+
+Deliverable #4: [Deliverable Name]
+Description: [Comprehensive description]
+Format: [Format details]
+Delivery Date: [Date]
+Acceptance Criteria:
+  • [Criterion 1]
+  • [Criterion 2]
+
+Deliverable #5: [Deliverable Name]
+Description: [Comprehensive description]
+Format: [Format details]
+Delivery Date: [Date]
+Acceptance Criteria:
+  • [Criterion 1]
+  • [Criterion 2]
+
+4.2 DOCUMENTATION DELIVERABLES
+
+The following documentation will be provided:
+
+• Project Plan: [Description and delivery date]
+• Technical Documentation: [Description and delivery date]
+• User Documentation: [Description and delivery date]
+• Training Materials: [Description and delivery date]
+• Test Plans and Results: [Description and delivery date]
+• Maintenance and Support Documentation: [Description and delivery date]
+• Final Project Report: [Description and delivery date]
+
+4.3 DELIVERABLE FORMATS AND STANDARDS
+
+All deliverables shall conform to the following standards:
+• Documents: [Format, e.g., Microsoft Word .docx, PDF]
+• Spreadsheets: [Format, e.g., Microsoft Excel .xlsx]
+• Presentations: [Format, e.g., PowerPoint .pptx, PDF]
+• Code/Software: [Languages, frameworks, coding standards]
+• Graphics: [Formats and resolutions]
+• [Other format requirements]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+5. PROJECT TIMELINE AND MILESTONES
+
+5.1 PROJECT SCHEDULE
+
+Project Start Date: [Date]
+Project End Date: [Date]
+Total Duration: [Number] weeks/months
+
+5.2 PHASE SCHEDULE
+
+PHASE 1: [Phase Name]
+Start Date: [Date]
+End Date: [Date]
+Duration: [Weeks/Days]
+
+Key Activities:
+Week 1-2: [Activities]
+Week 3-4: [Activities]
+Week 5-6: [Activities]
+
+PHASE 2: [Phase Name]
+Start Date: [Date]
+End Date: [Date]
+Duration: [Weeks/Days]
+
+Key Activities:
+Week 1-2: [Activities]
+Week 3-4: [Activities]
+
+PHASE 3: [Phase Name]
+Start Date: [Date]
+End Date: [Date]
+Duration: [Weeks/Days]
+
+Key Activities:
+Week 1-2: [Activities]
+Week 3-4: [Activities]
+
+5.3 MAJOR MILESTONES
+
+Milestone | Description | Deliverables | Target Date | Payment
+----------|-------------|--------------|-------------|--------
+M0 | Project Kickoff | Project Plan | [Date] | [Amount]
+M1 | [Milestone Name] | [Deliverables] | [Date] | [Amount]
+M2 | [Milestone Name] | [Deliverables] | [Date] | [Amount]
+M3 | [Milestone Name] | [Deliverables] | [Date] | [Amount]
+M4 | [Milestone Name] | [Deliverables] | [Date] | [Amount]
+M5 | Project Completion | Final Report | [Date] | [Amount]
+
+5.4 CRITICAL PATH ACTIVITIES
+
+The following activities are on the critical path and must be completed on schedule:
+• [Critical activity 1] - [Date]
+• [Critical activity 2] - [Date]
+• [Critical activity 3] - [Date]
+
+5.5 DEPENDENCIES
+
+Activity | Depends On | Dependency Type
+---------|------------|----------------
+[Activity] | [Prerequisite] | [Type: Start-to-Start, Finish-to-Start, etc.]
+[Activity] | [Prerequisite] | [Type]
+[Activity] | [Prerequisite] | [Type]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+6. ROLES AND RESPONSIBILITIES
+
+6.1 PROVIDER RESPONSIBILITIES
+
+The Provider shall:
+• Assign qualified personnel to perform the work outlined in this SOW
+• Provide project management and regular status updates
+• Deliver all items according to the specifications and schedule
+• Maintain professional standards and quality control
+• Address any deficiencies in deliverables within agreed timeframes
+• Maintain confidentiality of Client information
+
+Specific Responsibilities:
+• [Responsibility 1]
+• [Responsibility 2]
+• [Responsibility 3]
+• [Responsibility 4]
+
+6.2 CLIENT RESPONSIBILITIES
+
+The Client shall:
+• Designate a primary point of contact
+• Provide timely access to necessary resources, systems, and information
+• Review and approve deliverables within agreed timeframes
+• Provide feedback and decisions in a timely manner
+• Make payments according to the agreed schedule
+• Ensure availability of key personnel for meetings and reviews
+
+Specific Responsibilities:
+• [Responsibility 1]
+• [Responsibility 2]
+• [Responsibility 3]
+• [Responsibility 4]
+
+6.3 PROJECT TEAM STRUCTURE
+
+PROVIDER TEAM:
+
+Project Manager: [Name]
+Role: Overall project management, client communication, deliverable oversight
+Availability: [Hours per week or percentage]
+Email: [Email]
+Phone: [Phone]
+
+[Role Title]: [Name]
+Role: [Responsibilities]
+Availability: [Hours per week]
+
+[Role Title]: [Name]
+Role: [Responsibilities]
+Availability: [Hours per week]
+
+[Role Title]: [Name]
+Role: [Responsibilities]
+Availability: [Hours per week]
+
+CLIENT TEAM:
+
+Project Sponsor: [Name]
+Role: Executive oversight, major decision approval
+Email: [Email]
+Phone: [Phone]
+
+Project Lead: [Name]
+Role: Day-to-day client liaison, approvals, resource coordination
+Email: [Email]
+Phone: [Phone]
+
+[Role Title]: [Name]
+Role: [Responsibilities]
+Email: [Email]
+
+6.4 DECISION-MAKING AUTHORITY
+
+Decision Type | Authority | Response Time
+--------------|-----------|---------------
+Minor changes (<$[Amount]) | Project Manager | 2 business days
+Moderate changes ($[Range]) | Project Lead | 5 business days
+Major changes (>$[Amount]) | Project Sponsor | 10 business days
+Scope changes | Project Sponsor | 10 business days
+
+═══════════════════════════════════════════════════════════════════════════════
+
+7. PROJECT MANAGEMENT
+
+7.1 PROJECT MANAGEMENT METHODOLOGY
+
+This project will be managed using [Methodology name, e.g., Agile, Waterfall, Hybrid] methodology.
+
+Key practices include:
+• [Practice 1]
+• [Practice 2]
+• [Practice 3]
+
+7.2 MEETINGS AND REPORTING
+
+Kickoff Meeting:
+• Date: [Date]
+• Duration: [Hours]
+• Attendees: [List key attendees]
+• Agenda: Project overview, team introductions, plan review
+
+Weekly Status Meetings:
+• Frequency: Every [Day] at [Time]
+• Duration: [Minutes]
+• Format: [In-person/Virtual]
+• Attendees: Project teams
+
+Status Reports:
+• Frequency: Weekly/Bi-weekly
+• Format: Written report via email
+• Contents: Progress update, accomplishments, upcoming activities, issues, risks
+
+Milestone Reviews:
+• Conducted at each major milestone
+• Formal deliverable review and acceptance
+• Sign-off required to proceed
+
+Executive Updates:
+• Frequency: Monthly
+• Format: Executive summary
+• Attendees: Project sponsors and senior leadership
+
+7.3 ISSUE AND RISK MANAGEMENT
+
+Issues:
+• Issues logged in [Issue tracking system]
+• Reviewed in weekly status meetings
+• Critical issues escalated within 24 hours
+• Resolution owner and target date assigned to each issue
+
+Risks:
+• Risk register maintained throughout project
+• Risks assessed for probability and impact
+• Mitigation strategies defined for high-priority risks
+• Reviewed monthly or when new risks identified
+
+7.4 QUALITY MANAGEMENT
+
+Quality Assurance:
+• [QA activity 1]
+• [QA activity 2]
+• [QA activity 3]
+
+Quality Control:
+• All deliverables reviewed before submission
+• [Testing approach]
+• Defects tracked and resolved
+• Quality metrics reported monthly
+
+═══════════════════════════════════════════════════════════════════════════════
+
+8. ACCEPTANCE CRITERIA
+
+8.1 DELIVERABLE ACCEPTANCE PROCESS
+
+1. Provider submits deliverable to Client
+2. Client has [number] business days to review
+3. Client provides one of the following responses:
+   a) Acceptance - Deliverable approved as-is
+   b) Conditional Acceptance - Minor changes requested
+   c) Rejection - Significant issues identified
+
+4. If rejected, Provider has [number] business days to address issues and resubmit
+5. Process repeats until acceptance
+
+8.2 ACCEPTANCE CRITERIA BY DELIVERABLE
+
+Deliverable 1: [Name]
+• [Specific acceptance criterion 1]
+• [Specific acceptance criterion 2]
+• [Specific acceptance criterion 3]
+
+Deliverable 2: [Name]
+• [Specific acceptance criterion 1]
+• [Specific acceptance criterion 2]
+• [Specific acceptance criterion 3]
+
+[Continue for each major deliverable]
+
+8.3 PROJECT COMPLETION CRITERIA
+
+The project will be considered complete when:
+• All deliverables have been accepted by Client
+• All documentation has been provided
+• Training has been completed
+• Final payment has been processed
+• Project closeout meeting has been conducted
+• Lessons learned documented
+
+═══════════════════════════════════════════════════════════════════════════════
+
+9. PAYMENT TERMS
+
+9.1 TOTAL PROJECT VALUE
+
+Total Contract Value: $[Total Amount]
+
+9.2 PAYMENT SCHEDULE
+
+Payment # | Amount | Percentage | Due Date | Trigger/Milestone
+----------|--------|------------|----------|------------------
+1 | $[Amount] | [%] | [Date] | Contract signing
+2 | $[Amount] | [%] | [Date] | Milestone 1 completion
+3 | $[Amount] | [%] | [Date] | Milestone 2 completion
+4 | $[Amount] | [%] | [Date] | Milestone 3 completion
+5 | $[Amount] | [%] | [Date] | Project completion
+TOTAL | $[Total] | 100% | |
+
+9.3 INVOICING
+
+• Invoices submitted within [number] days of milestone completion
+• Invoices include: SOW reference, milestone achieved, deliverables provided
+• Payment due within [number] days of invoice date
+• Payment method: [Check, Wire Transfer, ACH, etc.]
+• Payment address: [Address or account details]
+
+9.4 EXPENSES
+
+Out-of-Pocket Expenses:
+• Pre-approved expenses billed at cost
+• Expenses exceeding $[amount] require written approval
+• Original receipts provided with expense reports
+• Common expenses: travel, accommodations, materials
+
+9.5 LATE PAYMENT
+
+• Interest charged at [percentage]% per month on overdue balances
+• Provider may suspend work if payment is more than [number] days overdue
+• Client responsible for all collection costs if legal action required
+
+═══════════════════════════════════════════════════════════════════════════════
+
+10. CHANGE MANAGEMENT
+
+10.1 CHANGE REQUEST PROCESS
+
+1. Change Request Submitted
+   • Either party may submit a change request
+   • Must include: description, justification, impact analysis
+
+2. Impact Assessment
+   • Provider evaluates impact on scope, timeline, budget
+   • Assessment provided within [number] business days
+
+3. Approval/Rejection
+   • Client reviews and approves or rejects
+   • Decision provided within [number] business days
+
+4. Implementation
+   • Approved changes incorporated into project plan
+   • SOW updated via formal amendment
+
+10.2 CHANGE REQUEST FORM
+
+Change requests must include:
+• Description of proposed change
+• Business justification
+• Impact on scope
+• Impact on timeline
+• Impact on budget
+• Impact on resources
+• Alternatives considered
+
+10.3 CHANGE APPROVAL AUTHORITY
+
+Change Value | Approval Required
+-------------|------------------
+< $[Amount] | Project Manager (both parties)
+$[Range] | Project Lead (both parties)
+> $[Amount] | Project Sponsor (both parties)
+Scope change | Project Sponsor (both parties)
+
+═══════════════════════════════════════════════════════════════════════════════
+
+11. ASSUMPTIONS AND CONSTRAINTS
+
+11.1 ASSUMPTIONS
+
+This SOW is based on the following assumptions:
+
+• [Assumption 1]
+• [Assumption 2]
+• [Assumption 3]
+• [Assumption 4]
+• [Assumption 5]
+• Client will provide access to necessary systems within [timeframe]
+• Key personnel from both parties will be available as scheduled
+• Required approvals will be provided within specified timeframes
+• [Technology/tools] will be available and functioning
+
+If any assumption proves invalid, scope, timeline, or budget may need adjustment.
+
+11.2 CONSTRAINTS
+
+The following constraints apply to this project:
+
+• Budget: Must be completed within approved budget of $[Amount]
+• Timeline: Must be completed by [Date]
+• Resources: Limited to [number] team members
+• Technology: Must use [specific technologies or platforms]
+• [Other constraints]
+
+11.3 DEPENDENCIES
+
+This project depends on:
+
+• [External dependency 1]
+• [External dependency 2]
+• [External dependency 3]
+• [Other project or initiative]
+• [Third-party vendor deliverables]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+12. RISK MANAGEMENT
+
+12.1 IDENTIFIED RISKS
+
+Risk #1: [Risk Description]
+Probability: ☐ Low  ☐ Medium  ☐ High
+Impact: ☐ Low  ☐ Medium  ☐ High
+Mitigation: [Strategy]
+Contingency: [Plan if risk occurs]
+
+Risk #2: [Risk Description]
+Probability: ☐ Low  ☐ Medium  ☐ High
+Impact: ☐ Low  ☐ Medium  ☐ High
+Mitigation: [Strategy]
+Contingency: [Plan if risk occurs]
+
+Risk #3: [Risk Description]
+Probability: ☐ Low  ☐ Medium  ☐ High
+Impact: ☐ Low  ☐ Medium  ☐ High
+Mitigation: [Strategy]
+Contingency: [Plan if risk occurs]
+
+12.2 RISK RESPONSE STRATEGIES
+
+• Risks monitored throughout project lifecycle
+• Risk register updated monthly
+• New risks identified and assessed as they arise
+• High-priority risks escalated to sponsors
+• Contingency budget: [Amount or percentage] of total budget
+
+═══════════════════════════════════════════════════════════════════════════════
+
+13. COMMUNICATION PLAN
+
+13.1 COMMUNICATION MATRIX
+
+Stakeholder | Information Needed | Frequency | Method | Owner
+------------|-------------------|-----------|--------|------
+Project Sponsor | Executive summary, major decisions | Monthly | Email report | PM
+Project Teams | Detailed status, issues, tasks | Weekly | Meeting | PM
+End Users | Progress updates, training | Bi-weekly | Email | Client Lead
+Management | High-level status, risks | Monthly | Presentation | PM
+
+13.2 ESCALATION PROCEDURES
+
+Level 1: Project Team
+• Issues resolved at project team level
+• Response time: 2 business days
+
+Level 2: Project Manager/Lead
+• Issues not resolved at team level
+• Response time: 3 business days
+
+Level 3: Sponsor/Senior Management
+• Critical issues requiring executive decision
+• Response time: 5 business days
+
+13.3 CONTACT INFORMATION
+
+Provider Primary Contact:
+[Name], [Title]
+Email: [Email]
+Phone: [Phone]
+Available: [Hours]
+
+Client Primary Contact:
+[Name], [Title]
+Email: [Email]
+Phone: [Phone]
+Available: [Hours]
+
+Emergency Contact (Provider): [Name/Phone]
+Emergency Contact (Client): [Name/Phone]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+14. TERMS AND CONDITIONS
+
+14.1 TERM AND TERMINATION
+
+Term: This SOW is effective from [Start Date] to [End Date]
+
+Termination for Convenience:
+• Either party may terminate with [number] days written notice
+• Client pays for work completed and expenses incurred to date
+• Provider delivers all work product completed to date
+
+Termination for Cause:
+• May be terminated immediately for material breach
+• Breaching party has [number] days to cure after written notice
+• If not cured, non-breaching party may terminate
+
+14.2 INTELLECTUAL PROPERTY
+
+Work Product:
+• All deliverables created specifically for this project owned by Client upon final payment
+• Provider retains ownership of pre-existing IP and methodologies
+• Provider may use project as reference/case study with Client approval
+
+Licenses:
+• [Specify any license grants]
+
+14.3 CONFIDENTIALITY
+
+• Both parties agree to maintain confidentiality of proprietary information
+• Confidential information marked as "Confidential" or disclosed in confidential context
+• Obligations survive termination for [number] years
+• Standard exceptions apply (public knowledge, independently developed, etc.)
+
+14.4 WARRANTIES
+
+Provider Warrants:
+• Services performed in professional workmanlike manner
+• Deliverables will materially conform to specifications
+• Provider has rights to grant licenses specified
+• Work will not infringe third-party IP rights
+
+Warranty Period: [Duration] from acceptance of each deliverable
+
+Remedy: Provider will re-perform services or correct deliverables at no additional charge
+
+14.5 LIMITATION OF LIABILITY
+
+• Provider's total liability limited to total contract value
+• Neither party liable for indirect, incidental, or consequential damages
+• Exceptions for: gross negligence, willful misconduct, IP infringement, confidentiality breach
+
+14.6 INSURANCE
+
+Provider maintains:
+• General Liability Insurance: $[Amount]
+• Professional Liability Insurance: $[Amount]
+• [Other insurance as applicable]
+
+Certificates provided upon request.
+
+14.7 INDEPENDENT CONTRACTOR
+
+Provider is independent contractor, not employee or agent of Client.
+
+14.8 GOVERNING LAW
+
+This SOW governed by laws of [State/Country], excluding conflict of law provisions.
+
+14.9 DISPUTE RESOLUTION
+
+• Good faith negotiation for [number] days
+• If unresolved, mediation in [Location]
+• If mediation fails, binding arbitration under [Rules]
+• Arbitration in [Location]
+
+14.10 ENTIRE AGREEMENT
+
+This SOW, together with [Master Services Agreement or other referenced documents], constitutes entire agreement and supersedes all prior agreements.
+
+14.11 AMENDMENTS
+
+Amendments must be in writing and signed by authorized representatives of both parties.
+
+14.12 FORCE MAJEURE
+
+Neither party liable for delays due to circumstances beyond reasonable control (natural disasters, war, pandemic, etc.).
+
+═══════════════════════════════════════════════════════════════════════════════
+
+15. SIGNATURES
+
+By signing below, the parties agree to the terms and conditions of this Statement of Work.
+
+CLIENT:
+
+Company: [Client Company Name]
+
+Authorized Signature: _________________________
+Print Name: [Name]
+Title: [Title]
+Date: _______
+
+PROVIDER:
+
+Company: [Provider Company Name]
+
+Authorized Signature: _________________________
+Print Name: [Name]
+Title: [Title]
+Date: _______
+
+═══════════════════════════════════════════════════════════════════════════════
+
+APPENDICES
+
+APPENDIX A: Detailed Technical Specifications
+APPENDIX B: Glossary of Terms
+APPENDIX C: Reference Documents
+APPENDIX D: Templates and Forms
+
+═══════════════════════════════════════════════════════════════════════════════
+
+END OF STATEMENT OF WORK
+    `
+  },
+  {
+    id: 'pm-project-timeline',
+    title: 'Project Timeline & Milestones Sheet',
+    description: 'Detailed project timeline template with milestones, dependencies, and progress tracking',
+    category: 'project-management',
+    downloadCount: 1278,
+    fileSize: '47.2 KB',
+    rating: 4.7,
+    tags: ['timeline', 'milestones', 'schedule', 'gantt', 'planning'],
+    createdAt: '2024-01-18T14:00:00Z',
+    updatedAt: '2024-01-31T09:00:00Z',
+    content: `
+PROJECT TIMELINE & MILESTONES SHEET
+
+═══════════════════════════════════════════════════════════════════════════════
+
+PROJECT INFORMATION
+
+Project Name: [Project Name]
+Project Manager: [Name]
+Project Sponsor: [Name]
+Department/Team: [Department]
+Project ID: [ID Number]
+
+Timeline Period: [Start Date] to [End Date]
+Total Duration: [Number] weeks/months
+Current Phase: [Phase Name]
+Overall Status: ☐ On Track  ☐ At Risk  ☐ Delayed  ☐ Completed
+
+Last Updated: [Date]
+Next Review Date: [Date]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+PROJECT OVERVIEW
+
+Project Description:
+[Brief 2-3 sentence description of the project]
+
+Project Objectives:
+1. [Objective 1]
+2. [Objective 2]
+3. [Objective 3]
+
+Key Stakeholders:
+• [Stakeholder 1] - [Role]
+• [Stakeholder 2] - [Role]
+• [Stakeholder 3] - [Role]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+TIMELINE SUMMARY
+
+Phase | Duration | Start Date | End Date | Status | % Complete
+------|----------|------------|----------|--------|------------
+Initiation | [Weeks] | [Date] | [Date] | ☐ Complete ☐ In Progress ☐ Not Started | [%]
+Planning | [Weeks] | [Date] | [Date] | ☐ Complete ☐ In Progress ☐ Not Started | [%]
+Execution | [Weeks] | [Date] | [Date] | ☐ Complete ☐ In Progress ☐ Not Started | [%]
+Monitoring | [Weeks] | [Date] | [Date] | ☐ Complete ☐ In Progress ☐ Not Started | [%]
+Closure | [Weeks] | [Date] | [Date] | ☐ Complete ☐ In Progress ☐ Not Started | [%]
+
+Overall Project Progress: [Percentage]%
+
+═══════════════════════════════════════════════════════════════════════════════
+
+MAJOR MILESTONES
+
+Milestone # | Milestone Name | Target Date | Actual Date | Status | Owner
+------------|----------------|-------------|-------------|--------|------
+M1 | Project Kickoff | [Date] | [Date] | ☐ Complete ☐ Pending ☐ Delayed | [Name]
+M2 | [Milestone Name] | [Date] | [Date] | ☐ Complete ☐ Pending ☐ Delayed | [Name]
+M3 | [Milestone Name] | [Date] | [Date] | ☐ Complete ☐ Pending ☐ Delayed | [Name]
+M4 | [Milestone Name] | [Date] | [Date] | ☐ Complete ☐ Pending ☐ Delayed | [Name]
+M5 | [Milestone Name] | [Date] | [Date] | ☐ Complete ☐ Pending ☐ Delayed | [Name]
+M6 | [Milestone Name] | [Date] | [Date] | ☐ Complete ☐ Pending ☐ Delayed | [Name]
+M7 | [Milestone Name] | [Date] | [Date] | ☐ Complete ☐ Pending ☐ Delayed | [Name]
+M8 | Project Completion | [Date] | [Date] | ☐ Complete ☐ Pending ☐ Delayed | [Name]
+
+Milestones Completed: [Number] of [Total]
+Milestones On Schedule: [Number]
+Milestones Delayed: [Number]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+PHASE 1: INITIATION
+
+Phase Duration: [Start Date] to [End Date]
+Phase Status: ☐ Complete  ☐ In Progress  ☐ Not Started
+Phase Progress: [Percentage]%
+
+Key Activities:
+
+ID | Activity | Owner | Start | End | Duration | Status | % Done | Notes
+---|----------|-------|-------|-----|----------|--------|--------|------
+1.1 | Define project charter | [Name] | [Date] | [Date] | [Days] | ☐ | [%] |
+1.2 | Identify stakeholders | [Name] | [Date] | [Date] | [Days] | ☐ | [%] |
+1.3 | Conduct kickoff meeting | [Name] | [Date] | [Date] | [Days] | ☐ | [%] |
+1.4 | Define success criteria | [Name] | [Date] | [Date] | [Days] | ☐ | [%] |
+1.5 | Establish governance | [Name] | [Date] | [Date] | [Days] | ☐ | [%] |
+
+Phase Deliverables:
+☐ Project Charter
+☐ Stakeholder Register
+☐ Kickoff Meeting Minutes
+☐ [Other deliverable]
+
+Critical Dependencies:
+• [Dependency 1]
+• [Dependency 2]
+
+Phase Risks:
+• [Risk 1] - Impact: [H/M/L]
+• [Risk 2] - Impact: [H/M/L]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+PHASE 2: PLANNING
+
+Phase Duration: [Start Date] to [End Date]
+Phase Status: ☐ Complete  ☐ In Progress  ☐ Not Started
+Phase Progress: [Percentage]%
+
+Key Activities:
+
+ID | Activity | Owner | Start | End | Duration | Status | % Done | Notes
+---|----------|-------|-------|-----|----------|--------|--------|------
+2.1 | Define detailed scope | [Name] | [Date] | [Date] | [Days] | ☐ | [%] |
+2.2 | Create WBS | [Name] | [Date] | [Date] | [Days] | ☐ | [%] |
+2.3 | Develop schedule | [Name] | [Date] | [Date] | [Days] | ☐ | [%] |
+2.4 | Define budget | [Name] | [Date] | [Date] | [Days] | ☐ | [%] |
+2.5 | Plan resources | [Name] | [Date] | [Date] | [Days] | ☐ | [%] |
+2.6 | Identify risks | [Name] | [Date] | [Date] | [Days] | ☐ | [%] |
+2.7 | Create communication plan | [Name] | [Date] | [Date] | [Days] | ☐ | [%] |
+2.8 | Define quality standards | [Name] | [Date] | [Date] | [Days] | ☐ | [%] |
+2.9 | Plan procurement | [Name] | [Date] | [Date] | [Days] | ☐ | [%] |
+2.10 | Get plan approval | [Name] | [Date] | [Date] | [Days] | ☐ | [%] |
+
+Phase Deliverables:
+☐ Project Plan
+☐ Work Breakdown Structure
+☐ Resource Plan
+☐ Risk Register
+☐ Communication Plan
+☐ Budget
+☐ [Other deliverable]
+
+Critical Dependencies:
+• [Dependency 1]
+• [Dependency 2]
+
+Phase Risks:
+• [Risk 1] - Impact: [H/M/L]
+• [Risk 2] - Impact: [H/M/L]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+PHASE 3: EXECUTION
+
+Phase Duration: [Start Date] to [End Date]
+Phase Status: ☐ Complete  ☐ In Progress  ☐ Not Started
+Phase Progress: [Percentage]%
+
+SPRINT/ITERATION 1: [Sprint Name]
+Duration: [Start Date] to [End Date]
+
+ID | Activity | Owner | Start | End | Duration | Status | % Done | Notes
+---|----------|-------|-------|-----|----------|--------|--------|------
+3.1 | [Activity Name] | [Name] | [Date] | [Date] | [Days] | ☐ | [%] |
+3.2 | [Activity Name] | [Name] | [Date] | [Date] | [Days] | ☐ | [%] |
+3.3 | [Activity Name] | [Name] | [Date] | [Date] | [Days] | ☐ | [%] |
+3.4 | [Activity Name] | [Name] | [Date] | [Date] | [Days] | ☐ | [%] |
+3.5 | [Activity Name] | [Name] | [Date] | [Date] | [Days] | ☐ | [%] |
+
+Sprint Deliverables:
+☐ [Deliverable 1]
+☐ [Deliverable 2]
+☐ [Deliverable 3]
+
+SPRINT/ITERATION 2: [Sprint Name]
+Duration: [Start Date] to [End Date]
+
+ID | Activity | Owner | Start | End | Duration | Status | % Done | Notes
+---|----------|-------|-------|-----|----------|--------|--------|------
+3.6 | [Activity Name] | [Name] | [Date] | [Date] | [Days] | ☐ | [%] |
+3.7 | [Activity Name] | [Name] | [Date] | [Date] | [Days] | ☐ | [%] |
+3.8 | [Activity Name] | [Name] | [Date] | [Date] | [Days] | ☐ | [%] |
+3.9 | [Activity Name] | [Name] | [Date] | [Date] | [Days] | ☐ | [%] |
+3.10 | [Activity Name] | [Name] | [Date] | [Date] | [Days] | ☐ | [%] |
+
+Sprint Deliverables:
+☐ [Deliverable 1]
+☐ [Deliverable 2]
+☐ [Deliverable 3]
+
+SPRINT/ITERATION 3: [Sprint Name]
+Duration: [Start Date] to [End Date]
+
+ID | Activity | Owner | Start | End | Duration | Status | % Done | Notes
+---|----------|-------|-------|-----|----------|--------|--------|------
+3.11 | [Activity Name] | [Name] | [Date] | [Date] | [Days] | ☐ | [%] |
+3.12 | [Activity Name] | [Name] | [Date] | [Date] | [Days] | ☐ | [%] |
+3.13 | [Activity Name] | [Name] | [Date] | [Date] | [Days] | ☐ | [%] |
+3.14 | [Activity Name] | [Name] | [Date] | [Date] | [Days] | ☐ | [%] |
+
+Phase Deliverables:
+☐ [Major deliverable 1]
+☐ [Major deliverable 2]
+☐ [Major deliverable 3]
+☐ Status Reports
+☐ [Other deliverable]
+
+Critical Dependencies:
+• [Dependency 1]
+• [Dependency 2]
+
+Phase Risks:
+• [Risk 1] - Impact: [H/M/L]
+• [Risk 2] - Impact: [H/M/L]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+PHASE 4: MONITORING & CONTROL
+
+Phase Duration: [Ongoing throughout project]
+Phase Status: ☐ Complete  ☐ In Progress  ☐ Not Started
+
+Key Activities:
+
+ID | Activity | Frequency | Owner | Status | Notes
+---|----------|-----------|-------|--------|------
+4.1 | Track progress | Weekly | [Name] | ☐ |
+4.2 | Monitor budget | Weekly | [Name] | ☐ |
+4.3 | Update schedule | Weekly | [Name] | ☐ |
+4.4 | Review risks | Bi-weekly | [Name] | ☐ |
+4.5 | Quality reviews | Per deliverable | [Name] | ☐ |
+4.6 | Stakeholder updates | Monthly | [Name] | ☐ |
+4.7 | Status reporting | Weekly | [Name] | ☐ |
+4.8 | Change management | As needed | [Name] | ☐ |
+
+Phase Deliverables:
+☐ Weekly Status Reports
+☐ Monthly Executive Reports
+☐ Updated Project Plan
+☐ Risk Register Updates
+☐ Change Requests
+☐ [Other deliverable]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+PHASE 5: CLOSURE
+
+Phase Duration: [Start Date] to [End Date]
+Phase Status: ☐ Complete  ☐ In Progress  ☐ Not Started
+Phase Progress: [Percentage]%
+
+Key Activities:
+
+ID | Activity | Owner | Start | End | Duration | Status | % Done | Notes
+---|----------|-------|-------|-----|----------|--------|--------|------
+5.1 | Final deliverable acceptance | [Name] | [Date] | [Date] | [Days] | ☐ | [%] |
+5.2 | Documentation handover | [Name] | [Date] | [Date] | [Days] | ☐ | [%] |
+5.3 | Conduct training | [Name] | [Date] | [Date] | [Days] | ☐ | [%] |
+5.4 | Lessons learned session | [Name] | [Date] | [Date] | [Days] | ☐ | [%] |
+5.5 | Final financial reconciliation | [Name] | [Date] | [Date] | [Days] | ☐ | [%] |
+5.6 | Archive project documents | [Name] | [Date] | [Date] | [Days] | ☐ | [%] |
+5.7 | Release resources | [Name] | [Date] | [Date] | [Days] | ☐ | [%] |
+5.8 | Project closeout meeting | [Name] | [Date] | [Date] | [Days] | ☐ | [%] |
+5.9 | Final project report | [Name] | [Date] | [Date] | [Days] | ☐ | [%] |
+
+Phase Deliverables:
+☐ Final Project Report
+☐ Lessons Learned Document
+☐ Training Materials
+☐ Project Archives
+☐ Closeout Approvals
+☐ [Other deliverable]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+DEPENDENCIES MATRIX
+
+Task ID | Task Name | Depends On | Dependency Type | Notes
+--------|-----------|------------|-----------------|------
+[ID] | [Task] | [Predecessor ID] | Finish-to-Start | [Notes]
+[ID] | [Task] | [Predecessor ID] | Start-to-Start | [Notes]
+[ID] | [Task] | [Predecessor ID] | Finish-to-Finish | [Notes]
+[ID] | [Task] | [Predecessor ID] | Start-to-Finish | [Notes]
+
+External Dependencies:
+• [External dependency 1] - Required by: [Date]
+• [External dependency 2] - Required by: [Date]
+• [External dependency 3] - Required by: [Date]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+CRITICAL PATH
+
+The following activities are on the critical path and directly impact project completion date:
+
+ID | Activity | Start | End | Duration | Float | Status
+---|----------|-------|-----|----------|-------|-------
+[ID] | [Activity] | [Date] | [Date] | [Days] | 0 days | [Status]
+[ID] | [Activity] | [Date] | [Date] | [Days] | 0 days | [Status]
+[ID] | [Activity] | [Date] | [Date] | [Days] | 0 days | [Status]
+[ID] | [Activity] | [Date] | [Date] | [Days] | 0 days | [Status]
+
+⚠️ CRITICAL PATH ALERTS:
+• [Alert or concern about critical path activities]
+• [Alert or concern]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+RESOURCE ALLOCATION
+
+Resource Name | Role | Allocation % | Assigned Tasks | Availability
+--------------|------|--------------|----------------|-------------
+[Name] | Project Manager | [%] | [Number] tasks | Full-time
+[Name] | [Role] | [%] | [Number] tasks | [Availability]
+[Name] | [Role] | [%] | [Number] tasks | [Availability]
+[Name] | [Role] | [%] | [Number] tasks | [Availability]
+[Name] | [Role] | [%] | [Number] tasks | [Availability]
+
+Resource Conflicts:
+• [Conflict description and resolution plan]
+• [Conflict description and resolution plan]
+
+Resource Requests Pending:
+• [Resource request 1]
+• [Resource request 2]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+PROJECT HEALTH INDICATORS
+
+Schedule Health:
+Status: ☐ Green (On Schedule)  ☐ Yellow (Minor Delays)  ☐ Red (Significant Delays)
+Variance: [Number] days ahead/behind schedule
+Explanation: [Brief explanation of status]
+
+Budget Health:
+Status: ☐ Green (On Budget)  ☐ Yellow (Minor Overrun)  ☐ Red (Significant Overrun)
+Variance: $[Amount] under/over budget
+Explanation: [Brief explanation of status]
+
+Scope Health:
+Status: ☐ Green (Stable)  ☐ Yellow (Minor Changes)  ☐ Red (Major Changes)
+Active Change Requests: [Number]
+Explanation: [Brief explanation of status]
+
+Quality Health:
+Status: ☐ Green (Meeting Standards)  ☐ Yellow (Minor Issues)  ☐ Red (Significant Issues)
+Open Quality Issues: [Number]
+Explanation: [Brief explanation of status]
+
+Risk Health:
+Status: ☐ Green (Low Risk)  ☐ Yellow (Medium Risk)  ☐ Red (High Risk)
+High-Priority Risks: [Number]
+Explanation: [Brief explanation of status]
+
+Overall Project Health: ☐ Green  ☐ Yellow  ☐ Red
+
+═══════════════════════════════════════════════════════════════════════════════
+
+ISSUES AND RISKS
+
+OPEN ISSUES:
+
+Issue # | Description | Priority | Owner | Status | Target Resolution
+--------|-------------|----------|-------|--------|------------------
+[#] | [Issue] | H/M/L | [Name] | Open | [Date]
+[#] | [Issue] | H/M/L | [Name] | Open | [Date]
+[#] | [Issue] | H/M/L | [Name] | Open | [Date]
+
+TOP RISKS:
+
+Risk # | Description | Probability | Impact | Mitigation Strategy | Owner
+-------|-------------|-------------|--------|-----------------------|------
+[#] | [Risk] | H/M/L | H/M/L | [Strategy] | [Name]
+[#] | [Risk] | H/M/L | H/M/L | [Strategy] | [Name]
+[#] | [Risk] | H/M/L | H/M/L | [Strategy] | [Name]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+CHANGE LOG
+
+Change # | Date | Description | Impact | Approved By | Status
+---------|------|-------------|--------|-------------|-------
+[#] | [Date] | [Description] | Schedule: [Impact] Budget: [Impact] | [Name] | Approved
+[#] | [Date] | [Description] | Schedule: [Impact] Budget: [Impact] | [Name] | Pending
+[#] | [Date] | [Description] | Schedule: [Impact] Budget: [Impact] | [Name] | Approved
+
+Total Approved Changes: [Number]
+Total Impact on Schedule: [Days]
+Total Impact on Budget: $[Amount]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+UPCOMING ACTIVITIES (NEXT 2 WEEKS)
+
+Week of [Date]:
+☐ [Activity 1] - Due: [Date] - Owner: [Name]
+☐ [Activity 2] - Due: [Date] - Owner: [Name]
+☐ [Activity 3] - Due: [Date] - Owner: [Name]
+☐ [Milestone] - Due: [Date] - Owner: [Name]
+
+Week of [Date]:
+☐ [Activity 1] - Due: [Date] - Owner: [Name]
+☐ [Activity 2] - Due: [Date] - Owner: [Name]
+☐ [Activity 3] - Due: [Date] - Owner: [Name]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+COMPLETED ACTIVITIES (LAST 2 WEEKS)
+
+Week of [Date]:
+✓ [Activity 1] - Completed: [Date] - Owner: [Name]
+✓ [Activity 2] - Completed: [Date] - Owner: [Name]
+✓ [Activity 3] - Completed: [Date] - Owner: [Name]
+
+Week of [Date]:
+✓ [Activity 1] - Completed: [Date] - Owner: [Name]
+✓ [Activity 2] - Completed: [Date] - Owner: [Name]
+✓ [Milestone] - Completed: [Date] - Owner: [Name]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+STAKEHOLDER UPDATES
+
+Next Stakeholder Meeting: [Date]
+Last Meeting Date: [Date]
+
+Key Messages for Next Update:
+• [Key message 1]
+• [Key message 2]
+• [Key message 3]
+
+Decisions Needed:
+• [Decision 1] - Needed by: [Date]
+• [Decision 2] - Needed by: [Date]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+NOTES AND COMMENTS
+
+[Date] - [Author]: [Note or comment]
+
+[Date] - [Author]: [Note or comment]
+
+[Date] - [Author]: [Note or comment]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+DOCUMENT CONTROL
+
+Created By: [Name]
+Created Date: [Date]
+Last Updated By: [Name]
+Last Updated Date: [Date]
+Version: [Version Number]
+Next Review Date: [Date]
+Distribution: [List of recipients]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+LEGEND
+
+Status Indicators:
+☐ Not Started
+◐ In Progress
+✓ Complete
+⚠ Delayed
+✗ Cancelled
+
+Priority Levels:
+H = High
+M = Medium
+L = Low
+
+Health Status:
+🟢 Green = Good/On Track
+🟡 Yellow = Caution/Minor Issues
+🔴 Red = Critical/Major Issues
+    `
+  },
+  {
+    id: 'pm-meeting-agenda',
+    title: 'Meeting Agenda Template',
+    description: 'Structured meeting agenda template for effective project meetings and discussions',
+    category: 'project-management',
+    downloadCount: 1892,
+    fileSize: '36.5 KB',
+    rating: 4.6,
+    tags: ['meeting', 'agenda', 'minutes', 'discussion', 'collaboration'],
+    createdAt: '2024-01-16T08:00:00Z',
+    updatedAt: '2024-01-29T14:20:00Z',
+    content: `
+MEETING AGENDA
+
+═══════════════════════════════════════════════════════════════════════════════
+
+MEETING INFORMATION
+
+Meeting Title: [Meeting Name/Purpose]
+Meeting Type: ☐ Project Status  ☐ Planning  ☐ Review  ☐ Kickoff  ☐ Retrospective  ☐ Other: _____
+Project/Initiative: [Project Name]
+Meeting Number: [#] (if part of series)
+
+Date: [Day, Month Date, Year]
+Time: [Start Time] - [End Time] ([Time Zone])
+Duration: [Number] minutes
+Location: ☐ Conference Room: [Room Name]  ☐ Virtual: [Meeting Link]  ☐ Hybrid
+
+Meeting Organizer: [Name]
+Email: [Email]
+Phone: [Phone]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+ATTENDEES
+
+REQUIRED ATTENDEES:
+☐ [Name] - [Title/Role] - [Email]
+☐ [Name] - [Title/Role] - [Email]
+☐ [Name] - [Title/Role] - [Email]
+☐ [Name] - [Title/Role] - [Email]
+
+OPTIONAL ATTENDEES:
+☐ [Name] - [Title/Role] - [Email]
+☐ [Name] - [Title/Role] - [Email]
+
+FACILITATOR: [Name]
+NOTE TAKER: [Name]
+TIMEKEEPER: [Name]
+
+UNABLE TO ATTEND:
+[Name] - [Reason]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+MEETING OBJECTIVES
+
+PRIMARY OBJECTIVE:
+[Clear statement of the main purpose of this meeting]
+
+SPECIFIC GOALS:
+1. [Specific goal or outcome 1]
+2. [Specific goal or outcome 2]
+3. [Specific goal or outcome 3]
+
+SUCCESS CRITERIA:
+This meeting will be successful if:
+• [Success criterion 1]
+• [Success criterion 2]
+• [Success criterion 3]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+PRE-MEETING PREPARATION
+
+REQUIRED PRE-READING:
+☐ [Document Name] - [Link/Location]
+☐ [Document Name] - [Link/Location]
+☐ [Document Name] - [Link/Location]
+
+PRE-MEETING TASKS:
+☐ [Name] - [Task to complete before meeting]
+☐ [Name] - [Task to complete before meeting]
+
+MATERIALS NEEDED:
+• [Material/Resource 1]
+• [Material/Resource 2]
+• [Material/Resource 3]
+
+TECHNOLOGY SETUP:
+☐ Meeting link tested
+☐ Screen sharing capability verified
+☐ Presentation loaded
+☐ Recording enabled (if applicable)
+☐ [Other technical requirement]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+AGENDA ITEMS
+
+─────────────────────────────────────────────────────────────────────────────
+
+ITEM 1: WELCOME AND INTRODUCTIONS
+Time: [Start Time] - [End Time] ([Duration] minutes)
+Presenter: [Name]
+Type: ☐ Information  ☐ Discussion  ☐ Decision  ☐ Action
+
+Purpose:
+• Welcome attendees
+• Brief introductions (if new members present)
+• Review meeting objectives and agenda
+
+Notes:
+[Space for notes during meeting]
+
+─────────────────────────────────────────────────────────────────────────────
+
+ITEM 2: REVIEW OF PREVIOUS MEETING
+Time: [Start Time] - [End Time] ([Duration] minutes)
+Presenter: [Name]
+Type: ☐ Information  ☐ Discussion  ☐ Decision  ☐ Action
+
+Topics to Cover:
+• Review previous meeting action items
+• Status of outstanding decisions
+• Follow-up on open issues
+
+Previous Action Items Status:
+
+Action Item | Owner | Due Date | Status | Notes
+------------|-------|----------|--------|------
+[Action] | [Name] | [Date] | ☐ Complete ☐ In Progress ☐ Not Started |
+[Action] | [Name] | [Date] | ☐ Complete ☐ In Progress ☐ Not Started |
+[Action] | [Name] | [Date] | ☐ Complete ☐ In Progress ☐ Not Started |
+
+Notes:
+[Space for notes during meeting]
+
+─────────────────────────────────────────────────────────────────────────────
+
+ITEM 3: [AGENDA ITEM TITLE]
+Time: [Start Time] - [End Time] ([Duration] minutes)
+Presenter: [Name]
+Type: ☐ Information  ☐ Discussion  ☐ Decision  ☐ Action
+
+Background/Context:
+[Brief context or background information for this agenda item]
+
+Topics to Cover:
+• [Topic/question 1]
+• [Topic/question 2]
+• [Topic/question 3]
+
+Discussion Questions:
+1. [Question 1]
+2. [Question 2]
+3. [Question 3]
+
+Desired Outcome:
+[What decision, agreement, or outcome is needed from this discussion]
+
+Materials/References:
+• [Document/Link 1]
+• [Document/Link 2]
+
+Notes:
+[Space for notes during meeting]
+
+Decisions Made:
+[Record decisions here]
+
+Action Items:
+☐ [Action item] - Owner: [Name] - Due: [Date]
+☐ [Action item] - Owner: [Name] - Due: [Date]
+
+─────────────────────────────────────────────────────────────────────────────
+
+ITEM 4: [AGENDA ITEM TITLE]
+Time: [Start Time] - [End Time] ([Duration] minutes)
+Presenter: [Name]
+Type: ☐ Information  ☐ Discussion  ☐ Decision  ☐ Action
+
+Background/Context:
+[Brief context]
+
+Topics to Cover:
+• [Topic 1]
+• [Topic 2]
+• [Topic 3]
+
+Desired Outcome:
+[Expected outcome]
+
+Notes:
+[Space for notes during meeting]
+
+Decisions Made:
+[Record decisions here]
+
+Action Items:
+☐ [Action item] - Owner: [Name] - Due: [Date]
+
+─────────────────────────────────────────────────────────────────────────────
+
+ITEM 5: PROJECT STATUS UPDATE
+Time: [Start Time] - [End Time] ([Duration] minutes)
+Presenter: [Project Manager Name]
+Type: ☐ Information  ☐ Discussion  ☐ Decision  ☐ Action
+
+Status Areas to Cover:
+
+SCHEDULE:
+Overall Status: ☐ On Track  ☐ At Risk  ☐ Delayed
+Key Points:
+• [Status point 1]
+• [Status point 2]
+
+BUDGET:
+Overall Status: ☐ On Budget  ☐ At Risk  ☐ Over Budget
+Key Points:
+• [Status point 1]
+• [Status point 2]
+
+SCOPE:
+Overall Status: ☐ Stable  ☐ Minor Changes  ☐ Significant Changes
+Key Points:
+• [Status point 1]
+• [Status point 2]
+
+ACCOMPLISHMENTS SINCE LAST MEETING:
+• [Accomplishment 1]
+• [Accomplishment 2]
+• [Accomplishment 3]
+
+UPCOMING MILESTONES:
+• [Milestone 1] - Due: [Date]
+• [Milestone 2] - Due: [Date]
+
+Notes:
+[Space for notes during meeting]
+
+─────────────────────────────────────────────────────────────────────────────
+
+ITEM 6: ISSUES AND RISKS REVIEW
+Time: [Start Time] - [End Time] ([Duration] minutes)
+Presenter: [Name]
+Type: ☐ Information  ☐ Discussion  ☐ Decision  ☐ Action
+
+OPEN ISSUES:
+
+Issue #1: [Issue Description]
+Priority: ☐ High  ☐ Medium  ☐ Low
+Current Status: [Status]
+Discussion Points:
+• [Point 1]
+• [Point 2]
+Resolution Plan: [Plan]
+Owner: [Name]
+Target Date: [Date]
+
+Issue #2: [Issue Description]
+Priority: ☐ High  ☐ Medium  ☐ Low
+Current Status: [Status]
+Resolution Plan: [Plan]
+Owner: [Name]
+Target Date: [Date]
+
+TOP RISKS:
+
+Risk #1: [Risk Description]
+Probability: ☐ High  ☐ Medium  ☐ Low
+Impact: ☐ High  ☐ Medium  ☐ Low
+Mitigation: [Strategy]
+Owner: [Name]
+
+Risk #2: [Risk Description]
+Probability: ☐ High  ☐ Medium  ☐ Low
+Impact: ☐ High  ☐ Medium  ☐ Low
+Mitigation: [Strategy]
+Owner: [Name]
+
+Notes:
+[Space for notes during meeting]
+
+Action Items:
+☐ [Action item] - Owner: [Name] - Due: [Date]
+
+─────────────────────────────────────────────────────────────────────────────
+
+ITEM 7: [AGENDA ITEM TITLE - DECISION REQUIRED]
+Time: [Start Time] - [End Time] ([Duration] minutes)
+Presenter: [Name]
+Type: ☐ Information  ☐ Discussion  ☐ Decision  ☐ Action
+
+Decision to Be Made:
+[Clear statement of the decision that needs to be made]
+
+Background:
+[Context and background information]
+
+Options:
+
+Option A: [Option Description]
+Pros:
+• [Pro 1]
+• [Pro 2]
+Cons:
+• [Con 1]
+• [Con 2]
+
+Option B: [Option Description]
+Pros:
+• [Pro 1]
+• [Pro 2]
+Cons:
+• [Con 1]
+• [Con 2]
+
+Option C: [Option Description]
+Pros:
+• [Pro 1]
+Cons:
+• [Con 1]
+
+Recommendation:
+[Recommended option with justification]
+
+Discussion Notes:
+[Space for notes during meeting]
+
+Decision Made:
+☐ Option A  ☐ Option B  ☐ Option C  ☐ Other: _______
+Rationale: [Why this decision was made]
+Decision Date: [Date]
+Communicated To: [List stakeholders who need to be informed]
+
+Action Items:
+☐ [Action item] - Owner: [Name] - Due: [Date]
+
+─────────────────────────────────────────────────────────────────────────────
+
+ITEM 8: STAKEHOLDER FEEDBACK/CONCERNS
+Time: [Start Time] - [End Time] ([Duration] minutes)
+Presenter: [Facilitator]
+Type: ☐ Information  ☐ Discussion  ☐ Decision  ☐ Action
+
+Purpose:
+• Provide opportunity for stakeholders to raise concerns
+• Gather feedback on project progress
+• Address questions
+
+Discussion Questions:
+1. What concerns do you have?
+2. What additional support or resources are needed?
+3. Are there any obstacles we should address?
+
+Notes:
+[Space for notes during meeting]
+
+Action Items:
+☐ [Action item] - Owner: [Name] - Due: [Date]
+
+─────────────────────────────────────────────────────────────────────────────
+
+ITEM 9: NEXT STEPS AND ACTION ITEMS SUMMARY
+Time: [Start Time] - [End Time] ([Duration] minutes)
+Presenter: [Facilitator]
+Type: ☐ Information  ☐ Discussion  ☐ Decision  ☐ Action
+
+Purpose:
+• Summarize all action items from this meeting
+• Confirm ownership and due dates
+• Ensure clarity on next steps
+
+Action Items Summary:
+
+# | Action Item | Owner | Due Date | Priority | Status
+--|-------------|-------|----------|----------|-------
+1 | [Action description] | [Name] | [Date] | H/M/L | Not Started
+2 | [Action description] | [Name] | [Date] | H/M/L | Not Started
+3 | [Action description] | [Name] | [Date] | H/M/L | Not Started
+4 | [Action description] | [Name] | [Date] | H/M/L | Not Started
+5 | [Action description] | [Name] | [Date] | H/M/L | Not Started
+
+Notes:
+[Space for notes during meeting]
+
+─────────────────────────────────────────────────────────────────────────────
+
+ITEM 10: NEXT MEETING AND CLOSE
+Time: [Start Time] - [End Time] ([Duration] minutes)
+Presenter: [Facilitator]
+Type: ☐ Information  ☐ Discussion  ☐ Decision  ☐ Action
+
+Next Meeting Details:
+Date: [Date]
+Time: [Time]
+Location: [Location/Link]
+Tentative Agenda Items:
+• [Item 1]
+• [Item 2]
+• [Item 3]
+
+Pre-Meeting Preparation for Next Meeting:
+☐ [Task/Document to review]
+☐ [Task/Document to review]
+
+Meeting Adjournment: [Time]
+
+Notes:
+[Space for notes during meeting]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+PARKING LOT
+
+Items raised during the meeting that are out of scope or require future discussion:
+
+Item | Raised By | Category | Action
+-----|-----------|----------|-------
+[Item description] | [Name] | [Topic area] | [Follow-up action/future agenda]
+[Item description] | [Name] | [Topic area] | [Follow-up action/future agenda]
+[Item description] | [Name] | [Topic area] | [Follow-up action/future agenda]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+MEETING EVALUATION (Optional)
+
+Rate the effectiveness of this meeting:
+
+Meeting started on time: ☐ Yes  ☐ No
+Meeting ended on time: ☐ Yes  ☐ No
+Agenda followed: ☐ Yes  ☐ Mostly  ☐ No
+Objectives achieved: ☐ Yes  ☐ Partially  ☐ No
+All voices heard: ☐ Yes  ☐ Mostly  ☐ No
+Good use of time: ☐ Yes  ☐ Mostly  ☐ No
+
+What went well:
+• [Point 1]
+• [Point 2]
+
+What could be improved:
+• [Point 1]
+• [Point 2]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+MEETING SUMMARY
+
+KEY DECISIONS MADE:
+1. [Decision 1]
+2. [Decision 2]
+3. [Decision 3]
+
+KEY TAKEAWAYS:
+• [Takeaway 1]
+• [Takeaway 2]
+• [Takeaway 3]
+
+CRITICAL ACTION ITEMS:
+• [Critical action 1] - Owner: [Name] - Due: [Date]
+• [Critical action 2] - Owner: [Name] - Due: [Date]
+
+NEXT STEPS:
+• [Next step 1]
+• [Next step 2]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+POST-MEETING TASKS
+
+☐ Distribute meeting minutes within [number] hours/days
+☐ Update project documentation with decisions
+☐ Follow up with action item owners
+☐ Schedule next meeting
+☐ Update project tracking tools
+☐ Communicate key decisions to stakeholders
+☐ [Other post-meeting task]
+
+Minutes Distribution List:
+• [Name/Group 1]
+• [Name/Group 2]
+• [Name/Group 3]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+ATTACHMENTS AND REFERENCES
+
+☐ [Document Name] - [Link/Location]
+☐ [Presentation Name] - [Link/Location]
+☐ [Spreadsheet/Data] - [Link/Location]
+☐ [Other Reference] - [Link/Location]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+DOCUMENT INFORMATION
+
+Meeting Minutes Prepared By: [Name]
+Date Prepared: [Date]
+Version: [Version Number]
+Status: ☐ Draft  ☐ Final
+
+Approval:
+Reviewed By: [Name]
+Approved By: [Name]
+Approval Date: [Date]
+
+═══════════════════════════════════════════════════════════════════════════════
+
+MEETING GROUND RULES (Reference)
+
+• Start and end on time
+• Come prepared (complete pre-reading)
+• Stay focused on agenda items
+• One conversation at a time
+• Phones on silent/no multitasking
+• All ideas are welcome
+• Disagree respectfully
+• Action items clearly assigned with due dates
+• Park items outside scope in parking lot
+
+═══════════════════════════════════════════════════════════════════════════════
+
+NOTES SECTION
+
+[Additional space for general notes, observations, or comments]
+    `
+  }
+];
+
+// Add Client & Project Management templates to the main templates array
+templates.push(...clientProjectTemplates);
+
 class DocumentService {
   getTemplates(): DocumentTemplate[] {
     return templates;
