@@ -1,14 +1,15 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import { 
-  LayoutDashboard, 
-  Share2, 
-  CheckSquare, 
-  FileText, 
-  Users, 
-  Settings, 
+import {
+  LayoutDashboard,
+  Share2,
+  CheckSquare,
+  FileText,
+  Users,
+  Settings,
   PlayCircle,
-  X
+  X,
+  UsersRound
 } from 'lucide-react';
 import { useLanguage } from '../contexts/LanguageContext';
 import { useAuth } from '../contexts/AuthContext';
@@ -26,6 +27,7 @@ const Sidebar: React.FC<SidebarProps> = ({ isOpen, onClose }) => {
     { name: t('nav.dashboard'), href: '/dashboard', icon: LayoutDashboard },
     { name: t('nav.socialMedia'), href: '/social-media', icon: Share2 },
     { name: t('nav.tasks'), href: '/tasks', icon: CheckSquare },
+    { name: 'Team', href: '/team', icon: UsersRound },
     { name: t('nav.templates'), href: '/templates', icon: FileText },
     ...(user?.role === 'admin' ? [{ name: t('nav.users'), href: '/users', icon: Users }] : []),
     { name: t('nav.training'), href: '/training', icon: PlayCircle },

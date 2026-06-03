@@ -1,13 +1,15 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { DragDropContext, Droppable, Draggable, DropResult } from 'react-beautiful-dnd';
-import { Plus, Search, Filter, Calendar, User, MessageSquare, Paperclip, MoreHorizontal, Star } from 'lucide-react';
+import { Plus, Search, Filter, Calendar, User, MessageSquare, Paperclip, MoreHorizontal, Star, Users } from 'lucide-react';
 import { useLanguage } from '../contexts/LanguageContext';
+import { supabase } from '../services/supabaseClient';
 
 interface Task {
   id: string;
   title: string;
   description: string;
   assignee: string;
+  assigneeId: string;
   avatar?: string;
   dueDate: string;
   priority: 'low' | 'medium' | 'high';
@@ -18,6 +20,12 @@ interface Task {
   color: string;
 }
 
+interface TeamMember {
+  id: string;
+  name: string;
+  email: string;
+}
+
 const TaskManager: React.FC = () => {
   const { t } = useLanguage();
   const [showAddTask, setShowAddTask] = useState(false);
@@ -26,10 +34,13 @@ const TaskManager: React.FC = () => {
   const [filterAssignee, setFilterAssignee] = useState('all');
   const [filterPriority, setFilterPriority] = useState('all');
   const [filterStage, setFilterStage] = useState('all');
+  const [teamMembers, setTeamMembers] = useState<TeamMember[]>([]);
+  const [loading, setLoading] = useState(false);
+  const [selectedTeam, setSelectedTeam] = useState<string | null>(null);
   const [newTask, setNewTask] = useState({
     title: '',
     description: '',
-    assignee: '',
+    assigneeId: '',
     dueDate: '',
     priority: 'medium' as const
   });
@@ -40,6 +51,7 @@ const TaskManager: React.FC = () => {
       title: 'Create Blog Content',
       description: 'Write a blog about our design process and publish it on our website',
       assignee: 'John Doe',
+      assigneeId: '1',
       avatar: 'JD',
       dueDate: '2024-01-20',
       priority: 'high',
@@ -54,6 +66,7 @@ const TaskManager: React.FC = () => {
       title: 'Send Email to John',
       description: 'Make sure to talk about what the design process and get his approval',
       assignee: 'Sarah Smith',
+      assigneeId: '2',
       avatar: 'SS',
       dueDate: '2024-01-25',
       priority: 'medium',
@@ -68,6 +81,7 @@ const TaskManager: React.FC = () => {
       title: 'Review UX Change',
       description: 'Look through the document with the details of UX changes and other things',
       assignee: 'Mike Johnson',
+      assigneeId: '3',
       avatar: 'MJ',
       dueDate: '2024-01-15',
       priority: 'low',
@@ -82,6 +96,7 @@ const TaskManager: React.FC = () => {
       title: 'Send Out Proposals',
       description: 'Find a new client and send them a detailed proposal for our services',
       assignee: 'Emily Brown',
+      assigneeId: '4',
       avatar: 'EB',
       dueDate: '2024-01-18',
       priority: 'high',
@@ -96,6 +111,7 @@ const TaskManager: React.FC = () => {
       title: 'Design the Dashboard',
       description: 'Be sure to look at what\'s been done and implement the design',
       assignee: 'Alex Wilson',
+      assigneeId: '5',
       avatar: 'AW',
       dueDate: '2024-01-22',
       priority: 'medium',
@@ -104,93 +120,70 @@ const TaskManager: React.FC = () => {
       attachments: 1,
       tags: ['Design', 'UI'],
       color: 'border-l-purple-500'
-    },
-    {
-      id: '6',
-      title: 'Design the Onboarding',
-      description: 'Make sure to keep the onboarding flow under 3 steps and make it engaging',
-      assignee: 'Lisa Chen',
-      avatar: 'LC',
-      dueDate: '2024-01-24',
-      priority: 'high',
-      status: 'inProgress',
-      comments: 7,
-      attachments: 2,
-      tags: ['Design', 'UX'],
-      color: 'border-l-indigo-500'
-    },
-    {
-      id: '7',
-      title: 'Send Files to Developer',
-      description: 'Upload files to drive and send coding spec to the developer',
-      assignee: 'Tom Davis',
-      avatar: 'TD',
-      dueDate: '2024-01-19',
-      priority: 'medium',
-      status: 'review',
-      comments: 1,
-      attachments: 5,
-      tags: ['Development', 'Files'],
-      color: 'border-l-cyan-500'
-    },
-    {
-      id: '8',
-      title: 'Complete Project Setup',
-      description: 'Finalize all project configurations and documentation',
-      assignee: 'Rachel Green',
-      avatar: 'RG',
-      dueDate: '2024-01-16',
-      priority: 'low',
-      status: 'done',
-      comments: 0,
-      attachments: 1,
-      tags: ['Setup', 'Documentation'],
-      color: 'border-l-emerald-500'
     }
   ]);
 
   const columns = [
-    { 
-      id: 'backlog', 
-      title: 'BACKLOG', 
+    {
+      id: 'backlog',
+      title: 'BACKLOG',
       color: 'text-gray-400',
       bgColor: 'bg-slate-800/50'
     },
-    { 
-      id: 'todo', 
-      title: 'TO DO', 
+    {
+      id: 'todo',
+      title: 'TO DO',
       color: 'text-blue-400',
       bgColor: 'bg-blue-900/20'
     },
-    { 
-      id: 'inProgress', 
-      title: 'IN PROGRESS', 
+    {
+      id: 'inProgress',
+      title: 'IN PROGRESS',
       color: 'text-yellow-400',
       bgColor: 'bg-yellow-900/20'
     },
-    { 
-      id: 'review', 
-      title: 'REVIEW', 
+    {
+      id: 'review',
+      title: 'REVIEW',
       color: 'text-purple-400',
       bgColor: 'bg-purple-900/20'
     },
-    { 
-      id: 'done', 
-      title: 'DONE', 
+    {
+      id: 'done',
+      title: 'DONE',
       color: 'text-green-400',
       bgColor: 'bg-green-900/20'
     }
   ];
 
-  // Apply filters first, then get tasks by status
+  useEffect(() => {
+    fetchTeamMembers();
+  }, []);
+
+  const fetchTeamMembers = async () => {
+    try {
+      // For now, use mock data
+      // In production, fetch from Supabase
+      setTeamMembers([
+        { id: '1', name: 'John Doe', email: 'john@example.com' },
+        { id: '2', name: 'Sarah Smith', email: 'sarah@example.com' },
+        { id: '3', name: 'Mike Johnson', email: 'mike@example.com' },
+        { id: '4', name: 'Emily Brown', email: 'emily@example.com' },
+        { id: '5', name: 'Alex Wilson', email: 'alex@example.com' }
+      ]);
+    } catch (err) {
+      console.error('Failed to load team members:', err);
+    }
+  };
+
   const filteredTasks = tasks.filter(task => {
     const matchesSearch = task.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
                          task.description.toLowerCase().includes(searchTerm.toLowerCase());
-    const matchesType = filterType === 'all' || true; // Type filter can be expanded
-    const matchesAssignee = filterAssignee === 'all' || task.assignee === filterAssignee;
+    const matchesType = filterType === 'all' || true;
+    const matchesAssignee = filterAssignee === 'all' || task.assigneeId === filterAssignee;
     const matchesPriority = filterPriority === 'all' || task.priority === filterPriority;
     const matchesStage = filterStage === 'all' || task.status === filterStage;
-    
+
     return matchesSearch && matchesType && matchesAssignee && matchesPriority && matchesStage;
   });
 
@@ -201,12 +194,10 @@ const TaskManager: React.FC = () => {
   const handleDragEnd = (result: DropResult) => {
     const { destination, source, draggableId } = result;
 
-    // If no destination, return early
     if (!destination) {
       return;
     }
 
-    // If dropped in the same position, return early
     if (
       destination.droppableId === source.droppableId &&
       destination.index === source.index
@@ -214,13 +205,11 @@ const TaskManager: React.FC = () => {
       return;
     }
 
-    // Find the task being moved
     const taskToMove = tasks.find(task => task.id === draggableId);
     if (!taskToMove) {
       return;
     }
 
-    // Create new tasks array with updated status
     const newTasks = tasks.map(task => {
       if (task.id === draggableId) {
         return {
@@ -231,29 +220,34 @@ const TaskManager: React.FC = () => {
       return task;
     });
 
-    // Update the tasks state
     setTasks(newTasks);
   };
 
   const handleAddTask = () => {
     if (!newTask.title) return;
 
+    const assignedMember = teamMembers.find(m => m.id === newTask.assigneeId);
     const task: Task = {
       id: Date.now().toString(),
-      ...newTask,
+      title: newTask.title,
+      description: newTask.description,
+      assignee: assignedMember?.name || 'Unassigned',
+      assigneeId: newTask.assigneeId || 'unassigned',
       status: 'backlog',
       comments: 0,
       attachments: 0,
       tags: ['New'],
       color: 'border-l-blue-500',
-      avatar: newTask.assignee.split(' ').map(n => n[0]).join('')
+      avatar: assignedMember?.name.split(' ').map(n => n[0]).join(''),
+      dueDate: newTask.dueDate,
+      priority: newTask.priority
     };
 
     setTasks(prev => [...prev, task]);
     setNewTask({
       title: '',
       description: '',
-      assignee: '',
+      assigneeId: '',
       dueDate: '',
       priority: 'medium'
     });
@@ -273,8 +267,7 @@ const TaskManager: React.FC = () => {
     }
   };
 
-  // Get unique assignees for filter dropdown
-  const uniqueAssignees = [...new Set(tasks.map(task => task.assignee))];
+  const uniqueAssignees = [...new Set(tasks.map(task => task.assigneeId))];
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 p-6">
@@ -285,7 +278,7 @@ const TaskManager: React.FC = () => {
             <Star className="h-6 w-6 text-blue-400" />
             <span className="text-white/60 text-sm">Saved Filters</span>
           </div>
-          
+
           <div className="flex items-center space-x-2 text-white/60">
             <div className="w-4 h-4 bg-blue-500 rounded"></div>
             <div className="w-4 h-4 bg-gray-600 rounded"></div>
@@ -312,11 +305,11 @@ const TaskManager: React.FC = () => {
           <Filter className="h-5 w-5 text-white/70" />
           <span className="text-white/70 font-medium">Filter Tasks</span>
         </div>
-        
+
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
           <div>
             <label className="block text-white/60 text-sm font-medium mb-2">Type</label>
-            <select 
+            <select
               value={filterType}
               onChange={(e) => setFilterType(e.target.value)}
               className="w-full px-3 py-2 bg-slate-700/50 border border-slate-600 rounded-lg text-white text-sm focus:outline-none focus:ring-2 focus:ring-blue-500/50"
@@ -327,24 +320,24 @@ const TaskManager: React.FC = () => {
               <option value="feature">Feature</option>
             </select>
           </div>
-          
+
           <div>
             <label className="block text-white/60 text-sm font-medium mb-2">Assigned To</label>
-            <select 
+            <select
               value={filterAssignee}
               onChange={(e) => setFilterAssignee(e.target.value)}
               className="w-full px-3 py-2 bg-slate-700/50 border border-slate-600 rounded-lg text-white text-sm focus:outline-none focus:ring-2 focus:ring-blue-500/50"
             >
               <option value="all">All Users</option>
-              {uniqueAssignees.map(assignee => (
-                <option key={assignee} value={assignee}>{assignee}</option>
+              {teamMembers.map(member => (
+                <option key={member.id} value={member.id}>{member.name}</option>
               ))}
             </select>
           </div>
-          
+
           <div>
             <label className="block text-white/60 text-sm font-medium mb-2">Priority</label>
-            <select 
+            <select
               value={filterPriority}
               onChange={(e) => setFilterPriority(e.target.value)}
               className="w-full px-3 py-2 bg-slate-700/50 border border-slate-600 rounded-lg text-white text-sm focus:outline-none focus:ring-2 focus:ring-blue-500/50"
@@ -355,10 +348,10 @@ const TaskManager: React.FC = () => {
               <option value="low">Low</option>
             </select>
           </div>
-          
+
           <div>
             <label className="block text-white/60 text-sm font-medium mb-2">Stage</label>
-            <select 
+            <select
               value={filterStage}
               onChange={(e) => setFilterStage(e.target.value)}
               className="w-full px-3 py-2 bg-slate-700/50 border border-slate-600 rounded-lg text-white text-sm focus:outline-none focus:ring-2 focus:ring-blue-500/50"
@@ -392,7 +385,7 @@ const TaskManager: React.FC = () => {
                   </button>
                 </div>
               </div>
-              
+
               <Droppable droppableId={column.id}>
                 {(provided, snapshot) => (
                   <div
@@ -414,7 +407,6 @@ const TaskManager: React.FC = () => {
                             } ${task.color} border-l-4`}
                             style={{
                               ...provided.draggableProps.style,
-                              // Ensure proper z-index when dragging
                               zIndex: snapshot.isDragging ? 1000 : 'auto'
                             }}
                           >
@@ -426,11 +418,11 @@ const TaskManager: React.FC = () => {
                                 <MoreHorizontal className="h-4 w-4" />
                               </button>
                             </div>
-                            
+
                             <p className="text-gray-400 text-xs mb-4 leading-relaxed">
                               {task.description}
                             </p>
-                            
+
                             <div className="flex flex-wrap gap-1 mb-4">
                               {task.tags.map((tag, tagIndex) => (
                                 <span
@@ -441,7 +433,7 @@ const TaskManager: React.FC = () => {
                                 </span>
                               ))}
                             </div>
-                            
+
                             <div className="flex items-center justify-between">
                               <div className="flex items-center space-x-3">
                                 <div className="flex items-center space-x-1 text-gray-400">
@@ -459,7 +451,7 @@ const TaskManager: React.FC = () => {
                                   <span className="text-xs">{task.dueDate}</span>
                                 </div>
                               </div>
-                              
+
                               <div className="flex items-center space-x-2">
                                 <div className={`w-2 h-2 rounded-full ${getPriorityColor(task.priority)}`}></div>
                                 <div className="w-6 h-6 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full flex items-center justify-center text-white text-xs font-medium">
@@ -484,8 +476,8 @@ const TaskManager: React.FC = () => {
       {showAddTask && (
         <div className="fixed inset-0 bg-black/50 backdrop-blur-sm flex items-center justify-center z-50">
           <div className="bg-slate-800 border border-slate-700 rounded-xl p-6 w-full max-w-md">
-            <h2 className="text-lg font-semibold text-white mb-4">{t('tasks.newTask')}</h2>
-            
+            <h2 className="text-lg font-semibold text-white mb-4">New Task</h2>
+
             <div className="space-y-4">
               <div>
                 <label className="block text-sm font-medium text-white/80 mb-1">
@@ -498,7 +490,7 @@ const TaskManager: React.FC = () => {
                   className="w-full px-3 py-2 bg-slate-700/50 border border-slate-600 rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-blue-500/50 focus:border-transparent"
                 />
               </div>
-              
+
               <div>
                 <label className="block text-sm font-medium text-white/80 mb-1">
                   Description
@@ -510,20 +502,24 @@ const TaskManager: React.FC = () => {
                   className="w-full px-3 py-2 bg-slate-700/50 border border-slate-600 rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-blue-500/50 focus:border-transparent resize-none"
                 />
               </div>
-              
+
               <div className="grid grid-cols-2 gap-4">
                 <div>
                   <label className="block text-sm font-medium text-white/80 mb-1">
-                    Assignee
+                    Assign To
                   </label>
-                  <input
-                    type="text"
-                    value={newTask.assignee}
-                    onChange={(e) => setNewTask(prev => ({ ...prev, assignee: e.target.value }))}
+                  <select
+                    value={newTask.assigneeId}
+                    onChange={(e) => setNewTask(prev => ({ ...prev, assigneeId: e.target.value }))}
                     className="w-full px-3 py-2 bg-slate-700/50 border border-slate-600 rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-blue-500/50 focus:border-transparent"
-                  />
+                  >
+                    <option value="">Select Member</option>
+                    {teamMembers.map(member => (
+                      <option key={member.id} value={member.id}>{member.name}</option>
+                    ))}
+                  </select>
                 </div>
-                
+
                 <div>
                   <label className="block text-sm font-medium text-white/80 mb-1">
                     Due Date
@@ -536,7 +532,7 @@ const TaskManager: React.FC = () => {
                   />
                 </div>
               </div>
-              
+
               <div>
                 <label className="block text-sm font-medium text-white/80 mb-1">
                   Priority
@@ -552,7 +548,7 @@ const TaskManager: React.FC = () => {
                 </select>
               </div>
             </div>
-            
+
             <div className="flex space-x-3 mt-6">
               <button
                 onClick={handleAddTask}

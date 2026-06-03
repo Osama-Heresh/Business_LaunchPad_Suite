@@ -14,6 +14,7 @@ import Templates from './pages/Templates';
 import UserManagement from './pages/UserManagement';
 import Training from './pages/Training';
 import Settings from './pages/Settings';
+import TeamManagement from './pages/TeamManagement';
 
 function App() {
   return (
@@ -35,6 +36,7 @@ function App() {
                   <Route path="tasks" element={<TaskManager />} />
                   <Route path="templates" element={<Templates />} />
                   <Route path="users" element={<UserManagement />} />
+                  <Route path="team" element={<TeamManagement />} />
                   <Route path="training" element={<Training />} />
                   <Route path="settings" element={<Settings />} />
                 </Route>
