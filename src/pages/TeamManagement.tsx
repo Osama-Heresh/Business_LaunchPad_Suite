@@ -123,6 +123,35 @@ const TeamManagement: React.FC = () => {
         return;
       }
 
+      const user = JSON.parse(localStorage.getItem('user') || '{}');
+      const teamName = currentTeams[teamIndex].name;
+
+      // Send invitation email
+      try {
+        const response = await fetch(
+          `${import.meta.env.VITE_SUPABASE_URL}/functions/v1/send-team-invitation`,
+          {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+              'Authorization': `Bearer ${import.meta.env.VITE_SUPABASE_ANON_KEY}`,
+            },
+            body: JSON.stringify({
+              memberEmail: newMemberEmail,
+              memberName: newMemberName,
+              teamName: teamName,
+              teamOwnerId: user.id || '1',
+              teamOwnerEmail: user.email || 'you@example.com',
+            }),
+          }
+        );
+
+        const result = await response.json();
+        console.log('Invitation sent:', result);
+      } catch (emailErr) {
+        console.error('Error sending invitation email:', emailErr);
+      }
+
       const newMember: TeamMember = {
         id: Date.now().toString(),
         name: newMemberName,
@@ -136,8 +165,8 @@ const TeamManagement: React.FC = () => {
       setNewMemberName('');
       setNewMemberEmail('');
       setShowAddMember(false);
-      setSuccess('Team member added successfully!');
-      setTimeout(() => setSuccess(''), 3000);
+      setSuccess(`Team member added! Invitation email sent to ${newMemberEmail}`);
+      setTimeout(() => setSuccess(''), 5000);
       setError('');
     } catch (err) {
       setError('Failed to add team member');

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { DragDropContext, Droppable, Draggable, DropResult } from 'react-beautiful-dnd';
-import { Plus, Search, Filter, Calendar, User, MessageSquare, Paperclip, MoreHorizontal, Star, Users } from 'lucide-react';
+import { Plus, Search, Filter, Calendar, User, MessageSquare, Paperclip, MoreHorizontal, Star, CreditCard as Edit, Check, X } from 'lucide-react';
 import { useLanguage } from '../contexts/LanguageContext';
 
 interface Task {
@@ -29,11 +29,12 @@ const TaskManager: React.FC = () => {
   const { t } = useLanguage();
   const [showAddTask, setShowAddTask] = useState(false);
   const [searchTerm, setSearchTerm] = useState('');
-  const [filterType, setFilterType] = useState('all');
   const [filterAssignee, setFilterAssignee] = useState('all');
   const [filterPriority, setFilterPriority] = useState('all');
   const [filterStage, setFilterStage] = useState('all');
   const [teamMembers, setTeamMembers] = useState<TeamMember[]>([]);
+  const [editingTaskId, setEditingTaskId] = useState<string | null>(null);
+  const [editingStatus, setEditingStatus] = useState('');
   const [newTask, setNewTask] = useState({
     title: '',
     description: '',
@@ -106,15 +107,16 @@ const TaskManager: React.FC = () => {
   ]);
 
   const columns = [
-    { id: 'backlog', title: 'BACKLOG', color: 'text-gray-400', bgColor: 'bg-slate-800/50' },
-    { id: 'todo', title: 'TO DO', color: 'text-blue-400', bgColor: 'bg-blue-900/20' },
-    { id: 'inProgress', title: 'IN PROGRESS', color: 'text-yellow-400', bgColor: 'bg-yellow-900/20' },
-    { id: 'review', title: 'REVIEW', color: 'text-purple-400', bgColor: 'bg-purple-900/20' },
-    { id: 'done', title: 'DONE', color: 'text-green-400', bgColor: 'bg-green-900/20' }
+    { id: 'backlog', title: 'BACKLOG', color: 'text-gray-400' },
+    { id: 'todo', title: 'TO DO', color: 'text-blue-400' },
+    { id: 'inProgress', title: 'IN PROGRESS', color: 'text-yellow-400' },
+    { id: 'review', title: 'REVIEW', color: 'text-purple-400' },
+    { id: 'done', title: 'DONE', color: 'text-green-400' }
   ];
 
   useEffect(() => {
     loadTeamMembers();
+    loadTasks();
   }, []);
 
   const loadTeamMembers = () => {
@@ -124,6 +126,22 @@ const TaskManager: React.FC = () => {
       { id: '4', name: 'Emily Brown', email: 'emily@example.com' },
       { id: '5', name: 'Alex Wilson', email: 'alex@example.com' }
     ]);
+  };
+
+  const loadTasks = () => {
+    try {
+      const stored = localStorage.getItem('tasks');
+      if (stored) {
+        setTasks(JSON.parse(stored));
+      }
+    } catch (err) {
+      console.error('Failed to load tasks:', err);
+    }
+  };
+
+  const saveTasks = (newTasks: Task[]) => {
+    setTasks(newTasks);
+    localStorage.setItem('tasks', JSON.stringify(newTasks));
   };
 
   const filteredTasks = tasks.filter(task => {
@@ -149,9 +167,6 @@ const TaskManager: React.FC = () => {
       return;
     }
 
-    const taskToMove = tasks.find(task => task.id === draggableId);
-    if (!taskToMove) return;
-
     const newTasks = tasks.map(task => {
       if (task.id === draggableId) {
         return { ...task, status: destination.droppableId as Task['status'] };
@@ -159,7 +174,7 @@ const TaskManager: React.FC = () => {
       return task;
     });
 
-    setTasks(newTasks);
+    saveTasks(newTasks);
   };
 
   const handleAddTask = (e: React.FormEvent) => {
@@ -183,9 +198,20 @@ const TaskManager: React.FC = () => {
       priority: newTask.priority
     };
 
-    setTasks(prev => [...prev, task]);
+    saveTasks([...tasks, task]);
     setNewTask({ title: '', description: '', assigneeId: '', dueDate: '', priority: 'medium' });
     setShowAddTask(false);
+  };
+
+  const handleUpdateTaskStatus = (taskId: string, newStatus: string) => {
+    const newTasks = tasks.map(task => {
+      if (task.id === taskId) {
+        return { ...task, status: newStatus as Task['status'] };
+      }
+      return task;
+    });
+    saveTasks(newTasks);
+    setEditingTaskId(null);
   };
 
   const getPriorityColor = (priority: string) => {
@@ -201,15 +227,9 @@ const TaskManager: React.FC = () => {
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 p-6">
       {/* Header */}
       <div className="flex items-center justify-between mb-6">
-        <div className="flex items-center space-x-6">
-          <div className="flex items-center space-x-3">
-            <Star className="h-6 w-6 text-blue-400" />
-            <span className="text-white/60 text-sm">Saved Filters</span>
-          </div>
-          <div className="flex items-center space-x-2 text-white/60">
-            <div className="w-4 h-4 bg-blue-500 rounded"></div>
-            <div className="w-4 h-4 bg-gray-600 rounded"></div>
-          </div>
+        <div className="flex items-center space-x-3">
+          <Star className="h-6 w-6 text-blue-400" />
+          <h1 className="text-2xl font-bold text-white">Task Manager</h1>
         </div>
 
         <div className="flex items-center space-x-4">
@@ -220,7 +240,7 @@ const TaskManager: React.FC = () => {
               placeholder="Search Tasks"
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
-              className="pl-10 pr-4 py-2 w-64 bg-slate-800/50 border border-slate-700 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500/50 focus:border-transparent backdrop-blur-sm"
+              className="pl-10 pr-4 py-2 w-64 bg-slate-800/50 border border-slate-700 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500/50"
             />
           </div>
         </div>
@@ -233,21 +253,7 @@ const TaskManager: React.FC = () => {
           <span className="text-white/70 font-medium">Filter Tasks</span>
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-          <div>
-            <label className="block text-white/60 text-sm font-medium mb-2">Type</label>
-            <select
-              value={filterType}
-              onChange={(e) => setFilterType(e.target.value)}
-              className="w-full px-3 py-2 bg-slate-700/50 border border-slate-600 rounded-lg text-white text-sm focus:outline-none focus:ring-2 focus:ring-blue-500/50"
-            >
-              <option value="all">All Types</option>
-              <option value="task">Task</option>
-              <option value="bug">Bug</option>
-              <option value="feature">Feature</option>
-            </select>
-          </div>
-
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
           <div>
             <label className="block text-white/60 text-sm font-medium mb-2">Assigned To</label>
             <select
@@ -296,20 +302,15 @@ const TaskManager: React.FC = () => {
 
       {/* Kanban Board */}
       <DragDropContext onDragEnd={handleDragEnd}>
-        <div style={{ display: 'flex', gap: '1rem', overflowX: 'auto', paddingBottom: '1rem' }}>
+        <div className="flex gap-4 overflow-x-auto pb-4">
           {columns.map((column) => (
             <div
               key={column.id}
-              style={{
-                flex: '0 0 20%',
-                minWidth: '280px',
-                display: 'flex',
-                flexDirection: 'column'
-              }}
+              className="flex-shrink-0 w-80"
             >
               <div className="flex items-center justify-between mb-4">
                 <div className="flex items-center space-x-2">
-                  <h2 className={`text-xs font-bold tracking-wider ${column.color}`}>
+                  <h2 className={`text-sm font-bold tracking-wider ${column.color}`}>
                     {column.title}
                   </h2>
                   <span className="text-xs text-white/40">
@@ -323,76 +324,106 @@ const TaskManager: React.FC = () => {
                   <div
                     ref={provided.innerRef}
                     {...provided.droppableProps}
-                    style={{
-                      flex: 1,
-                      padding: '8px',
-                      borderRadius: '8px',
-                      minHeight: '600px',
-                      backgroundColor: snapshot.isDraggingOver ? 'rgba(59, 130, 246, 0.1)' : 'transparent',
-                      transition: 'background-color 0.2s'
-                    }}
-                    className="space-y-3"
+                    className={`rounded-lg p-3 min-h-96 transition-all ${
+                      snapshot.isDraggingOver
+                        ? 'bg-blue-900/30 ring-2 ring-blue-500/50'
+                        : 'bg-slate-800/40'
+                    }`}
                   >
                     {getTasksByStatus(column.id).map((task, index) => (
-                      <Draggable key={task.id} draggableId={task.id} index={index}>
+                      <Draggable
+                        key={task.id}
+                        draggableId={task.id}
+                        index={index}
+                      >
                         {(provided, snapshot) => (
                           <div
                             ref={provided.innerRef}
                             {...provided.draggableProps}
                             {...provided.dragHandleProps}
-                            style={{
-                              ...provided.draggableProps.style,
-                              marginBottom: '12px'
-                            }}
-                            className={`bg-slate-800/60 backdrop-blur-sm border border-slate-700/50 rounded-lg p-4 cursor-grab active:cursor-grabbing transition-all ${
-                              snapshot.isDragging ? 'shadow-2xl ring-2 ring-blue-500/50 rotate-1' : 'hover:shadow-lg'
+                            className={`mb-3 bg-slate-800/80 backdrop-blur border border-slate-700/60 rounded-lg p-4 cursor-move transition-all ${
+                              snapshot.isDragging
+                                ? 'shadow-2xl ring-2 ring-blue-400 opacity-100'
+                                : 'hover:shadow-lg hover:bg-slate-800'
                             } ${task.color} border-l-4`}
                           >
-                            <div className="flex items-start justify-between mb-3">
-                              <h3 className="text-white font-medium text-sm leading-tight pr-2">
+                            <div className="flex items-start justify-between mb-2">
+                              <h3 className="text-white font-semibold text-sm leading-tight flex-1 pr-2">
                                 {task.title}
                               </h3>
-                              <button className="text-gray-400 hover:text-white transition-colors">
+                              <button className="text-gray-400 hover:text-white transition-colors flex-shrink-0">
                                 <MoreHorizontal className="h-4 w-4" />
                               </button>
                             </div>
 
-                            <p className="text-gray-400 text-xs mb-4 leading-relaxed">
+                            <p className="text-gray-400 text-xs mb-3 leading-relaxed">
                               {task.description}
                             </p>
 
-                            <div className="flex flex-wrap gap-1 mb-4">
-                              {task.tags.map((tag, tagIndex) => (
+                            <div className="flex flex-wrap gap-1 mb-3">
+                              {task.tags.map((tag, idx) => (
                                 <span
-                                  key={tagIndex}
-                                  className="px-2 py-1 bg-slate-700/50 text-gray-300 text-xs rounded-md"
+                                  key={idx}
+                                  className="px-2 py-1 bg-slate-700/60 text-gray-300 text-xs rounded"
                                 >
                                   {tag}
                                 </span>
                               ))}
                             </div>
 
-                            <div className="flex items-center justify-between">
-                              <div className="flex items-center space-x-3">
-                                <div className="flex items-center space-x-1 text-gray-400">
-                                  <MessageSquare className="h-3 w-3" />
-                                  <span className="text-xs">{task.comments}</span>
-                                </div>
-                                {task.attachments > 0 && (
-                                  <div className="flex items-center space-x-1 text-gray-400">
-                                    <Paperclip className="h-3 w-3" />
-                                    <span className="text-xs">{task.attachments}</span>
-                                  </div>
-                                )}
-                                <div className="flex items-center space-x-1 text-gray-400">
-                                  <Calendar className="h-3 w-3" />
-                                  <span className="text-xs">{task.dueDate}</span>
-                                </div>
+                            {editingTaskId === task.id ? (
+                              <div className="flex gap-2 mb-3">
+                                <select
+                                  value={editingStatus}
+                                  onChange={(e) => setEditingStatus(e.target.value)}
+                                  className="flex-1 px-2 py-1 bg-slate-700 border border-slate-600 rounded text-white text-xs focus:outline-none focus:ring-2 focus:ring-blue-500/50"
+                                >
+                                  <option value="">Change status...</option>
+                                  {columns.map(col => (
+                                    <option key={col.id} value={col.id}>{col.title}</option>
+                                  ))}
+                                </select>
+                                <button
+                                  onClick={() => {
+                                    if (editingStatus) {
+                                      handleUpdateTaskStatus(task.id, editingStatus);
+                                    }
+                                  }}
+                                  className="px-2 py-1 bg-green-600 hover:bg-green-700 text-white rounded text-xs transition-colors"
+                                >
+                                  <Check className="h-4 w-4" />
+                                </button>
+                                <button
+                                  onClick={() => setEditingTaskId(null)}
+                                  className="px-2 py-1 bg-red-600 hover:bg-red-700 text-white rounded text-xs transition-colors"
+                                >
+                                  <X className="h-4 w-4" />
+                                </button>
+                              </div>
+                            ) : null}
+
+                            <div className="flex items-center justify-between pt-3 border-t border-slate-700/50">
+                              <div className="flex items-center space-x-2 text-xs">
+                                <MessageSquare className="h-3 w-3 text-gray-400" />
+                                <span className="text-gray-400">{task.comments}</span>
                               </div>
 
                               <div className="flex items-center space-x-2">
+                                {!editingTaskId && (
+                                  <button
+                                    onClick={() => {
+                                      setEditingTaskId(task.id);
+                                      setEditingStatus(task.status);
+                                    }}
+                                    className="text-gray-400 hover:text-blue-400 transition-colors"
+                                    title="Update task status"
+                                  >
+                                    <Edit className="h-4 w-4" />
+                                  </button>
+                                )}
+
                                 <div className={`w-2 h-2 rounded-full ${getPriorityColor(task.priority)}`}></div>
-                                <div className="w-6 h-6 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full flex items-center justify-center text-white text-xs font-medium">
+                                <div className="w-6 h-6 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full flex items-center justify-center text-white text-xs font-bold">
                                   {task.avatar}
                                 </div>
                               </div>
@@ -414,7 +445,7 @@ const TaskManager: React.FC = () => {
       {showAddTask && (
         <div className="fixed inset-0 bg-black/50 backdrop-blur-sm flex items-center justify-center z-50">
           <div className="bg-slate-800 border border-slate-700 rounded-xl p-6 w-full max-w-md">
-            <h2 className="text-lg font-semibold text-white mb-4">New Task</h2>
+            <h2 className="text-lg font-semibold text-white mb-4">Create New Task</h2>
 
             <form onSubmit={handleAddTask} className="space-y-4">
               <div>
@@ -423,7 +454,8 @@ const TaskManager: React.FC = () => {
                   type="text"
                   value={newTask.title}
                   onChange={(e) => setNewTask(prev => ({ ...prev, title: e.target.value }))}
-                  className="w-full px-3 py-2 bg-slate-700/50 border border-slate-600 rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-blue-500/50 focus:border-transparent"
+                  placeholder="Task title"
+                  className="w-full px-3 py-2 bg-slate-700/50 border border-slate-600 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500/50"
                 />
               </div>
 
@@ -432,8 +464,9 @@ const TaskManager: React.FC = () => {
                 <textarea
                   value={newTask.description}
                   onChange={(e) => setNewTask(prev => ({ ...prev, description: e.target.value }))}
+                  placeholder="Task description"
                   rows={3}
-                  className="w-full px-3 py-2 bg-slate-700/50 border border-slate-600 rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-blue-500/50 focus:border-transparent resize-none"
+                  className="w-full px-3 py-2 bg-slate-700/50 border border-slate-600 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500/50 resize-none"
                 />
               </div>
 
@@ -443,7 +476,7 @@ const TaskManager: React.FC = () => {
                   <select
                     value={newTask.assigneeId}
                     onChange={(e) => setNewTask(prev => ({ ...prev, assigneeId: e.target.value }))}
-                    className="w-full px-3 py-2 bg-slate-700/50 border border-slate-600 rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-blue-500/50 focus:border-transparent"
+                    className="w-full px-3 py-2 bg-slate-700/50 border border-slate-600 rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-blue-500/50"
                   >
                     <option value="">Select Member</option>
                     {teamMembers.map(member => (
@@ -458,7 +491,7 @@ const TaskManager: React.FC = () => {
                     type="date"
                     value={newTask.dueDate}
                     onChange={(e) => setNewTask(prev => ({ ...prev, dueDate: e.target.value }))}
-                    className="w-full px-3 py-2 bg-slate-700/50 border border-slate-600 rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-blue-500/50 focus:border-transparent"
+                    className="w-full px-3 py-2 bg-slate-700/50 border border-slate-600 rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-blue-500/50"
                   />
                 </div>
               </div>
@@ -468,7 +501,7 @@ const TaskManager: React.FC = () => {
                 <select
                   value={newTask.priority}
                   onChange={(e) => setNewTask(prev => ({ ...prev, priority: e.target.value as Task['priority'] }))}
-                  className="w-full px-3 py-2 bg-slate-700/50 border border-slate-600 rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-blue-500/50 focus:border-transparent"
+                  className="w-full px-3 py-2 bg-slate-700/50 border border-slate-600 rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-blue-500/50"
                 >
                   <option value="low">Low</option>
                   <option value="medium">Medium</option>
@@ -476,17 +509,17 @@ const TaskManager: React.FC = () => {
                 </select>
               </div>
 
-              <div className="flex space-x-3 mt-6">
+              <div className="flex gap-3 mt-6">
                 <button
                   type="submit"
-                  className="flex-1 px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors font-medium"
+                  className="flex-1 px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-lg transition-colors font-medium"
                 >
-                  Add Task
+                  Create Task
                 </button>
                 <button
                   type="button"
                   onClick={() => setShowAddTask(false)}
-                  className="px-4 py-2 text-gray-400 border border-slate-600 rounded-lg hover:bg-slate-700 transition-colors"
+                  className="px-4 py-2 bg-slate-700 hover:bg-slate-600 text-white rounded-lg transition-colors"
                 >
                   Cancel
                 </button>
@@ -499,7 +532,7 @@ const TaskManager: React.FC = () => {
       {/* Floating Add Button */}
       <button
         onClick={() => setShowAddTask(true)}
-        className="fixed bottom-8 right-8 w-14 h-14 bg-gradient-to-r from-blue-600 to-purple-600 rounded-full flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-110"
+        className="fixed bottom-8 right-8 w-14 h-14 bg-gradient-to-r from-blue-600 to-purple-600 rounded-full flex items-center justify-center shadow-lg hover:shadow-xl transition-all hover:scale-110"
       >
         <Plus className="h-6 w-6 text-white" />
       </button>
