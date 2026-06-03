@@ -1,107 +1,97 @@
 import React, { useState, useEffect } from 'react';
-import { Plus, Trash2, User, Users, Mail, X } from 'lucide-react';
-import { supabase } from '../services/supabaseClient';
+import { Plus, Trash2, User, Users, X } from 'lucide-react';
 
 interface TeamMember {
   id: string;
-  user_id: string;
-  email: string;
   name: string;
+  email: string;
   role: 'owner' | 'member';
-  joined_at: string;
+  joinedAt: string;
 }
 
 interface Team {
   id: string;
   name: string;
-  created_at: string;
+  createdAt: string;
+  members: TeamMember[];
 }
 
 const TeamManagement: React.FC = () => {
   const [teams, setTeams] = useState<Team[]>([]);
-  const [members, setMembers] = useState<TeamMember[]>([]);
   const [selectedTeam, setSelectedTeam] = useState<string | null>(null);
   const [showAddMember, setShowAddMember] = useState(false);
   const [showCreateTeam, setShowCreateTeam] = useState(false);
   const [newTeamName, setNewTeamName] = useState('');
+  const [newMemberName, setNewMemberName] = useState('');
   const [newMemberEmail, setNewMemberEmail] = useState('');
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
   const [success, setSuccess] = useState('');
 
-  const currentUserId = localStorage.getItem('user_id');
-
   useEffect(() => {
-    if (currentUserId) {
-      fetchTeams();
-    }
-  }, [currentUserId]);
+    loadTeams();
+  }, []);
 
-  const fetchTeams = async () => {
+  const loadTeams = () => {
     try {
-      setLoading(true);
-      const { data, error } = await supabase
-        .from('teams')
-        .select('*')
-        .eq('user_id', currentUserId);
-
-      if (error) throw error;
-      setTeams(data || []);
-      if (data && data.length > 0) {
-        setSelectedTeam(data[0].id);
-        fetchTeamMembers(data[0].id);
+      const stored = localStorage.getItem('teams');
+      if (stored) {
+        const teamsData = JSON.parse(stored);
+        setTeams(teamsData);
+        if (teamsData.length > 0) {
+          setSelectedTeam(teamsData[0].id);
+        }
       }
     } catch (err) {
-      setError('Failed to load teams');
-      console.error(err);
-    } finally {
-      setLoading(false);
+      console.error('Failed to load teams:', err);
     }
   };
 
-  const fetchTeamMembers = async (teamId: string) => {
-    try {
-      const { data, error } = await supabase
-        .from('team_members')
-        .select('*')
-        .eq('team_id', teamId);
-
-      if (error) throw error;
-      setMembers(data || []);
-    } catch (err) {
-      console.error('Failed to load team members:', err);
-    }
+  const saveTeams = (teamsData: Team[]) => {
+    localStorage.setItem('teams', JSON.stringify(teamsData));
+    setTeams(teamsData);
   };
 
-  const handleCreateTeam = async () => {
-    if (!newTeamName.trim() || !currentUserId) return;
+  const handleCreateTeam = async (e: React.FormEvent) => {
+    e.preventDefault();
+
+    if (!newTeamName.trim()) {
+      setError('Team name is required');
+      return;
+    }
+
+    if (teams.length >= 5) {
+      setError('You can create a maximum of 5 teams');
+      return;
+    }
 
     try {
       setLoading(true);
-      const { data, error } = await supabase
-        .from('teams')
-        .insert({
-          user_id: currentUserId,
-          name: newTeamName
-        })
-        .select()
-        .single();
+      const user = JSON.parse(localStorage.getItem('user') || '{}');
 
-      if (error) throw error;
+      const newTeam: Team = {
+        id: Date.now().toString(),
+        name: newTeamName,
+        createdAt: new Date().toISOString(),
+        members: [
+          {
+            id: user.id || '1',
+            name: user.name || 'You',
+            email: user.email || 'you@example.com',
+            role: 'owner',
+            joinedAt: new Date().toISOString()
+          }
+        ]
+      };
 
-      // Add current user as owner
-      await supabase.from('team_members').insert({
-        team_id: data.id,
-        user_id: currentUserId,
-        role: 'owner'
-      });
-
-      setTeams([...teams, data]);
-      setSelectedTeam(data.id);
+      const updatedTeams = [...teams, newTeam];
+      saveTeams(updatedTeams);
+      setSelectedTeam(newTeam.id);
       setNewTeamName('');
       setShowCreateTeam(false);
-      setSuccess('Team created successfully');
+      setSuccess('Team created successfully!');
       setTimeout(() => setSuccess(''), 3000);
+      setError('');
     } catch (err) {
       setError('Failed to create team');
       console.error(err);
@@ -110,34 +100,45 @@ const TeamManagement: React.FC = () => {
     }
   };
 
-  const handleAddMember = async () => {
-    if (!newMemberEmail.trim() || !selectedTeam) return;
+  const handleAddMember = async (e: React.FormEvent) => {
+    e.preventDefault();
+
+    if (!newMemberName.trim() || !newMemberEmail.trim()) {
+      setError('Name and email are required');
+      return;
+    }
+
+    if (!selectedTeam) return;
 
     try {
       setLoading(true);
+      const currentTeams = [...teams];
+      const teamIndex = currentTeams.findIndex(t => t.id === selectedTeam);
 
-      // First, we need to find the user by email
-      // In a real app, you might have a separate endpoint for this
-      // For now, we'll create a temporary user entry or use an invite system
+      if (teamIndex === -1) return;
 
-      // Add team member (this would normally be done after user accepts invite)
-      const { error } = await supabase.from('team_members').insert({
-        team_id: selectedTeam,
-        user_id: null, // Would be set when user accepts invite
-        role: 'member'
-      });
-
-      if (error && !error.message.includes('violates unique constraint')) {
-        throw error;
+      if (currentTeams[teamIndex].members.length >= 5) {
+        setError('Team is at maximum capacity (5 members)');
+        setLoading(false);
+        return;
       }
 
+      const newMember: TeamMember = {
+        id: Date.now().toString(),
+        name: newMemberName,
+        email: newMemberEmail,
+        role: 'member',
+        joinedAt: new Date().toISOString()
+      };
+
+      currentTeams[teamIndex].members.push(newMember);
+      saveTeams(currentTeams);
+      setNewMemberName('');
       setNewMemberEmail('');
       setShowAddMember(false);
-      setSuccess('Team member added successfully');
+      setSuccess('Team member added successfully!');
       setTimeout(() => setSuccess(''), 3000);
-      if (selectedTeam) {
-        fetchTeamMembers(selectedTeam);
-      }
+      setError('');
     } catch (err) {
       setError('Failed to add team member');
       console.error(err);
@@ -146,26 +147,31 @@ const TeamManagement: React.FC = () => {
     }
   };
 
-  const handleRemoveMember = async (memberId: string) => {
-    try {
-      setLoading(true);
-      const { error } = await supabase
-        .from('team_members')
-        .delete()
-        .eq('id', memberId);
+  const handleRemoveMember = (memberId: string) => {
+    if (!selectedTeam) return;
 
-      if (error) throw error;
+    const currentTeams = [...teams];
+    const teamIndex = currentTeams.findIndex(t => t.id === selectedTeam);
 
-      setMembers(members.filter(m => m.id !== memberId));
-      setSuccess('Team member removed successfully');
+    if (teamIndex === -1) return;
+
+    const memberIndex = currentTeams[teamIndex].members.findIndex(m => m.id === memberId);
+    if (memberIndex !== -1) {
+      const member = currentTeams[teamIndex].members[memberIndex];
+      if (member.role === 'owner') {
+        setError('Cannot remove team owner');
+        return;
+      }
+
+      currentTeams[teamIndex].members.splice(memberIndex, 1);
+      saveTeams(currentTeams);
+      setSuccess('Team member removed successfully!');
       setTimeout(() => setSuccess(''), 3000);
-    } catch (err) {
-      setError('Failed to remove team member');
-      console.error(err);
-    } finally {
-      setLoading(false);
     }
   };
+
+  const currentTeam = selectedTeam ? teams.find(t => t.id === selectedTeam) : null;
+  const currentMembers = currentTeam?.members || [];
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 p-6">
@@ -209,10 +215,7 @@ const TeamManagement: React.FC = () => {
                   teams.map(team => (
                     <button
                       key={team.id}
-                      onClick={() => {
-                        setSelectedTeam(team.id);
-                        fetchTeamMembers(team.id);
-                      }}
+                      onClick={() => setSelectedTeam(team.id)}
                       className={`w-full text-left px-4 py-3 rounded-lg transition-colors ${
                         selectedTeam === team.id
                           ? 'bg-blue-600 text-white'
@@ -221,7 +224,7 @@ const TeamManagement: React.FC = () => {
                     >
                       <p className="font-medium">{team.name}</p>
                       <p className="text-xs opacity-70">
-                        {new Date(team.created_at).toLocaleDateString()}
+                        {team.members.length} member{team.members.length !== 1 ? 's' : ''}
                       </p>
                     </button>
                   ))
@@ -235,7 +238,7 @@ const TeamManagement: React.FC = () => {
             <div className="bg-slate-800/60 backdrop-blur-sm border border-slate-700/50 rounded-xl p-6">
               <div className="flex items-center justify-between mb-6">
                 <h2 className="text-lg font-semibold text-white">Team Members</h2>
-                {selectedTeam && (
+                {selectedTeam && currentMembers.length < 5 && (
                   <button
                     onClick={() => setShowAddMember(true)}
                     className="flex items-center space-x-2 px-3 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors text-sm"
@@ -248,10 +251,10 @@ const TeamManagement: React.FC = () => {
 
               {selectedTeam ? (
                 <div className="space-y-3">
-                  {members.length === 0 ? (
+                  {currentMembers.length === 0 ? (
                     <p className="text-gray-400 text-sm">No members yet. Invite your first team member!</p>
                   ) : (
-                    members.map(member => (
+                    currentMembers.map(member => (
                       <div
                         key={member.id}
                         className="flex items-center justify-between bg-slate-700/50 p-4 rounded-lg hover:bg-slate-700 transition-colors"
@@ -259,7 +262,7 @@ const TeamManagement: React.FC = () => {
                         <div className="flex items-center space-x-3">
                           <User className="h-5 w-5 text-gray-400" />
                           <div>
-                            <p className="text-white font-medium">{member.name || 'Pending'}</p>
+                            <p className="text-white font-medium">{member.name}</p>
                             <p className="text-gray-400 text-xs">{member.email}</p>
                           </div>
                         </div>
@@ -299,14 +302,17 @@ const TeamManagement: React.FC = () => {
             <div className="flex items-center justify-between mb-4">
               <h2 className="text-lg font-semibold text-white">Create New Team</h2>
               <button
-                onClick={() => setShowCreateTeam(false)}
+                onClick={() => {
+                  setShowCreateTeam(false);
+                  setError('');
+                }}
                 className="text-gray-400 hover:text-white transition-colors"
               >
                 <X className="h-5 w-5" />
               </button>
             </div>
 
-            <div className="space-y-4">
+            <form onSubmit={handleCreateTeam} className="space-y-4">
               <div>
                 <label className="block text-sm font-medium text-white/80 mb-2">
                   Team Name
@@ -317,25 +323,30 @@ const TeamManagement: React.FC = () => {
                   onChange={(e) => setNewTeamName(e.target.value)}
                   placeholder="e.g., Design Team"
                   className="w-full px-3 py-2 bg-slate-700/50 border border-slate-600 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500/50"
+                  disabled={loading}
                 />
               </div>
-            </div>
 
-            <div className="flex space-x-3 mt-6">
-              <button
-                onClick={handleCreateTeam}
-                disabled={loading}
-                className="flex-1 px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors disabled:opacity-50"
-              >
-                {loading ? 'Creating...' : 'Create Team'}
-              </button>
-              <button
-                onClick={() => setShowCreateTeam(false)}
-                className="px-4 py-2 text-gray-400 border border-slate-600 rounded-lg hover:bg-slate-700 transition-colors"
-              >
-                Cancel
-              </button>
-            </div>
+              <div className="flex space-x-3 mt-6">
+                <button
+                  type="submit"
+                  disabled={loading}
+                  className="flex-1 px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors disabled:opacity-50 disabled:cursor-not-allowed font-medium"
+                >
+                  {loading ? 'Creating...' : 'Create Team'}
+                </button>
+                <button
+                  type="button"
+                  onClick={() => {
+                    setShowCreateTeam(false);
+                    setError('');
+                  }}
+                  className="px-4 py-2 text-gray-400 border border-slate-600 rounded-lg hover:bg-slate-700 transition-colors"
+                >
+                  Cancel
+                </button>
+              </div>
+            </form>
           </div>
         </div>
       )}
@@ -347,7 +358,10 @@ const TeamManagement: React.FC = () => {
             <div className="flex items-center justify-between mb-4">
               <h2 className="text-lg font-semibold text-white">Add Team Member</h2>
               <button
-                onClick={() => setShowAddMember(false)}
+                onClick={() => {
+                  setShowAddMember(false);
+                  setError('');
+                }}
                 className="text-gray-400 hover:text-white transition-colors"
               >
                 <X className="h-5 w-5" />
@@ -355,10 +369,24 @@ const TeamManagement: React.FC = () => {
             </div>
 
             <p className="text-gray-400 text-sm mb-4">
-              Add up to 5 team members to your team. They'll receive an invitation to join.
+              Add up to 5 team members to your team. They'll be able to see and update assigned tasks.
             </p>
 
-            <div className="space-y-4">
+            <form onSubmit={handleAddMember} className="space-y-4">
+              <div>
+                <label className="block text-sm font-medium text-white/80 mb-2">
+                  Name
+                </label>
+                <input
+                  type="text"
+                  value={newMemberName}
+                  onChange={(e) => setNewMemberName(e.target.value)}
+                  placeholder="John Doe"
+                  className="w-full px-3 py-2 bg-slate-700/50 border border-slate-600 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500/50"
+                  disabled={loading}
+                />
+              </div>
+
               <div>
                 <label className="block text-sm font-medium text-white/80 mb-2">
                   Email Address
@@ -369,25 +397,30 @@ const TeamManagement: React.FC = () => {
                   onChange={(e) => setNewMemberEmail(e.target.value)}
                   placeholder="coworker@company.com"
                   className="w-full px-3 py-2 bg-slate-700/50 border border-slate-600 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500/50"
+                  disabled={loading}
                 />
               </div>
-            </div>
 
-            <div className="flex space-x-3 mt-6">
-              <button
-                onClick={handleAddMember}
-                disabled={loading}
-                className="flex-1 px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors disabled:opacity-50"
-              >
-                {loading ? 'Adding...' : 'Add Member'}
-              </button>
-              <button
-                onClick={() => setShowAddMember(false)}
-                className="px-4 py-2 text-gray-400 border border-slate-600 rounded-lg hover:bg-slate-700 transition-colors"
-              >
-                Cancel
-              </button>
-            </div>
+              <div className="flex space-x-3 mt-6">
+                <button
+                  type="submit"
+                  disabled={loading}
+                  className="flex-1 px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors disabled:opacity-50 disabled:cursor-not-allowed font-medium"
+                >
+                  {loading ? 'Adding...' : 'Add Member'}
+                </button>
+                <button
+                  type="button"
+                  onClick={() => {
+                    setShowAddMember(false);
+                    setError('');
+                  }}
+                  className="px-4 py-2 text-gray-400 border border-slate-600 rounded-lg hover:bg-slate-700 transition-colors"
+                >
+                  Cancel
+                </button>
+              </div>
+            </form>
           </div>
         </div>
       )}
