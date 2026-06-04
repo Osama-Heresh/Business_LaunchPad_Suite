@@ -36,7 +36,8 @@ Deno.serve(async (req: Request) => {
       );
     }
 
-    const invitationLink = `${Deno.env.get("VITE_APP_URL") || "http://localhost:5173"}/team-invite?email=${encodeURIComponent(memberEmail)}&team=${encodeURIComponent(teamName)}&inviter=${encodeURIComponent(teamOwnerEmail)}`;
+    const appUrl = Deno.env.get("VITE_APP_URL") || "http://localhost:5173";
+    const invitationLink = `${appUrl}/team-invite?email=${encodeURIComponent(memberEmail)}&team=${encodeURIComponent(teamName)}&inviter=${encodeURIComponent(teamOwnerEmail)}`;
 
     const emailContent = `
 <!DOCTYPE html>
