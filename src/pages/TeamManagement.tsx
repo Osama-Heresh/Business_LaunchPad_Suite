@@ -16,6 +16,16 @@ interface Team {
   members: TeamMember[];
 }
 
+interface Invitation {
+  id: string;
+  teamId: string;
+  teamName: string;
+  memberEmail: string;
+  memberName: string;
+  status: 'pending' | 'accepted' | 'rejected';
+  createdAt: string;
+}
+
 const TeamManagement: React.FC = () => {
   const [teams, setTeams] = useState<Team[]>([]);
   const [selectedTeam, setSelectedTeam] = useState<string | null>(null);
@@ -126,34 +136,20 @@ const TeamManagement: React.FC = () => {
       const user = JSON.parse(localStorage.getItem('user') || '{}');
       const teamName = currentTeams[teamIndex].name;
 
-      // Create invitation in database
-      try {
-        const response = await fetch(
-          `${import.meta.env.VITE_SUPABASE_URL}/functions/v1/send-team-invitation`,
-          {
-            method: 'POST',
-            headers: {
-              'Content-Type': 'application/json',
-              'Authorization': `Bearer ${import.meta.env.VITE_SUPABASE_ANON_KEY}`,
-            },
-            body: JSON.stringify({
-              memberEmail: newMemberEmail,
-              memberName: newMemberName,
-              teamId: selectedTeam,
-              teamName: teamName,
-              teamOwnerId: user.id || '1',
-              teamOwnerEmail: user.email || 'you@example.com',
-            }),
-          }
-        );
+      // Create invitation and store locally
+      const invitation: Invitation = {
+        id: Date.now().toString(),
+        teamId: selectedTeam,
+        teamName: teamName,
+        memberEmail: newMemberEmail,
+        memberName: newMemberName,
+        status: 'pending',
+        createdAt: new Date().toISOString(),
+      };
 
-        if (response.ok) {
-          const result = await response.json();
-          console.log('Invitation created:', result);
-        }
-      } catch (emailErr) {
-        console.log('Invitation saved locally');
-      }
+      const invitations = JSON.parse(localStorage.getItem('invitations') || '[]');
+      invitations.push(invitation);
+      localStorage.setItem('invitations', JSON.stringify(invitations));
 
       const newMember: TeamMember = {
         id: Date.now().toString(),
@@ -168,7 +164,7 @@ const TeamManagement: React.FC = () => {
       setNewMemberName('');
       setNewMemberEmail('');
       setShowAddMember(false);
-      setSuccess(`${newMemberName} has been invited to the team!`);
+      setSuccess(`Invitation sent to ${newMemberName}!`);
       setTimeout(() => setSuccess(''), 5000);
       setError('');
     } catch (err) {

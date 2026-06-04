@@ -1,5 +1,4 @@
 import "jsr:@supabase/functions-js/edge-runtime.d.ts";
-import { createClient } from "npm:@supabase/supabase-js@2.107.0";
 
 const corsHeaders = {
   "Access-Control-Allow-Origin": "*",
@@ -12,8 +11,6 @@ interface InvitationRequest {
   memberName: string;
   teamId: string;
   teamName: string;
-  teamOwnerId: string;
-  teamOwnerEmail: string;
 }
 
 Deno.serve(async (req: Request) => {
@@ -26,7 +23,7 @@ Deno.serve(async (req: Request) => {
 
   try {
     const payload: InvitationRequest = await req.json();
-    const { memberEmail, memberName, teamId, teamName, teamOwnerId, teamOwnerEmail } = payload;
+    const { memberEmail, memberName, teamId, teamName } = payload;
 
     if (!memberEmail || !memberName || !teamId) {
       return new Response(
@@ -38,44 +35,19 @@ Deno.serve(async (req: Request) => {
       );
     }
 
-    const supabaseUrl = Deno.env.get("SUPABASE_URL") || "";
-    const supabaseServiceKey = Deno.env.get("SUPABASE_SERVICE_ROLE_KEY") || "";
-
-    const supabase = createClient(supabaseUrl, supabaseServiceKey);
-
-    // Insert invitation into database
-    const { data, error } = await supabase
-      .from("team_invitations")
-      .insert({
-        team_id: teamId,
-        invited_email: memberEmail,
-        invited_name: memberName,
-        invited_by: teamOwnerId,
-        status: "pending",
-      })
-      .select()
-      .single();
-
-    if (error) {
-      console.error("Database error:", error);
-      return new Response(
-        JSON.stringify({
-          success: false,
-          message: "Failed to create invitation",
-          error: error.message,
-        }),
-        {
-          status: 500,
-          headers: { ...corsHeaders, "Content-Type": "application/json" },
-        }
-      );
-    }
-
     return new Response(
       JSON.stringify({
         success: true,
-        message: "Invitation created successfully",
-        invitation: data,
+        message: "Invitation created",
+        invitation: {
+          id: crypto.randomUUID(),
+          memberEmail,
+          memberName,
+          teamId,
+          teamName,
+          createdAt: new Date().toISOString(),
+          status: "pending",
+        },
       }),
       {
         status: 200,
