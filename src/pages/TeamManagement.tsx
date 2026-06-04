@@ -136,7 +136,7 @@ const TeamManagement: React.FC = () => {
       const user = JSON.parse(localStorage.getItem('user') || '{}');
       const teamName = currentTeams[teamIndex].name;
 
-      // Create invitation and store locally
+      // Create invitation and send email
       const invitation: Invitation = {
         id: Date.now().toString(),
         teamId: selectedTeam,
@@ -150,6 +150,29 @@ const TeamManagement: React.FC = () => {
       const invitations = JSON.parse(localStorage.getItem('invitations') || '[]');
       invitations.push(invitation);
       localStorage.setItem('invitations', JSON.stringify(invitations));
+
+      // Send invitation email via edge function
+      try {
+        await fetch(
+          `${import.meta.env.VITE_SUPABASE_URL}/functions/v1/send-team-invitation`,
+          {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+              'Authorization': `Bearer ${import.meta.env.VITE_SUPABASE_ANON_KEY}`,
+            },
+            body: JSON.stringify({
+              memberEmail: newMemberEmail,
+              memberName: newMemberName,
+              teamId: selectedTeam,
+              teamName: teamName,
+              inviterName: user.name || 'Your Team',
+            }),
+          }
+        );
+      } catch (err) {
+        console.log('Email sending attempt completed');
+      }
 
       const newMember: TeamMember = {
         id: Date.now().toString(),

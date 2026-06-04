@@ -6,6 +6,7 @@ import { SubscriptionProvider } from './contexts/SubscriptionContext';
 import { SocialAccountsProvider } from './contexts/SocialAccountsContext';
 import ProtectedRoute from './components/ProtectedRoute';
 import Layout from './components/Layout';
+import InvitationNotifications from './components/InvitationNotifications';
 import Login from './pages/Login';
 import Dashboard from './pages/Dashboard';
 import SocialMedia from './pages/SocialMedia';
@@ -23,6 +24,7 @@ function App() {
         <SubscriptionProvider>
           <SocialAccountsProvider>
             <Router>
+              <InvitationNotifications />
               <Routes>
                 <Route path="/login" element={<Login />} />
                 <Route path="/" element={
