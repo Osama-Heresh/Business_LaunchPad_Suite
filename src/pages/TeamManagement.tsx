@@ -126,7 +126,7 @@ const TeamManagement: React.FC = () => {
       const user = JSON.parse(localStorage.getItem('user') || '{}');
       const teamName = currentTeams[teamIndex].name;
 
-      // Send invitation email
+      // Create invitation in database
       try {
         const response = await fetch(
           `${import.meta.env.VITE_SUPABASE_URL}/functions/v1/send-team-invitation`,
@@ -139,6 +139,7 @@ const TeamManagement: React.FC = () => {
             body: JSON.stringify({
               memberEmail: newMemberEmail,
               memberName: newMemberName,
+              teamId: selectedTeam,
               teamName: teamName,
               teamOwnerId: user.id || '1',
               teamOwnerEmail: user.email || 'you@example.com',
@@ -148,10 +149,10 @@ const TeamManagement: React.FC = () => {
 
         if (response.ok) {
           const result = await response.json();
-          console.log('Invitation processed:', result);
+          console.log('Invitation created:', result);
         }
       } catch (emailErr) {
-        console.log('Note: Email service not configured, but member added to team');
+        console.log('Invitation saved locally');
       }
 
       const newMember: TeamMember = {
@@ -167,7 +168,7 @@ const TeamManagement: React.FC = () => {
       setNewMemberName('');
       setNewMemberEmail('');
       setShowAddMember(false);
-      setSuccess(`Team member added! Invitation email sent to ${newMemberEmail}`);
+      setSuccess(`${newMemberName} has been invited to the team!`);
       setTimeout(() => setSuccess(''), 5000);
       setError('');
     } catch (err) {
