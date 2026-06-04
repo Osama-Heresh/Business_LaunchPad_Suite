@@ -1,4 +1,5 @@
 import "jsr:@supabase/functions-js/edge-runtime.d.ts";
+import { createClient } from "npm:@supabase/supabase-js@2.107.0";
 
 const corsHeaders = {
   "Access-Control-Allow-Origin": "*",
@@ -36,7 +37,10 @@ Deno.serve(async (req: Request) => {
       );
     }
 
+    const supabaseUrl = Deno.env.get("SUPABASE_URL") || "";
+    const supabaseServiceKey = Deno.env.get("SUPABASE_SERVICE_ROLE_KEY") || "";
     const appUrl = Deno.env.get("VITE_APP_URL") || "http://localhost:5173";
+
     const invitationLink = `${appUrl}/team-invite?email=${encodeURIComponent(memberEmail)}&team=${encodeURIComponent(teamName)}&inviter=${encodeURIComponent(teamOwnerEmail)}`;
 
     const emailContent = `
@@ -87,42 +91,24 @@ Deno.serve(async (req: Request) => {
 </html>
     `;
 
-    const smtpResponse = await fetch("https://api.sendgrid.com/v3/mail/send", {
-      method: "POST",
-      headers: {
-        "Authorization": `Bearer ${Deno.env.get("SENDGRID_API_KEY")}`,
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        personalizations: [
-          {
-            to: [{ email: memberEmail, name: memberName }],
-          },
-        ],
-        from: {
-          email: "noreply@launchpadsuite.com",
-          name: "LaunchPad Suite",
-        },
-        subject: `You're invited to join ${teamName} team!`,
-        content: [
-          {
-            type: "text/html",
-            value: emailContent,
-          },
-        ],
-      }),
+    const supabase = createClient(supabaseUrl, supabaseServiceKey);
+
+    const { error } = await supabase.auth.admin.sendRawEmail({
+      email: memberEmail,
+      html: emailContent,
+      subject: `You're invited to join ${teamName} team!`,
     });
 
-    if (!smtpResponse.ok) {
-      console.error("SendGrid error:", await smtpResponse.text());
-
+    if (error) {
+      console.error("Supabase email error:", error);
       return new Response(
         JSON.stringify({
-          success: true,
-          message: "Invitation saved (email service not configured)",
+          success: false,
+          message: "Failed to send invitation email",
+          error: error.message,
         }),
         {
-          status: 200,
+          status: 500,
           headers: { ...corsHeaders, "Content-Type": "application/json" },
         }
       );
@@ -143,11 +129,12 @@ Deno.serve(async (req: Request) => {
     console.error("Error:", error);
     return new Response(
       JSON.stringify({
-        success: true,
-        message: "Invitation processed (email service not configured)",
+        success: false,
+        message: "Error processing invitation",
+        error: String(error),
       }),
       {
-        status: 200,
+        status: 500,
         headers: { ...corsHeaders, "Content-Type": "application/json" },
       }
     );
