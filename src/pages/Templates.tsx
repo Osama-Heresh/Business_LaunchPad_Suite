@@ -1,5 +1,5 @@
 import React, { useState, useMemo, useCallback, useEffect } from 'react';
-import { Search, Download, Eye, Edit, Trash2, Plus, Filter } from 'lucide-react';
+import { Search, Download, Eye, CreditCard as Edit, Trash2, Plus, Filter } from 'lucide-react';
 import { documentService } from '../services/documentService';
 import TemplatePreview from '../components/TemplatePreview';
 import TemplateUpload from '../components/TemplateUpload';
@@ -78,9 +78,9 @@ const Templates: React.FC = () => {
     return filtered;
   }, [templates, selectedCategory, searchTerm, sortBy]);
 
-  const handleDownload = useCallback(async (template: any) => {
+  const handleDownload = useCallback(async (template: any, variables?: Record<string, string>) => {
     try {
-      await documentService.generateDocx(template, {});
+      await documentService.generateDocx(template, variables || {});
       // Update download count
       template.downloadCount += 1;
     } catch (error) {

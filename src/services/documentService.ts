@@ -23268,6 +23268,15 @@ class DocumentService {
 
   async generateDocx(template: DocumentTemplate, variables: Record<string, string> = {}): Promise<void> {
     try {
+      let processedContent = template.content || '';
+
+      // Replace variables in content
+      for (const [key, value] of Object.entries(variables)) {
+        if (value && value.trim()) {
+          processedContent = processedContent.replace(new RegExp(`\\${key}`, 'g'), value);
+        }
+      }
+
       const doc = new Document({
         sections: [{
           properties: {},
@@ -23291,7 +23300,7 @@ class DocumentService {
                 }),
               ],
             }),
-            ...this.parseContentToParagraphs(template.content || ''),
+            ...this.parseContentToParagraphs(processedContent),
           ],
         }],
       });
