@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { X, Download, Edit, Eye, FileText, Calendar, Star, Users } from 'lucide-react';
+import { X, Download, CreditCard as Edit, Eye, FileText, Calendar, Star, Users } from 'lucide-react';
 import { DocumentTemplate } from '../services/documentService';
 
 interface TemplatePreviewProps {
@@ -154,20 +154,26 @@ const TemplatePreview: React.FC<TemplatePreviewProps> = ({
             {/* Sections Preview */}
             <div className="mb-6">
               <h3 className="text-lg font-medium text-gray-900 mb-3">Document Sections</h3>
-              <div className="space-y-2">
-                {template.preview.sections.map((section, index) => (
-                  <div key={index} className="flex items-center space-x-3 p-3 bg-gray-50 rounded-lg">
-                    <div className="w-6 h-6 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center text-sm font-medium">
-                      {index + 1}
+              {template.preview?.sections && template.preview.sections.length > 0 ? (
+                <div className="space-y-2">
+                  {template.preview.sections.map((section, index) => (
+                    <div key={index} className="flex items-center space-x-3 p-3 bg-gray-50 rounded-lg">
+                      <div className="w-6 h-6 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center text-sm font-medium">
+                        {index + 1}
+                      </div>
+                      <span className="text-gray-900">{section}</span>
                     </div>
-                    <span className="text-gray-900">{section}</span>
-                  </div>
-                ))}
-              </div>
+                  ))}
+                </div>
+              ) : (
+                <div className="p-4 bg-gray-50 rounded-lg text-gray-600 text-sm">
+                  Professional business document with customizable sections
+                </div>
+              )}
             </div>
 
             {/* Variables */}
-            {template.preview.variables.length > 0 && (
+            {template.preview?.variables && template.preview.variables.length > 0 && (
               <div>
                 <h3 className="text-lg font-medium text-gray-900 mb-3">Customizable Fields</h3>
                 <div className="grid grid-cols-2 gap-3">
@@ -190,23 +196,29 @@ const TemplatePreview: React.FC<TemplatePreviewProps> = ({
               </p>
               
               <div className="space-y-4">
-                {template.preview.variables.map((variable, index) => {
-                  const cleanVariable = variable.replace(/[\[\]]/g, '');
-                  return (
-                    <div key={index}>
-                      <label className="block text-sm font-medium text-gray-700 mb-1">
-                        {cleanVariable.replace(/([A-Z])/g, ' $1').replace(/^./, str => str.toUpperCase())}
-                      </label>
-                      <input
-                        type="text"
-                        value={variables[variable] || ''}
-                        onChange={(e) => handleVariableChange(variable, e.target.value)}
-                        placeholder={`Enter ${cleanVariable.toLowerCase()}`}
-                        className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-sm"
-                      />
-                    </div>
-                  );
-                })}
+                {template.preview?.variables && template.preview.variables.length > 0 ? (
+                  template.preview.variables.map((variable, index) => {
+                    const cleanVariable = variable.replace(/[\[\]]/g, '');
+                    return (
+                      <div key={index}>
+                        <label className="block text-sm font-medium text-gray-700 mb-1">
+                          {cleanVariable.replace(/([A-Z])/g, ' $1').replace(/^./, str => str.toUpperCase())}
+                        </label>
+                        <input
+                          type="text"
+                          value={variables[variable] || ''}
+                          onChange={(e) => handleVariableChange(variable, e.target.value)}
+                          placeholder={`Enter ${cleanVariable.toLowerCase()}`}
+                          className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-sm"
+                        />
+                      </div>
+                    );
+                  })
+                ) : (
+                  <p className="text-sm text-gray-600 py-4">
+                    This template is ready to download as-is. No additional customization needed.
+                  </p>
+                )}
               </div>
 
               <div className="mt-6 pt-4 border-t border-gray-200">

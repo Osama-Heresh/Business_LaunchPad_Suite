@@ -10,7 +10,10 @@ export interface DocumentTemplate {
   fileSize: string;
   rating: number;
   tags: string[];
-  preview?: string;
+  preview?: {
+    sections: string[];
+    variables: string[];
+  };
   createdAt: string;
   updatedAt: string;
   content?: string;
@@ -23226,8 +23229,41 @@ templates.push(...clientProjectTemplates);
 templates.push(...strategyTemplates);
 
 class DocumentService {
+  private extractPreviewData(content: string): { sections: string[]; variables: string[] } {
+    const sections: string[] = [];
+    const variablesSet = new Set<string>();
+
+    const lines = content.split('\n');
+    for (const line of lines) {
+      const trimmed = line.trim();
+
+      // Extract section headers (lines that are all caps or numbered)
+      if (trimmed.match(/^[A-Z\s&()]+:?$/) || trimmed.match(/^\d+\.\s+[A-Z]/)) {
+        if (trimmed.length > 0 && !sections.includes(trimmed)) {
+          sections.push(trimmed);
+        }
+      }
+
+      // Extract variables (text within square brackets)
+      const variableMatches = trimmed.match(/\[([^\]]+)\]/g);
+      if (variableMatches) {
+        variableMatches.forEach(match => {
+          variablesSet.add(match);
+        });
+      }
+    }
+
+    return {
+      sections: sections.slice(0, 10), // Limit to first 10 sections
+      variables: Array.from(variablesSet).slice(0, 15) // Limit to first 15 variables
+    };
+  }
+
   getTemplates(): DocumentTemplate[] {
-    return templates;
+    return templates.map(template => ({
+      ...template,
+      preview: this.extractPreviewData(template.content || '')
+    }));
   }
 
   async generateDocx(template: DocumentTemplate, variables: Record<string, string> = {}): Promise<void> {
@@ -23342,7 +23378,12 @@ class DocumentService {
   }
 
   getTemplatesByCategory(category: string): DocumentTemplate[] {
-    return templates.filter(template => template.category === category);
+    return templates
+      .filter(template => template.category === category)
+      .map(template => ({
+        ...template,
+        preview: this.extractPreviewData(template.content || '')
+      }));
   }
 
   getAllCategories(): string[] {
@@ -23352,12 +23393,17 @@ class DocumentService {
 
   searchTemplates(query: string): DocumentTemplate[] {
     const lowercaseQuery = query.toLowerCase();
-    return templates.filter(template =>
-      template.title.toLowerCase().includes(lowercaseQuery) ||
-      template.description.toLowerCase().includes(lowercaseQuery) ||
-      template.category.toLowerCase().includes(lowercaseQuery) ||
-      template.tags.some(tag => tag.toLowerCase().includes(lowercaseQuery))
-    );
+    return templates
+      .filter(template =>
+        template.title.toLowerCase().includes(lowercaseQuery) ||
+        template.description.toLowerCase().includes(lowercaseQuery) ||
+        template.category.toLowerCase().includes(lowercaseQuery) ||
+        template.tags.some(tag => tag.toLowerCase().includes(lowercaseQuery))
+      )
+      .map(template => ({
+        ...template,
+        preview: this.extractPreviewData(template.content || '')
+      }));
   }
 }
 
