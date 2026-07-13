@@ -12,65 +12,135 @@ interface InvitationRequest {
   teamId: string;
   teamName: string;
   inviterName: string;
+  appUrl?: string;
 }
+
+const DEFAULT_APP_URL = "https://launchpad-suite.com";
+const SENDER_EMAIL = "LaunchPad Suite <noreply@launchpad-suite.com>";
 
 Deno.serve(async (req: Request) => {
   if (req.method === "OPTIONS") {
-    return new Response(null, {
-      status: 200,
-      headers: corsHeaders,
-    });
+    return new Response(null, { status: 200, headers: corsHeaders });
   }
 
+  if (req.method !== "POST") {
+    return new Response(
+      JSON.stringify({ error: "Method not allowed" }),
+      { status: 405, headers: { ...corsHeaders, "Content-Type": "application/json" } }
+    );
+  }
+
+  let payload: InvitationRequest;
   try {
-    const payload: InvitationRequest = await req.json();
-    const { memberEmail, memberName, teamId, teamName, inviterName } = payload;
+    payload = await req.json();
+  } catch {
+    return new Response(
+      JSON.stringify({ error: "Invalid JSON body" }),
+      { status: 400, headers: { ...corsHeaders, "Content-Type": "application/json" } }
+    );
+  }
 
-    if (!memberEmail || !memberName || !teamId || !teamName) {
-      return new Response(
-        JSON.stringify({ error: "Missing required fields" }),
-        {
-          status: 400,
-          headers: { ...corsHeaders, "Content-Type": "application/json" },
-        }
-      );
-    }
+  const { memberEmail, memberName, teamId, teamName, inviterName, appUrl } = payload;
 
-    const resendApiKey = Deno.env.get("RESEND_API_KEY");
+  if (!memberEmail || !memberName || !teamId || !teamName) {
+    return new Response(
+      JSON.stringify({ error: "Missing required fields: memberEmail, memberName, teamId, teamName" }),
+      { status: 400, headers: { ...corsHeaders, "Content-Type": "application/json" } }
+    );
+  }
 
-    // If no Resend key, still return success but log that email wasn't sent
-    if (!resendApiKey) {
-      console.warn("RESEND_API_KEY not configured - invitation created but email not sent");
-      console.warn(`Would have sent invitation email to ${memberEmail} for team ${teamName}`);
+  const resendApiKey = Deno.env.get("RESEND_API_KEY");
+  const baseUrl = appUrl || DEFAULT_APP_URL;
+  const invitationLink = `${baseUrl}/accept-invitation?email=${encodeURIComponent(memberEmail)}&team=${encodeURIComponent(teamId)}`;
 
+  const invitation = {
+    id: crypto.randomUUID(),
+    memberEmail,
+    memberName,
+    teamId,
+    teamName,
+    createdAt: new Date().toISOString(),
+    status: "pending" as const,
+  };
+
+  // No Resend key configured — invitation is still created, email is skipped
+  if (!resendApiKey) {
+    return new Response(
+      JSON.stringify({
+        success: true,
+        message: "Invitation created (email service not configured)",
+        invitation,
+        emailSent: false,
+      }),
+      { status: 200, headers: { ...corsHeaders, "Content-Type": "application/json" } }
+    );
+  }
+
+  const htmlContent = buildEmailHtml(memberName, inviterName || "Your Team", teamName, invitationLink);
+
+  try {
+    const resendResponse = await fetch("https://api.resend.com/emails", {
+      method: "POST",
+      headers: {
+        "Authorization": `Bearer ${resendApiKey}`,
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        from: SENDER_EMAIL,
+        to: memberEmail,
+        subject: `You're invited to join ${teamName} team!`,
+        html: htmlContent,
+      }),
+    });
+
+    const resendData = await resendResponse.json();
+
+    if (!resendResponse.ok) {
+      console.error("Resend API error:", resendData);
       return new Response(
         JSON.stringify({
           success: true,
-          message: "Invitation created (email service not configured)",
-          invitation: {
-            id: crypto.randomUUID(),
-            memberEmail,
-            memberName,
-            teamId,
-            teamName,
-            createdAt: new Date().toISOString(),
-            status: "pending",
-          },
+          message: "Invitation created, but email delivery failed",
+          invitation,
           emailSent: false,
-          note: "Email service not configured. To send emails, add RESEND_API_KEY to your Supabase Edge Function Secrets.",
+          error: resendData.message || "Email service error",
         }),
-        {
-          status: 200,
-          headers: { ...corsHeaders, "Content-Type": "application/json" },
-        }
+        { status: 200, headers: { ...corsHeaders, "Content-Type": "application/json" } }
       );
     }
 
-    const appUrl = Deno.env.get("VITE_APP_URL") || "https://launchpad-suite.com";
-    const invitationLink = `${appUrl}/accept-invitation?email=${encodeURIComponent(memberEmail)}&team=${encodeURIComponent(teamId)}`;
+    return new Response(
+      JSON.stringify({
+        success: true,
+        message: "Invitation created and email sent successfully",
+        invitation,
+        emailSent: true,
+        resendId: resendData.id,
+      }),
+      { status: 200, headers: { ...corsHeaders, "Content-Type": "application/json" } }
+    );
+  } catch (error) {
+    console.error("Failed to send email:", error);
+    return new Response(
+      JSON.stringify({
+        success: true,
+        message: "Invitation created, but email delivery failed",
+        invitation,
+        emailSent: false,
+        error: String(error),
+      }),
+      { status: 200, headers: { ...corsHeaders, "Content-Type": "application/json" } }
+    );
+  }
+});
 
-    const htmlContent = `
-<!DOCTYPE html>
+function buildEmailHtml(
+  memberName: string,
+  inviterName: string,
+  teamName: string,
+  invitationLink: string
+): string {
+  return `<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -91,7 +161,7 @@ Deno.serve(async (req: Request) => {
       .features { margin: 25px 0; }
       .feature-list { list-style: none; padding: 0; }
       .feature-list li { padding: 8px 0; padding-left: 24px; position: relative; color: #4b5563; }
-      .feature-list li:before { content: "✓"; position: absolute; left: 0; color: #10b981; font-weight: bold; }
+      .feature-list li:before { content: "\\2713"; position: absolute; left: 0; color: #10b981; font-weight: bold; }
       .footer { background-color: #f9fafb; padding: 20px; text-align: center; border-top: 1px solid #e5e7eb; font-size: 12px; color: #6b7280; }
       .divider { border: none; border-top: 1px solid #e5e7eb; margin: 20px 0; }
     </style>
@@ -145,90 +215,9 @@ Deno.serve(async (req: Request) => {
 
       <div class="footer">
         <p style="margin: 0;">LaunchPad Suite - Your Business Management Hub</p>
-        <p style="margin: 5px 0 0 0;">© 2025 LaunchPad Suite. All rights reserved.</p>
+        <p style="margin: 5px 0 0 0;">&copy; 2025 LaunchPad Suite. All rights reserved.</p>
       </div>
     </div>
   </body>
-</html>
-    `;
-
-    // Send email using Resend
-    const resendResponse = await fetch("https://api.resend.com/emails", {
-      method: "POST",
-      headers: {
-        "Authorization": `Bearer ${resendApiKey}`,
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        from: "LaunchPad Suite <noreply@launchpad-suite.com>",
-        to: memberEmail,
-        subject: `You're invited to join ${teamName} team!`,
-        html: htmlContent,
-      }),
-    });
-
-    const resendData = await resendResponse.json();
-
-    if (!resendResponse.ok) {
-      console.error("Resend error:", resendData);
-
-      // Still return success so frontend doesn't break, but log the error
-      return new Response(
-        JSON.stringify({
-          success: true,
-          message: "Invitation created (email delivery failed)",
-          invitation: {
-            id: crypto.randomUUID(),
-            memberEmail,
-            memberName,
-            teamId,
-            teamName,
-            createdAt: new Date().toISOString(),
-            status: "pending",
-          },
-          emailSent: false,
-          error: resendData.message || "Email service error",
-        }),
-        {
-          status: 200,
-          headers: { ...corsHeaders, "Content-Type": "application/json" },
-        }
-      );
-    }
-
-    return new Response(
-      JSON.stringify({
-        success: true,
-        message: "Invitation created and email sent successfully",
-        invitation: {
-          id: resendData.id || crypto.randomUUID(),
-          memberEmail,
-          memberName,
-          teamId,
-          teamName,
-          createdAt: new Date().toISOString(),
-          status: "pending",
-        },
-        emailSent: true,
-        resendId: resendData.id,
-      }),
-      {
-        status: 200,
-        headers: { ...corsHeaders, "Content-Type": "application/json" },
-      }
-    );
-  } catch (error) {
-    console.error("Error:", error);
-    return new Response(
-      JSON.stringify({
-        success: true,
-        message: "Invitation created",
-        error: String(error),
-      }),
-      {
-        status: 200,
-        headers: { ...corsHeaders, "Content-Type": "application/json" },
-      }
-    );
-  }
-});
+</html>`;
+}

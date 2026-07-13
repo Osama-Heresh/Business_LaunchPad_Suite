@@ -24,17 +24,32 @@ This application sends invitation emails to team members using **Resend**, a mod
 
 ### Step 3: Test Email Sending
 
-1. Start the development server
-2. Navigate to **Team Management** page
-3. Create a team (if you don't have one)
-4. Click "Add Member"
-5. Enter a team member's email and name
-6. Click "Add Member"
-7. Check the email inbox - the invitation should arrive within seconds
+1. Navigate to **Team Management** page
+2. Create a team (if you don't have one)
+3. Click "Add Member"
+4. Enter a team member's email and name
+5. Click "Add Member"
+6. Check the email inbox - the invitation should arrive within seconds
+
+## How It Works
+
+The invitation link is generated automatically from the current browser URL
+(`window.location.origin`), so it always points to the correct deployed domain —
+no manual `APP_URL` configuration required.
+
+When `RESEND_API_KEY` is not configured:
+- Invitations are still created in the database
+- The accept-invitation link is generated but no email is sent
+- A warning is logged in the browser console
+- The edge function returns `emailSent: false`
+
+When the key is present:
+- A professionally formatted HTML email is sent via Resend
+- The response includes `emailSent: true` and the Resend message ID
 
 ## What Members Receive
 
-Team members will receive a professionally formatted HTML email containing:
+Team members receive a professionally formatted HTML email containing:
 - Team name and inviter information
 - List of team features and benefits
 - A clickable "Accept Invitation" button
@@ -54,7 +69,7 @@ This means the `RESEND_API_KEY` secret hasn't been added to Supabase yet. Follow
 ### Invalid email format
 Resend requires a valid sender domain. By default, this app uses `noreply@launchpad-suite.com`. For production:
 1. Verify your domain with Resend
-2. Update the sender email in the edge function
+2. Update the sender email in the edge function (`SENDER_EMAIL` constant)
 
 ## Production Considerations
 
@@ -64,9 +79,3 @@ For production deployment:
 3. Monitor email delivery in Resend dashboard
 4. Implement email unsubscribe links for compliance
 5. Set up DKIM, SPF, and DMARC records for your domain
-
-## Current Status
-
-- ✓ Edge function deployed and ready
-- ⏳ Waiting for RESEND_API_KEY to be added to Supabase
-- Once key is added, emails will send automatically

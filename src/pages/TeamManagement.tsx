@@ -153,7 +153,7 @@ const TeamManagement: React.FC = () => {
 
       // Send invitation email via edge function
       try {
-        await fetch(
+        const response = await fetch(
           `${import.meta.env.VITE_SUPABASE_URL}/functions/v1/send-team-invitation`,
           {
             method: 'POST',
@@ -167,11 +167,19 @@ const TeamManagement: React.FC = () => {
               teamId: selectedTeam,
               teamName: teamName,
               inviterName: user.name || 'Your Team',
+              appUrl: window.location.origin,
             }),
           }
         );
+
+        const data = await response.json();
+        if (!response.ok) {
+          console.error('Invitation failed:', data.error);
+        } else if (!data.emailSent) {
+          console.warn('Invitation created but email not sent:', data.message);
+        }
       } catch (err) {
-        console.log('Email sending attempt completed');
+        console.error('Failed to send invitation email:', err);
       }
 
       const newMember: TeamMember = {
